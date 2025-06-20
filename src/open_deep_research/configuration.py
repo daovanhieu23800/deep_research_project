@@ -36,19 +36,19 @@ class WorkflowConfiguration:
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
     process_search_results: Literal["summarize", "split_and_rerank"] | None = None
-    summarization_model_provider: str = "anthropic"
-    summarization_model: str = "claude-3-5-haiku-latest"
+    summarization_model_provider: str = "google_genai" #"anthropic"
+    summarization_model: str = "gemini-2.0-flash-lite" #"claude-3-5-haiku-latest"
     max_structured_output_retries: int = 3
     include_source_str: bool = False
     
     # Workflow-specific configuration
     number_of_queries: int = 2 # Number of search queries to generate per iteration
     max_search_depth: int = 2 # Maximum number of reflection + search iterations
-    planner_provider: str = "anthropic"
-    planner_model: str = "claude-3-7-sonnet-latest"
+    planner_provider: str = "google_genai"#"anthropic"
+    planner_model: str = "gemini-2.0-flash-lite"#"claude-3-7-sonnet-latest"
     planner_model_kwargs: Optional[Dict[str, Any]] = None
-    writer_provider: str = "anthropic"
-    writer_model: str = "claude-3-7-sonnet-latest"
+    writer_provider: str = "google_genai"#"anthropic"
+    writer_model: str = "gemini-2.0-flash-lite"#"claude-3-7-sonnet-latest"
     writer_model_kwargs: Optional[Dict[str, Any]] = None
 
     @classmethod
