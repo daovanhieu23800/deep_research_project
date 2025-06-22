@@ -17,6 +17,7 @@ DEFAULT_REPORT_STRUCTURE = """Use this structure to create a report on the user-
    - Aim for 1 structural element (either a list or table) that distills the main body sections 
    - Provide a concise summary of the report"""
 
+
 class SearchAPI(Enum):
     PERPLEXITY = "perplexity"
     TAVILY = "tavily"
@@ -28,6 +29,7 @@ class SearchAPI(Enum):
     GOOGLESEARCH = "googlesearch"
     NONE = "none"
 
+
 @dataclass(kw_only=True)
 class WorkflowConfiguration:
     """Configuration for the workflow/graph-based implementation (graph.py)."""
@@ -35,20 +37,21 @@ class WorkflowConfiguration:
     report_structure: str = DEFAULT_REPORT_STRUCTURE
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
-    process_search_results: Literal["summarize", "split_and_rerank"] | None = None
-    summarization_model_provider: str = "google_genai" #"anthropic"
-    summarization_model: str = "gemini-2.0-flash-lite" #"claude-3-5-haiku-latest"
-    max_structured_output_retries: int = 3
+    process_search_results: Literal["summarize",
+                                    "split_and_rerank"] | None = None
+    summarization_model_provider: str = "google_genai"  # "anthropic"
+    summarization_model: str = "gemini-2.0-flash-lite"  # "claude-3-5-haiku-latest"
+    max_structured_output_retries: int = 1
     include_source_str: bool = False
-    
+
     # Workflow-specific configuration
-    number_of_queries: int = 2 # Number of search queries to generate per iteration
-    max_search_depth: int = 2 # Maximum number of reflection + search iterations
-    planner_provider: str = "google_genai"#"anthropic"
-    planner_model: str = "gemini-2.0-flash-lite"#"claude-3-7-sonnet-latest"
+    number_of_queries: int = 1  # Number of search queries to generate per iteration
+    max_search_depth: int = 1  # Maximum number of reflection + search iterations
+    planner_provider: str = "google_genai"  # "anthropic"
+    planner_model: str = "gemini-2.0-flash-lite"  # "claude-3-7-sonnet-latest"
     planner_model_kwargs: Optional[Dict[str, Any]] = None
-    writer_provider: str = "google_genai"#"anthropic"
-    writer_model: str = "gemini-2.0-flash-lite"#"claude-3-7-sonnet-latest"
+    writer_provider: str = "google_genai"  # "anthropic"
+    writer_model: str = "gemini-2.0-flash-lite"  # "claude-3-7-sonnet-latest"
     writer_model_kwargs: Optional[Dict[str, Any]] = None
 
     @classmethod
@@ -66,22 +69,25 @@ class WorkflowConfiguration:
         }
         return cls(**{k: v for k, v in values.items() if v})
 
+
 @dataclass(kw_only=True)
 class MultiAgentConfiguration:
     """Configuration for the multi-agent implementation (multi_agent.py)."""
     # Common configuration
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
-    process_search_results: Literal["summarize", "split_and_rerank"] | None = None
+    process_search_results: Literal["summarize",
+                                    "split_and_rerank"] | None = None
     summarization_model_provider: str = "anthropic"
     summarization_model: str = "claude-3-5-haiku-latest"
     include_source_str: bool = False
-    
+
     # Multi-agent specific configuration
-    number_of_queries: int = 2 # Number of search queries to generate per section
+    number_of_queries: int = 2  # Number of search queries to generate per section
     supervisor_model: str = "anthropic:claude-3-7-sonnet-latest"
     researcher_model: str = "anthropic:claude-3-7-sonnet-latest"
-    ask_for_clarification: bool = False # Whether to ask for clarification from the user
+    # Whether to ask for clarification from the user
+    ask_for_clarification: bool = False
     # MCP server configuration
     mcp_server_config: Optional[Dict[str, Any]] = None
     mcp_prompt: Optional[str] = None
@@ -101,6 +107,7 @@ class MultiAgentConfiguration:
             if f.init
         }
         return cls(**{k: v for k, v in values.items() if v})
+
 
 # Keep the old Configuration class for backward compatibility
 Configuration = WorkflowConfiguration

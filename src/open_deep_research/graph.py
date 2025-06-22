@@ -38,6 +38,15 @@ from open_deep_research.utils import (
     get_today_str
 )
 
+
+# additional lib for app
+import os
+import pypandoc
+# pypandoc.download_pandoc()
+
+
+output_dir = "outputs"
+os.makedirs(output_dir, exist_ok=True)
 # Nodes --
 
 
@@ -470,10 +479,25 @@ def compile_final_report(state: ReportState, config: RunnableConfig):
     # Compile final report
     all_sections = "\n\n".join([s.content for s in sections])
 
+    md_path = os.path.join(output_dir, "final_report.md")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(all_sections)
+
     if configurable.include_source_str:
         return {"final_report": all_sections, "source_str": state["source_str"]}
     else:
         return {"final_report": all_sections}
+
+
+def parse_pdf(state: ReportState):
+    pypandoc.convert_text(
+        state["final_report"],
+        to='docx',
+        format='md',
+        outputfile=os.path.join(output_dir, "final_report.docx")
+    )
+    # pypandoc.convert_file('outputs/final_report.md',
+    #                       'docx', outputfile="somefile.docx")
 
 
 def initiate_final_section_writing(state: ReportState):
@@ -522,6 +546,7 @@ builder.add_node("build_section_with_web_research", section_builder.compile())
 builder.add_node("gather_completed_sections", gather_completed_sections)
 builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
+builder.add_node("parse_pdf", parse_pdf)
 
 # Add edges
 builder.add_edge(START, "generate_report_plan")
@@ -531,6 +556,8 @@ builder.add_edge("build_section_with_web_research",
 builder.add_conditional_edges("gather_completed_sections",
                               initiate_final_section_writing, ["write_final_sections"])
 builder.add_edge("write_final_sections", "compile_final_report")
-builder.add_edge("compile_final_report", END)
+# builder.add_edge("compile_final_report", END)
+builder.add_edge("compile_final_report", "parse_pdf")
+builder.add_edge("parse_pdf", END)
 
 graph = builder.compile()
