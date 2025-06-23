@@ -28,7 +28,7 @@ wheels/
 venv/
 env/
 ENV/
-.env
+.env*
 
 # IDE specific files
 .idea/

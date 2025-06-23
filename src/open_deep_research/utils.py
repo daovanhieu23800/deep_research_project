@@ -43,7 +43,8 @@ from open_deep_research.state import Section
 from open_deep_research.prompts import SUMMARIZATION_PROMPT
 
 import platform
-
+from langchain_experimental.utilities import PythonREPL
+import textwrap
 
 def get_config_value(value):
     """
@@ -1555,6 +1556,28 @@ async def azureaisearch_search(queries: List[str], max_results: int = 5, topic: 
     else:
         return "No valid search results found. Please try different search queries or use a different search API."
 
+
+@tool
+def python_execute(code: str) -> str:
+    """Execute Python code and return the result.
+
+    Args:
+        code (str): Python code to execute
+
+    Returns:
+        str: Result of the code execution
+    """
+
+    catch_err = "try:\n"
+    catch_err += textwrap.indent(code, "    ")
+    catch_err += textwrap.dedent("""
+    except Exception as e:
+        print(e)
+""")
+
+    python_repl = PythonREPL()
+    result_from_repl = python_repl.run(catch_err)
+    return result_from_repl
 
 async def select_and_execute_search(search_api: str, query_list: list[str], params_to_pass: dict) -> str:
     """Select and execute the appropriate search API.

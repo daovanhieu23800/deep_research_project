@@ -40,7 +40,11 @@ dependencies = [
     "langsmith>=0.3.37",
     "langchain-google-genai",
     "pypandoc_binary",
-    "wkhtmltopdf"
+    "langchain-experimental",
+    "matplotlib",
+    "pandas",
+    "numpy",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]

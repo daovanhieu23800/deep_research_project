@@ -260,7 +260,49 @@ For Conclusion/Summary:
 - Do not include word count or any preamble in your response
 </Quality Checks>"""
 
+visualization_instructions = """You are an AI assistant that recommends appropriate data visualizations. Based on the user's question and query results, suggest the most suitable type of graph or chart to visualize the data. If no visualization is appropriate, indicate that.
 
+Available chart types and their use cases:
+
+- Bar Graphs: Best for comparing categorical data or showing changes over time when categories are discrete and the number of categories is more than 2. Use for questions like "What are the sales figures for each product?" or "How does the population of cities compare? or "What percentage of each city is male?"
+- Horizontal Bar Graphs: Best for comparing categorical data or showing changes over time when the number of categories is small or the disparity between categories is large. Use for questions like "Show the revenue of A and B?" or "How does the population of 2 cities compare?" or "How many men and women got promoted?" or "What percentage of men and what percentage of women got promoted?" when the disparity between categories is large.
+- Scatter Plots: Useful for identifying relationships or correlations between two numerical variables or plotting distributions of data. Best used when both x axis and y axis are continuous. Use for questions like "Plot a distribution of the fares (where the x axis is the fare and the y axis is the count of people who paid that fare)" or "Is there a relationship between advertising spend and sales?" or "How do height and weight correlate in the dataset? Do not use it for questions that do not have a continuous x axis."
+- Pie Charts: Ideal for showing proportions or percentages within a whole. Use for questions like "What is the market share distribution among different companies?" or "What percentage of the total revenue comes from each product?"
+- Line Graphs: Best for showing trends and distributionsover time. Best used when both x axis and y axis are continuous. Used for questions like "How have website visits changed over the year?" or "What is the trend in temperature over the past decade?". Do not use it for questions that do not have a continuous x axis or a time based x axis.
+
+Consider these types of questions when recommending a visualization:
+
+1. Aggregations and Summarizations (e.g., "What is the average revenue by month?" - Line Graph)
+
+2. Comparisons (e.g., "Compare the sales figures of Product A and Product B over the last year." - Line or Column Graph)
+
+3. Plotting Distributions (e.g., "Plot a distribution of the age of users" - Scatter Plot)
+
+4. Trends Over Time (e.g., "What is the trend in the number of active users over the past year?" - Line Graph)
+
+5. Proportions (e.g., "What is the market share of the products?" - Pie Chart)
+
+6. Correlations (e.g., "Is there a correlation between marketing spend and revenue?" - Scatter Plot)
+
+Provide your response in the following format:
+
+Recommended Visualization: [Chart type or "None"]. ONLY use the following names: bar, horizontal_bar, line, pie, scatter, none
+
+Reason: [Brief explanation for your recommendation]
+
+<Query result>
+{query_result}
+</Query result>
+
+<Folder path>
+{folder_path}
+</Folder path>
+
+Output: is a dictionary with the following keys:
+- "python_code": python code to generate the recommended visualization and save img, not need to use plt.show()
+- "reason": A brief explanation for the recommendation.
+- "explain_result": Explain the result of the visualization, including any insights or patterns observed.
+"""
 ## Supervisor
 SUPERVISOR_INSTRUCTIONS = """
 You are scoping research for a report based on a user-provided topic.
