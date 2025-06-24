@@ -1722,3 +1722,23 @@ async def load_mcp_server_config(path: str) -> dict:
 
     config = await asyncio.to_thread(_load)
     return config
+
+@tool
+def query_bigquery(query: str)->str:
+    """Execute a BigQuery SQL query and return the results."""
+    code = f"""
+from google.cloud import bigquery
+
+client = bigquery.Client(project="agentic-ai-463517")
+
+query = \"\"\"{query}\"\"\"
+
+query_job = client.query(query)
+results = query_job.result()
+
+# Print results
+for row in results:
+    print(row)
+"""
+    results = python_execute(code)
+    return results

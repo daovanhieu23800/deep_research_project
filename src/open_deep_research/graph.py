@@ -28,15 +28,18 @@ from open_deep_research.prompts import (
     section_grader_instructions,
     section_writer_inputs,
     visualization_instructions,
+    sql_instructions,
+    sql_grader_instructions,
 )
-
+from open_deep_research.knowledge import dataset_info
 from open_deep_research.configuration import WorkflowConfiguration
 from open_deep_research.utils import (
     format_sections,
     get_config_value,
     get_search_params,
     select_and_execute_search,
-    get_today_str
+    get_today_str,
+    query_bigquery
 )
 
 
@@ -46,7 +49,7 @@ import os
 import pypandoc
 from langchain_experimental.utilities import PythonREPL
 import matplotlib
-from open_deep_research.structured_output import VizResponse
+from open_deep_research.structured_output import VizResponse, SQLResponse
 matplotlib.use('Agg')
 # make dir for related docs
 output_dir = "outputs"
@@ -497,6 +500,7 @@ def compile_final_report(state: ReportState, config: RunnableConfig):
         return {"final_report": all_sections}
 
 async def visualize_data(state: ReportState, config: RunnableConfig):
+    print("="*50)
     print("Visualizing data...")
     query_result = """
 [
@@ -560,6 +564,7 @@ async def visualize_data(state: ReportState, config: RunnableConfig):
     structured_llm = writer_model.with_structured_output(VizResponse)
     # Format system instructions
     system_instructions_query = visualization_instructions.format(
+        question=question,
         query_result=query_result,
         folder_path = os.path.join(output_dir, "images")
     )
@@ -578,7 +583,76 @@ async def visualize_data(state: ReportState, config: RunnableConfig):
     # python_repl.run(f"""print({os.path.join(output_dir,"images/sin.jpg")},'sadfasdfadsadsfas')""")
     result_from_repl = python_execute(visualization_code)
     print(result_from_repl)
+    print("="*50)
 
+async def write_sql(state: SectionState, config: RunnableConfig):
+    """Write SQL queries based on the section content.
+
+    This node generates SQL queries to extract data relevant to the section topic.
+
+    Args:
+        state: Current state with section details
+        config: Configuration for the SQL writing model
+
+    Returns:
+        Dict containing the generated SQL queries
+    """
+    # Get configuration
+    print("="*50)
+    print("Writing SQL queries...")
+    question = "Phân tích xu hướng tổng thể đơn hàng 4 năm và xác định các giai đoạn/mùa cao điểm rõ rệt"
+    project_id = "agentic-ai-463517"
+    dataset_name = "ghn_data"
+    configurable = WorkflowConfiguration.from_runnable_config(config)
+
+    # Generate SQL queries
+    writer_provider = get_config_value(configurable.writer_provider)
+    writer_model_name = get_config_value(configurable.writer_model)
+    writer_model_kwargs = get_config_value(
+        configurable.writer_model_kwargs or {})
+    writer_model = init_chat_model(
+        model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    # writer_model = writer_model.bind_tools([query_bigquery])
+    system_instructions_query = sql_instructions.format(
+        question=question,
+        top_k=10,
+        dataset_info=dataset_info,
+        project_id=project_id,
+        dataset_name=dataset_name,
+        last_error="there was no error in the last query",
+        previous_query="",
+    )
+    structured_llm = writer_model.with_structured_output(SQLResponse)
+    # Generate queries
+    for retry  in range(3):
+        print("="*50)
+        results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
+                                                HumanMessage(content=question)])
+        print(results.query)
+        query_results = query_bigquery(results.query)
+        print(query_results)
+
+        system_instructions_query = sql_instructions.format(
+        question=question,
+        top_k=10,
+        dataset_info=dataset_info,
+        project_id=project_id,
+        dataset_name=dataset_name,
+        last_error=query_results,
+        previous_query=results.query,
+    )
+        
+
+    #visualize code output from the agent
+    print(results.query)
+    # query_results = query_bigquery(results.query)
+    print(query_results)
+    #return {"query_result": results.content}
+
+    grader_query = writer_model.invoke([SystemMessage(content=sql_grader_instructions.format(query_results=query_results)),
+                         HumanMessage(content=question)])
+    print(grader_query)
+    print("="*50)
 
 def parse_pdf(state: ReportState):
     pypandoc.convert_text(
@@ -639,6 +713,8 @@ builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
 builder.add_node("parse_pdf", parse_pdf)
 builder.add_node("visualize_data", visualize_data)
+builder.add_node("write_sql", write_sql)
+
 # Add edges
 builder.add_edge(START, "generate_report_plan")
 builder.add_edge("generate_report_plan", "human_feedback")
@@ -650,7 +726,8 @@ builder.add_edge("write_final_sections", "compile_final_report")
 # builder.add_edge("compile_final_report", END)
 
 #=================================================
-builder.add_edge("compile_final_report", "visualize_data")
+builder.add_edge("compile_final_report", "write_sql")
+builder.add_edge("write_sql", "visualize_data")
 builder.add_edge("visualize_data", "parse_pdf")
 builder.add_edge("parse_pdf", END)
 #=================================================

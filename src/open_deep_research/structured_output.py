@@ -13,3 +13,12 @@ class VizResponse(BaseModel):
     explain_result: str = Field(
         ..., description="Explain the result of the visualization, including any insights or patterns observed."
     )
+
+class SQLResponse(BaseModel):
+    """
+    Structured answer returned by the visualization agent.
+    """
+    query: str = Field(
+        ..., description="SQL query"
+    )
+    
