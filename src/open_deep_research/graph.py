@@ -23,6 +23,7 @@ from open_deep_research.prompts import (
     report_planner_query_writer_instructions,
     report_planner_instructions,
     query_writer_instructions,
+    section_writer_instructions_v2,
     section_writer_instructions,
     final_section_writer_instructions,
     section_grader_instructions,
@@ -31,7 +32,10 @@ from open_deep_research.prompts import (
     sql_instructions,
     sql_grader_instructions,
 )
-from open_deep_research.knowledge import dataset_info
+from open_deep_research.knowledge import (
+    dataset_info,
+    abbreviation,
+)
 from open_deep_research.configuration import WorkflowConfiguration
 from open_deep_research.utils import (
     format_sections,
@@ -114,19 +118,27 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
         topic=topic,
         report_organization=report_structure,
         number_of_queries=number_of_queries,
+        abbreviation=abbreviation,
         today=get_today_str()
 
     )
 
     # Generate queries
     results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
-                                            HumanMessage(content="Generate search queries that will help with planning the sections of the report.")])
+                                            HumanMessage(content="Generate search queries that will help with planning the sections of the report. You can also add new queries that you think it will appropriate to the topic")])
     # Web search
+    print("="*50)
+    print("Generate queries.....")
+    print(results)
+    print("="*50)
     query_list = [query.search_query for query in results.queries]
 
     # Search the web with parameters
     source_str = await select_and_execute_search(search_api, query_list, params_to_pass)
-
+    print("="*50)
+    print("Generate source str")
+    # print(source_str)
+    print("="*50)
     # Format system instructions
     system_instructions_sections = report_planner_instructions.format(
         topic=topic, report_organization=report_structure, context=source_str, feedback=feedback)
@@ -161,6 +173,10 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
                                                     HumanMessage(content=planner_message)])
 
     # Get sections
+    print("="*50)
+    print("Generate report section.....")
+    print(report_sections)
+    print("="*50)
     sections = report_sections.sections
     print(state)
     return {"sections": sections}
@@ -261,6 +277,10 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
     # Generate queries
     queries = await structured_llm.ainvoke([SystemMessage(content=system_instructions),
                                             HumanMessage(content="Generate search queries on the provided topic.")])
+    print("="*50)
+    print("generate_queries......")
+    print(queries)
+    print("="*50)
 
     return {"search_queries": queries.queries}
 
@@ -318,12 +338,15 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     Returns:
         Command to either complete section or do more research
     """
-
+    # print(state)
     # Get state
     topic = state["topic"]
     section = state["section"]
     source_str = state["source_str"]
-
+    query_result = state["query_results"]
+    print("="*50)
+    print("Write section.....")
+    print(query_result)
     # Get configuration
     configurable = WorkflowConfiguration.from_runnable_config(config)
 
@@ -332,7 +355,8 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                                                                    section_name=section.name,
                                                                    section_topic=section.description,
                                                                    context=source_str,
-                                                                   section_content=section.content)
+                                                                   section_content=section.content,
+                                                                   sql_results_per_question=query_result)
 
     # Generate section
     writer_provider = get_config_value(configurable.writer_provider)
@@ -342,7 +366,7 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     writer_model = init_chat_model(
         model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
 
-    section_content = await writer_model.ainvoke([SystemMessage(content=section_writer_instructions),
+    section_content = await writer_model.ainvoke([SystemMessage(content=section_writer_instructions_v2),
                                                   HumanMessage(content=section_writer_inputs_formatted)])
 
     # Write content to the section object
@@ -600,9 +624,11 @@ async def write_sql(state: SectionState, config: RunnableConfig):
     # Get configuration
     print("="*50)
     print("Writing SQL queries...")
-    question = "Phân tích xu hướng tổng thể đơn hàng 4 năm và xác định các giai đoạn/mùa cao điểm rõ rệt"
+    list_query = state["search_queries"]
+    # question = "Phân tích xu hướng tổng thể đơn hàng 4 năm và xác định các giai đoạn/mùa cao điểm rõ rệt"
     project_id = "agentic-ai-463517"
     dataset_name = "ghn_data"
+    list_query_results = []
     configurable = WorkflowConfiguration.from_runnable_config(config)
 
     # Generate SQL queries
@@ -613,46 +639,52 @@ async def write_sql(state: SectionState, config: RunnableConfig):
     writer_model = init_chat_model(
         model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
     # writer_model = writer_model.bind_tools([query_bigquery])
-    system_instructions_query = sql_instructions.format(
-        question=question,
-        top_k=10,
-        dataset_info=dataset_info,
-        project_id=project_id,
-        dataset_name=dataset_name,
-        last_error="there was no error in the last query",
-        previous_query="",
-    )
-    structured_llm = writer_model.with_structured_output(SQLResponse)
-    # Generate queries
-    for retry  in range(3):
-        print("="*50)
-        results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
-                                                HumanMessage(content=question)])
-        print(results.query)
-        query_results = query_bigquery(results.query)
-        print(query_results)
-
+    question_list = [query.search_query for query in list_query]
+    for question in question_list:
         system_instructions_query = sql_instructions.format(
-        question=question,
-        top_k=10,
-        dataset_info=dataset_info,
-        project_id=project_id,
-        dataset_name=dataset_name,
-        last_error=query_results,
-        previous_query=results.query,
-    )
-        
+            question=question,
+            top_k=10,
+            dataset_info=dataset_info,
+            project_id=project_id,
+            dataset_name=dataset_name,
+            last_error="there was no error in the last query",
+            previous_query="",
+        )
+        structured_llm = writer_model.with_structured_output(SQLResponse)
+        # Generate queries
+        for retry  in range(2):
+            print("="*50)
+            results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
+                                                    HumanMessage(content=question)])
+            print(results.query)
+            query_results = query_bigquery(results.query)
+            print(query_results)
 
-    #visualize code output from the agent
-    print(results.query)
-    # query_results = query_bigquery(results.query)
-    print(query_results)
-    #return {"query_result": results.content}
+            system_instructions_query = sql_instructions.format(
+            question=question,
+            top_k=10,
+            dataset_info=dataset_info,
+            project_id=project_id,
+            dataset_name=dataset_name,
+            last_error=query_results,
+            previous_query=results.query,
+        )
+        list_query_results.append({
+            "question": question,
+            "query_results": query_results,
+           
+        })
+    
+    # #visualize code output from the agent
+    # print(results.query)
+    # # query_results = query_bigquery(results.query)
+    # print(query_results)
+    return {"query_results": list_query_results}
 
-    grader_query = writer_model.invoke([SystemMessage(content=sql_grader_instructions.format(query_results=query_results)),
-                         HumanMessage(content=question)])
-    print(grader_query)
-    print("="*50)
+    # grader_query = writer_model.invoke([SystemMessage(content=sql_grader_instructions.format(query_results=query_results)),
+    #                      HumanMessage(content=question)])
+    # print(grader_query)
+    # print("="*50)
 
 def parse_pdf(state: ReportState):
     pypandoc.convert_text(
@@ -694,11 +726,14 @@ section_builder = StateGraph(SectionState, output=SectionOutputState)
 section_builder.add_node("generate_queries", generate_queries)
 section_builder.add_node("search_web", search_web)
 section_builder.add_node("write_section", write_section)
-
+section_builder.add_node("write_sql", write_sql)
 # Add edges
 section_builder.add_edge(START, "generate_queries")
 section_builder.add_edge("generate_queries", "search_web")
+section_builder.add_edge("generate_queries", "write_sql")
+
 section_builder.add_edge("search_web", "write_section")
+section_builder.add_edge("write_sql", "write_section")
 
 # Outer graph for initial report plan compiling results from each section --
 
@@ -712,8 +747,8 @@ builder.add_node("gather_completed_sections", gather_completed_sections)
 builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
 builder.add_node("parse_pdf", parse_pdf)
-builder.add_node("visualize_data", visualize_data)
-builder.add_node("write_sql", write_sql)
+# builder.add_node("visualize_data", visualize_data)
+# builder.add_node("write_sql", write_sql)
 
 # Add edges
 builder.add_edge(START, "generate_report_plan")
@@ -723,12 +758,14 @@ builder.add_edge("build_section_with_web_research",
 builder.add_conditional_edges("gather_completed_sections",
                               initiate_final_section_writing, ["write_final_sections"])
 builder.add_edge("write_final_sections", "compile_final_report")
-# builder.add_edge("compile_final_report", END)
+builder.add_edge("compile_final_report", 'parse_pdf')
 
 #=================================================
-builder.add_edge("compile_final_report", "write_sql")
-builder.add_edge("write_sql", "visualize_data")
-builder.add_edge("visualize_data", "parse_pdf")
+# builder.add_edge("compile_final_report", "write_sql")
+# builder.add_edge("write_sql", "visualize_data")
+# builder.add_edge("visualize_data", "parse_pdf")
 builder.add_edge("parse_pdf", END)
+
+# builder.add_edge("human_feedback", END)
 #=================================================
 graph = builder.compile()

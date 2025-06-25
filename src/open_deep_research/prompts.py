@@ -1,3 +1,5 @@
+
+
 report_planner_query_writer_instructions="""You are performing research for a report. 
 
 <Report topic>
@@ -9,7 +11,7 @@ report_planner_query_writer_instructions="""You are performing research for a re
 </Report organization>
 
 <Task>
-Your goal is to generate {number_of_queries} web search queries that will help gather information for planning the report sections. 
+Your goal is to generate {number_of_queries} web search queries that will help gather information for planning the report sections. You can ask for more queries if you need to. 
 
 The queries should:
 
@@ -22,6 +24,9 @@ Make the queries specific enough to find high-quality, relevant sources while co
 <Format>
 Call the Queries tool 
 </Format>
+
+Also there are some abbreviations if you dont know the meaning of some words:
+{abbreviation}   
 
 Today is {today}
 """
@@ -80,7 +85,7 @@ Call the Sections tool
 </Format>
 """
 
-query_writer_instructions="""You are an expert technical writer crafting targeted web search queries that will gather comprehensive information for writing a technical report section.
+query_writer_instructions="""You are an expert technical writer crafting targeted web search queries and database question that will gather comprehensive information for writing a technical report section. 
 
 <Report topic>
 {topic}
@@ -91,13 +96,13 @@ query_writer_instructions="""You are an expert technical writer crafting targete
 </Section topic>
 
 <Task>
-Your goal is to generate {number_of_queries} search queries that will help gather comprehensive information above the section topic. 
+Your goal is to generate {number_of_queries} search queries and database question that will help gather comprehensive information above the section topic. 
 
 The queries should:
 
 1. Be related to the topic 
 2. Examine different aspects of the topic
-
+3. The queries can asked about internal data to help satisfy the requirements specified in the section topic 
 Make the queries specific enough to find high-quality, relevant sources.
 </Task>
 
@@ -108,14 +113,103 @@ Call the Queries tool
 Today is {today}
 """
 
+section_writer_instructions_v2 = """
+Write one section of a research report.
+
+<Task>
+1. Review the report topic, section name, and section topic carefully.
+2. If present, review any existing section content. 
+3. If present, review any existing sql result content. 
+4. Then, look at the provided Source material and sql result.
+5. Decide the sources and sql results that you will use it to write a report section.
+6. Write the report section and list your sources as well as sql results. 
+7. SQL results should be used to support the section content and write in table
+</Task>
+
+<Writing Guidelines>
+- If existing section content is not populated, write from scratch
+- If existing section content is populated, synthesize it with the source material and our sql results
+- Use simple, clear language
+- Use ## for section title (Markdown format)
+</Writing Guidelines>
+
+<Citation Rules>
+- Assign each unique URL a single citation number in your text
+- End with ### Sources that lists each source with corresponding numbers
+- IMPORTANT: Number sources sequentially without gaps (1,2,3,4...) in the final list regardless of which sources you choose
+- Example format:
+  [1] Source Title: URL
+  [2] Source Title: URL
+</Citation Rules>
+
+
+To write a section of a report, you must follow the 5-phase framework outlined below. You should use them as guidelines to structure your thinking and writing process.
+<think>
+
+For EVERY query from the BOD, you must execute the following 5-phase thinking framework. This protocol is designed to create a direct, unbreakable link: Data -> Problem -> Solution -> Action, which is the foundation for effective strategic Decision-Making.
+
+Phase 1: Deconstruct & Reason (The "Why")
+Before initiating any analysis, engage in deep reasoning.
+Objective: To understand the true strategic intent behind the BOD's question.
+Tasks:
+Identify the Core Business Question: What is the unspoken concern? Is it about cost, growth, competitive threats, talent, or risk?
+Diagnose the Problem: Frame the query as a business problem to be solved (e.g., "stagnating productivity," "high operational risk during peak seasons").
+Expose Assumptions: Identify and list the underlying assumptions in the query. Your analysis will either validate or challenge them.
+
+Phase 2: Plan & Decompose (The "How")
+Structure your thinking and present a clear plan of attack.
+Objective: To create a logical and transparent analytical roadmap.
+Tasks:
+Break Down the Query: Decompose the main question into a series of smaller, answerable sub-queries and tasks.
+Formulate Hypotheses: State clear, testable hypotheses (e.g., "We hypothesize that order density is the single most significant driver of last-mile productivity.").
+Outline the Analytical Approach: Specify the data required, the key metrics (KPIs) you will define, and the analytical models you will employ (e.g., regression, time-series analysis, cohort analysis, DiD).
+
+Phase 3: Multi-Source Analysis (The "What")
+Your conclusions must be built on a foundation of solid evidence.
+Objective: To gather and analyze data from all relevant sources to build a 360-degree view.
+Tasks:
+Leverage Internal Data: You are granted full, real-time query access to GHN's internal databases. Your analysis must be populated with direct evidence (charts, tables, KPIs) extracted from these databases (operations, finance, HR).
+Consult Internal Knowledge Base: Reference past analyses, project outcomes, and manager profiles to provide context and avoid redundant work.
+Conduct External Research: Actively scan the external environment for insights.
+Native-Language Search Protocol: When researching non-English markets (e.g., China, Indonesia, India, Thailand), you must prioritize conducting searches using native-language keywords first, then synthesize and translate the findings. This ensures access to the most authentic and in-depth local information.
+Innovate & Expand: Do not be limited by the provided knowledge. Proactively seek novel ideas, business models, and data points that can lead to breakthrough insights.
+
+Phase 4: Benchmark & Contextualize (The "So What")
+Never present data in a vacuum. Context is everything.
+Objective: To measure GHN's performance against relevant benchmarks and derive strategic lessons.
+Tasks:
+Market Benchmarking: Compare GHN against direct domestic competitors (SPX Express, J&T Express, etc.) on key metrics.
+International Best-Practice Benchmarking: Analyze the strategies, technologies, and business models of global logistics leaders (SF Express, ZTO, Kerry Express, Delhivery). Focus not just on what they do, but why their models are effective.
+
+Phase 5: Synthesize & Recommend (The "Now What")
+This is where you convert analysis into actionable value.
+Objective: To deliver a clear, persuasive, and actionable strategic plan.
+Tasks:
+Construct a Narrative: Synthesize all findings into a compelling story that logically flows from problem to solution.
+Develop Concrete Solutions: Formulate detailed strategic initiatives.
+Build an Action Plan: For each initiative, define the objectives, KPIs, timeline, responsible departments, and estimated budget/resource requirements.
+Adhere to Presentation Standards: The analysis must be profound, but the presentation must be crisp, logical, and executive-friendly. Use visuals effectively to convey complex information simply.
+</think>
+
+<Final Check>
+1. Verify that EVERY claim is grounded in the provided Source material and sql results.
+2. Confirm each URL appears ONLY ONCE in the Source list
+3. Verify that sources are numbered sequentially (1,2,3...) without any gaps
+</Final Check>
+
+"""
+
+
+
 section_writer_instructions = """Write one section of a research report.
 
 <Task>
 1. Review the report topic, section name, and section topic carefully.
 2. If present, review any existing section content. 
-3. Then, look at the provided Source material.
-4. Decide the sources that you will use it to write a report section.
-5. Write the report section and list your sources. 
+3. If present, review any existing sql result content. 
+4. Then, look at the provided Source material and sql result.
+5. Decide the sources and sql results that you will use it to write a report section.
+6. Write the report section and list your sources as well as sql results. 
 </Task>
 
 <Writing Guidelines>
@@ -156,9 +250,15 @@ section_writer_inputs="""
 {section_topic}
 </Section topic>
 
+<Query results per question>
+{sql_results_per_question}
+</Query results per question>
+
 <Existing section content (if populated)>
 {section_content}
 </Existing section content>
+
+
 
 <Source material>
 {context}
@@ -256,6 +356,66 @@ For Conclusion/Summary:
 <Quality Checks>
 - For introduction: 50-100 word limit, # for report title, no structural elements, no sources section
 - For conclusion: 100-150 word limit, ## for section title, only ONE structural element at most, no sources section
+- Markdown format
+- Do not include word count or any preamble in your response
+</Quality Checks>"""
+
+final_section_writer_instructions_v2="""You are an expert technical writer crafting a section that synthesizes information from the rest of the report.
+
+<Report topic>
+{topic}
+</Report topic>
+
+<Section name>
+{section_name}
+</Section name>
+
+<Section topic> 
+{section_topic}
+</Section topic>
+
+<Available report content>
+{context}
+</Available report content>
+
+<Task>
+1. Section-Specific Approach:
+
+For Introduction:
+- Use # for report title (Markdown format)
+- Write in simple and clear language
+- Preview the specific content covered in the main body sections (mention key examples, case studies, or findings)
+- Use a clear narrative arc to introduce the report
+- Include NO structural elements (no lists or tables)
+- No sources section needed
+
+For Conclusion/Summary:
+- Use ## for section title (Markdown format)
+- Synthesize and tie together the key themes, findings, and insights from the main body sections
+- Reference specific examples, case studies, or data points covered in the report
+- For comparative reports:
+    * Must include a focused comparison table using Markdown table syntax
+    * Table should distill insights from the report
+    * Keep table entries clear and concise
+- For non-comparative reports: 
+    * Can use structural element IF it helps distill the points made in the report:
+    * Either a focused table comparing items present in the report (using Markdown table syntax)
+    * Or a short list using proper Markdown list syntax:
+      - Use `*` or `-` for unordered lists
+      - Use `1.` for ordered lists
+      - Ensure proper indentation and spacing
+- End with specific next steps or implications based on the report content
+- No sources section needed
+
+3. Writing Approach:
+- Use concrete details over general statements
+- Make every word count
+- Focus on your single most important point
+</Task>
+
+<Quality Checks>
+- For introduction: # for report title, no structural elements, no sources section
+- For conclusion:  ## for section title, only ONE structural element at most, no sources section
 - Markdown format
 - Do not include word count or any preamble in your response
 </Quality Checks>"""

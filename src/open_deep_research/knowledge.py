@@ -177,3 +177,70 @@ Schema for sla_delivery:
  - from_district_id (INTEGER)
  - to_district_id (INTEGER)
  - delivery_sla (INTEGER)"""
+
+
+abbreviation = """
+| Thuật ngữ                                | Viết tắt | Giải thích ý nghĩa                                              |
+|------------------------------------------|----------|-----------------------------------------------------------------|
+| Key Account                              | KA       | Khách hàng lớn                                                  |
+| Small Medium Enterprise                  | SME      | Khách hàng vừa và nhỏ                                           |
+| Khách Hàng Mới                           | KHM      | KH lần đầu hoặc quay lại sau 90 ngày                            |
+| Khách Hàng Cũ                            | KHC      | KH đang sử dụng dịch vụ                                         |
+| Nhóm A,B,C,D,E,F                         |         | Phân loại KH theo doanh thu                                     |
+| Shop Siêu Sao                            |        | Chương trình khách hàng thân thiết                              |
+|                                          |          |                                                                 |
+| Nhân viên Phát triển Thị trường          | NVPTTT   | Nhân viên giao nhận (shipper)                                   |
+| Chiến Binh Siêu Sao                      | CBSS     | NVPTTT có doanh thu KHM ≥ 1 triệu/tháng                         |
+| Đại Hiệp                                  |       | CBSS liên tục 3 tháng                                           |
+| Cao Thủ                                   |       | CBSS liên tục 6 tháng                                           |
+| Đại Cao Thủ                               |         | CBSS liên tục 9 tháng                                           |
+| Chiến Thần                                |         | CBSS liên tục 12 tháng                                          |
+| NVPTTT siêu giao                         |         | NV có > 70 % thu nhập từ giao                                   |
+| NVPTTT siêu lấy                          |         | (không có giải thích)                                           |
+|                                          |          |                                                                 |
+| Ban Dự Án                                | BDA      | Nhóm triển khai dự án                                           |
+| Area Manager                             | AM       | Quản lý khu vực                                                 |
+| Trưởng Bưu Cục                           | TBC      | Quản lý bưu cục                                                 |
+| Giám đốc Vùng                            | GĐV      | Giám đốc vùng                                                   |
+| Human Resources Business Partner         | HRBP     | Đối tác nhân sự                                                 |
+| Nhân viên xử lý                          | NVXL     | Nhân viên xử lý đơn trong kho                                   |
+| Compensation & Benefits                  | CnB      | Phòng Tiền lương & Phúc lợi                                     |
+| Business Intelligence                    | BI       | Phòng Phân tích dữ liệu                                         |
+| Finance                                  | FIN      | Phòng Tài chính                                                 |
+| Operational Excellence                   | OE       | Phòng Chiến lược Vận hành                                       |
+|                                          |          |                                                                 |
+| Đông Bắc Bộ                              | DBB      | Vùng địa lý                                                     |
+| Bắc Trung Bộ                             | BTB      | Vùng địa lý                                                     |
+| Tây Bắc Bộ                               | TBB      | Vùng địa lý                                                     |
+| Duyên hải                                | DSH      | Vùng địa lý                                                     |
+| Đông Nam Bộ                              | DNB      | Vùng địa lý                                                     |
+| Nam Trung Bộ                             | NTB      | Vùng địa lý                                                     |
+| Tây Nam Bộ                               | TNB      | Vùng địa lý                                                     |
+| Hồ Chí Minh                              | HCM      | Vùng địa lý                                                     |
+| Hà Nội                                   | HNO      | Vùng địa lý                                                     |
+|                                          |          |                                                                 |
+| Giao Thành Công                          | GTC      | Trạng thái giao hàng thành công                                 |
+| Lấy Thành Công                           | LTC      | Trạng thái lấy hàng thành công                                  |
+| Giao Thất Bại - Thu tiền                 | GTB-TT   | Giao không thành công lần thứ 3 - thu tiền                      |
+| Stop                                     |         | Đơn vị quy đổi (1 Stop = 4 kg)                                  |
+| Giao-Lấy Hỗn Hợp                         | GLHH     | Mô hình giao lấy kết hợp                                        |
+| Kho Khách Hàng Lớn                       | KHL      | Mô hình kho riêng cho KH lớn                                    |
+| Bưu cục Hybrid                           |         | BC kết hợp nhiều tuyến                                          |
+| Giao Ca 2                                |         | Mô hình giao 2 ca/ngày                                          |
+| Chia tuyến                               |         | Phân chia địa bàn hoạt động                                     |
+| “Cứu bể”                                 |         | Giải pháp khắc phục BC bất ổn                                   |
+| Standard Operating Procedure             | SOP      | Quy trình chuẩn                                                 |
+|                                          |          |                                                                 |
+| Lương Hoa Hồng                           |        | Cách tính lương theo % doanh thu                                |
+| Lương Đơn Hàng                           |         | Cách tính lương cũ theo khối lượng                              |
+| Auto-payroll                             |         | Hệ thống tính lương tự động                                     |
+| Payslip                                  |         | Bảng lương chi tiết                                             |
+| Kỳ lương                                  |         | Chu kỳ trả lương (2 kỳ/tháng)                                   |
+|                                          |          |                                                                 |
+| Electronic Know Your Customer            | eKYC     | Xác minh khách hàng điện tử                                     |
+| Talent Management System                 |         | Hệ thống quản trị nhân tài                                      |
+| Bảng xếp hạng vùng                       |        | Xếp hạng hiệu quả các vùng                                      |
+| Dự án 7K                                 | 7K       | Dự án Toàn dân bán hàng                                         |
+| Quy hoạch bưu cục                        |         | Kế hoạch tổ chức BC                                             |
+
+"""
