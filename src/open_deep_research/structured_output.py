@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-
+from typing import Annotated, List
 class VizResponse(BaseModel):
     """
     Structured answer returned by the visualization agent.
@@ -18,7 +18,9 @@ class SQLResponse(BaseModel):
     """
     Structured answer returned by the visualization agent.
     """
-    query: str = Field(
-        ..., description="SQL query"
+    sql_script: str = Field(None, description="SQL script ")
+    follow_up_questions: List[str] = Field(
+        None, description="List of follow-up questions to ask the user based on the SQL script."
     )
+    explaination: str = Field(None, description="Explanation of the SQL script.")
     

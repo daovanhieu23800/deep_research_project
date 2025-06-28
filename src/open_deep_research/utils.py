@@ -1572,7 +1572,7 @@ def python_execute(code: str) -> str:
     catch_err += textwrap.indent(code, "    ")
     catch_err += textwrap.dedent("""
     except Exception as e:
-        print(e)
+        print(f"error: {e}")
 """)
 
     python_repl = PythonREPL()

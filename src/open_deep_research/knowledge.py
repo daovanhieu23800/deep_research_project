@@ -1,182 +1,199 @@
 dataset_info = """
-Schema for dim_location:
- - ward_id (STRING)
- - ward_name (STRING)
- - ward_status (INTEGER)
- - district_id (INTEGER)
- - district_code (STRING)
- - district_name (STRING)
- - district_type (STRING)
- - province_id (INTEGER)
- - province_name (STRING)
- - region_id (INTEGER)
- - region_name (STRING)
- - region_fullname (STRING)
- - region_shortname (STRING)
- - region_code_hrw (STRING)
 
-Schema for dim_warehouse:
- - warehouse_id (INTEGER)
- - department_id (INTEGER)
- - warehouse_name (STRING)
- - warehouse_address (STRING)
- - is_enabled (BOOLEAN)
- - status_hrw (INTEGER)
- - warehouse_type (STRING)
- - ward_code (STRING)
- - ward_name (STRING)
- - district_id (INTEGER)
- - district_name (STRING)
- - province_id (INTEGER)
- - province_name (STRING)
- - region_shortname (STRING)
- - region_fullname (STRING)
- - team_name (STRING)
- - section_name (STRING)
- - department_name (STRING)
- - gdv_id (INTEGER)
- - gdv_name (STRING)
- - pgdv_id (STRING)
- - pgdv_name (STRING)
- - area_manager_id (INTEGER)
- - area_manager_name (STRING)
- - station_leader_id (INTEGER)
- - station_leader_name (STRING)
- - latitude (FLOAT)
- - longitude (FLOAT)
- - owner_location_id (FLOAT)
- - is_virtual (BOOLEAN)
- - created_time (TIMESTAMP)
- - last_updated_time (TIMESTAMP)
- - hrw_updated_at (TIMESTAMP)
+Schema for table shipping_order:
+| Field | Type | Description |
+|---|---|---|
+| created_date_partition | DATE | Cột phân vùng theo ngày tạo (must have when query into this table) |
+| _id | STRING | mã mongo |
+| return_ward_code | STRING | phường trả |
+| return_district_id | INTEGER | quận trả |
+| from_ward_code | STRING | mã phường người gửi |
+| from_district_id | INTEGER | quận người gửi |
+| from_location | STRING | vị trí người gửi (gồm thông tin lat, long, cell_code, wardcode, trustlevel) |
+| deliver_station_id | INTEGER | mã bưu cục/kho bàn giao hàng cho người nhận |
+| to_ward_code | STRING | mã phường người nhận Buyer |
+| to_district_id | INTEGER | mã quận người nhận Buyer |
+| to_location | STRING | vị trí người nhận (gồm thông tin lat, long, cell_code, wardcode, trustlevel) Buyer |
+| weight | INTEGER | cân nặng (gram) |
+| length | INTEGER | dài (cm) |
+| width | INTEGER | rộng (cm) |
+| height | INTEGER | cao (cm) |
+| converted_weight | INTEGER | khối lượng quy đổi (gram) |
+| service_type_id | INTEGER | loại dịch vụ |
+| service_id | INTEGER | gói cước |
+| payment_type_id | INTEGER | hình thức thay toán - người nhận trả hay người gửi trả |
+| custom_service_fee | INTEGER |  |
+| cod_amount | INTEGER | số tiền cod của đơn hàng |
+| cod_collect_date | TIMESTAMP | ngày tạo phiếu thu cod |
+| cod_transfer_date | TIMESTAMP | ngày chuyển cod |
+| insurance_value | INTEGER | giá trị khai giá bảo hiểm |
+| pick_station_id | INTEGER | bưu cục nhận hàng |
+| client_order_code | STRING | mã đơn hàng khách hàng |
+| pickup_time_before | TIMESTAMP |  |
+| pickup_time_after | TIMESTAMP |  |
+| required_note | STRING | ghi chú bắt buộc |
+| content | STRING | nội dung hàng hóa |
+| note | STRING | ghi chú |
+| coupon | STRING | coupon áp dụng cho đơn hàng |
+| version_no | STRING | số phiên bản |
+| updated_ip | STRING | ip cập nhật |
+| updated_employee | INTEGER | mã nhân viên cập nhật |
+| updated_date | TIMESTAMP | thời gian cập nhật cuối DATETIME_KEY +1 |
+| created_ip | STRING | mã ip tạo đơn |
+| created_employee | INTEGER | nhân viên tạo đơn - nhân viên của ghn tạo đơn giúp |
+| created_date | TIMESTAMP | ngày tạo đơn +2 |
+| status | STRING | trạng thái đơn hàng |
+| pick_warehouse_id | INTEGER | mã kho lấy |
+| deliver_warehouse_id | INTEGER | mã kho giao |
+| current_warehouse_id | INTEGER | mã kho hiện tại |
+| return_warehouse_id | INTEGER | mã kho trả |
+| next_warehouse_id | INTEGER | kho tiếp theo sẽ đến |
+| leadtime | TIMESTAMP | thời gian dự kiến giao hàng |
+| order_date | TIMESTAMP | ngày tạo đơn cut off |
+| action | STRING | thao tác (chi tiết hơn trạng thái) |
+| soc_id | STRING | mã cước |
+| finish_date | TIMESTAMP |  |
+| legacy | BOOLEAN | có phải hệ thống cũ |
+| tag | STRING | nhãn |
+| pickup_time | TIMESTAMP | thời gian hẹn lấy |
+| warehouse_log | STRING | log thay đổi kho |
+| is_partial_return | BOOLEAN | đơn giao trả 1 phần |
+| items | STRING | items chi tiết trong đơn |
+| pick_shift | STRING | ca lấy |
+| deliver_shift | STRING | ca giao |
+| return_shift | STRING | ca trả hàng |
+| sort_code | STRING | mã phân loại |
+| first_picked_time | TIMESTAMP | thời gian lấy đầu tiên |
+| lost_time | TIMESTAMP | thời gian mất hàng |
+| num_pick | INTEGER | số lần lấy |
+| num_deliver | INTEGER | số lần giao |
+| num_return | INTEGER | số lần trả |
+| pick_user | INTEGER | nhân viên lấy Driver |
+| deliver_user | INTEGER | mã nhân viên giao hàng Driver |
+| return_user | INTEGER | nhân viên trả Driver |
+| lost_user | INTEGER | người xác nhận mất hàng |
+| end_pick_time | TIMESTAMP | thời gian kết thúc lấy |
+| first_delivered_time | TIMESTAMP | thời gian giao hàng đầu tiên |
+| return_time | TIMESTAMP | thời gian hẹn trả |
+| s2r_time | TIMESTAMP | thời gian bắt đầu tính để chờ chuyển trả hàng |
+| end_delivery_time | TIMESTAMP | thời gian kết thúc giao |
+| end_return_time | TIMESTAMP | thời gian kết thúc trả |
+| end_success_time | TIMESTAMP | thời gian hoàn tất đơn hàng (GTTC) |
+| updated_warehouse | INTEGER | mã kho cập nhất |
+| current_transport_warehouse_id | INTEGER | mã kho hiện tại đang luân chuyển đến |
+| internal_process | STRING |  |
+| table_partition | STRING |  |
+| extra_service | STRING | dịch vụ bổ sung |
+| cod_failed_amount | INTEGER | tiền giao thất bại thu khách |
+| cod_failed_collect_date | TIMESTAMP | ngày thu tiền giao thất bại của khách |
+| pods | STRING | chứng từ giao nhận |
+| discount_log | STRING |  |
+| is_b2b | BOOLEAN | đơn B2B |
+| cod_transferred_histories | STRING |  |
+| is_cod_collected | BOOLEAN | đơn có thu cod không |
+| process_by_partner | BOOLEAN | đơn hàng do đối tác xử lí |
+| process_partner_name | STRING | tên đối tác xử lý |
+| operation_partner | STRING | đối tác vận hành |
+| type_order | STRING | loại đơn hàng (phân biệt đơn freight) (Freight hoặc Null) |
+| type_order_code | STRING | mã loại đơn hàng (phân biệt các nhóm đơn freight) |
+| cod_amount_bk | INTEGER | Số tiền COD bản ghi cũ (backup) |
+| ecom_config_fee_id | INTEGER | ID cấu hình phí thương mại điện tử |
+| ecom_extra_cost_id | INTEGER | ID chi phí bổ sung thương mại điện tử |
+| config_fee_id | INTEGER | ID cấu hình phí |
+| extra_cost_id | INTEGER | ID chi phí bổ sung |
+| config_fee_id_new | STRING | ID cấu hình phí mới (chuẩn hóa) |
+| extra_cost_id_new | STRING | ID chi phí bổ sung mới (chuẩn hóa) |
+| is_new_multiple | BOOLEAN | Cờ cho biết đơn hàng nhiều gói (phiên bản mới) |
+| order_code_hash | STRING | Giá trị băm của mã đơn hàng (ẩn danh hóa) |
+| client_id_hash | INTEGER | Giá trị băm của mã khách hàng (ẩn danh hóa) |
+| shop_id_hash | INTEGER | Giá trị băm của mã shop (ẩn danh hóa) |
+| updated_client_hash | INTEGER | Giá trị băm của client khi cập nhật |
+| created_client_hash | INTEGER | Giá trị băm của client khi tạo |
 
-Schema for middle_mile_log:
- - action_type (STRING)
- - order_code_hash (STRING)
- - package_code_hash (STRING)
- - action_date (DATE)
- - action_time (STRING)
- - warehouse_id (INTEGER)
+Schema for table dim_location:
+|Field|Type|Description|
+|---|---|---|
+|ward_id|STRING|Mã phường/xã|
+|ward_name|STRING|Tên phường/xã|
+|ward_status|INTEGER|Trạng thái phường/xã (0 = ngưng, 1 = hoạt động)|
+|district_id|INTEGER|ID quận/huyện|
+|district_code|STRING|Mã quận/huyện|
+|district_name|STRING|Tên quận/huyện|
+|district_type|STRING|Loại quận/huyện (Nội Thành/Ngoại Thành 1/Ngoại Thành 2)|
+|province_id|INTEGER|ID tỉnh/thành phố|
+|province_name|STRING|Tên tỉnh/thành phố|
+|region_id|INTEGER|ID khu vực|
+|region_name|STRING|Tên khu vực|
+|region_fullname|STRING|Tên vùng đầy đủ|
+|region_shortname|STRING|Tên vùng rút gọn|
+|region_code_hrw|STRING|Mã vùng HRW|
+
+
+Schema for table dim_warehouse:
+|Field|Type|Description|
+|---|---|---|
+|warehouse_id|INTEGER|Mã kho|
+|department_id|INTEGER|Mã phòng ban|
+|warehouse_name|STRING|Tên kho|
+|warehouse_address|STRING|Địa chỉ kho|
+|is_enabled|BOOLEAN|Trạng thái hoạt động (true/false)|
+|status_hrw|INTEGER|Trạng thái hoạt động trên hệ thống HRW (1 đang hoạt động, 0 ngưng)|
+|warehouse_type|STRING|Loại kho (BC bưu cục, KTC kho trung chuyển, KHL kho khách)|
+|ward_code|STRING|Mã phường/xã|
+|ward_name|STRING|Tên phường/xã|
+|district_id|INTEGER|Mã quận/huyện|
+|district_name|STRING|Tên quận/huyện|
+|province_id|INTEGER|Mã tỉnh/thành phố|
+|province_name|STRING|Tên tỉnh/thành phố|
+|region_shortname|STRING|Tên vùng rút gọn|
+|region_fullname|STRING|Tên vùng đầy đủ|
+|team_name|STRING|Tên team HRW phụ trách|
+|section_name|STRING|Tên section HRW phụ trách|
+|department_name|STRING|Tên phòng ban HRW phụ trách|
+|gdv_id|INTEGER|Mã Giám đốc vùng|
+|gdv_name|STRING|Tên Giám đốc vùng|
+|pgdv_id|STRING|Mã Phó Giám đốc vùng|
+|pgdv_name|STRING|Tên Phó Giám đốc vùng|
+|area_manager_id|INTEGER|Mã Area Manager phụ trách|
+|area_manager_name|STRING|Tên Area Manager phụ trách|
+|station_leader_id|INTEGER|Mã Trưởng bưu cục|
+|station_leader_name|STRING|Tên Trưởng bưu cục|
+|latitude|FLOAT|Vĩ độ kho|
+|longitude|FLOAT|Kinh độ kho|
+|owner_location_id|FLOAT|Mã kho chủ (kho ảo thuộc kho chủ này)|
+|is_virtual|BOOLEAN|true kho ảo, false kho vật lý|
+|created_time|TIMESTAMP|Thời gian tạo kho|
+|last_updated_time|TIMESTAMP|Thời gian cập nhật cuối|
+|hrw_updated_at|TIMESTAMP|Thời gian cập nhật cuối trên HRW|
+
+Schema for table middle_mile_log:
+|Field|Type|Description|
+|---|---|---|
+|action_type|STRING|Tên thao tác (must have when query into this table)|
+|order_code_hash|STRING|Mã đơn hàng (băm ẩn danh)|
+|package_code_hash|STRING|Mã kiện hàng (băm ẩn danh)|
+|action_date|DATE|Ngày thao tác|
+|action_time|STRING|Giờ thao tác|
+|warehouse_id|INTEGER|Mã kho/bưu cục thực hiện thao tác|
+
 
 Schema for revenue_order:
  - order_code_hash (STRING)
  - rev (FLOAT)
 
-Schema for shipping_order:
- - created_date_partition (DATE)
- - _id (STRING)
- - return_ward_code (STRING)
- - return_district_id (INTEGER)
- - from_ward_code (STRING)
- - from_district_id (INTEGER)
- - from_location (STRING)
- - deliver_station_id (INTEGER)
- - to_ward_code (STRING)
- - to_district_id (INTEGER)
- - to_location (STRING)
- - weight (INTEGER)
- - length (INTEGER)
- - width (INTEGER)
- - height (INTEGER)
- - converted_weight (INTEGER)
- - service_type_id (INTEGER)
- - service_id (INTEGER)
- - payment_type_id (INTEGER)
- - custom_service_fee (INTEGER)
- - cod_amount (INTEGER)
- - cod_collect_date (TIMESTAMP)
- - cod_transfer_date (TIMESTAMP)
- - insurance_value (INTEGER)
- - pick_station_id (INTEGER)
- - client_order_code (STRING)
- - pickup_time_before (TIMESTAMP)
- - pickup_time_after (TIMESTAMP)
- - required_note (STRING)
- - content (STRING)
- - note (STRING)
- - coupon (STRING)
- - version_no (STRING)
- - updated_ip (STRING)
- - updated_employee (INTEGER)
- - updated_date (TIMESTAMP)
- - created_ip (STRING)
- - created_employee (INTEGER)
- - created_date (TIMESTAMP)
- - status (STRING)
- - pick_warehouse_id (INTEGER)
- - deliver_warehouse_id (INTEGER)
- - current_warehouse_id (INTEGER)
- - return_warehouse_id (INTEGER)
- - next_warehouse_id (INTEGER)
- - leadtime (TIMESTAMP)
- - order_date (TIMESTAMP)
- - action (STRING)
- - soc_id (STRING)
- - finish_date (TIMESTAMP)
- - legacy (BOOLEAN)
- - tag (STRING)
- - pickup_time (TIMESTAMP)
- - warehouse_log (STRING)
- - is_partial_return (BOOLEAN)
- - items (STRING)
- - pick_shift (STRING)
- - deliver_shift (STRING)
- - return_shift (STRING)
- - sort_code (STRING)
- - first_picked_time (TIMESTAMP)
- - lost_time (TIMESTAMP)
- - num_pick (INTEGER)
- - num_deliver (INTEGER)
- - num_return (INTEGER)
- - pick_user (INTEGER)
- - deliver_user (INTEGER)
- - return_user (INTEGER)
- - lost_user (INTEGER)
- - end_pick_time (TIMESTAMP)
- - first_delivered_time (TIMESTAMP)
- - return_time (TIMESTAMP)
- - s2r_time (TIMESTAMP)
- - end_delivery_time (TIMESTAMP)
- - end_return_time (TIMESTAMP)
- - end_success_time (TIMESTAMP)
- - updated_warehouse (INTEGER)
- - current_transport_warehouse_id (INTEGER)
- - internal_process (STRING)
- - table_partition (STRING)
- - extra_service (STRING)
- - cod_failed_amount (INTEGER)
- - cod_failed_collect_date (TIMESTAMP)
- - pods (STRING)
- - discount_log (STRING)
- - is_b2b (BOOLEAN)
- - cod_transferred_histories (STRING)
- - is_cod_collected (BOOLEAN)
- - process_by_partner (BOOLEAN)
- - process_partner_name (STRING)
- - operation_partner (STRING)
- - type_order (STRING)
- - type_order_code (STRING)
- - cod_amount_bk (INTEGER)
- - ecom_config_fee_id (INTEGER)
- - ecom_extra_cost_id (INTEGER)
- - config_fee_id (INTEGER)
- - extra_cost_id (INTEGER)
- - config_fee_id_new (STRING)
- - extra_cost_id_new (STRING)
- - is_new_multiple (BOOLEAN)
- - order_code_hash (STRING)
- - client_id_hash (INTEGER)
- - shop_id_hash (INTEGER)
- - updated_client_hash (INTEGER)
- - created_client_hash (INTEGER)
+
 
 Schema for sla_delivery:
- - route (STRING)
- - from_district (STRING)
- - to_district (STRING)
- - from_district_id (INTEGER)
- - to_district_id (INTEGER)
- - delivery_sla (INTEGER)"""
+|Field|Type|Description|
+|---|---|---|
+|route|STRING|Phân loại tuyến|
+|from_district|STRING|Tên quận/huyện lấy|
+|to_district|STRING|Tên quận/huyện giao|
+|from_district_id|INTEGER|Mã định danh quận/huyện lấy|
+|to_district_id|INTEGER|Mã định danh quận/huyện giao|
+|delivery_sla|INTEGER|Quy định SLA‒số ngày giao|
+
+"""
 
 
 abbreviation = """

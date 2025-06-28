@@ -1,6 +1,18 @@
 from typing import Annotated, List, TypedDict, Literal
 from pydantic import BaseModel, Field
 import operator
+class SearchQuery(BaseModel):
+    search_query: str = Field(None, description="Query for web search.")
+class DataInternalQuestion(BaseModel):
+    data_interal_question: str = Field(None, description="data internal question for SQL search.")
+
+class Queries(BaseModel):
+    web_search_queries: List[SearchQuery] = Field(
+        description="List of search queries.",
+    )
+    data_interal_questions: List[DataInternalQuestion] = Field(
+        description="List of data internal questions",
+    )
 
 class Section(BaseModel):
     name: str = Field(
@@ -14,6 +26,10 @@ class Section(BaseModel):
     )
     content: str = Field(
         description="The content of the section."
+    )  
+   
+    data_internal_question: List[DataInternalQuestion] = Field(
+        description="The list of data internal question related to this section to ask."
     )   
 
 class Sections(BaseModel):
@@ -21,13 +37,7 @@ class Sections(BaseModel):
         description="Sections of the report.",
     )
 
-class SearchQuery(BaseModel):
-    search_query: str = Field(None, description="Query for web search.")
 
-class Queries(BaseModel):
-    queries: List[SearchQuery] = Field(
-        description="List of search queries.",
-    )
 
 class Feedback(BaseModel):
     grade: Literal["pass","fail"] = Field(
@@ -65,6 +75,7 @@ class SectionState(TypedDict):
     query_results: list[str] # List of database results
     source_str: str # String of formatted source content from web search
     report_sections_from_research: str # String of any completed sections from research to write final sections
+    
     completed_sections: list[Section] # Final key we duplicate in outer state for Send() API
 
 class SectionOutputState(TypedDict):

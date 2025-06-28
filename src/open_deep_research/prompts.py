@@ -11,12 +11,14 @@ report_planner_query_writer_instructions="""You are performing research for a re
 </Report organization>
 
 <Task>
-Your goal is to generate {number_of_queries} web search queries that will help gather information for planning the report sections. You can ask for more queries if you need to. 
+Your goal is to generate {number_of_queries} web search queries and data internal question that will help gather information for planning the report sections. You can ask for more queries if you need to. 
 
 The queries should:
 
 1. Be related to the Report topic
 2. Help satisfy the requirements specified in the report organization
+3. Examine different aspects of the topic
+4. Data internal question to help satisfy the requirements specified in the report organization
 
 Make the queries specific enough to find high-quality, relevant sources while covering the breadth needed for the report structure.
 </Task>
@@ -27,6 +29,7 @@ Call the Queries tool
 
 Also there are some abbreviations if you dont know the meaning of some words:
 {abbreviation}   
+
 
 Today is {today}
 """
@@ -48,14 +51,19 @@ Here is context to use to plan the sections of the report:
 {context}
 </Context>
 
+<Data questions>
+Here is the list of data question can be used to plan the sections of the report: 
+{data_questions}
+<Data questions
+
 <Task>
 Generate a list of sections for the report. Your plan should be tight and focused with NO overlapping sections or unnecessary filler. 
 
 For example, a good report structure might look like:
 1/ intro
-2/ overview of topic A
-3/ overview of topic B
-4/ comparison between A and B
+2/ section 1
+3/ section 2
+4/ .....
 5/ conclusion
 
 Each section should have the fields:
@@ -131,6 +139,7 @@ Write one section of a research report.
 - If existing section content is populated, synthesize it with the source material and our sql results
 - Use simple, clear language
 - Use ## for section title (Markdown format)
+- Also write in vietnamese language.
 </Writing Guidelines>
 
 <Citation Rules>
@@ -143,7 +152,7 @@ Write one section of a research report.
 </Citation Rules>
 
 
-To write a section of a report, you must follow the 5-phase framework outlined below. You should use them as guidelines to structure your thinking and writing process.
+To write a section of a report, you must follow the 5-phase framework outlined below. You should use them as guidelines to structure your thinking and writing process. Dont put them in the report .
 <think>
 
 For EVERY query from the BOD, you must execute the following 5-phase thinking framework. This protocol is designed to create a direct, unbreakable link: Data -> Problem -> Solution -> Action, which is the foundation for effective strategic Decision-Making.
@@ -195,13 +204,18 @@ Adhere to Presentation Standards: The analysis must be profound, but the present
 1. Verify that EVERY claim is grounded in the provided Source material and sql results.
 2. Confirm each URL appears ONLY ONCE in the Source list
 3. Verify that sources are numbered sequentially (1,2,3...) without any gaps
+4
 </Final Check>
+
+
 
 """
 
 
 
 section_writer_instructions = """Write one section of a research report.
+
+
 
 <Task>
 1. Review the report topic, section name, and section topic carefully.
@@ -378,6 +392,9 @@ final_section_writer_instructions_v2="""You are an expert technical writer craft
 {context}
 </Available report content>
 
+<report_structure>
+{report_structure}
+>/report_structure>
 <Task>
 1. Section-Specific Approach:
 
@@ -408,6 +425,7 @@ For Conclusion/Summary:
 - No sources section needed
 
 3. Writing Approach:
+- First make a table of cotents.
 - Use concrete details over general statements
 - Make every word count
 - Focus on your single most important point
@@ -465,25 +483,29 @@ Output: is a dictionary with the following keys:
 - "explain_result": Explain the result of the visualization, including any insights or patterns observed.
 """
 
-sql_instructions = """You are an AI assistant that generates SQL queries and execute them get query result based on user questions. Given an input question, create a syntactically correct in Bigquery format, and query to
-run to help find the answer. You can order the results by a relevant column to
-return the most interesting examples in the database.
+sql_instructions = """
+You are an intelligent AI assistant that generates and executes SQL queries in BigQuery format based on user questions.
 
-Never query for all the columns from a specific table, only ask for a the
-few relevant columns given the question.
+Given a natural language question, you must:
+1. Generate a syntactically correct BigQuery SQL query to answer the question.
+2. Return only a relevant subset of columns based on the question. Avoid SELECT * at all costs.
+3. Apply mandatory filters when querying specific tables:
+   - If querying the `shipping_order` table, always include:
+     WHERE ... AND created_date_partition <= "2030-01-01"
+   - If querying the `middle_mile_log` table, always include:
+     WHERE ... AND action_date <= "2030-01-01"
+4. Use only valid column names that exist in the provided schema. Do not invent or assume columns.
+5. Ensure column-table correctness — only reference columns that exist in the table being queried.
+6. When possible, order the result by a relevant column to surface the most informative or interesting rows.
 
-Pay attention to use only the column names that you can see in the schema
-description. Be careful to not query for columns that do not exist. Also,
-pay attention to which column is in which table.
+Your primary objective is to generate safe, valid, and insightful queries.
 
 For additional detail: 
 + The dataset will in project {project_id} 
 + The dataset name is {dataset_name}
-+ To query shipping_order table, one addtional column created_date_partition must be provided in the WHERE clause. (Ex WHERE ... AND created_date_partition = '2023-10-01')
+
 Use the following dataset infomation:
 {dataset_info}
-
-You can use tools to execute the SQL query and get the results.
 
 <previous_query>
 {previous_query}
