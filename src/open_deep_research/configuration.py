@@ -36,19 +36,19 @@ class WorkflowConfiguration:
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
     process_search_results: Literal["summarize", "split_and_rerank"] | None = None
-    summarization_model_provider: str = "anthropic"
-    summarization_model: str = "claude-3-5-haiku-latest"
+    summarization_model_provider: str = "openai"
+    summarization_model: str = "gpt-4o-mini"
     max_structured_output_retries: int = 3
     include_source_str: bool = False
     
     # Workflow-specific configuration
     number_of_queries: int = 2 # Number of search queries to generate per iteration
     max_search_depth: int = 2 # Maximum number of reflection + search iterations
-    planner_provider: str = "anthropic"
-    planner_model: str = "claude-3-7-sonnet-latest"
+    planner_provider: str = "openai"
+    planner_model: str = "gpt-4o-mini"
     planner_model_kwargs: Optional[Dict[str, Any]] = None
     writer_provider: str = "anthropic"
-    writer_model: str = "claude-3-7-sonnet-latest"
+    writer_model: str = "gpt-4o-mini"
     writer_model_kwargs: Optional[Dict[str, Any]] = None
 
     @classmethod
@@ -72,16 +72,16 @@ class MultiAgentConfiguration:
     # Common configuration
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
-    process_search_results: Literal["summarize", "split_and_rerank"] | None = None
-    summarization_model_provider: str = "anthropic"
-    summarization_model: str = "claude-3-5-haiku-latest"
-    include_source_str: bool = False
+    process_search_results: Literal["summarize", "split_and_rerank"] | None = "summarize" 
+    summarization_model_provider: str = "openai"
+    summarization_model: str = "gpt-4o-mini"
+    include_source_str: bool = True 
     
     # Multi-agent specific configuration
     number_of_queries: int = 2 # Number of search queries to generate per section
-    supervisor_model: str = "anthropic:claude-3-7-sonnet-latest"
-    researcher_model: str = "anthropic:claude-3-7-sonnet-latest"
-    ask_for_clarification: bool = False # Whether to ask for clarification from the user
+    supervisor_model: str = "openai:gpt-4o-mini"
+    researcher_model: str = "openai:gpt-4o-mini"
+    ask_for_clarification: bool = True # Whether to ask for clarification from the user
     # MCP server configuration
     mcp_server_config: Optional[Dict[str, Any]] = None
     mcp_prompt: Optional[str] = None

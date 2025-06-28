@@ -170,7 +170,7 @@ Content:
     return formatted_str
 
 @traceable
-async def tavily_search_async(search_queries, max_results: int = 5, topic: Literal["general", "news", "finance"] = "general", include_raw_content: bool = True):
+async def tavily_search_async(search_queries, max_results: int = 3, topic: Literal["general", "news", "finance"] = "general", include_raw_content: bool = True):
     """
     Performs concurrent web searches with the Tavily API
 
@@ -1363,7 +1363,7 @@ TAVILY_SEARCH_DESCRIPTION = (
 @tool(description=TAVILY_SEARCH_DESCRIPTION)
 async def tavily_search(
     queries: List[str],
-    max_results: Annotated[int, InjectedToolArg] = 5,
+    max_results: Annotated[int, InjectedToolArg] = 3,
     topic: Annotated[Literal["general", "news", "finance"], InjectedToolArg] = "general",
     config: RunnableConfig = None
 ) -> str:
@@ -1547,7 +1547,7 @@ class Summary(BaseModel):
 async def summarize_webpage(model: BaseChatModel, webpage_content: str) -> str:
     """Summarize webpage content."""
     try:
-        user_input_content = "Please summarize the article"
+        user_input_content = "Please summarize the following article:\n\n<webpage_content>\n" + webpage_content + "\n</webpage_content>"
         if isinstance(model, ChatAnthropic):
             user_input_content = [{
                 "type": "text",
@@ -1556,7 +1556,7 @@ async def summarize_webpage(model: BaseChatModel, webpage_content: str) -> str:
             }]
 
         summary = await model.with_structured_output(Summary).with_retry(stop_after_attempt=2).ainvoke([
-            {"role": "system", "content": SUMMARIZATION_PROMPT.format(webpage_content=webpage_content)},
+            {"role": "system", "content": SUMMARIZATION_PROMPT},
             {"role": "user", "content": user_input_content},
         ])
     except:
