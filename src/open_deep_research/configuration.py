@@ -143,18 +143,16 @@ class MultiAgentConfiguration:
     # Common configuration
     search_api: SearchAPI = SearchAPI.TAVILY
     search_api_config: Optional[Dict[str, Any]] = None
-    process_search_results: Literal["summarize",
-                                    "split_and_rerank"] | None = None
-    summarization_model_provider: str = "anthropic"
-    summarization_model: str = "claude-3-5-haiku-latest"
-    include_source_str: bool = False
-
+    process_search_results: Literal["summarize", "split_and_rerank"] | None = "summarize" 
+    summarization_model_provider: str = "openai"
+    summarization_model: str = "gpt-4o-mini"
+    include_source_str: bool = False 
+    
     # Multi-agent specific configuration
-    number_of_queries: int = 2  # Number of search queries to generate per section
-    supervisor_model: str = "anthropic:claude-3-7-sonnet-latest"
-    researcher_model: str = "anthropic:claude-3-7-sonnet-latest"
-    # Whether to ask for clarification from the user
-    ask_for_clarification: bool = False
+    number_of_queries: int = 2 # Number of search queries to generate per section
+    supervisor_model: str = "openai:gpt-4o-mini"
+    researcher_model: str = "openai:gpt-4o"
+    ask_for_clarification: bool = False # Whether to ask for clarification from the user
     # MCP server configuration
     mcp_server_config: Optional[Dict[str, Any]] = None
     mcp_prompt: Optional[str] = None
