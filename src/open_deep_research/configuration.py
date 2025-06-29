@@ -75,13 +75,13 @@ class MultiAgentConfiguration:
     process_search_results: Literal["summarize", "split_and_rerank"] | None = "summarize" 
     summarization_model_provider: str = "openai"
     summarization_model: str = "gpt-4o-mini"
-    include_source_str: bool = True 
+    include_source_str: bool = False 
     
     # Multi-agent specific configuration
     number_of_queries: int = 2 # Number of search queries to generate per section
     supervisor_model: str = "openai:gpt-4o-mini"
-    researcher_model: str = "openai:gpt-4o-mini"
-    ask_for_clarification: bool = True # Whether to ask for clarification from the user
+    researcher_model: str = "openai:gpt-4o"
+    ask_for_clarification: bool = False # Whether to ask for clarification from the user
     # MCP server configuration
     mcp_server_config: Optional[Dict[str, Any]] = None
     mcp_prompt: Optional[str] = None
