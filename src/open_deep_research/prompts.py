@@ -440,6 +440,12 @@ For Conclusion/Summary:
 
 visualization_instructions = """You are an AI assistant that recommends appropriate data visualizations. Based on the user's question and query results, suggest the most suitable type of graph or chart to visualize the data. If no visualization is appropriate, indicate that.
 
+Your task is to:
+
+1. Use only the provided query_result for generating the visualization. Never invent or assume data not present in the result.
+
+2. If query_result is empty (no rows or no relevant columns), return a visualization type of "none" and return empty Python code.
+
 Available chart types and their use cases:
 
 - Bar Graphs: Best for comparing categorical data or showing changes over time when categories are discrete and the number of categories is more than 2. Use for questions like "What are the sales figures for each product?" or "How does the population of cities compare? or "What percentage of each city is male?"
@@ -466,21 +472,28 @@ Provide your response in the following format:
 
 Recommended Visualization: [Chart type or "None"]. ONLY use the following names: bar, horizontal_bar, line, pie, scatter, none
 
-Reason: [Brief explanation for your recommendation]
-
 
 <Query result>
 {query_result}
 </Query result>
 
-<Folder path>
+<folder_path>
 {folder_path}
-</Folder path>
+</folder_path>
+
+<previous_script>
+{previous_script}
+</previous_script>
+
+<last_error>
+{last_error}
+</last_error>
 
 Output: is a dictionary with the following keys:
 - "python_code": python code to generate the recommended visualization and save image in folder path, not need to use plt.show() 
-- "reason": A brief explanation for the recommendation.
-- "explain_result": Explain the result of the visualization, including any insights or patterns observed.
+
+
+
 """
 
 sql_instructions = """
