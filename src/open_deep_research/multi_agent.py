@@ -24,6 +24,14 @@ from open_deep_research.utils import (
 from open_deep_research.prompts import SUPERVISOR_INSTRUCTIONS, RESEARCH_INSTRUCTIONS
 
 
+#---------------------------SQL writer-----------------------------
+from langchain_core.messages import HumanMessage, SystemMessage
+from open_deep_research.utils import query_bigquery, python_execute
+from open_deep_research.sql_agent_prompt import sql_instructions
+from open_deep_research.knowledge import dataset_info
+#---------------------------SQL writer-----------------------------
+
+
 ## Tools factory - will be initialized based on configuration
 def get_search_tool(config: RunnableConfig):
     """Get the appropriate search tool based on configuration"""
@@ -49,6 +57,61 @@ def get_search_tool(config: RunnableConfig):
     tool_metadata = {**(search_tool.metadata or {}), "type": "search"}
     search_tool.metadata = tool_metadata
     return search_tool
+#---------------------------SQL writer-----------------------------
+class SQLResponse(BaseModel):
+    sql_script: str = Field(None, description="only SQL script if cant retrive output empty string ")
+    explaination: str = Field(None, description="explain why cant retrive given data schema, else ouput empty")
+@tool(description= "Generate **and execute** a BigQuery query against the company’s internal warehouse "
+    "(project ‘agentic-ai-463517’, dataset ‘ghn_data’) to answer a natural-language question. "
+    "The tool uses an LLM to write the SQL, automatically retries up to three times on errors, "
+    "and returns the query result  or an error message. "
+    "Use this when you need *precise internal metrics*—volumes, costs, cycle times, revenue figures—"
+    "rather than information from public web sources.")
+def sql_writer_tool(question: str, model_name: str = "gpt-4o") -> str:
+    """Use LLM to generate SQL and run BigQuery against a dataset for a given question."""
+    print("sql writing........")
+    llm = init_chat_model(model=model_name)
+    llm = llm.with_structured_output(SQLResponse)
+
+    project_id = "agentic-ai-463517"
+    dataset_name = "ghn_data"
+    system_instructions_query = sql_instructions.format(
+        question=question,
+        dataset_info=dataset_info,
+        project_id=project_id,
+        dataset_name=dataset_name,
+        last_error="there was no error in the last query",
+        previous_query=""
+    )
+
+    result = llm.invoke([
+        SystemMessage(content=system_instructions_query),
+        HumanMessage(content=question)
+    ])
+    print(result)
+    if result.sql_script:
+        output = query_bigquery(result.sql_script)
+        print(output)
+        for _ in range(3):
+            if "error" in output:
+                system_instructions_query = sql_instructions.format(
+                    question=question,
+                    dataset_info=dataset_info,
+                    project_id=project_id,
+                    dataset_name=dataset_name,
+                    last_error=output,
+                    previous_query=result.sql_script,
+                )
+                result = llm.invoke([
+                    SystemMessage(content=system_instructions_query),
+                    HumanMessage(content=question)
+                ])
+                output = query_bigquery(result.sql_script)
+            else:
+                return str(output)
+    return "SQL generation failed or returned empty result."
+#---------------------------SQL writer-----------------------------
+
 
 
 class ProblemStatement(BaseModel):
@@ -134,6 +197,7 @@ class SectionOutputState(TypedDict):
     # this is included only if configurable.include_source_str is True
     source_str: str  # String of formatted source content from web search
 
+## SQL ttool
 
 async def _load_mcp_tools(
     config: RunnableConfig,
@@ -388,6 +452,11 @@ async def get_research_tools(config: RunnableConfig) -> list[BaseTool]:
     tools = [tool(Section), tool(FinishResearch)]
     if search_tool is not None:
         tools.append(search_tool)  # Add search tool, if available
+
+    #add sql too;
+    tools.append(sql_writer_tool)
+    # 
+    #     
     existing_tool_names = {cast(BaseTool, tool).name for tool in tools}
     mcp_tools = await _load_mcp_tools(config, existing_tool_names)
     tools.extend(mcp_tools)
@@ -409,6 +478,8 @@ async def research_agent(state: SectionState, config: RunnableConfig):
         number_of_queries=configurable.number_of_queries,
         today=get_today_str(),
     )
+    system_prompt += "\n\nYou can use the 'sql_writer_tool' when you think querying a structured database can help answer the section's questions."
+
     if configurable.mcp_prompt:
         system_prompt += f"\n\n{configurable.mcp_prompt}"
 
@@ -430,7 +501,7 @@ Your mission is to research and write the following section of our Board of Dire
 - **Style Hint:** {framed_section.writing_style_hint}
 - **Required Subsections:** You must structure your content to include these subsections: {', '.join(framed_section.subsections)}
 
-Begin your research. Your first step should be to call a search tool with a query designed to address the core questions.
+Begin your research. Your first step should be to call a search tool and sql_writer_tool with a query designed to address the core questions.
 """
         messages = [{"role": "user", "content": mission_brief}]
     else:
@@ -504,7 +575,8 @@ async def research_agent_tools(state: SectionState, config: RunnableConfig):
         # Store the section observation if a Section tool was called
         if tool_call["name"] == Section.__name__:
             completed_section = cast(Section, observation)
-
+        if tool_call["name"] == "sql_writer_tool" and configurable.include_source_str:
+            source_str += str(observation)
         # Store the source string if a search tool was called
         if tool_call["name"] in search_tool_names and configurable.include_source_str:
             source_str += cast(str, observation)

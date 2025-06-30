@@ -1633,3 +1633,45 @@ async def load_mcp_server_config(path: str) -> dict:
 
     config = await asyncio.to_thread(_load)
     return config
+
+#----------------------run python code-------------------------------
+from langchain_experimental.utilities import PythonREPL
+import textwrap
+
+def python_execute(code: str) -> str:
+    """
+    Execute Python code in a fresh PythonREPL and return stdout / errors.
+    """
+    import traceback
+    import sys
+
+    wrapped = "try:\n"
+    wrapped += textwrap.indent(code, "    ")
+    wrapped += textwrap.dedent(
+        """
+        except Exception as e:
+            print(f"error: {e}")
+    """
+    )
+    # print(wrapped)
+    python_repl = PythonREPL()
+    return python_repl.run(wrapped)
+
+def query_bigquery(sql: str, project_id: str = "agentic-ai-463517") -> str:
+    """
+    Run a BigQuery query in a throw-away PythonREPL sandbox and return its stdout.
+    Using `repr(sql)` guarantees the SQL is embedded as a *single* clean string.
+    """
+    code = f"""
+from google.cloud import bigquery
+client = bigquery.Client(project={project_id!r})
+query_job = client.query({sql!r})
+if query_job.result().total_rows == 0:
+    print("No results found.")
+else:
+    print(list(query_job.result()))
+"""
+    return python_execute(code)
+
+
+#----------------------run python code-------------------------------

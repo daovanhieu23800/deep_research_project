@@ -37,6 +37,17 @@ dependencies = [
     "rich>=13.0.0",
     "langgraph-cli[inmem]>=0.3.1",
     "langsmith>=0.3.37",
+    
+    "langchain-google-genai",
+    "pypandoc_binary",
+    "langchain-experimental",
+    "matplotlib",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "google-cloud-bigquery",
+
+
 ]
 
 [project.optional-dependencies]
