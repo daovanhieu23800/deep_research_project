@@ -7,6 +7,7 @@ import re
 from langchain.chat_models import init_chat_model
 from langchain_core.tools import tool, BaseTool
 from langchain_core.runnables import RunnableConfig
+from langchain_core.messages import HumanMessage, ToolMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.graph import MessagesState
 
@@ -19,9 +20,24 @@ from open_deep_research.utils import (
     tavily_search,
     duckduckgo_search,
     get_today_str,
+    query_bigquery
+)
+from open_deep_research.sql_tools import (
+    get_schema_shipping_order,
+    get_schema_dim_location,
+    get_schema_dim_warehouse,
+    get_schema_middle_mile_log,
+    get_schema_revenue_order,
+    get_schema_sla_delivery,
+    ABBREVIATIONS_AND_JARGON_LIST
 )
 
-from open_deep_research.prompts import SUPERVISOR_INSTRUCTIONS, RESEARCH_INSTRUCTIONS
+from open_deep_research.prompts import (
+    SUPERVISOR_INSTRUCTIONS,
+    RESEARCH_INSTRUCTIONS,
+    SQL_AGENT_INSTRUCTIONS
+)
+
 
 ## Tools factory - will be initialized based on configuration
 def get_search_tool(config: RunnableConfig):
@@ -102,7 +118,6 @@ class ReportStateOutput(MessagesState):
     source_str: str # String of formatted source content from web search
 
 class ReportState(MessagesState):
-    sections: list[str] # List of report sections 
     completed_sections: Annotated[list[Section], operator.add] # Send() API key
     final_report: str # Final report
     # for evaluation purposes only
@@ -110,7 +125,7 @@ class ReportState(MessagesState):
     source_str: Annotated[str, operator.add] # String of formatted source content from web search
 
 class SectionState(MessagesState):
-    section: str # Report section  
+    framed_section: FramedSection # The section to research and write
     completed_sections: list[Section] # Final key we duplicate in outer state for Send() API
     # for evaluation purposes only
     # this is included only if configurable.include_source_str is True
@@ -122,7 +137,12 @@ class SectionOutputState(TypedDict):
     # this is included only if configurable.include_source_str is True
     source_str: str # String of formatted source content from web search
 
+# Define the state for our SQL agent graph
+class SqlAgentState(TypedDict):
+    # The `add_messages` function ensures that new messages are always appended to the list
+    messages: Annotated[list, operator.add] # List of messages in the conversation
 
+# ======================================
 async def _load_mcp_tools(
     config: RunnableConfig,
     existing_tool_names: set[str],
@@ -152,12 +172,54 @@ async def _load_mcp_tools(
 
     return filtered_mcp_tools
 
+
+# --- Input Schema for the new tool ---
+class ResolveAbbreviationInput(BaseModel):
+    """Input model for the resolve_abbreviations_in_query tool."""
+    query: str = Field(description="The user query that may contain company-specific abbreviations or jargon.")
+
+# --- The new, intelligent tool implementation ---
+@tool(args_schema=ResolveAbbreviationInput)
+def resolve_abbreviations_in_query(query: str) -> str:
+    """
+    Analyzes a user query, identifies any company-specific jargon or abbreviations, and returns a new version of the query with all terms fully expanded.
+    Use this tool FIRST on any user query to ensure all terms are fully understood before further analysis.
+    If no abbreviations are found, it will return the original query.
+    """
+    print(f"--- Abbreviation Resolver received query: '{query}' ---")
+    
+    # Use a fast and cheap model for this internal task
+    resolver_llm = init_chat_model(model="gpt-4o-mini") 
+
+    prompt_template = f"""
+    You are a helpful assistant. Your task is to expand abbreviations in a given sentence based on a provided list.
+
+    Here is the list of abbreviations and their meanings:
+    ---
+    {ABBREVIATIONS_AND_JARGON_LIST}
+    ---
+
+    Now, please rewrite the following user query by replacing any found abbreviations with their full term and meaning. For example, 'NVPTTT' should be replaced with 'Nhân viên Phát triển Thị trường (Delivery staff/shipper)'. 
+    If no abbreviations from the list are found in the query, return the original query exactly as it is.
+
+    Original Query: "{query}"
+
+    Expanded Query:
+    """
+
+    response = resolver_llm.invoke(prompt_template)
+    expanded_query = response.content.strip()
+    
+    print(f"--- Abbreviation Resolver returned expanded query: '{expanded_query}' ---")
+    return expanded_query    
+
 async def get_supervisor_tools(config: RunnableConfig) -> list[BaseTool]:
     """Get supervisor tools based on configuration, using the new strategic tool schemas."""
     configurable = MultiAgentConfiguration.from_runnable_config(config)
     
     # Use the new, more specific tool names
     tools = [
+        resolve_abbreviations_in_query,
         tool(CoreProblem), 
         tool(Sections), 
         tool(AssembleReport), 
@@ -371,11 +433,133 @@ async def supervisor_should_continue(state: ReportState) -> str:
     # If the LLM makes a tool call, then perform an action
     return "supervisor_tools"
 
+class ExecuteSqlArgs(BaseModel):
+    """Input model for the execute_sql_query tool."""
+    sql_query: str = Field(description="The syntactically correct SQL query to execute against the database.")
+
+@tool(args_schema=ExecuteSqlArgs)
+def execute_sql_query(sql_query: str) -> str:
+    """
+    Executes the given SQL query against the database and returns the result set as a string.
+    This is the final step after a query has been generated.
+    """
+    # In a real-world scenario, you would connect to your BigQuery client here
+    # and execute the query, handling potential errors and formatting the result.
+    print("--- EXECUTING SQL ---")
+    print(sql_query)
+    print("---------------------")
+    
+    result = query_bigquery(sql_query)
+    return result 
+
+def get_sql_agent_tools() -> list[BaseTool]:
+    """Returns the complete list of tools available to the SQL agent."""
+    return [
+        get_schema_shipping_order,
+        get_schema_dim_location,
+        get_schema_dim_warehouse,
+        get_schema_middle_mile_log,
+        get_schema_revenue_order,
+        get_schema_sla_delivery,
+        execute_sql_query
+    ]
+
+async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
+    """The core node of the SQL agent. It decides which tool to call or if it's done."""
+    # This example uses a single model, but you could have a configurable one
+    # Get configuration
+    configurable = MultiAgentConfiguration.from_runnable_config(config)
+    researcher_model = get_config_value(configurable.researcher_model)
+    
+    # Initialize the model
+    llm = init_chat_model(model=researcher_model)
+    
+    tools = get_sql_agent_tools()
+    llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=False)
+
+    project_id = "agentic-ai-463517"  
+    dataset_name = "ghn_data"  
+
+    # Invoke the LLM with the message history to decide the next step
+    response = await llm_with_tools.ainvoke(
+        [{"role": "system", "content": SQL_AGENT_INSTRUCTIONS.format(
+            project_id=project_id,
+            dataset_name=dataset_name,
+        )}] + state["messages"]
+    )
+    return {"messages": [response]}
+
+async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
+    """Executes the tool(s) called by the sql_agent_node."""
+    tool_calls = state["messages"][-1].tool_calls
+    
+    tools_by_name = {tool.name: tool for tool in get_sql_agent_tools()}
+    result_messages = []
+
+    for tool_call in tool_calls:
+        tool_to_call = tools_by_name[tool_call["name"]]
+        
+        try:
+            observation = await tool_to_call.ainvoke(tool_call["args"], config)
+        except NotImplementedError:
+            observation = tool_to_call.invoke(tool_call["args"], config)
+            
+        result_messages.append(
+            ToolMessage(content=str(observation), name=tool_call["name"], tool_call_id=tool_call["id"])
+        )
+    return {"messages": result_messages}
+
+def sql_agent_should_continue(state: SqlAgentState) -> str:
+    """
+    Conditional edge that decides whether to continue the loop or end.
+    The loop ends only after the `execute_sql_query` tool has been called.
+    """
+    last_message = state["messages"][-1]
+    # If there are no tool calls, loop back to the agent to generate one.
+    if not last_message.tool_calls:
+        return "sql_agent_node"
+        
+    # If the last tool call was to execute a query, the cycle is complete.
+    if last_message.tool_calls[0]["name"] == execute_sql_query.name:
+        return END
+        
+    # Otherwise, a schema was likely fetched, so continue the tool-use loop.
+    return "sql_agent_tools_node"
+
+class QueryInternalDbInput(BaseModel):
+    """Input model for the query_internal_database tool."""
+    question: str = Field(
+        description="A clear, specific question in natural language to be answered by querying the internal company database. Example: 'What was the total revenue in Ho Chi Minh City last month?'"
+    )
+
+"""Build the multi-agent workflow"""
+
+@tool(args_schema=QueryInternalDbInput)
+async def query_internal_database(question: str) -> str:
+    """
+    Use this tool ONLY to get specific, quantitative data, metrics, or figures from the company's internal logistics database.
+    This is for questions about orders, revenue, delivery times, warehouse operations, etc.
+    Do NOT use this for general web research (e.g., market trends, competitor news).
+    """
+    print(f"--- RESEARCHER is calling SQL AGENT with question: '{question}' ---")
+    
+    # Invoke the entire SQL Agent graph with the question
+    # This encapsulates all the complexity of Text-to-SQL away from the researcher
+    sql_agent_state = await sql_agent_graph.ainvoke({
+        "messages": [HumanMessage(content=question)]
+    })
+    
+    # The final answer from the SQL agent is the last message in its state
+    final_answer = sql_agent_state['messages'][-1].content
+    print(f"--- SQL AGENT returned answer: '{final_answer}' ---")
+    
+    return final_answer
+
 
 async def get_research_tools(config: RunnableConfig) -> list[BaseTool]:
     """Get research tools based on configuration"""
     search_tool = get_search_tool(config)
-    tools = [tool(Section), tool(FinishResearch)]
+    tools = [tool(Section), tool(FinishResearch), query_internal_database]
     if search_tool is not None:
         tools.append(search_tool)  # Add search tool, if available
     existing_tool_names = {cast(BaseTool, tool).name for tool in tools}
@@ -396,7 +580,6 @@ async def research_agent(state: SectionState, config: RunnableConfig):
     # Get tools based on configuration
     research_tool_list = await get_research_tools(config)
     system_prompt = RESEARCH_INSTRUCTIONS.format(
-        section_description=state["section"],
         number_of_queries=configurable.number_of_queries,
         today=get_today_str(),
     )
@@ -460,6 +643,7 @@ If NO, perform another targeted search to fill the remaining gaps.
         ]
     }
 
+
 async def research_agent_tools(state: SectionState, config: RunnableConfig):
     """Performs the tool call and route to supervisor or continue the research loop"""
     configurable = MultiAgentConfiguration.from_runnable_config(config)
@@ -522,8 +706,27 @@ async def research_agent_should_continue(state: SectionState) -> str:
         return END
     else:
         return "research_agent_tools"
-    
-"""Build the multi-agent workflow"""
+
+
+# SQL agent workflow
+graph_builder = StateGraph(SqlAgentState)
+graph_builder.add_node("sql_agent_node", sql_agent_node)
+graph_builder.add_node("sql_agent_tools_node", sql_agent_tools_node)
+
+graph_builder.set_entry_point("sql_agent_node")
+graph_builder.add_conditional_edges(
+    source="sql_agent_node",
+    path=sql_agent_should_continue,
+    # This dictionary maps the string output of the 'path' function to a node name.
+    path_map={
+        "sql_agent_tools_node": "sql_agent_tools_node",
+        "sql_agent_node": "sql_agent_node",
+        END: END  # The special END value is also mapped.
+    }
+)
+graph_builder.add_edge("sql_agent_tools_node", "sql_agent_node")
+
+sql_agent_graph = graph_builder.compile()
 
 # Research agent workflow
 research_builder = StateGraph(SectionState, output=SectionOutputState, config_schema=MultiAgentConfiguration)

@@ -1740,5 +1740,8 @@ results = query_job.result()
 for row in results:
     print(row)
 """
-    results = python_execute(code)
-    return results
+    try:
+        results = python_execute(code)
+        return results
+    except Exception as e:
+        return f"Error executing BigQuery query: {str(e)}"
