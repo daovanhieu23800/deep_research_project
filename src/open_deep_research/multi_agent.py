@@ -29,6 +29,7 @@ from open_deep_research.sql_tools import (
     get_schema_middle_mile_log,
     get_schema_revenue_order,
     get_schema_sla_delivery,
+    get_unique_value_of_columns,
     ABBREVIATIONS_AND_JARGON_LIST
 )
 
@@ -461,6 +462,7 @@ def get_sql_agent_tools() -> list[BaseTool]:
         get_schema_middle_mile_log,
         get_schema_revenue_order,
         get_schema_sla_delivery,
+        get_unique_value_of_columns,
         execute_sql_query
     ]
 

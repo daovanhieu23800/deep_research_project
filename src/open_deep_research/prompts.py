@@ -849,8 +849,12 @@ Example thought process:
 4.  Next turn: "Now that I have the schemas, I see I can join on `order_code_hash` and `to_district_id`. I can filter by `province_name` in `dim_location` and sum the `rev` from `revenue_order`. I will now write the final query."
 
 ---
+### 3. HOW TO KNOW COLUMNS HAVE WHAT VALUE 
+For each column which are str type. you **MUST** call the corresponding tool 'get_unique_value_of_columns'. **Do not guess column value when put in WHERE clause**
 
-### 3. CRUCIAL QUERY WRITING RULES
+
+---
+### 4. CRUCIAL QUERY WRITING RULES
 1. Return only a relevant subset of columns based on the question. Avoid SELECT * at all costs.
 2. Apply mandatory filters when querying specific tables:
    - If querying the `shipping_order` table, always include:

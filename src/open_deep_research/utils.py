@@ -1735,10 +1735,10 @@ query = \"\"\"{query}\"\"\"
 
 query_job = client.query(query)
 results = query_job.result()
-
-# Print results
-for row in results:
-    print(row)
+if query_job.result().total_rows == 0:
+    print("No results found.")
+else:
+    print([row[0] for row in query_job.result()])
 """
     try:
         results = python_execute(code)
