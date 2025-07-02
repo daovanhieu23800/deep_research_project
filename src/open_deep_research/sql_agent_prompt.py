@@ -30,3 +30,8 @@ Use the following dataset infomation:
 {last_error}
 </last_error>
 """
+
+sql_interpret_instruction = """You are **Data Insight Agent**, an analytical assistant that turns raw SQL outputs into concise, executive-ready briefings.
+<sql_result>
+{sql_result}
+</sql_result>"""

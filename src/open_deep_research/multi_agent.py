@@ -27,7 +27,7 @@ from open_deep_research.prompts import SUPERVISOR_INSTRUCTIONS, RESEARCH_INSTRUC
 #---------------------------SQL writer-----------------------------
 from langchain_core.messages import HumanMessage, SystemMessage
 from open_deep_research.utils import query_bigquery, python_execute
-from open_deep_research.sql_agent_prompt import sql_instructions
+from open_deep_research.sql_agent_prompt import sql_instructions, sql_interpret_instruction
 from open_deep_research.knowledge import dataset_info
 #---------------------------SQL writer-----------------------------
 
@@ -61,15 +61,14 @@ def get_search_tool(config: RunnableConfig):
 class SQLResponse(BaseModel):
     sql_script: str = Field(None, description="only SQL script if cant retrive output empty string ")
     explaination: str = Field(None, description="explain why cant retrive given data schema, else ouput empty")
-@tool(description= "Generate **and execute** a BigQuery query against the company’s internal warehouse "
-    "(project ‘agentic-ai-463517’, dataset ‘ghn_data’) to answer a natural-language question. "
-    "The tool uses an LLM to write the SQL, automatically retries up to three times on errors, "
-    "and returns the query result  or an error message. "
-    "Use this when you need *precise internal metrics*—volumes, costs, cycle times, revenue figures—"
-    "rather than information from public web sources.")
-def sql_writer_tool(question: str, model_name: str = "gpt-4o") -> str:
+
+class SQLInterpret(BaseModel):
+    insight: str = Field(None, description="Insight about sql result and question")
+    summarization:  str = Field(None, description="Summarization about sql result and question")
+
+@tool(description= " Use this tool to answer each question in data_internal_quesions only, **DONT** use it for other puspose")
+def sql_writer_tool(question: str, model_name: str = "openai:o3-mini") -> str:
     """Use LLM to generate SQL and run BigQuery against a dataset for a given question."""
-    print("sql writing........")
     llm = init_chat_model(model=model_name)
     llm = llm.with_structured_output(SQLResponse)
 
@@ -88,10 +87,10 @@ def sql_writer_tool(question: str, model_name: str = "gpt-4o") -> str:
         SystemMessage(content=system_instructions_query),
         HumanMessage(content=question)
     ])
-    print(result)
+    #  print(result)
     if result.sql_script:
         output = query_bigquery(result.sql_script)
-        print(output)
+        # print(output)
         for _ in range(3):
             if "error" in output:
                 system_instructions_query = sql_instructions.format(
@@ -108,8 +107,17 @@ def sql_writer_tool(question: str, model_name: str = "gpt-4o") -> str:
                 ])
                 output = query_bigquery(result.sql_script)
             else:
-                return str(output)
-    return "SQL generation failed or returned empty result."
+                llm = init_chat_model(model="openai:gpt-4o")
+                llm = llm.with_structured_output(SQLInterpret)
+
+                system_instructions_query = sql_interpret_instruction.format(
+                                    sql_result=output
+                                )
+                    # print(system_instructions_query)
+                result =  llm.invoke([SystemMessage(content=system_instructions_query),
+                                                            HumanMessage(content=question)])
+                return str(result.summarization)
+    return "Cant write sql script."
 #---------------------------SQL writer-----------------------------
 
 
@@ -129,7 +137,7 @@ class FramedSection(BaseModel):
     key_questions_to_answer: List[str] = Field(description="A list of specific, critical questions this section must answer to fulfill its purpose. (e.g., 'How does our turnover rate compare to our top 3 competitors?').")
     writing_style_hint: str = Field(description="A concise directive to the researcher on the required tone and format. Examples: 'Data-Summary & Analytical. Use markdown tables for KPIs.', 'Prescriptive & Action-Oriented. Group solutions into phases.'")
     subsections: List[str] = Field(description="A list of required subsections that must be included within the main section content.")
-
+    data_internal_quesions: List[str] = Field(description="A list of  questions in human language about our data internal given database schema context **it must be able to answer using only our database information**, to provide evidence for the writing process")
 class Sections(BaseModel):
     """Defines the complete structure of the Board of Directors report based on the diagnosed core problems. The structure MUST follow the standard Board-Ready Template."""
     report_structure: List[FramedSection] = Field(description="A list of all sections that will make up the report, each framed as a detailed brief for a researcher.")
@@ -271,7 +279,7 @@ async def supervisor(state: ReportState, config: RunnableConfig):
         tool_choice="any", # Force a tool call unless it's finished
     )
 
-    system_prompt = SUPERVISOR_INSTRUCTIONS.format(today=get_today_str())
+    system_prompt = SUPERVISOR_INSTRUCTIONS.format(today=get_today_str(), db_schema=dataset_info)
     if configurable.mcp_prompt:
         system_prompt += f"\n\n{configurable.mcp_prompt}"
 
@@ -478,7 +486,10 @@ async def research_agent(state: SectionState, config: RunnableConfig):
         number_of_queries=configurable.number_of_queries,
         today=get_today_str(),
     )
-    system_prompt += "\n\nYou can use the 'sql_writer_tool' when you think querying a structured database can help answer the section's questions."
+    system_prompt += (
+        "\n\nYou must use the 'sql_writer_tool' to answer all data_internal_questions "
+        "and **only** those questions."
+    )
 
     if configurable.mcp_prompt:
         system_prompt += f"\n\n{configurable.mcp_prompt}"
@@ -495,6 +506,7 @@ Your mission is to research and write the following section of our Board of Dire
 **Section Name:** "{framed_section.name}"
 
 **Your Core Task:** You must answer these key questions thoroughly:
+- {nl.join(framed_section.data_internal_quesions)}
 - {nl.join(framed_section.key_questions_to_answer)}
 
 **Writing Style & Format:**
@@ -512,6 +524,7 @@ Begin your research. Your first step should be to call a search tool and sql_wri
 You have gathered some research. Before your next action, re-read your mission.
 
 - **Section to Write:** "{framed_section.name}"
+- **Data interal question to Answer:** {'; '.join(framed_section.data_internal_quesions)}
 - **Key Questions to Answer:** {'; '.join(framed_section.key_questions_to_answer)}
 - **Writing Style:** "{framed_section.writing_style_hint}"
 
