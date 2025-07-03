@@ -665,6 +665,9 @@ You will be given a section to complete with a specific name, key questions, and
 
 ---
 ### Section-Specific Writing Guidelines:
+
+** If there are visualization file path of query_internal_database tool ouput, you **MUST ALWAYS**  included it into section content only where you need to illustrate out sql results when writing (for example: "![](./outputs/images/product_price_distribution.png)"). 
+
 (This section remains the same, as the guidelines are still valid)
 
 *   **If it's a "Current State" or "Benchmarking" section:**
@@ -869,6 +872,10 @@ For each column which are str type. you **MUST** call the corresponding tool 'ge
    - The dataset name is {dataset_name}
    - The table name are: `shipping_order`, `dim_location`, `dim_warehouse`, `middle_mile_log`, `revenue_order`, and `sla_delivery`.
    - To select from a specific table, use the format `{project_id}.{dataset_name}.<table_name>`.
+
+   
+
+Note: If after 3 tries and you dont know how to query due to some reason. you can terminate
 
 Please think step-by-step to ensure you understand the user's question and the data structure before writing your SQL query.
 """

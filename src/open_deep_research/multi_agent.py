@@ -38,7 +38,7 @@ from open_deep_research.prompts import (
     RESEARCH_INSTRUCTIONS,
     SQL_AGENT_INSTRUCTIONS
 )
-
+MAX_TRIES = 3  
 
 ## Tools factory - will be initialized based on configuration
 def get_search_tool(config: RunnableConfig):
@@ -451,6 +451,7 @@ def execute_sql_query(sql_query: str) -> str:
     print("---------------------")
     
     result = query_bigquery(sql_query)
+    result += "And the visualizion of sql result is at **./outputs/images/product_price_distribution.png**"
     return result 
 
 def get_sql_agent_tools() -> list[BaseTool]:
@@ -516,8 +517,15 @@ def sql_agent_should_continue(state: SqlAgentState) -> str:
     Conditional edge that decides whether to continue the loop or end.
     The loop ends only after the `execute_sql_query` tool has been called.
     """
+    print(state["messages"])
     last_message = state["messages"][-1]
+    if len(state['messages'])>5:
+        last_last_message = state["messages"][-2]
+        last_last_last_message = state["messages"][-3]
     # If there are no tool calls, loop back to the agent to generate one.
+
+        if (not getattr(last_message, "tool_calls", None)) and (not getattr(last_last_message, "tool_calls", None)) and (not getattr(last_last_last_message, "tool_calls", None)):
+            return END
     if not last_message.tool_calls:
         return "sql_agent_node"
         
@@ -550,11 +558,15 @@ async def query_internal_database(question: str) -> str:
     sql_agent_state = await sql_agent_graph.ainvoke({
         "messages": [HumanMessage(content=question)]
     })
-    
+
+
     # The final answer from the SQL agent is the last message in its state
     final_answer = sql_agent_state['messages'][-1].content
-    print(f"--- SQL AGENT returned answer: '{final_answer}' ---")
-    
+    print('**************1111111*************************')
+
+    print(f"""--- SQL AGENT returned answer: '{final_answer}' ---""")
+    print('***************222222************************')
+
     return final_answer
 
 
