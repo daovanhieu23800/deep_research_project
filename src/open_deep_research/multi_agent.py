@@ -1,4 +1,5 @@
-from typing import List, Annotated, TypedDict, Literal, cast
+from typing import List, Annotated, Literal, cast
+from typing_extensions import TypedDict
 from pydantic import BaseModel, Field
 import operator
 import warnings
@@ -110,37 +111,40 @@ class FinishReport(BaseModel):
     """Signals that the entire report-writing process is complete."""
     pass
 
+class FinishSQLAgent(BaseModel):
+    """Signals that the SQL agent has completed its task and the result is ready."""
+    pass
+
 ## State
-class ReportStateOutput(MessagesState):
-    final_report: str # Final report
-    # for evaluation purposes only
-    # this is included only if configurable.include_source_str is True
-    source_str: str # String of formatted source content from web search
 
 class ReportState(MessagesState):
     completed_sections: Annotated[list[Section], operator.add] # Send() API key
     final_report: str # Final report
-    # for evaluation purposes only
-    # this is included only if configurable.include_source_str is True
     source_str: Annotated[str, operator.add] # String of formatted source content from web search
 
-class SectionState(MessagesState):
+class SectionState(TypedDict):
+    messages: Annotated[list, operator.add] # List of messages in the conversation
     framed_section: FramedSection # The section to research and write
     completed_sections: list[Section] # Final key we duplicate in outer state for Send() API
-    # for evaluation purposes only
-    # this is included only if configurable.include_source_str is True
-    source_str: str # String of formatted source content from web search
-
-class SectionOutputState(TypedDict):
-    completed_sections: list[Section] # Final key we duplicate in outer state for Send() API
-    # for evaluation purposes only
-    # this is included only if configurable.include_source_str is True
     source_str: str # String of formatted source content from web search
 
 # Define the state for our SQL agent graph
 class SqlAgentState(TypedDict):
     # The `add_messages` function ensures that new messages are always appended to the list
     messages: Annotated[list, operator.add] # List of messages in the conversation
+    result: str # The final result of the SQL agent's work, typically the answer to the user's question
+
+class SqlAgentOutput(TypedDict):
+    result: str # The final result of the SQL agent's work, typically the answer to the user's question
+
+class ReportStateOutput(TypedDict):
+    final_report: str # Final report
+    source_str: str # String of formatted source content from web search
+
+class SectionOutputState(TypedDict):
+    completed_sections: list[Section]
+    source_str: str # String of formatted source content from web search
+
 
 # ======================================
 async def _load_mcp_tools(
@@ -461,7 +465,8 @@ def get_sql_agent_tools() -> list[BaseTool]:
         get_schema_middle_mile_log,
         get_schema_revenue_order,
         get_schema_sla_delivery,
-        execute_sql_query
+        execute_sql_query,
+        tool(FinishSQLAgent),  # Tool to signal the SQL agent is done
     ]
 
 async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
@@ -480,6 +485,8 @@ async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
     project_id = "agentic-ai-463517"  
     dataset_name = "ghn_data"  
 
+    result = state.get("result", "No data found for the given question.")
+
     # Invoke the LLM with the message history to decide the next step
     response = await llm_with_tools.ainvoke(
         [{"role": "system", "content": SQL_AGENT_INSTRUCTIONS.format(
@@ -487,7 +494,7 @@ async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
             dataset_name=dataset_name,
         )}] + state["messages"]
     )
-    return {"messages": [response]}
+    return {"messages": [response], "result": result}
 
 async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
     """Executes the tool(s) called by the sql_agent_node."""
@@ -495,6 +502,7 @@ async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
     
     tools_by_name = {tool.name: tool for tool in get_sql_agent_tools()}
     result_messages = []
+    sql_result = None  # Initialize SQL result to None
 
     for tool_call in tool_calls:
         tool_to_call = tools_by_name[tool_call["name"]]
@@ -507,20 +515,31 @@ async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
         result_messages.append(
             ToolMessage(content=str(observation), name=tool_call["name"], tool_call_id=tool_call["id"])
         )
-    return {"messages": result_messages}
+
+        # If the tool called is execute_sql_query, we need to store the result
+        if tool_call["name"] == execute_sql_query.name:
+            # Store the result in the state
+            sql_result = observation
+            result_messages.append(
+                HumanMessage(content=f"SQL query executed successfully. You should call the `FinishSQLAgent` tool to signal that the SQL agent is done.")
+            )
+
+    return {"messages": result_messages, "result": sql_result}
 
 def sql_agent_should_continue(state: SqlAgentState) -> str:
     """
     Conditional edge that decides whether to continue the loop or end.
     The loop ends only after the `execute_sql_query` tool has been called.
     """
+
     last_message = state["messages"][-1]
     # If there are no tool calls, loop back to the agent to generate one.
     if not last_message.tool_calls:
         return "sql_agent_node"
-        
-    # If the last tool call was to execute a query, the cycle is complete.
-    if last_message.tool_calls[0]["name"] == execute_sql_query.name:
+
+    # If the last tool call was FinishSQLAgent, we are done.
+    if last_message.tool_calls[0]["name"] == FinishSQLAgent.__name__:
+        # Return END to signal the SQL agent is done
         return END
         
     # Otherwise, a schema was likely fetched, so continue the tool-use loop.
@@ -550,7 +569,7 @@ async def query_internal_database(question: str) -> str:
     })
     
     # The final answer from the SQL agent is the last message in its state
-    final_answer = sql_agent_state['messages'][-1].content
+    final_answer = sql_agent_state["result"]
     print(f"--- SQL AGENT returned answer: '{final_answer}' ---")
     
     return final_answer
@@ -590,15 +609,14 @@ async def research_agent(state: SectionState, config: RunnableConfig):
     messages = state.get("messages", [])
     framed_section: FramedSection = state['framed_section']
     # On the first turn, construct the initial mission brief for the agent
-    nl = "\n"
+    nl = "\n-"
     if not messages:
         mission_brief = f"""
 Your mission is to research and write the following section of our Board of Directors report:
 
 **Section Name:** "{framed_section.name}"
 
-**Your Core Task:** You must answer these key questions thoroughly:
-- {nl.join(framed_section.key_questions_to_answer)}
+**Your Core Task:** You must answer these key questions thoroughly:{nl.join(framed_section.key_questions_to_answer)}
 
 **Writing Style & Format:**
 - **Style Hint:** {framed_section.writing_style_hint}
@@ -709,7 +727,7 @@ async def research_agent_should_continue(state: SectionState) -> str:
 
 
 # SQL agent workflow
-graph_builder = StateGraph(SqlAgentState)
+graph_builder = StateGraph(SqlAgentState, output=SqlAgentOutput, config_schema=MultiAgentConfiguration)
 graph_builder.add_node("sql_agent_node", sql_agent_node)
 graph_builder.add_node("sql_agent_tools_node", sql_agent_tools_node)
 
@@ -736,7 +754,10 @@ research_builder.add_edge(START, "research_agent")
 research_builder.add_conditional_edges(
     "research_agent",
     research_agent_should_continue,
-    ["research_agent_tools", END]
+    {
+        "research_agent_tools": "research_agent_tools",
+        END: END
+    }
 )
 research_builder.add_edge("research_agent_tools", "research_agent")
 
@@ -751,7 +772,10 @@ supervisor_builder.add_edge(START, "supervisor")
 supervisor_builder.add_conditional_edges(
     "supervisor",
     supervisor_should_continue,
-    ["supervisor_tools", END]
+    {
+        "supervisor_tools": "supervisor_tools",
+        END: END
+    } 
 )
 supervisor_builder.add_edge("research_team", "supervisor")
 

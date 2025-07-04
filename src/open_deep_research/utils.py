@@ -1572,7 +1572,7 @@ def python_execute(code: str) -> str:
     catch_err += textwrap.indent(code, "    ")
     catch_err += textwrap.dedent("""
     except Exception as e:
-        print(f"error: {e}")
+        raise RuntimeError(f"Error executing code: {str(e)}")
 """)
 
     python_repl = PythonREPL()
@@ -1727,6 +1727,7 @@ async def load_mcp_server_config(path: str) -> dict:
 def query_bigquery(query: str)->str:
     """Execute a BigQuery SQL query and return the results."""
     code = f"""
+import json
 from google.cloud import bigquery
 
 client = bigquery.Client(project="agentic-ai-463517")
@@ -1737,8 +1738,14 @@ query_job = client.query(query)
 results = query_job.result()
 
 # Print results
-for row in results:
-    print(row)
+print("Query results: ")
+if (not results or results.total_rows == 0):
+    print("No results found.")
+else:
+    print("Total rows: " + str(results.total_rows))
+    rows = [dict(row.items()) for row in results]
+    print(json.dumps(rows, indent=2, ensure_ascii=False)) 
+    
 """
     try:
         results = python_execute(code)

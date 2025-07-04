@@ -716,8 +716,8 @@ You will be given a section to complete with a specific name, key questions, and
 - CRITICAL: Your ultimate audience is the Board. Write with clarity, precision, and a strategic focus.
 - CRITICAL: Always follow the Section-Specific Writing Guidelines provided above.
 - **CRITICAL: You MUST add inline citations (e.g., [1], [2]) for all data points and link them to the Sources list.**
-- CRITICAL: For each search step, maximum 3 queries per search, and at most 10 follow-up searches.
-- CRITICAL: Maximum 10 SQL queries in total.
+- CRITICAL: For each search step, maximum 3 queries per search, and at most 5 follow-up searches.
+- CRITICAL: Maximum 5 SQL queries in total.
 - CRITICAL: You MUST call the Section tool and then the FinishResearch tool to complete your work.
 - Focus on the quality and relevance of evidence, not the quantity of searches.
 - Stay within the 3000-word limit.
@@ -847,24 +847,28 @@ Example thought process:
 2.  My thought: "I need revenue and location. That means I need the `shipping_order`, `revenue_order`, and `dim_location` tables. I should get their schemas to find the right columns for joining and filtering."
 3.  Action: Call `get_schema_shipping_order`, `get_schema_revenue_order`, and `get_schema_dim_location`.
 4.  Next turn: "Now that I have the schemas, I see I can join on `order_code_hash` and `to_district_id`. I can filter by `province_name` in `dim_location` and sum the `rev` from `revenue_order`. I will now write the final query."
-
+5.  Write the final query.
+6.  Action: Call `execute_sql_query` with the final query.
 ---
 
 ### 3. CRUCIAL QUERY WRITING RULES
-1. Return only a relevant subset of columns based on the question. Avoid SELECT * at all costs.
-2. Apply mandatory filters when querying specific tables:
+1. **STICK TO THE PROCESS:** Always follow the step-by-step process outlined above. Do not skip steps or make assumptions about column names.
+2. Return only a relevant subset of columns based on the question. Avoid SELECT * at all costs.
+3. Apply mandatory filters when querying specific tables:
    - If querying the `shipping_order` table, always include:
      WHERE ... AND created_date_partition <= "2030-01-01"
    - If querying the `middle_mile_log` table, always include:
      WHERE ... AND action_date <= "2030-01-01"
-3. Use only valid column names that exist in the provided schema. Do not invent or assume columns.
-4. Ensure column-table correctness — only reference columns that exist in the table being queried.
-5. When possible, order the result by a relevant column to surface the most informative or interesting rows.
-6. For additional detail: 
+4. Use only valid column names that exist in the provided schema. Do not invent or assume columns.
+5. Ensure column-table correctness — only reference columns that exist in the table being queried.
+6. When possible, order the result by a relevant column to surface the most informative or interesting rows.
+7. For additional detail: 
    - The dataset will in project {project_id} 
    - The dataset name is {dataset_name}
    - The table name are: `shipping_order`, `dim_location`, `dim_warehouse`, `middle_mile_log`, `revenue_order`, and `sla_delivery`.
    - To select from a specific table, use the format `{project_id}.{dataset_name}.<table_name>`.
+8. DO NOT ask the user for clarification. Instead, make reasonable assumptions based on the question and the available data.
+9. If you can not process the question, call the `FinishSQLAgent` tool with a message explaining why you cannot process the question.
 
 Please think step-by-step to ensure you understand the user's question and the data structure before writing your SQL query.
 """
