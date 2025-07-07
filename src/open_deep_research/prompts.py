@@ -606,7 +606,7 @@ Step 6: Call FinishReport tool → Complete the report.
 **Step 6: Complete the Final Report**
 - After the report is assembled, call the `FinishReport` tool.
 - Ensure the final document is polished, cohesive, and written in a powerful, decisive, and data-driven tone suitable for a Board of Directors.
-
+- Finally, remember to translate it to **VIETNAMESE**
 </step_by_step_responsibilities>
 
 <critical_reminders>

@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 import operator
 import warnings
 import re 
+import pypandoc
 
 from langchain.chat_models import init_chat_model
 from langchain_core.tools import tool, BaseTool
@@ -146,6 +147,60 @@ class SectionOutputState(TypedDict):
     source_str: str # String of formatted source content from web search
 
 
+#==============tránslate to vietnamese==================
+
+class _VITranslationInput(BaseModel):
+    text: str = Field(description="English text that must be rendered in Vietnamese")
+
+@tool(args_schema=_VITranslationInput)
+async def translate_to_vietnamese(text: str) -> str:
+    """
+    High-fidelity English → Vietnamese translation for large blocks (2-5k tokens).
+    • Does NOT alter citation markers like [17].
+    • Leaves URLs, code fences, and numeric values unchanged.
+    """
+    llm = init_chat_model(model="gpt-4o-mini")  # or any cheaper model
+    prompt = (
+        "Bạn là dịch giả chuyên nghiệp Anh-Việt.\n"
+        "Dịch toàn bộ nội dung sang tiếng Việt **giữ nguyên**:\n"
+        "  • Mã code trong ``` ``` hoặc indentation 4 spaces\n"
+        "  • URL, tên miền, và trích dẫn dạng [12]\n"
+        "  • Số liệu & ký hiệu tiền tệ\n"
+        "Trả lại đúng văn bản tiếng Việt, không thêm chú thích.\n\n"
+        f"{text}"
+    )
+    resp = await llm.ainvoke(prompt)
+    return resp.content.strip()
+
+import datetime, pathlib, warnings, textwrap
+from typing import Union
+
+def _persist_report(final_report: str,
+                    out_dir: Union[str, pathlib.Path] = "reports") -> pathlib.Path:
+    """
+    Save *final_report* to both Markdown and DOCX in *out_dir*.
+    Returns the path to the .md file (same stem as .docx).
+    """
+    today = datetime.date.today().isoformat()            # e.g., 2025-07-07
+    out_dir = pathlib.Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    md_path   = out_dir / f"board_report_{today}.md"
+    docx_path = md_path.with_suffix(".docx")
+
+    # --- Markdown ---
+    md_path.write_text(final_report, encoding="utf-8")
+
+    pypandoc.convert_text(
+        final_report,
+        to='docx',
+        format='md',
+        outputfile=docx_path)
+    
+
+    return md_path
+# ------------------
+
 # ======================================
 async def _load_mcp_tools(
     config: RunnableConfig,
@@ -227,7 +282,8 @@ async def get_supervisor_tools(config: RunnableConfig) -> list[BaseTool]:
         tool(CoreProblem), 
         tool(Sections), 
         tool(AssembleReport), 
-        tool(FinishReport)
+        tool(FinishReport),
+        translate_to_vietnamese
     ]
     
     if configurable.ask_for_clarification:
@@ -393,6 +449,10 @@ async def supervisor_tools(
         elif tool_call["name"] == AssembleReport.__name__:
             # final_report = "\n\n".join([s.content for s in state["completed_sections"]])
             final_report = _assemble_and_reindex_report(state["completed_sections"])
+        #     final_report = await translate_to_vietnamese.ainvoke(
+        #     {"text": final_report}, config
+        # )
+            _persist_report(final_report)
             state_update = {"messages": state["messages"] + result_messages, "final_report": final_report}
             return Command(goto="supervisor", update=state_update)
         # Store special tool results for processing after all tools have been called
@@ -533,6 +593,14 @@ def sql_agent_should_continue(state: SqlAgentState) -> str:
     """
 
     last_message = state["messages"][-1]
+    if len(state['messages'])>5:
+        last_last_message = state["messages"][-2]
+        last_last_last_message = state["messages"][-3]
+    # If there are no tool calls, loop back to the agent to generate one.
+
+        if (not getattr(last_message, "tool_calls", None)) and (not getattr(last_last_message, "tool_calls", None)) and (not getattr(last_last_last_message, "tool_calls", None)):
+            return END
+
     # If there are no tool calls, loop back to the agent to generate one.
     if not last_message.tool_calls:
         return "sql_agent_node"
