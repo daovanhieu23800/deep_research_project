@@ -1745,7 +1745,8 @@ else:
     print("Total rows: " + str(results.total_rows))
     rows = [dict(row.items()) for row in results]
     print(json.dumps(rows, indent=2, ensure_ascii=False)) 
-    
+    df  = query_job.result().to_dataframe()
+    df.to_csv('./outputs/temp_data/test.csv')
 """
     try:
         results = python_execute(code)

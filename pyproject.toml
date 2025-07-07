@@ -46,6 +46,8 @@ dependencies = [
     "numpy",
     "matplotlib",
     "google-cloud-bigquery",
+    "google-cloud-bigquery[pandas]",
+    "db-dtypes"
 ]
 
 [project.optional-dependencies]

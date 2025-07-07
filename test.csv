@@ -1,0 +1,3452 @@
+,warehouse_name
+0, Bưu Cục TT Lô 20 Đề Thám-Cao Bằng-Cao Bằng	
+1, Kho giao hàng Ahamove Long An
+2, NutiFood Chương Dương-Thường Tín-Hà Nội
+3,An Giang
+4,B2B Nha Trang-Phạm Thái Vũ
+5,B2B Đắk Lắk-Nguyễn Thị Cẩm Hoàng
+6,B2B Đắk Lắk-Nguyễn Tiến Điệp
+7,BDG-VinMart+-300ThichQuangDuc
+8,BDG-VinMart+-38/12KhuphoDongB
+9,BDG-VinMart+-416NguyenThiMinhKhai
+10,BDG-VinMart+-52/7BinhDuong2
+11,BDG-VinMart+-544ANguyenTrai
+12,BDG-VinMart+-549ADuongDT743A
+13,BDG-VinMart+-62BisCachMangThangTam
+14,BDG-VinMart+-72BisNguyenVanTiet
+15,BDG-VinMart+-86NgoThiNham
+16,BDG-VinMart+-D7/28KPBinhThuan2
+17,BDG-VinMart+-KhuphoHoaLan
+18,BDG-VinMart+-O23-DC01KDCVietSing
+19,BL BƯU CỤC 03 TRẦN HƯNG ĐẠO-KRÔNG PẮC-ĐẮK LẮK
+20,BL BƯU CỤC 418 ĐƯỜNG ĐT782-GÒ DẦU-TÂY NINH
+21,BL Bưu Cục 01 Nguyễn Tất Thành-Đắk R lấp-Đắk Nông
+22,BL Bưu Cục 02 Phó Đức Chính-Hồng Hà-Yên Bái
+23,BL Bưu Cục 132 Hoàng Hoa Thám-Buôn Ma Thuột-Đắk Lắk
+24,BL Bưu Cục 156 Quốc Lộ 22-Gò Dầu-Tây Ninh
+25,BL Bưu Cục 156 Đường 3 Tháng 2-Q.Hải Châu-Đà Nẵng
+26,BL Bưu Cục 16 Huỳnh Thúc Kháng-TP Phan Thiết-Bình Thuận
+27,BL Bưu Cục 162 Trần Văn Trà-Cái Răng-Cần Thơ
+28,BL Bưu Cục 167 Đường 19 Tháng 8-Lai Châu
+29,BL Bưu Cục 1702 Tỉnh Lộ 10-Tân Tạo A-Bình Tân
+30,BL Bưu Cục 190 Nguyễn Ái Quốc-Biên Hoà-Đồng Nai 
+31,BL Bưu Cục 2069 Quốc lộ 1A-Trảng Bom-Đồng Nai
+32,BL Bưu Cục 208 Võ Văn Kiệt-Buôn Ma Thuột-Đắk Lắk
+33,BL Bưu Cục 213 Xô Viết Nghệ Tĩnh-Q.Bình Thạnh-HCM
+34,BL Bưu Cục 222 Phố Ba Mỏ-Thanh Sơn-Phú Thọ
+35,"BL Bưu Cục 25 Phạm Văn Đồng TP.Đồng Hới, Tỉnh Quảng Bình"
+36,BL Bưu Cục 29D Gò Xoài-Q.Bình Tân-HCM
+37,BL Bưu Cục 336 Võ Việt Tân-TX Cai Lậy-Tiền Giang
+38,BL Bưu Cục 342 Tôn Đức Thắng-Gia Nghĩa-Đắk Nông
+39,BL Bưu Cục 418 Đường 782-Gò Dầu-Tây Ninh
+40,BL Bưu Cục 46/48 Kp2 Tân Hòa -Biên Hòa- Đồng Nai
+41,BL Bưu Cục 499 Đinh Tiên Hoàng-TP Yên Bái-Yên Bái
+42,BL Bưu Cục 565 Thống Nhất-Lagi-Bình Thuận
+43,BL Bưu Cục 565 Thống Nhất-La Gi-Bình Thuận
+44,BL Bưu Cục 565 Trần Phú-Tuy Phước-Bình Định
+45,BL Bưu Cục 57 Phú Khánh-Hàm Thuận Nam-Bình Thuận
+46,BL Bưu Cục 58 Nguyễn Tất Thành-Krông Năng-Đắk Lắk
+47,BL Bưu Cục 67 Hai Tháng Tư-Đơn Dương-Lâm Đồng
+48,BL Bưu Cục 68 Hùng Vương-Gia Nghĩa-Đắk Nông
+49,BL Bưu Cục 839 Hoàng Lê Kha-Châu Thành-Tây Ninh
+50,BL Bưu Cục 99 Nguyễn Khuyến-Buôn Ma Thuột-Đắk Lắk
+51,BL Bưu Cục Bình Chuẩn 45-Thuận An-Bình Dương
+52,BL Bưu Cục Chợ Lương-Duy Tiên-Hà Nam
+53,BL Bưu Cục Hà Huy Giáp-Long Thành-Đồng Nai
+54,BL Bưu Cục KM38-QL26-Krông Pắc-Đắk Lắk
+55,BL Bưu Cục KP1 Đường Nguyễn Ái Quốc-Biên Hòa-Đồng Nai
+56,BL Bưu Cục Km 30 Tân Hòa-Buôn Đôn-Đắk Lắk
+57,BL Bưu Cục Lý Thường Kiệt-Long Thành-Đồng Nai
+58,BL Bưu Cục Phú Khánh-Hàm Thuận Nam-Bình Thuận
+59,BL Bưu Cục Quang Trung-Vinh-Nghệ An
+60,BL Bưu Cục Thôn 2-Tuy Đức-Đắk Nông
+61,BL Bưu Cục Thôn 4-Di Linh-Lâm Đồng
+62,BL Bưu Cục Thôn 5-Đắk Glong-Đắk Nông
+63,BL Bưu Cục Trần Hưng Đạo-Hàm Thuận Nam-Bình Thuận
+64,BL Bưu Cục Tổ 2 Xã Mường Nhé-Mường Nhé-Điện Biên
+65,BL Bưu Cục Tổ 5-Điện Biên Đông-Điện Biên
+66,BL Bưu cục 05 Lê Công Phép - Bình Tân - HCM
+67,BL Bưu cục 58 Vũ Tông Phan-Q.2-HCM
+68,BL Bưu cục 61 Tôn Đức Thắng-Tiên Phước-Quảng Nam
+69,BL Bưu cục Khu phố 1-Tân Phước-Tiền Giang 
+70,BL GHN
+71,BL KTC
+72,BTB Sorting Team
+73,Big C An Lạc
+74,Big C Biên Hòa
+75,Big C Bắc Giang
+76,Big C Chính
+77,Big C Cần Thơ
+78,Big C Dĩ An
+79,Big C Gò Vấp
+80,Big C Hoàng Văn Thụ
+81,Big C Huế
+82,Big C Hạ Long
+83,Big C Hải Dương
+84,Big C MegaMall
+85,Big C Mê Linh
+86,Big C Nam Định
+87,Big C Ngô Quyền
+88,Big C Nha Trang
+89,Big C Ninh Bình
+90,Big C Phú Thạnh
+91,Big C Quy Nhơn
+92,Big C Quận 2
+93,Big C Thanh Hoá
+94,Big C Thanh Khê
+95,Big C The Garden
+96,Big C Thủ Dầu Một
+97,Big C To Hien Thanh
+98,Big C Trường Chinh
+99,Big C Tân Hiệp
+100,Big C Vinh
+101,Big C Việt Trì
+102,Big C Vĩnh Yên
+103,Big C Đà Lạt
+104,Bà Rịa Vũng Tàu
+105,Bình Dương
+106,Bình Phước
+107,Bình Thuận
+108,Bình Định
+109,BƯU CỤC TT 156 QUỐC LỘ 22-GÒ DẦU-TÂY NINH
+110,BƯU CỤC TT 466 ĐƯỜNG 23/10-NHA TRANG-KHÁNH HÒA
+111,BƯU CỤC TT QUANG TRUNG-VINH-NGHỆ AN
+112,BƯU CỤC TT ĐƯỜNG BA MƯƠI THÁNG TƯ-TRẢNG BÀNG-TÂY NINH
+113,Bưu Cục 01 Châu Văn Liêm-Ngã Bảy-Hậu Giang
+114,Bưu Cục 01 Nguyễn Tất Thành-Đắk R lấp-Đắk Nông
+115,Bưu Cục 01 Nguyễn Đức Cảnh-Quy Nhơn-Bình Định
+116,Bưu Cục 01 Tây Sơn-Đồng Hới-Quảng Bình
+117,Bưu Cục 01A Hoàng Văn Thụ-Cam Lâm-Khánh Hòa
+118,Bưu Cục 02 Lâm Văn Quang-Hà Tiên-Kiên Giang
+119,Bưu Cục 02 Lê Quý Đôn-Yên Minh-Hà Giang
+120,Bưu Cục 02 Lý Thái Tổ-TP.Thái Bình
+121,Bưu Cục 02 Phó Đức Chính-Hồng Hà-Yên Bái
+122,Bưu Cục 02 Tỉnh Lộ 934-Mỹ Xuyên-Sóc Trăng
+123,Bưu Cục 02 Đường Số 28 - Củ Chi - HCM
+124,Bưu Cục 03 Cù Chính Lan-Nha Trang-Khánh Hòa
+125,Bưu Cục 03 Tiểu khu 14-Lương Sơn-Hoà Bình
+126,Bưu Cục 03 Trần Hưng Đạo-Krông Pắc-Đắk Lắk
+127,Bưu Cục 04 Nhất Chi Mai-Q.Tân Bình-HCM
+128,Bưu Cục 04 Trần Quang Khải-Rạch Giá-Kiên Giang
+129,Bưu Cục 04 Đào Dã-Thanh Ba-Phú Thọ
+130,Bưu Cục 04 Đường 13 tháng 3-Dầu Tiếng-Bình Dương
+131,Bưu Cục 05 Huyền Trân Công Chúa-Kiên Lương-Kiên Giang
+132,Bưu Cục 052 Ngọc Uyển-Bắc Hà-Lào Cai
+133,Bưu Cục 06 Lê Duẩn-Tuy Phong-Bình Thuận
+134,Bưu Cục 06 Nguyễn Tri Phương-Vị Thuỷ-Hậu Giang
+135,Bưu Cục 07 Lê Lợi-Mang Thít-Vĩnh Long
+136,Bưu Cục 08 Ba Mươi Tháng Tư-Thủ Dầu Một-Bình Dương 01
+137,Bưu Cục 08 Ba Mươi Tháng Tư-Thủ Dầu Một-Bình Dương 02
+138,Bưu Cục 08 Ba Mươi Tháng Tư-Thủ Dầu Một-Bình Dương 03
+139,Bưu Cục 08 Hùng Vương-Thị Trấn Đồng Lê-Quảng Bình
+140,Bưu Cục 08 Noong Bua-Điện Biên Phủ-Điện Biên 01
+141,Bưu Cục 08 Noong Bua-Điện Biên Phủ-Điện Biên 02
+142,Bưu Cục 08 Phan Bá Phiến-Hội An-Quảng Nam
+143,Bưu Cục 08 Đổ Quang-Thị trấn Đông Phú-Quế Sơn-Quảng Nam
+144,Bưu Cục 088 Nậm Sắt-Bắc Hà-Lào Cai
+145,Bưu Cục 09 Hoàng Cầu-Q.Đống Đa-HN
+146,Bưu Cục 093 Võ Nguyên Giáp-Bắc Cường-Lào Cai
+147,Bưu Cục 1/9 Phan Bội Châu-Vinh-Nghệ An
+148,Bưu Cục 10 Khu Phố 2-Biên Hòa-Đồng Nai
+149,Bưu Cục 10 Trần Hưng Đạo-Krông Pắc-Đắk Lắk
+150,Bưu Cục 10 Vĩnh Tuy-Q.Hai Bà Trưng-HN
+151,Bưu Cục 10 Đường số 8-Q.Thủ Đức-HCM
+152,Bưu Cục 100 Giáp Hải-TP.Bắc Giang
+153,Bưu Cục 100 Lê Lợi-Thường Xuân-Thanh Hóa
+154,Bưu Cục 100/4 Ấp Tây Lân-Hóc Môn-HCM
+155,Bưu Cục 101 B5 Núi Trúc-Q.Ba Đình-HN
+156,Bưu Cục 101 Nguyễn Bỉnh Khiêm-Vinh-Nghệ An
+157,Bưu Cục 1017 Huỳnh Tấn Phát-Q.7-HCM
+158,Bưu Cục 101B Lý Thái Tổ-Phủ Lý-Hà Nam
+159,Bưu Cục 102 Hoàng Liên-TP.Lào Cai
+160,Bưu Cục 102 Lê Lợi-Quảng Ngãi-Quảng Ngãi
+161,Bưu Cục 102 Nguyễn Đăng Lành-Nam Sách-Hải Dương
+162,Bưu Cục 102A Nguyễn Trãi-TP.Hà Giang
+163,Bưu Cục 102A Phường Nguyễn Trãi-Hà Giang-Hà Giang
+164,Bưu Cục 104 Lương Ngọc Quyến-Q.Bình Thạnh-HCM
+165,Bưu Cục 104 Phạm Huy Thông-Ân Thi-Hưng Yên
+166,Bưu Cục 104B đường Quế Sơn-Thọ Xuân-Thanh Hóa
+167,Bưu Cục 1056 Nguyễn Bỉnh Khiêm-Q.Hải An-Hải Phòng
+168,Bưu Cục 105C Đồng Khởi-Biên Hòa-Đồng Nai
+169,Bưu Cục 106 Kinh Dương Vương-Phú Vang-Huế
+170,Bưu Cục 106 Kỳ Đồng-Q.Thanh Khê-Đà Nẵng
+171,Bưu Cục 106 Nguyễn Sinh Cung-Cửa Lò-Nghệ An
+172,Bưu Cục 106 Phạm Văn Đồng-Phổ Yên-Thái Nguyên
+173,Bưu Cục 106 Quang Trung-Đại Lộc-Quảng Nam
+174,Bưu Cục 106/3A Tây Lân-Hóc Môn-HCM
+175,Bưu Cục 107 Nguyễn Chí Thanh-Q.Đống Đa-HN
+176,Bưu Cục 107 Nguyễn Chí Thanh-Tân Biên-Tây Ninh
+177,Bưu Cục 107 Trần Hưng Đạo-Văn Yên-Yên Bái
+178,Bưu Cục 107 Đường 3D-Bình Hưng Hòa B-Bình Tân-HCM
+179,Bưu Cục 1070 Quốc Lộ 51-TP. Biên Hòa-Đồng Nai
+180,Bưu Cục 108 Khu Phố 2-Đức Huệ-Long An
+181,Bưu Cục 108 Kim Bài-Thanh Oai-HN
+182,Bưu Cục 108 Phú Đô-Q.Nam Từ Liêm-HN
+183,Bưu Cục 108 Phố Nhổn-Q.Bắc Từ Liêm-Hà Nội
+184,Bưu Cục 108 Đường Số 13-Bình Chánh-HCM
+185,Bưu Cục 1089 Cách Mạng Tháng Tám-Thủ Dầu Một -Bình Dương
+186,Bưu Cục 109 E3-Q.Hai Bà Trưng-HN
+187,Bưu Cục 109 Trần Nhân Tông-Thịnh Lang-Hòa Bình
+188,Bưu Cục 109/3 Trần Quốc Toản-Biên Hòa-Đồng Nai
+189,Bưu Cục 109/3 Trần Quốc Toản-TP Biên Hòa-Đồng Nai
+190,Bưu Cục 10BT4 KĐT Văn Quán-Phúc La-Hà Đông-HNO
+191,Bưu Cục 11 Chu Mạnh Trinh-TP.Hưng Yên
+192,Bưu Cục 110 Nguyễn Huệ-Trảng Bom-Đồng Nai
+193,Bưu Cục 1106 A Tỉnh Lộ 10-Q.Bình Tân-HCM
+194,Bưu Cục 110A3 Thành Công-Q.Ba Đình-Hà Nội
+195,Bưu Cục 111 Lê Duẫn-Khánh Sơn-Khánh Hoà
+196,Bưu Cục 111 Phố Quán Chè-Thường Tín-HN
+197,Bưu Cục 111 Quốc Lộ 1A-Vĩnh Lợi-Bạc Liêu
+198,Bưu Cục 111 Xuân Thành-Ninh Bình-Ninh Bình 01
+199,Bưu Cục 111 Xuân Thành-Ninh Bình-Ninh Bình 02
+200,Bưu Cục 112 Võ Nguyên Giáp-Tam Đường-Lai Châu
+201,Bưu Cục 113 Lê Lợi-Đồng Hới-Quảng Bình
+202,Bưu Cục 113 Lê Đại Hành-Biên Hòa-Đồng Nai
+203,Bưu Cục 113 Quang Trung-TP.Bắc Giang
+204,Bưu Cục 1130 Đông Hưng Thuận 05-Q.12-HCM
+205,Bưu Cục 1135 Phan Văn Trị-Q.Gò Vấp-HCM
+206,Bưu Cục 114 Nguyễn Văn Trỗi-TP Tam Kỳ-Quảng Nam
+207,Bưu Cục 114 Yên Lãng-Q.Đống Đa-HN
+208,Bưu Cục 1146 Tỉnh Lộ 15-Củ Chi-HCM
+209,Bưu Cục 115 Hà Huy Giáp-Long Thành-Đồng Nai
+210,Bưu Cục 115 Lý Nam Đế-Nha Trang-Khánh Hòa
+211,Bưu Cục 1157 Đại Lộ Hùng Vương-Tiên Cát-Việt Trì-Phú Thọ 
+212,Bưu Cục 116 Dương Đình Nghệ-Thanh Hóa-Thanh Hóa
+213,Bưu Cục 116 Hoàng Hoa Thám-Buôn Ma Thuột-Đắk Lắk
+214,Bưu Cục 116 Hoàng Văn Thụ-Ngọc Hồi-KonTum
+215,Bưu Cục 116 Phạm Thận Duật-Ninh Sơn-Ninh Bình
+216,Bưu Cục 116A Bà Hom-Phường 13-Quận 6-HCM
+217,Bưu Cục 117 CMT8 Huỳnh Văn Lũy-Biên Hòa-Đồng Nai
+218,Bưu Cục 117 Hùng Vương-Q.5-HCM
+219,Bưu Cục 119 Hùng Vương-Vĩnh Yên-Vĩnh Phúc
+220,Bưu Cục 119 Nguyễn Văn Luông-Q.6-HCM
+221,Bưu Cục 119 Ngô Thì Nhậm-Dĩ An-Bình Dương
+222,Bưu Cục 119 Đường Số 1-Phường 11-Gò Vấp-HCM
+223,Bưu Cục 1190 QL91-Q.Ô Môn-Cần Thơ
+224,Bưu Cục 12 A Ma Khê -Buôn Hồ-Đắk Lắk
+225,Bưu Cục 12 Nguyễn Thị Minh Khai-Bắc Sơn-Lạng Sơn
+226,Bưu Cục 12 Ngõ 340 Quang Trung-Hồng Lĩnh-Hà Tĩnh
+227,Bưu Cục 12 Trần Nhân Tông-Uông Bí-Quảng Ninh
+228,Bưu Cục 12 Trịnh Đình Cửu-Q.Hoàng Mai-HN
+229,Bưu Cục 12-14 Bà Triệu-Cao Lãnh-Đồng Tháp
+230,Bưu Cục 120 An Định-Tp.Hải Dương-Hải Dương
+231,Bưu Cục 1221 Nguyễn Duy Trinh-Q.9-HCM
+232,Bưu Cục 124 Lý Thái Tổ-Nhơn Trạch-Đồng Nai 01
+233,Bưu Cục 124 Lý Thái Tổ-Nhơn Trạch-Đồng Nai 02
+234,Bưu Cục 124 Phan Bá Vành-Q.Bắc Từ Liêm-HN
+235,Bưu Cục 124 Sào Nam-Nghi Thu-Cửa Lò-Nghệ An
+236,Bưu Cục 124 Trịnh Văn Bô-Q.Nam Từ Liêm-HN
+237,Bưu Cục 124 Võ Văn Kiệt-Q.Bình Thủy-Cần Thơ
+238,Bưu Cục 124 Võ Văn Kiệt-Q.Ninh Kiều-Cần Thơ 03
+239,Bưu Cục 125 Lý Chính Thắng-Buôn Ma Thuột-Đắk Lắk
+240,Bưu Cục 126 Tỉnh Lộ 8-Củ Chi-HCM
+241,Bưu Cục 127 Lý Thường Kiệt-TP.Vũng Tàu
+242,Bưu Cục 127 Đường D20-Thuận An-Bình Dương
+243,Bưu Cục 127B Lê Văn Tám-Thị Trấn Kbang-Huyện Kbang-Gia Lai
+244,Bưu Cục 128 Võ Chí Công-Xuân La-Tây Hồ-HNO
+245,Bưu Cục 128 Đồng Nai-Q.10-HCM
+246,Bưu Cục 128 Đồng Nai-Q.10-HCM 01
+247,Bưu Cục 1284 Quang Trung-Q.Gò Vấp-HCM
+248,Bưu Cục 129 Khổng Tử-Long Khánh-Đồng Nai
+249,Bưu Cục 129 Võ Nguyên Giáp-Minh Hóa-Quảng Bình
+250,Bưu Cục 129A Đường N2-Dầu Tiếng-Bình Dương
+251,Bưu Cục 13 đường 30/4-Tân Châu-Tây Ninh
+252,Bưu Cục 130 Quốc Lộ 1A-Vĩnh Lợi-Bạc Liêu
+253,Bưu Cục 130 Trần Nhân Tông-Quảng Yên-Quảng Ninh
+254,Bưu Cục 130 Trần Văn Lan-Q.Hải An-Hải Phòng
+255,Bưu Cục 130 Tôn Đức Thắng-Cà Mau-Cà Mau
+256,Bưu Cục 131 Quan Hoa-Q.Cầu Giấy-HN
+257,Bưu Cục 131 Trần Phú-Ninh Trung-Ninh Sơn-Tây NInh
+258,Bưu Cục 132 Hoàng Hoa Thám-Buôn Ma Thuột-Đắk Lắk
+259,Bưu Cục 132 Quang Trung-Uông Bí-Quảng Ninh
+260,Bưu Cục 132 Tân Long-Yên Lập-Phú Thọ
+261,Bưu Cục 1322 Hùng Vương-Di Linh-Lâm Đồng
+262,Bưu Cục 135 Khúc Tréo A-Giá Rai-Bạc Liêu
+263,Bưu Cục 1353 Trần Phú-Bảo Lộc-Lâm Đồng
+264,Bưu Cục 136 CMT8-Sông Mã-Sơn La
+265,Bưu Cục 136 Quốc lộ 46-Nam Đàn-Nghệ An
+266,Bưu Cục 136 Đường Huyện 704-Minh Tân-Dầu Tiếng-Bình Dương
+267,Bưu Cục 137 Đường 30/04-Trần Văn Thời-Cà Mau
+268,Bưu Cục 138 Hùng Vương-Phú Thiện-Gia Lai
+269,Bưu Cục 138 Trần Phú- Đồng Xuân- Phú Yên
+270,Bưu Cục 139 Hồ Chí Minh-Đông Giang-Quảng Nam
+271,Bưu Cục 139 Lò Hột-TP.Trà Vinh
+272,Bưu Cục 139 Thụy Phương-Q.Bắc Từ Liêm-HN
+273,Bưu Cục 14 Huỳnh Thúc Kháng-Q.Đống Đa-HN
+274,Bưu Cục 14 Trần Phú-Từ Sơn-Bắc Ninh
+275,Bưu Cục 14 ngõ 10 Nguyễn Văn Huyên-Q.Cầu Giấy-HN
+276,Bưu Cục 140 Khâm Thiên-Q.Đống Đa-HN
+277,Bưu Cục 140 Kiều Hạ-Đông Hải 2-Hải An-Hải Phòng
+278,Bưu Cục 140 Tôn Đức Thắng-An Sơn-Tam Kỳ-Quảng Nam
+279,Bưu Cục 1402 Hoàng Lê Kha-Châu Thành-Tây Ninh
+280,Bưu Cục 140A Quốc lộ 1A-Biên Hòa-Đồng Nai
+281,Bưu Cục 140B1A1 Nguyễn Văn Cừ-Ninh Kiều-Cần Thơ
+282,Bưu Cục 141 Đường Số 5 An Phú-Q.2-HCM
+283,Bưu Cục 142 Phố Giỗ-Gia Lộc-Hải Dương
+284,Bưu Cục 142A Khuất Duy Tiến-Q.Thanh Xuân-HN
+285,Bưu Cục 143 Phước Thiện-Q.9-HCM
+286,Bưu Cục 144 Trần Đăng Ninh-TP.Lạng Sơn
+287,Bưu Cục 1440/1 Tỉnh Lộ 10-Tân Tạo-Bình Tân-HCM
+288,Bưu Cục 145 Nhật Tảo-Vĩnh Hưng-Long An
+289,Bưu Cục 145/36/4 Điểu Xiển-Tân Biên-TP.Biên Hòa-Đồng Nai
+290,Bưu Cục 1454 Lê Văn Lương-Nhà Bè-HCM
+291,Bưu Cục 1459 Đường 30/4-Vũng Tàu-Bà Rịa Vũng Tàu
+292,Bưu Cục 148 Hoàng Quốc Việt-TP.Lào Cai-Lào Cai
+293,Bưu Cục 148 Nguyễn Đăng Lành-Nam Sách-Hải Dương
+294,Bưu Cục 148 Trần Hưng Đạo-Phan Thiết-Bình Thuận
+295,Bưu Cục 149 Bà Triệu-Quản Bạ-Hà Giang
+296,Bưu Cục 149 Đường 23/3-Gia Nghĩa-Đắk Nông
+297,Bưu Cục 14A/20 Nguyễn Khuyến-TP Biên Hòa-Đồng Nai
+298,Bưu Cục 14LE Khu Biệt thự liền kề Vũ Tuân-Việt Trì-Phú Thọ
+299,Bưu Cục 15 Hoàng Văn Thụ-An Khê-Gia Lai
+300,Bưu Cục 15 Hàng Bún-Q.Ba Đình-HN
+301,Bưu Cục 15 Đồng Khởi-Vĩnh Cửu-Đồng Nai
+302,Bưu Cục 150 Trần Hưng Đạo-Bình Lục-Hà Nam
+303,Bưu Cục 151 Lê Lợi-Sầm Sơn-Thanh Hoá
+304,Bưu Cục 152 Hùng Vương-Ba Đồn-Quảng Bình
+305,Bưu Cục 152 Phạm Phú Thứ-Q.Tân Bình-HCM 01
+306,Bưu Cục 152 Phạm Phú Thứ-Q.Tân Bình-HCM 02
+307,Bưu Cục 153 Hùng Vương-Ia Grai-Gia Lai
+308,Bưu Cục 154B Mai Thị Hồng Hạnh-Rạch Giá-Kiên Giang
+309,Bưu Cục 155 Phú Diễn-Phú Diễn-Bắc Từ Liêm-HN
+310,Bưu Cục 155 Quốc Lộ 80-Hòn Đất-Kiên Giang
+311,Bưu Cục 155 Điện Biên Phủ-Sa Pa-Lào Cai
+312,Bưu Cục 156 Nguyễn An Ninh-Cần Giuộc-Long An
+313,Bưu Cục 156 Quốc Lộ 22-Gò Dầu-Tây Ninh
+314,Bưu Cục 156 Trần Vỹ -Q.Cầu Giấy-HN
+315,Bưu Cục 156 Đường 3 Tháng 2-Q.Hải Châu-Đà Nẵng
+316,Bưu Cục 158 Lê Duẩn Ea Knop-Ea Kar-Đắk Lắk
+317,Bưu Cục 158 Quốc lộ 55-Tánh Linh-Bình Thuận
+318,Bưu Cục 159 Tân Quảng-EaTóh-Krông Năng-Đắk Lắk
+319,Bưu Cục 159 Tôn Đức Thắng- Q.Liên Chiểu- Đà Nẵng
+320,Bưu Cục 16 Huỳnh Thúc Kháng-Phan Thiết-Bình Thuận
+321,Bưu Cục 16 Lê Lợi-Duy Tiên-Hà Nam
+322,Bưu Cục 16 Tiền Huân-Sơn Tây-HN
+323,Bưu Cục 16 Trần Nhật Duật-Q.1-HCM
+324,Bưu Cục 16 Đỗ Nhuận-Long Xuyên-An Giang
+325,Bưu Cục 161 Nguyễn Tri Phương-Châu Đốc-An Giang
+326,Bưu Cục 162 Huỳnh Thúc Kháng-Đại Lộc-Quảng Nam
+327,Bưu Cục 162 Trần Văn Trà-Cái Răng-Cần Thơ
+328,Bưu Cục 163 Nguyễn Đình Chiểu-Q.3-HCM
+329,Bưu Cục 165 Ấp Thị Tứ-Phong Điền-Cần Thơ
+330,Bưu Cục 166 Tô Hiệu-Mai Sơn-Sơn La
+331,Bưu Cục 167 Tôn Đức Thắng-Tân Châu-Tây Ninh
+332,Bưu Cục 167 Vĩnh Khang-Chiêm Hóa-Tuyên Quang
+333,Bưu Cục 167 Đường 19 Tháng 8-Lai Châu
+334,Bưu Cục 168 Nguyễn Tất Thành-Vĩnh Yên-Vĩnh Phúc 01
+335,Bưu Cục 168 Nguyễn Tất Thành-Vĩnh Yên-Vĩnh Phúc 02
+336,Bưu Cục 168 Ngô Quyền-Đà Lạt-Lâm Đồng
+337,Bưu Cục 168 đường 1/9-Thanh Chương-Nghệ An
+338,Bưu Cục 169 Xương Giang-Hữu Lũng-Lạng Sơn
+339,Bưu Cục 16A An Toàn-Hoà Nghĩa-Dương Kinh-Hải Phòng
+340,Bưu Cục 16A Hòa Mã -Q.Hai Bà Trưng-HN
+341,Bưu Cục 16A Lê Hồng Phong-Q.10-HCM 01
+342,Bưu Cục 16A Lê Hồng Phong-Q.10-HCM 02
+343,Bưu Cục 16A Lê Hồng Phong-Q.10-HCM 03
+344,Bưu Cục 16A Lê Hồng Phong-Q.10-HCM 04
+345,Bưu Cục 17 Nguyễn Thị Minh Khai-Bù Đăng-Bình Phước
+346,Bưu Cục 17 Phùng Ngọc Liêm-TP.Bạc Liêu
+347,Bưu Cục 1702 Tỉnh Lộ 10-Tân Tạo A-Bình Tân
+348,Bưu Cục 172 Cầu Gáo-Đan Phượng-HN
+349,Bưu Cục 172 Hùng Vương-Chư Prông-Gia Lai
+350,Bưu Cục 172 Quang Trung-Đức Cơ-Gia Lai
+351,Bưu Cục 173 Đồng Cam-Thạch Thất-HN
+352,Bưu Cục 173-175 Đường Số 11-Bình Hưng Hòa-Bình Tân-HCM
+353,Bưu Cục 173A/10 Ấp Long Hiệp-Long Hồ-Vĩnh Long
+354,Bưu Cục 174 Cao Lỗ-Đông Anh-HN
+355,Bưu Cục 174 Cầu Gáo-Đan Phượng-Hà Nội
+356,Bưu Cục 174 Nguyễn Du-Vinh-Nghệ An
+357,Bưu Cục 175 Lý Thái Tổ-Q.10-HCM
+358,Bưu Cục 176 Nguyễn Đức Cảnh-Hoàng Diệu-Thái Bình
+359,Bưu Cục 177 Nguyễn Văn Phát-Sa Đéc-Đồng Tháp
+360,Bưu Cục 178 Đường DT741-Bến Cát-Bình Dương
+361,Bưu Cục 18 An Dương Vương-Q.Ngũ Hành Sơn-Đà Nẵng
+362,Bưu Cục 18 Bạch Năng Thi-Hải Dương
+363,Bưu Cục 18 TDP Phong Ý-Cẩm Thuỷ-Thanh Hoá
+364,Bưu Cục 18 Thôn Ngọc Động-Thường Tín-HN
+365,Bưu Cục 18 Đường 3/2-Hải Lăng-Quảng Trị 
+366,Bưu Cục 181 Trường Chinh-Điện Biên Phủ-Điện Biên
+367,Bưu Cục 183 Nguyễn Oanh-Phường 17-Gò Vấp-HCM
+368,Bưu Cục 183 Trần Phú-Vĩnh Linh-Quảng Trị
+369,Bưu Cục 184 Nguyễn Tất Thành-Hội An-Quảng Nam
+370,Bưu Cục 1855 Võ Văn Kiệt-Hoà Long-Bà Rịa Vũng Tàu
+371,Bưu Cục 186 QL61 Châu Thành A-Hậu Giang
+372,Bưu Cục 187 Giảng Võ-Q.Đống Đa-HN 01
+373,Bưu Cục 187 Giảng Võ-Q.Đống Đa-HN 02
+374,Bưu Cục 187 Nguyễn Thị Thập-Q.7-HCM
+375,Bưu Cục 188 Khương Đình-Q.Thanh Xuân-HN
+376,Bưu Cục 188 Nguyễn Ngọc Nại-Q.Thanh Xuân-HN
+377,Bưu Cục 18TT2 Khu Đấu Giá Tứ Hiệp-Thanh Trì-HN
+378,Bưu Cục 19 Ngõ 196 Phú Diễn-Q. Bắc Từ Liêm-HN
+379,Bưu Cục 19 Phú Thịnh-TP.Lào Cai 01
+380,Bưu Cục 19 Phú Thịnh-TP.Lào Cai 02
+381,Bưu Cục 19 Tô Hiến Thành-Đà Lạt-Lâm Đồng
+382,Bưu Cục 19 Đội Cấn-Bảo Lộc-Lâm Đồng
+383,Bưu Cục 190 Nguyễn Sỹ Sách-TP.Vinh-Nghệ An
+384,Bưu Cục 190 Nguyễn Sỹ Sách-Vinh-Nghệ An
+385,Bưu Cục 190 Nguyễn Ái Quốc-Biên Hoà-Đồng Nai
+386,Bưu Cục 190/11 Phù Đổng Thiên Vương-Phường 8-Đà Lạt-Lâm Đồng
+387,Bưu Cục 191 Ngô Chí Quốc-Thủ Đức-HCM
+388,Bưu Cục 192 Tỉnh Lộ 823-Đức Hòa-Long An
+389,Bưu Cục 192/9 Lý Thường Kiệt-Di Linh-Lâm Đồng
+390,Bưu Cục 195 Châu Văn Liêm-Hòa Thành-Tây Ninh
+391,Bưu Cục 195 Nguyễn Huệ-Phú Sơn-Bỉm Sơn-Thanh Hóa
+392,Bưu Cục 195 Đường 2/4-Nha Trang-Khánh Hòa
+393,Bưu Cục 195B Lý Chính Thắng-Q.3-HCM
+394,Bưu Cục 196 Khu 1-Vĩnh Lộc-Thanh Hóa
+395,Bưu Cục 197 Lê Cao Lãng-Phú Thạnh-Tân Phú-HCM
+396,Bưu Cục 197 Nguyễn Oanh-Q.Gò Vấp-HCM
+397,Bưu Cục 198 Thạnh Lộc 15-Q.12-HCM
+398,Bưu Cục 199 Nguyễn Thái Học-Dĩ An-Bình Dương
+399,Bưu Cục 199 Nguyễn Tất Thành-Krông Bông-Đắk Lắk
+400,Bưu Cục 19A Lê Hồng Phong-Q.Hà Đông-HN
+401,Bưu Cục 1A Tản Đà-Vinh-Nghệ An
+402,Bưu Cục 2 Bis Nguyễn Thị Minh Khai-Q.1-HCM
+403,Bưu Cục 2 Bis Nguyễn Thị Minh Khai-Q.1-HCM 01
+404,Bưu Cục 2/9 Nguyễn Duy Trinh-Tân Biên-Tây Ninh
+405,Bưu Cục 20 LK9 Xa La-Q.Hà Đông-HN
+406,Bưu Cục 20 Nguyễn Du-Đắk R lấp-Đắk Nông
+407,Bưu Cục 20 Đông Quan-Q.Cầu Giấy-HN
+408,Bưu Cục 20 Đường số 81-Q.7-HCM
+409,Bưu Cục 20/48A Bờ Bao Tân Thắng-Q. Tân Phú-HCM
+410,Bưu Cục 20/82-84 Bờ Bao Tân Thắng-Q.Tân Phú-HCM
+411,Bưu Cục 201 Nguyễn Du-Quỳnh Phụ-Thái Bình
+412,Bưu Cục 202 Lý Thánh Tông-Phú Lộc-Huế
+413,Bưu Cục 203 Hà Huy Tập-Nam Hà-Hà Tĩnh
+414,Bưu Cục 203 La Thành-Sơn Tây-HN
+415,Bưu Cục 204 Lê Lai-Máy Chai-Ngô Quyền-Hải Phòng
+416,Bưu Cục 204 Trần Hưng Đạo-Buôn Hồ-Đắk Lắk
+417,Bưu Cục 205 Nguyễn Trãi-Thị Xã Ngã Năm-Sóc Trăng
+418,Bưu Cục 205 Trần Hưng Đạo-Hòa Bình-Hòa Bình
+419,Bưu Cục 206 A Đoàn Thị Nghiệp-Mỹ Tho-Tiền Giang 01
+420,Bưu Cục 206 A Đoàn Thị Nghiệp-Mỹ Tho-Tiền Giang 02
+421,Bưu Cục 206 A Đoàn Thị Nghiệp-Mỹ Tho-Tiền Giang 03
+422,Bưu Cục 206 Đống Đa-Quy Nhơn-Bình Định
+423,Bưu Cục 2069 Quốc lộ 1A-Trảng Bom-Đồng Nai
+424,Bưu Cục 2069 Đông Bình-Trảng Bom-Đồng Nai
+425,Bưu Cục 208 Võ Văn Kiệt-Buôn Ma Thuột-Đắk Lắk
+426,Bưu Cục 208 Ấp 7-Lộc Ninh-Bình Phước
+427,Bưu Cục 209 Nguyễn Trãi-Hạ Long-Quảng Ninh
+428,Bưu Cục 209/11 Hồ Tùng Mậu-Bảo Lộc-Lâm Đồng 02
+429,Bưu Cục 20A Gò Dầu-Q.Tân Phú-HCM
+430,Bưu Cục 21 Lý Tự Trọng-Nha Trang-Khánh Hòa
+431,Bưu Cục 21 Đặng Văn Ngữ-Q.Cẩm Lệ-Đà Nẵng
+432,Bưu Cục 21 Đỗ Cận-Phổ Yên-Thái Nguyên
+433,Bưu Cục 211 Lạc Long Quân-Q.Cầu Giấy-HN
+434,Bưu Cục 211 Quốc Lộ 80-Kiên Lương-Kiên Giang
+435,Bưu Cục 214 Ngọc Uyển-Bắc Hà-Lào Cai
+436,Bưu Cục 214 Tuệ Tĩnh-Ninh Tiến-Ninh Bình
+437,Bưu Cục 215 Hùng Vương-Đắk Hà-Kon Tum
+438,Bưu Cục 215 Đề Nắm-Yên Thế-Bắc Giang
+439,Bưu Cục 216 Nguyễn Du-An Hòa-Trảng Bàng-Tây Ninh
+440,Bưu Cục 217A Hoàng Văn Thụ-Q.Phú Nhuận-HCM
+441,Bưu Cục 217A Trường Chinh-Phủ Lý-Hà Nam
+442,Bưu Cục 219 Nơ Trang Long-Q.Bình Thạnh-HCM 01
+443,Bưu Cục 219 Nơ Trang Long-Q.Bình Thạnh-HCM 02
+444,Bưu Cục 219 Nơ Trang Long-Q.Bình Thạnh-HCM 03
+445,Bưu Cục 219 Sơn Đồng-Hoài Đức-HN
+446,Bưu Cục 219 Yên Trung-Đức Thọ-Hà Tĩnh
+447,Bưu Cục 22 Quốc Lộ 22-Gò Dầu-Tây Ninh
+448,Bưu Cục 22 Thanh Yên-Q.Hoàn Kiếm-HN
+449,Bưu Cục 22 Đường 8/5-Yên Châu-Sơn La
+450,Bưu Cục 221 Kim Ngưu-Q.Hai Bà Trưng-HN
+451,Bưu Cục 223 Hà Huy Tập-TP.Hà Tĩnh-Hà Tĩnh
+452,Bưu Cục 224 Lê Trọng Tấn-Q.Hà Đông-HN
+453,Bưu Cục 224 Phùng Hưng-TP.Hòa Bình
+454,Bưu Cục 224 Phùng Hưng-TP.Hòa Bình 01
+455,Bưu Cục 224 Phùng Hưng-TP.Hòa Bình 02
+456,Bưu Cục 225 Nguyễn Trãi-Ngã Năm-Sóc Trăng
+457,Bưu Cục 225 Đường Nguyễn Trãi-Ngã Năm-Sóc Trăng
+458,Bưu Cục 228 Nguyễn Bình-Quảng Yên-Quảng Ninh
+459,Bưu Cục 229 Quan Nhân-Q.Thanh Xuân-HN
+460,Bưu Cục 22A Cầu Bươu-Thanh Liệt-Thanh Trì-HNO
+461,Bưu Cục 23 Chu Văn An-Thanh Miện-Hải Dương
+462,Bưu Cục 23 Ngõ 164 Ỷ La-Q.Hà Đông-HN
+463,Bưu Cục 23 Trần Phú-Ninh Sơn-Tây Ninh
+464,Bưu Cục 23 Đặng Văn Ngữ-Q.Đống Đa-HN
+465,Bưu Cục 230 Lê Lợi-Lạng Giang-Bắc Giang
+466,Bưu Cục 231 Hoàng Sào-Bảo Thắng-Lào Cai
+467,Bưu Cục 231 Võ An Ninh-Q.Cẩm Lệ-Đà Nẵng
+468,Bưu Cục 2312 Hồng Khanh-Phước Long-Bạc Liêu
+469,Bưu Cục 232 Đường 25/5-Thanh Hà-Hải Dương
+470,Bưu Cục 233 Trần Khánh Dư-Tp.Kon Tum-Kon Tum
+471,Bưu Cục 233 Điện Biên Phủ-Sa Pa-Lào Cai
+472,Bưu Cục 235 Nguyễn Xiển-Q.Thanh Xuân-HN
+473,Bưu Cục 235 Phạm Hùng-Q.8-HCM
+474,Bưu Cục 237 Lý Thái Tổ-Buôn Ma Thuột-Đắk Lắk
+475,Bưu Cục 237 Nguyễn Tất Thành-Bắc Bình-Bình Thuận
+476,Bưu Cục 237 Phương Trạch-Đông Anh-HN
+477,Bưu Cục 238 Chi Lăng-Phù Ninh-Phú Thọ
+478,Bưu Cục 239A QL50-Bình Chánh-HCM
+479,Bưu Cục 24 Khu Phố Thanh Bình-Bù Đốp-Bình Phước
+480,Bưu Cục 24 Lê Duẩn-TP.Tuyên Quang-Tuyên Quang
+481,Bưu Cục 24 Phạm Thị Gạo-Long Mỹ-Hậu Giang
+482,Bưu Cục 24 ngõ 80 La Nội-Q.Hà Đông-HN
+483,Bưu Cục 24 Âu Cơ-Đông Hà-Quảng Trị
+484,Bưu Cục 242 Lê Lợi-Hương Sơn-Hà Tĩnh
+485,Bưu Cục 242 Trường Trinh-Điện Biên Phủ-Điện Biên
+486,Bưu Cục 242 Tỉnh Lộ 2-Củ Chi-HCM
+487,Bưu Cục 244 Lê Lợi-Đông Lương-Đông Hà-Quảng Trị
+488,Bưu Cục 244 Nguyễn Tất Thành-Yên Thế-Lục Yên-Yên Bái
+489,Bưu Cục 244 Tự Phước-Đà Lạt-Lâm Đồng 
+490,Bưu Cục 244/23 Dương Đình Hội-Q.9-HCM
+491,Bưu Cục 245 Hùng Vương-Ea Súp-Đắk Lắk
+492,Bưu Cục 245 Phố Đông An Khánh-Hoài Đức-Hà Nội
+493,Bưu Cục 245 Trần Hưng Đạo-Hàm Thuận Nam-Bình Thuận
+494,Bưu Cục 247 Phạm Văn Bạch-Q.Tân Bình-HCM
+495,Bưu Cục 24B Nguyễn Du-Phường 1-TP.Vũng Tàu-Bà Rịa Vũng Tàu
+496,Bưu Cục 25 Khedol -Xã Suối Đá-Dương Minh Châu-Tây Ninh
+497,Bưu Cục 25 Nguyễn Xí-Q.Bình Thạnh-HCM
+498,Bưu Cục 25 Phú Cường-Hậu Lộc-Thanh Hoá
+499,"Bưu Cục 25 Phạm Văn Đồng TP.Đồng Hới, Tỉnh Quảng Bình"
+500,Bưu Cục 25 Trương Định-Q.Hai Bà Trưng-HN 01
+501,Bưu Cục 25 Trương Định-Q.Hai Bà Trưng-HN 02
+502,Bưu Cục 25 Tổ 7-Sông Hiến-Cao Bằng
+503,Bưu Cục 250 Tôn Đức Thắng-Phan Thiết-Bình Thuận
+504,Bưu Cục 251 Hàn Hải Nguyên-Q.11-HCM
+505,Bưu Cục 252 Kinh Dương Vương-Thuận An-Phú Vang-Huế
+506,Bưu Cục 252 Minh Phụng-Q.11-HCM
+507,Bưu Cục 254-256 Âu Cơ-Q.Liên Chiểu-Đà Nẵng
+508,Bưu Cục 254/13C Trần Hưng Đạo-TP Long Xuyên-An Giang
+509,Bưu Cục 2549 Đại Lộ Hùng Vương-Việt Trì-Phú Thọ
+510,Bưu Cục 254A Đường 21 tháng 8-Phan Rang-Tháp Chàm-Ninh Thuận
+511,Bưu Cục 256 Võ Nguyên Giáp-TP.Bắc Kạn
+512,Bưu Cục 256A Hồ Chí Minh-Hương Khê-Hà Tĩnh
+513,Bưu Cục 258 Lê Duẩn-Hướng Hóa-Quảng Trị
+514,Bưu Cục 26 Bùi Thanh Khiết-Tân Túc-Bình Chánh
+515,Bưu Cục 26 Huỳnh Thúc Kháng-Thị Trấn P'rao-Đông Giang-Quảng Nam
+516,Bưu Cục 26 Phạm Thận Duật-Bích Đào-Ninh Bình
+517,Bưu Cục 26 Phạm Văn Xảo-Tp.Lào Cai-Lào Cai
+518,Bưu Cục 261 Lê Đại Hành-Q.11-HCM
+519,Bưu Cục 263 Nguyễn Trường Tộ-La Gi-Bình Thuận
+520,Bưu Cục 263 Phố Vọng-Q.Hai Bà Trưng-HN
+521,Bưu Cục 263 Đống Đa-Quy Nhơn-Bình Định
+522,Bưu Cục 265 Lào Cai-Chánh Nghĩa-Thủ Dầu Một-Bình Dương
+523,Bưu Cục 265 Tiểu Khu 2 QL45-Thiệu Hóa-Thanh Hóa
+524,Bưu Cục 266B Hàng Gòn-Lê Bình-Cái Răng-Cần Thơ
+525,Bưu Cục 268 DT741-Đồng Phú-Bình Phước
+526,Bưu Cục 268 Lý Thường Kiệt-Thái Hòa-Nghệ An
+527,Bưu Cục 269 Tây Sơn-Quy Nhơn-Bình Định
+528,Bưu Cục 26A Lê Duẩn-Ninh Sơn-Ninh Thuận
+529,Bưu Cục 27 Hồ Nghinh-Tam Kỳ-Quảng Nam
+530,Bưu Cục 27 Mười Tháng Ba-Buôn Ma Thuột-Đắk Lắk
+531,Bưu Cục 27 Nguyễn Xí-Q.Bình Thạnh-HCM
+532,Bưu Cục 270 Phan Văn Mãng- Bến Lức-Long An
+533,Bưu Cục 271 Đỗ Xuân Hợp-Q.9-HCM
+534,Bưu Cục 274 Cô Bắc-Q.1-HCM
+535,Bưu Cục 274 Hùng Vương-Chư Pưh-Gia Lai
+536,Bưu Cục 274 Hùng Vương-Tuy Hòa-Phú Yên
+537,Bưu Cục 274 Điện Biên Phủ-Duy Xuyên-Quảng Nam
+538,Bưu Cục 275 Khâm Thiên-Q.Đống Đa-HN
+539,Bưu Cục 275 Võ Văn Kiệt-Buôn Ma Thuột-Đắk Lắk
+540,Bưu Cục 275A Phan Văn Mãng-Bến Lức-Long An
+541,Bưu Cục 276 Hùng Vương-Ia Grai-Gia Lai
+542,Bưu Cục 279 Lê Duẩn-Hướng Hóa-Quảng Trị
+543,Bưu Cục 27D Mê Linh-Đà Lạt-Lâm Đồng
+544,Bưu Cục 28 Bắc Son 2-Trảng Bom-Đồng Nai
+545,Bưu Cục 28 Võ Nguyên Giáp-Điện Biên Phủ-Điện Biên
+546,Bưu Cục 28 Xuân Hồng-Bình Thuỷ-Cần Thơ
+547,Bưu Cục 280 Lê Đại Hành-Q.Cẩm Lệ-Đà Nẵng
+548,Bưu Cục 280 Trần Đăng Ninh-Sơn La-Sơn La 01
+549,Bưu Cục 280 Trần Đăng Ninh-Sơn La-Sơn La 02
+550,Bưu Cục 281 Nguyễn Hữu Cảnh-An Phú-An Giang
+551,Bưu Cục 281 Nguyễn Trãi-Hạ Long-Quảng Ninh
+552,Bưu Cục 286 Lê Lợi-Trường Sơn-Sầm Sơn-Thanh Hóa
+553,Bưu Cục 286 Nguyễn Huệ-Tân Hồng-Đồng Tháp
+554,Bưu Cục 288 Núi Thành-Q.Hải Châu-Đà Nẵng
+555,Bưu Cục 29 Hưng Phúc-Yên Sở-Q.Hoàng Mai-HN
+556,Bưu Cục 29 Nguyễn Trãi-Q.Ngô Quyền-Hải Phòng
+557,Bưu Cục 29 Ngô Gia Tự-Móng Cái-Quảng Ninh 01
+558,Bưu Cục 29 Ngô Gia Tự-Móng Cái-Quảng Ninh 02
+559,Bưu Cục 29 Trần Phú-Tuy Phong-Bình Thuận
+560,Bưu Cục 29 Xuyên Á-Dĩ An-Bình Dương
+561,Bưu Cục 290 Lý Thánh Tông-Phú Lộc-Huế
+562,Bưu Cục 291 Nguyễn Hoàng-Long Xuyên-An Giang
+563,Bưu Cục 291 Nguyễn Sơn-Q.Tân Phú-HCM
+564,Bưu Cục 291A Nguyễn Duy-Q.8-HCM
+565,Bưu Cục 292 Đinh Bộ Lĩnh-Q.Bình Thạnh-HCM
+566,Bưu Cục 292A Lý Tự Trọng-Thạch Hà-Hà Tĩnh
+567,Bưu Cục 295F Lý Thường Kiệt-Quận 11-HCM
+568,Bưu Cục 296 Trần Phú-Đức Thuận-Hồng Lĩnh-Hà Tĩnh
+569,Bưu Cục 297 Hùng Vương-CưMgar-Đắk Lắk
+570,Bưu Cục 298 Trần Điền-Định Công-Hoàng Mai-Hà Nội
+571,Bưu Cục 299 Trung Kính-Q.Cầu Giấy-HN
+572,Bưu Cục 2999 Phạm Thế Hiển-Q.8-HCM
+573,Bưu Cục 29A Đường Số 5-Q.2-HCM
+574,Bưu Cục 29D Gò Xoài-Q.Bình Tân-HCM
+575,Bưu Cục 2C Châu Văn Liêm-Ngã Bảy-Hậu Giang
+576,Bưu Cục 3 Trần Thị Liền-Nhà Bè-HCM
+577,Bưu Cục 3/2 Thị Trấn Châu Thành-Bến Tre
+578,Bưu Cục 3/38 Bạch Đằng-Q.Tân Bình-HCM
+579,Bưu Cục 3/3A Huỳnh Văn Nghệ-Bửu Long-Biên Hòa-Đồng Nai
+580,Bưu Cục 30 Hùng Vương-Hàm Tân-Bình Thuận
+581,Bưu Cục 30 Nguyễn Trãi-Phường 3-Tây Ninh
+582,Bưu Cục 30 Phố Xã Đàn-Q.Đống Đa-HN
+583,Bưu Cục 300 Tự Phước-Đà Lạt-Lâm Đồng
+584,Bưu Cục 301C Bến Bình Đông-Q.8-HCM 01
+585,Bưu Cục 303 Hoàng Hoa Thám-Q.Ba Đình-HN
+586,Bưu Cục 303 Lý Thánh Tông-Phú Lộc-Huế
+587,Bưu Cục 305 QL14-Bù Đăng-Bình Phước
+588,Bưu Cục 305 Vĩnh Khang-Chiêm Hóa-Tuyên Quang
+589,Bưu Cục 306 Hùng Vương-Bố Trạch-Quảng Bình
+590,Bưu Cục 306 Lê Duẩn-Thừa Thiên-Huế
+591,Bưu Cục 307 Phan Đình Phùng-Pleiku-Gia Lai
+592,Bưu Cục 307 Tiểu La-Q.Hải Châu-Đà Nẵng
+593,Bưu Cục 309 Nguyễn Thị Ngâu-Hóc Môn-HCM
+594,Bưu Cục 309 Đường 8/4-Thị trấn Ma Lâm-Hàm Thuận Bắc-Bình Thuận
+595,Bưu Cục 31-31A Lý Phục Man-Bình Thuận-Quận 7-HCM
+596,Bưu Cục 310 Tiểu khu 3-Hà Trung-Thanh Hóa
+597,Bưu Cục 3124 Hùng Vương-Việt Trì-Phú Thọ
+598,Bưu Cục 3156 Hùng Vương-Việt Trì-Phú Thọ
+599,Bưu Cục 316 Tỉnh Lộ 2-Củ Chi-HCM
+600,Bưu Cục 319 Nguyễn Tất Thành-M Drắk-Đắk Lắk
+601,Bưu Cục 32 Nguyễn Hữu Cảnh-Chợ Mới-An Giang
+602,Bưu Cục 320 Cách Mạng Tháng 8-Đức Linh-Bình Thuận
+603,Bưu Cục 320 Nguyễn Thị Kiểu-Hiệp Thành-Quận 12-HCM
+604,Bưu Cục 320 Đường Hùng Vương-Mai Pha-Lạng Sơn 
+605,Bưu Cục 320/12 Ngô Quyền-Cà Mau-Cà Mau
+606,Bưu Cục 321 Ngọc Hồi-Thanh Trì-Hà Nội
+607,Bưu Cục 322 Trần Phú-Xuân Lộc-Đồng Nai
+608,Bưu Cục 323 Lại Dụ An Thượng-Hoài Đức-HN
+609,Bưu Cục 325 LouisI-Q.Hoàng Mai-HN
+610,Bưu Cục 325 Trần Cung-Q.Bắc Từ Liêm-HN
+611,Bưu Cục 327 QL10-Nga Sơn-Thanh Hóa
+612,Bưu Cục 327E Lê Văn Quới-Q.Bình Tân-HCM
+613,Bưu Cục 32A Đường 23-Q.Thủ Đức-HCM
+614,Bưu Cục 32B Huyện lộ 6-TT.Kế Sách-Sóc Trăng
+615,Bưu Cục 33 Lê Duẩn-TP.Sóc Trăng
+616,Bưu Cục 33 Quang Trung-Lâm Hà-Lâm Đồng
+617,Bưu Cục 33 Đông Hưng-Ba Vì-HN
+618,Bưu Cục 33 Đặng Trần Côn-Q.Đống Đa-HN
+619,Bưu Cục 336 Võ Việt Tân-TX Cai Lậy-Tiền Giang
+620,Bưu Cục 337 Hùng Vương-Lộc Thắng-Bảo Lâm-Lâm Đồng 
+621,Bưu Cục 337 Điện Biên Phủ-Than Uyên-Lai Châu
+622,Bưu Cục 339 Đường Lam Sơn-Nông Cống-Thanh Hóa
+623,Bưu Cục 34 Nguyễn Thị Khắp-Dĩ An-Bình Dương
+624,Bưu Cục 34 Quang Trung-Eakar-Đắk Lắk
+625,Bưu Cục 34 Thành Công-Q.Ba Đình-HN
+626,Bưu Cục 34 Y Ngông-Cư M gar-Đắk Lắk
+627,Bưu Cục 34-36 Phạm Hữu Lầu-Tháp Mười-Đồng Tháp
+628,Bưu Cục 340 Nguyễn Công Phương-TP.Quảng Ngãi
+629,Bưu Cục 341 Nguyễn Tất Thành-Bảo Yên-Lào Cai
+630,Bưu Cục 342 Tôn Đức Thắng-Gia Nghĩa-Đắk Nông
+631,Bưu Cục 345C Ngô Quyền-Sơn Trà-Đà Nẵng
+632,Bưu Cục 346 Trần Phú-Xuân Lộc-Đồng Nai
+633,Bưu Cục 346 Đường 767-Vĩnh Cửu-Đồng Nai
+634,Bưu Cục 347 Trần Hưng Đạo-TP.Bà Rịa
+635,Bưu Cục 349 Xuân Phương-Q.Nam Từ Liêm-HN
+636,Bưu Cục 3499 Hùng Vương-Vân Phú-Việt Trì-Phú Thọ
+637,Bưu Cục 3499 Vân Phú-Việt Trì-Phú Thọ 01
+638,Bưu Cục 3499 Vân Phú-Việt Trì-Phú Thọ 02
+639,Bưu Cục 35 Lô I4 KĐT Yên Hoà-Q.Cầu Giấy-HN
+640,Bưu Cục 35 Lục Giàng-Cao Lộc-Lạng Sơn
+641,Bưu Cục 35/6 Phan Văn Hớn-Q.12-HCM
+642,Bưu Cục 352 Huỳnh Văn Bánh-Q.Phú Nhuận-HCM
+643,Bưu Cục 352 Lê Duẩn-Phú Thuận-Huế
+644,Bưu Cục 353 Ngô Gia Tự-TP.Bắc Ninh
+645,Bưu Cục 353A Nguyễn Thái Bình-Q.Tân Bình-HCM 01
+646,Bưu Cục 353A Nguyễn Thái Bình-Q.Tân Bình-HCM 02
+647,Bưu Cục 354 Trần Đăng Ninh-Sơn La-Sơn La
+648,Bưu Cục 355 Lê Hồng Phong-Sóc Trăng-Sóc Trăng
+649,Bưu Cục 355 Võ Tấn Đức-Tam Bình-Vĩnh Long
+650,Bưu Cục 356 Đặng Văn Dầy-Bình Thủy-Cần Thơ
+651,Bưu Cục 357 Khối Hòa Tây-Tương Dương-Nghệ An
+652,Bưu Cục 358 Đường Chi Lăng-Phù Ninh-Phú Thọ
+653,Bưu Cục 36 Bà Triệu-Vạn Ninh-Khánh Hoà
+654,Bưu Cục 36 Lý Chiêu Hoàng-Ninh Hiệp-Gia Lâm-Hà Nội
+655,Bưu Cục 36 Lý Thái Tổ- Điện Bàn- Quảng Nam
+656,Bưu Cục 36 Lý Thái Tổ-Điện Bàn-Quảng Nam
+657,Bưu Cục 361 Ba Mươi Tháng Tư-TP.Vũng Tàu
+658,Bưu Cục 365 Đường 30 Tháng 04-Ninh Kiều-Cần Thơ
+659,Bưu Cục 365A Nguyễn Tất Thành-Bắc Bình-Bình Thuận
+660,Bưu Cục 366 Hai Bà Trưng-Quảng Ngãi-Quảng Ngãi
+661,Bưu Cục 368 Lê Bình-Cái Răng-Cần Thơ
+662,Bưu Cục 369 Trần Thái Tông-TP.Thái Bình
+663,Bưu Cục 37 Bế Văn Cấm-Q.7-HCM 01
+664,Bưu Cục 37 Bế Văn Cấm-Q.7-HCM 02
+665,Bưu Cục 37 Nguyễn Tất Thành-Krông Ana-Đắk Lắk
+666,Bưu Cục 370 Lê Hồng Phong-Q.10-HCM
+667,Bưu Cục 370 Lê Hồng Phong-Q.10-HCM 02
+668,Bưu Cục 371 Nguyễn Tất Thành-Bắc Bình-Bình Thuận
+669,Bưu Cục 373 Thanh Niên-TP.Yên Bái
+670,Bưu Cục 374 Xô Viết Nghệ Tĩnh-Q.Bình Thạnh-HCM
+671,Bưu Cục 374 Âu Cơ-Q.Tây Hồ-HN
+672,Bưu Cục 376/38 Trảng Sắn-Phú Giáo-Bình Dương
+673,Bưu Cục 379 Hùng Vương-Châu Thành-Hậu Giang
+674,Bưu Cục 38 Bờ Kênh-Đông Anh-HN
+675,Bưu Cục 38 Phan Đình Phùng-Chư Sê-Gia Lai
+676,Bưu Cục 380 Ấp Tây Sơn 3-An Biên-Kiên Giang
+677,Bưu Cục 382 Lũy Bán Bích-Q.Tân Phú-HCM
+678,Bưu Cục 386 Lê Duẩn-Kiến An-Hải Phòng
+679,Bưu Cục 386 Nguyễn Văn Cừ-Bảo Lộc-Lâm Đồng
+680,Bưu Cục 38E Cây Keo-Q.Thủ Đức-HCM
+681,Bưu Cục 39 Gò Sỏi-Sóc Sơn-HN
+682,Bưu Cục 39 Hùng Vương-Diên Khánh-Khánh Hòa
+683,Bưu Cục 39 Nguyễn Huệ-Ayun Pa-Gia Lai
+684,Bưu Cục 39 Tôn Đức Thắng-TP.Bà Rịa
+685,Bưu Cục 39 Tỉnh Lộ 940-Huỳnh Hữu Nghĩa-Mỹ Tú-Sóc Trăng
+686,Bưu Cục 39 Đường 30/4-Châu Thành A-Hậu Giang
+687,Bưu Cục 390 Nguyễn Kim Cương-Tân Thạnh Đông-Củ Chi
+688,Bưu Cục 390 Phò Trạch-Phong Điền-Thừa Thiên Huế
+689,Bưu Cục 391 Lâm Quang Ky-Rạch Giá-Kiên Giang 01
+690,Bưu Cục 391 Lâm Quang Ky-Rạch Giá-Kiên Giang 03
+691,Bưu Cục 391 Nguyễn Tử Lực-Đà Lạt-Lâm Đồng
+692,Bưu Cục 393 Tôn Đức Thắng-Hòa Thành-Tây Ninh
+693,Bưu Cục 396 Cửa Đại-Hội An-Quảng Nam
+694,Bưu Cục 396 Kim Giang-Q.Thanh Xuân-HN
+695,Bưu Cục 396 Âu Cơ-Bùi Thị Xuân-Quy Nhơn-Bình Định
+696,Bưu Cục 397 Nguyễn Khang-Q.Cầu Giấy-HN
+697,Bưu Cục 4 Đường 1 Linh Tây-Q.Thủ Đức-HCM
+698,Bưu Cục 40 Nguyễn Văn Linh-Cư Jút-Đắk Nông
+699,Bưu Cục 40 Nguyễn Văn Linh-Quảng Ngãi-Quảng Ngãi
+700,Bưu Cục 40 Phúc Sơn-Hoằng Hóa-Thanh Hoá
+701,Bưu Cục 400 Lê Hồng Phong-Châu Đức-Bà Rịa Vũng Tàu
+702,Bưu Cục 400 Nguyễn Tất Thành-Bắc Bình-Bình Thuận
+703,Bưu Cục 400 Âu Cơ-Q.Tân Bình-HCM 01
+704,Bưu Cục 400 Âu Cơ-Q.Tân Bình-HCM 02
+705,Bưu Cục 400 Âu Cơ-Q.Tân Bình-HCM 03
+706,Bưu Cục 404 Lê Văn Hiến-Khuê Mỹ-Ngũ Hành Sơn-Đà Nẵng
+707,Bưu Cục 40A Quách Thị Trang-Nhơn Trạch-Đồng Nai
+708,Bưu Cục 40A Yết Kiêu-Nha Trang-Khánh Hòa
+709,Bưu Cục 41 Nguyễn Tất Thành-Long Điền-Bà Rịa Vũng Tàu
+710,Bưu Cục 41 Phố Nguyễn Khả Trạc-Q.Cầu Giấy-HN
+711,Bưu Cục 41 Tỉnh Lộ 744-Bến Cát-Bình Dương
+712,Bưu Cục 41 Đông Tác-Q.Đống Đa-HN
+713,Bưu Cục 41 đường 19/5-Đoan Hùng-Phú Thọ
+714,Bưu Cục 411 Lê Đại Hành-Kỳ Anh-Hà Tĩnh
+715,Bưu Cục 412 Nguyễn Văn Cừ-Lộc Phát-Bảo Lộc-Lâm Đồng
+716,Bưu Cục 414 Trần Hưng Đạo-Mang Yang-Gia Lai
+717,Bưu Cục 415 Hà Huy Tập-Cẩm Xuyên-Hà Tĩnh
+718,Bưu Cục 415 Nguyễn Chế Nghĩa-Gia Lộc-Hải Dương
+719,Bưu Cục 417 Hồ Chí Minh-Hương Khê-Hà Tĩnh
+720,Bưu Cục 418 Đường ĐT782-Gò Dầu-Tây Ninh
+721,Bưu Cục 42 Lý Bôn-Cà Mau-Cà Mau
+722,Bưu Cục 42 Nguyễn Du-Cam Lâm-Khánh Hoà
+723,Bưu Cục 42 Võ Thị Nhờ-Q.7-HCM
+724,Bưu Cục 424 Tên Lửa-Q.Bình Tân-HCM
+725,Bưu Cục 425D Tân Kỳ Tân Quý-Q.Tân Phú-HCM
+726,Bưu Cục 426 Lý Nhân Tông-Hương Trà-Huế
+727,Bưu Cục 426A QL1A-Sóc Trăng-Sóc Trăng
+728,Bưu Cục 427 Bình Trị Đông-Q.Bình Tân-HCM
+729,Bưu Cục 43 Nguyễn Nghiêm-Huyện Tư Nghĩa-Quảng Ngãi
+730,Bưu Cục 43 Nguyễn Nghiêm-Tư Nghĩa-Quảng Ngãi
+731,Bưu Cục 43 Trần Đăng Ninh-Ứng Hòa-HN
+732,Bưu Cục 43/04 Quốc lộ 20-Thống Nhất-Đồng Nai
+733,Bưu Cục 43/5A Đặng Thúc Vịnh-Hóc Môn-HCM
+734,Bưu Cục 430 Bắc Kạn-TP.Thái Nguyên
+735,Bưu Cục 430 Tôn Đức Thắng-Tân Phước-Thị xã La Gi-Bình Thuận
+736,Bưu Cục 44 Quang Trung-Tây Sơn-Bình Định
+737,Bưu Cục 44 Đặng Tiến Đông-Q.Đống Đa-HN
+738,Bưu Cục 443 Cao Lỗ-Đông Anh-Hà Nội
+739,Bưu Cục 444 Lê Trọng Tấn-Q.Tân Phú-HCM
+740,Bưu Cục 446 Dương Công Khi-Hóc Môn-HCM
+741,Bưu Cục 447 Phạm Văn Đồng-Bắc Từ Liêm-HN
+742,Bưu Cục 44B Nguyễn Đình Chiểu-Đạ Teh-Lâm Đồng 
+743,Bưu Cục 45 Lê Thánh Tông-Buôn Ma Thuột-Đắk Lắk
+744,Bưu Cục 45 Phan Đình Phùng-Đức Trọng-Lâm Đồng
+745,Bưu Cục 45 Trần Hưng Đạo-Thị trấn Plei Kần-Ngọc Hồi-Kon Tum
+746,Bưu Cục 45 Đường An Nhơn-Dĩ An-Bình Dương
+747,Bưu Cục 45/2b Quốc Lộ 62-Tân An-Long An 01
+748,Bưu Cục 45/2b Quốc Lộ 62-Tân An-Long An 02
+749,Bưu Cục 456 Nguyễn Kiệm-Q.Phú Nhuận-HCM
+750,Bưu Cục 46 Hàng Cháo-Q.Đống Đa-HN
+751,Bưu Cục 46 Hùng Vương-Hàm Tân-Bình Thuận
+752,Bưu Cục 46 Ngõ 192 Đại Từ-Q.Hoàng Mai-HN
+753,Bưu Cục 46 Tam Bình-Hiệp Bình Chánh-Q.Thủ Đức-HCM
+754,Bưu Cục 46/48 Kp2 Tân Hòa -Biên Hòa- Đồng Nai
+755,Bưu Cục 461 Nguyễn Văn Cừ-Buôn Ma Thuột-Đắk Lắk
+756,Bưu Cục 463 Phạm Văn Đồng-Lê Lợi-TP.KonTum-KonTum
+757,Bưu Cục 464 Âu Cơ-Q.Tây Hồ-HN
+758,Bưu Cục 466 Quốc Lộ 28-Hàm Thuận Bắc-Bình Thuận
+759,Bưu Cục 466 Đường 17 Tháng 3-Sơn Hà-Quảng Ngãi
+760,Bưu Cục 466 Đường 23/10-Nha Trang-Khánh Hòa
+761,Bưu Cục 467 TTH07-Q.12-HCM
+762,Bưu Cục 468 Quốc Lộ 20-Liên Nghĩa-Đức Trọng-Lâm Đồng
+763,Bưu Cục 46B Võ Thị Sáu- Sông Cầu- Phú Yên
+764,Bưu Cục 47 Nguyễn Xí-Q.Bình Thạnh-HCM
+765,Bưu Cục 47 Đường 882-Phú Hữu-Q.9-HCM
+766,Bưu Cục 473A Bình Giã-TP.Vũng Tàu
+767,Bưu Cục 478 Đường Tua Hai-Bình Minh-Tây Ninh
+768,Bưu Cục 48 Khúc Tréo A-Giá Rai-Bạc Liêu
+769,Bưu Cục 48 Đường 30/4-Trảng Bàng-Tây Ninh
+770,Bưu Cục 480 Ngô Quyền-Q.Sơn Trà-Đà Nẵng
+771,Bưu Cục 480F Cao Thắng - Cửu Long-Q.10-HCM
+772,Bưu Cục 480F Cao Thắng - Trường Sa-Q.3-HCM
+773,Bưu Cục 482 Đội Cấn-Q.Ba Đình-HN
+774,Bưu Cục 49 Hùng Vương-Cư M gar-Đắk Lắk
+775,Bưu Cục 499 Đinh Tiên Hoàng-TP Yên Bái-Yên Bái
+776,Bưu Cục 4A KP6-Biên Hòa-Đồng Nai
+777,Bưu Cục 4B Hùng Thắng-Hạ Long-Quảng Ninh
+778,Bưu Cục 5 Trần Hưng Đạo-Hàm Thuận Nam-Bình Thuận
+779,Bưu Cục 500B4 Đại Lộ Đồng Khởi-TP.Bến Tre
+780,Bưu Cục 503/16 Lê Thị Trung-Bình Chuẩn-TP.Thuận An-Bình Dương
+781,Bưu Cục 509 Trần Phú-TP.Hà Tĩnh
+782,Bưu Cục 509 Trần Phú-TP.Hà Tĩnh 02
+783,Bưu Cục 51 Phạm Ngọc Thạch-Ninh Hải-Ninh Thuận
+784,Bưu Cục 51 Tây Đằng-Ba Vì-HN
+785,Bưu Cục 513 Ngô Minh Loan-Hợp Minh-Yên Bái
+786,Bưu Cục 52 Phạm Văn Đồng-Núi Thành-Quảng Nam
+787,Bưu Cục 521 Trương Định-Q.Hoàng Mai-HN
+788,Bưu Cục 523 Lê Văn Lương-Q.7-HCM
+789,Bưu Cục 525 Lê Văn Hiến-Q.Ngũ Hành Sơn- Đà Nẵng
+790,Bưu Cục 53 Lãng Yên-Q.Hai Bà Trưng-HN
+791,Bưu Cục 53 Phố Đoài-Nghĩa Hưng-Nam Định
+792,Bưu Cục 53 Tôn Đức Thắng-Nghĩa Thành-Gia Nghĩa-Đắk Nông
+793,Bưu Cục 53 Tôn Đức Thắng-Tam Kỳ-Quảng Nam
+794,Bưu Cục 532 Nguyễn Nhiễm-Nghi Xuân-Hà Tĩnh
+795,Bưu Cục 533 Nguyễn Văn Cừ-Phú Quốc-Kiên Giang
+796,Bưu Cục 533 Đường Nguyễn Văn Cừ-Phú Quốc-Kiên Giang
+797,Bưu Cục 539A Lê Thị Riêng-Q.12-HCM
+798,Bưu Cục 53A2 Đường 5-Linh Tây-Q.Thủ Đức-HCM
+799,Bưu Cục 54 Hùng Vương-Năm Căn-Cà Mau
+800,Bưu Cục 54 Lưu Úc-Phù Liễn-Kiến An-Hải Phòng
+801,Bưu Cục 54 Nguyễn Văn Hưởng-Q.Long Biên-HN
+802,Bưu Cục 54 Thạch Cầu-Q.Long Biên-HN
+803,Bưu Cục 54 Đường 17 tháng 4-Tuy Phong-Bình Thuận
+804,Bưu Cục 544 Lê Thanh Nghị-TP.Hải Dương
+805,Bưu Cục 55 Trần Nguyên Hãn-Q.Lê Chân-Hải Phòng
+806,Bưu Cục 55 Trần Thị Do-Q.12-HCM
+807,Bưu Cục 551 Quang Trung-Q.Hà Đông-HN
+808,Bưu Cục 555 Nguyễn Văn Cừ-Long Biên-HN
+809,Bưu Cục 555 Nguyễn Văn Cừ-Phú Quốc-Kiên Giang
+810,Bưu Cục 558 Phạm Văn Chiêu-Q.Gò Vấp-HCM
+811,Bưu Cục 558 đường Tố Hữu-Quảng Xương-Thanh Hóa
+812,Bưu Cục 559 Trần Phú-Tuy Phước-Bình Định
+813,Bưu Cục 559 Vũ Tông Phan-Q.Thanh Xuân-HN
+814,Bưu Cục 55C Nguyễn Khoái-Q.Hai Bà Trưng-HN
+815,Bưu Cục 56 Lý Thường Kiệt-Đảo Phú Quốc-Kiên Giang
+816,Bưu Cục 56 Nguyễn Văn Cừ-Cái Khế-Ninh Kiều-Cần Thơ
+817,Bưu Cục 56 Phan Đình Phùng-Cam Ranh-Khánh Hòa
+818,Bưu Cục 56 QL56-Cẩm Mỹ-Đồng Nai
+819,Bưu Cục 56 Thùy Lĩnh-Q.Hoàng Mai-HN
+820,Bưu Cục 56 Đường 17 Tháng 3-Chư Sê-Gia Lai
+821,Bưu Cục 565 Thống Nhât-Lagi-Bình Thuận
+822,Bưu Cục 565 Trần Phú-Tuy Phước-Bình Định
+823,Bưu Cục 566 Lạc Long Quân-Q.11-HCM
+824,Bưu Cục 569 Trường Chinh-Pleiku-Gia Lai
+825,Bưu Cục 57 Chi Nê-Lạc Thuỷ-Hoà Bình
+826,Bưu Cục 57 Hạ Đình-Q.Thanh Xuân-HN 02
+827,Bưu Cục 57 Phú Khánh-Hàm Thuận Nam-Bình Thuận
+828,Bưu Cục 57 Thao Chính-Phú Xuyên-HN
+829,Bưu Cục 57 Vạn Kiếp-Đà Lạt-Lâm Đồng
+830,Bưu Cục 57/4 Phan Văn Đáng-Vĩnh Long-Vĩnh Long
+831,Bưu Cục 571 Hùng Vương-Cam Nghĩa-TP.Cam Ranh-Khánh Hoà
+832,Bưu Cục 573 Trường Chinh-Bắc Quang-Hà Giang
+833,Bưu Cục 575 Đường 22/12-Thuận An-Bình Dương
+834,Bưu Cục 575 Đường 8/4-Hàm Thuận Bắc-Bình Thuận
+835,Bưu Cục 57C Ngô Gia Tự-Bắc Bình-Bình Thuận
+836,Bưu Cục 58 Cao Thắng-Hạ Long-Quảng Ninh
+837,Bưu Cục 58 Lê Lợi-Châu Đức-Bà Rịa-Vũng Tàu
+838,Bưu Cục 58 Lý Thường Kiệt-Lệ Thủy-Quảng Bình
+839,Bưu Cục 58 Nguyễn Tất Thành-Krông Năng-Đắk Lắk
+840,Bưu Cục 58 Trương Quốc Dung-Q.Phú Nhuận-HCM
+841,Bưu Cục 58 Trần Văn Trà-Tân Châu-Tây Ninh
+842,Bưu Cục 58 Đường số 79-Q.7-HCM
+843,Bưu Cục 59 Kim Lân-Kinh Bắc-Bắc Ninh
+844,Bưu Cục 59 Trương Phước Phan-Q.Bình Tân-HCM
+845,Bưu Cục 596 ĐT 784-Dương Minh Châu Tây Ninh
+846,Bưu Cục 599 Nguyễn Văn Cừ-Hạ Long-Quảng Ninh
+847,Bưu Cục 59A Nguyễn Văn Tạo-Tân An-Long An 
+848,Bưu Cục 5B Thanh Đàm-Q.Hoàng Mai-HN
+849,Bưu Cục 5D/1 Ấp Phước Long-Long Hồ-Vĩnh Long
+850,Bưu Cục 6/318 Ngọc Trì-Q.Long Biên-HN
+851,Bưu Cục 60 Sài Đồng-Q.Long Biên-Hà Nội
+852,Bưu Cục 600 DT782 Bàu Đồn-Gò Dầu-Tây Ninh
+853,Bưu Cục 602/26 Điện Biên Phủ-Phường 12-Bình Thạnh-HCM
+854,Bưu Cục 603 Giải Phóng-Ea Hleo-Đắk Lắk
+855,Bưu Cục 605 Tổ dân phố 2B-Sông Công-Thái Nguyên
+856,Bưu Cục 607 Nguyễn Văn Linh-Long Biên-HN
+857,Bưu Cục 608 Lê Quang Định-Q.Gò Vấp-HCM 02
+858,Bưu Cục 608 Lê Quang Định-Q.Gò Vấp-HCM 03
+859,Bưu Cục 608 Phan Văn Trị-Gò Vấp-HCM
+860,Bưu Cục 608 Quốc Lộ 20 -Định Quán-Đồng Nai
+861,Bưu Cục 608 Trần Hưng Đạo-Bình Đức-TP.Long Xuyên-An Giang
+862,Bưu Cục 61 Kim Mã-Q.Ba Đình-HN
+863,Bưu Cục 61 Trường Chinh-Điện Biên Phủ-Điện Biên
+864,Bưu Cục 61 đường Trần Đăng Tuyển-Vũ Ninh-Bắc Ninh
+865,Bưu Cục 610 Nguyễn Bình-Đông Triều-Quảng Ninh
+866,Bưu Cục 612 Phan Văn Trị-Q.Gò Vấp-HCM
+867,Bưu Cục 617 Xô Viết Nghệ Tĩnh-Q.Bình Thạnh-HCM 01
+868,Bưu Cục 62 Bắc Sơn-Q.Cẩm Lệ-Đà Nẵng
+869,Bưu Cục 62 Đường 13B-Sơn Dương-Tuyên Quang
+870,Bưu Cục 621 Điện Biên Phủ-Q.Thanh Khê-Đà Nẵng
+871,Bưu Cục 629 Quốc Lộ 13-Q.Thủ Đức-HCM
+872,Bưu Cục 63 Ký Hòa-Q.5-HCM
+873,Bưu Cục 63 Lý Thái Tổ-Phủ Lý-Hà Nam
+874,Bưu Cục 63 Nguyễn Thiếp-Pleiku-Gia Lai
+875,Bưu Cục 63 Trần Thủ Độ-Điện Bàn-Quảng Nam
+876,Bưu Cục 63 Vĩnh Hội-Q.4-HCM
+877,Bưu Cục 63 Đường Bờ Sông Sét-Thịnh Liệt-Hoàng Mai-HN
+878,Bưu Cục 631 Phúc Diễn-Q.Nam Từ Liêm-HN
+879,Bưu Cục 638 Phố Cống-Ngọc Lặc-Thanh Hóa
+880,Bưu Cục 63A Trần Đình Xu-Q.1-HCM
+881,Bưu Cục 64 Hùng Vương-Thị Trấn Krông Năng-Đắk Lắk
+882,Bưu Cục 64 Nguyễn Trực-Q.Hà Đông-HN
+883,Bưu Cục 64 Trần Hưng Đạo-TP.Ninh Bình-Ninh Bình
+884,Bưu Cục 64 Đường 30/04 Vĩnh Châu-Sóc Trăng
+885,Bưu Cục 644 Nguyễn Văn Cừ-Q.Long Biên-HN
+886,Bưu Cục 65 Nguyễn Văn Thoát-TP.Bắc Kạn
+887,Bưu Cục 65 Phan Xích-Đan Phượng-HN
+888,Bưu Cục 65 Quang Trung-TP.Thái Nguyên-Thái nguyên
+889,Bưu Cục 65/1 Cao Đặng Chiếm-TX.Cai Lậy-Tiền Giang
+890,Bưu Cục 65/1E Trần Văn Mười-Hóc Môn-HCM
+891,Bưu Cục 650 Đinh Tiên Hoàng-Yên Thịnh-Yên Bái
+892,Bưu Cục 651 Đường Đồng Tâm-Đoan Hùng-Phú Thọ
+893,Bưu Cục 654B Quang Trung-Phù Mỹ-Bình Định
+894,Bưu Cục 656 Phạm Văn Đồng-Núi Thành-Quảng Nam
+895,Bưu Cục 66 Hữu Hưng-Q.Nam Từ Liêm-HN
+896,Bưu Cục 66 Nguyễn Thị Minh Khai-TP.Trà Vinh
+897,Bưu Cục 66 Nguyễn Tri Phương-Châu Phú B-TP.Châu Đốc-An Giang
+898,Bưu Cục 663 Đường 23/10-Nha Trang-Khánh Hoà
+899,Bưu Cục 67 Hai Tháng Tư-Đơn Dương-Lâm Đồng
+900,Bưu Cục 67F Hải Thượng Lãn Ông-TP.Cà Mau
+901,Bưu Cục 68 Hùng Vương-Gia Nghĩa-Đắk Nông
+902,Bưu Cục 68 Khu Ga-Chi Lăng-Lạng Sơn
+903,Bưu Cục 68 Nguyễn Văn Cừ-An Khánh-Ninh Kiều-Cần Thơ
+904,Bưu Cục 68 Quốc Lộ 1A-Trảng Bom-Đồng Nai
+905,Bưu Cục 68 Tỉnh lộ 824-Đức Hòa-Long An
+906,Bưu Cục 68 Đình Phong Phú-Q.9-HCM
+907,Bưu Cục 680 QL1-TP.Sóc Trăng
+908,Bưu Cục 684 Tỉnh Lộ 10-Q.Bình Tân-HCM
+909,Bưu Cục 685 Hùng Vương-Buôn Hồ-Đắk Lắk
+910,Bưu Cục 689 QL933-Giồng Riềng-Kiên Giang
+911,Bưu Cục 69 Hoàng Văn Thụ-Q.Phú Nhuận-HCM 01
+912,Bưu Cục 69 Phạm Ngũ Lão-Nghĩa Lộ-Yên Bái
+913,Bưu Cục 69/20E Phó Cơ Điều-TP.Vĩnh Long
+914,Bưu Cục 693 Điện Biên-TP.Nam Định 01
+915,Bưu Cục 693 Điện Biên-TP.Nam Định 02
+916,Bưu Cục 7 Hồ Hảo Hớn-Q.1-HCM
+917,Bưu Cục 7 Đường D20-Thuận An-Bình Dương
+918,Bưu Cục 7/11 Lê Thị Hà-Hóc Môn-HCM
+919,Bưu Cục 7/28 Thành Thái-P.14-Quận 10-HCM
+920,Bưu Cục 70 Lê Hồng Phong-Ninh Diêm-Ninh Hoà-Khánh Hoà
+921,Bưu Cục 70 Đường 30/4-Ea Tam-Buôn Ma Thuột-Đắk Lắk 
+922,Bưu Cục 70 Đặng Huy Trứ-Tp. Huế-Thừa Thiên Huế
+923,Bưu Cục 70 Đỗ Anh Hàn-Q.Sơn Trà-Đà Nẵng
+924,Bưu Cục 70 Đỗ Quang Thắng-Đức Phổ-Quảng Ngãi
+925,Bưu Cục 702 Lý Thái Tổ-Kỳ Anh-Hà Tĩnh
+926,Bưu Cục 71B Gò Dầu-Q.Tân Phú-HCM
+927,Bưu Cục 721 Võ Nguyên Giáp-Quảng Ngãi-Quảng Ngãi
+928,Bưu Cục 724 Tô Hiệu-Mai Sơn-Sơn La
+929,Bưu Cục 73 Lâm Úy-Ba Đồn-Quảng Bình
+930,Bưu Cục 73 Nguyễn Tất Thành-Krông Nô-Đắk Nông
+931,Bưu Cục 73 Quang Trung-TP.Tuyên Quang
+932,Bưu Cục 733 Đại Lộ Bình Dương-Thủ Dầu Một-Bình Dương
+933,Bưu Cục 74 Nguyễn Tất Thành-Hương Thủy-Huế
+934,Bưu Cục 74/15 Huỳnh Tấn Phát-TP.Tây Ninh
+935,Bưu Cục 745 Tiểu khu 13-Lương Sơn-Hòa Bình
+936,Bưu Cục 75 Trường Chinh-TP Vinh-Nghệ An
+937,Bưu Cục 75 Trường Chinh-Vinh-Nghệ An
+938,Bưu Cục 75 Đường Số 2 KDC Nguyên Sơn-Bình Hưng-Bình Chánh
+939,Bưu Cục 757 Dương Tự Minh-Phú Lương-Thái Nguyên
+940,Bưu Cục 759 Lê Thánh Tông-Hạ Long-Quảng Ninh
+941,Bưu Cục 76 Bùi Thị Cội-Dĩ An-Bình Dương
+942,Bưu Cục 76 Thác Bưởi-Tiên Lãng-Tiên Yên-Quảng Ninh
+943,Bưu Cục 76/540 KP8-Hố Nai-TP Biên Hòa-Đồng Nai
+944,Bưu Cục 767 Hùng Vương-Quy Nhơn-Bình Định
+945,Bưu Cục 77 Nguyễn Phước Thái-Q.Thanh Khê-Đà Nẵng
+946,Bưu Cục 77 Thái Dương-Phú Vang-Huế
+947,Bưu Cục 78 Nguyễn Minh Hoàng-Phường 12-Q.Tân Bình-HCM
+948,Bưu Cục 78 Tiểu khu 8-Mộc Châu-Sơn La
+949,Bưu Cục 785C Nguyễn Bình-Nhà Bè-HCM
+950,Bưu Cục 79 Quốc Lộ 1A-Giá Rai-Bạc Liêu 
+951,Bưu Cục 793 Trần Nhân Tông-Q.Kiến An-Hải Phòng
+952,Bưu Cục 796 Quang Trung-Q.Gò Vấp-HCM
+953,Bưu Cục 79A Hưng Đạo Vương-Biên Hòa-Đồng Nai
+954,Bưu Cục 7C Phường Nguyễn Trãi-Hà Giang-Hà Giang
+955,Bưu Cục 7C10 Nguyễn Phong Sắc-Cầu Giấy-Hà Nội
+956,Bưu Cục 8 Huỳnh Mẫn Đạt-Giồng Riềng-Kiên Giang
+957,Bưu Cục 8 Đình Nguyên-Đan Phượng-HN
+958,Bưu Cục 80A Dương Đình Hội-Q.9-HCM
+959,Bưu Cục 81 Nguyễn Chí Thanh-Cam Ranh-Khánh Hòa
+960,Bưu Cục 81 Ngô Mây-Cẩm Xuyên-Hà Tĩnh
+961,Bưu Cục 82 Hòn Khói-Ninh Hoà-Khánh Hoà
+962,Bưu Cục 82 Thống Nhất-Tuy Phong-Bình Thuận
+963,Bưu Cục 827 Trần Hưng Đạo-Kinh Môn-Hải Dương
+964,Bưu Cục 829 Ngô Gia Tự-Long Biên-Hà Nội
+965,Bưu Cục 83 Bis Đường CMT8-Thuận An-Bình Dương
+966,Bưu Cục 83 Bàu Cá-Trảng Bom-Đồng Nai
+967,Bưu Cục 83 Thanh Niên Xung Phong-TP.Thái Nguyên
+968,Bưu Cục 83 Đường Số 23-Q.Bắc Từ Liêm-HN
+969,Bưu Cục 839 Hoàng Lê Kha-Châu Thành-Tây Ninh
+970,Bưu Cục 84 Đặng Xuân Bảng-Đại Kim-Hoàng Mai-HNO
+971,Bưu Cục 84.04 Thanh Bình-TP.Hải Dương
+972,Bưu Cục 849 Ngô Gia Tự-Đức Giang-Long Biên-HNO
+973,Bưu Cục 849 tổ 4A-Sông Công-Thái Nguyên
+974,Bưu Cục 84A Châu Cầu-Phủ Lý-Hà Nam
+975,Bưu Cục 85 Nguyễn Tất Thành-Liên Bảo-Vĩnh Yên-Vĩnh Phúc
+976,Bưu Cục 85 Trần Kim Xuyến-Hương Sơn-Hà Tĩnh
+977,Bưu Cục 85/33 Đường Dương Thị Mười-Tân Chánh Hiệp-Quận 12-HCM
+978,Bưu Cục 852 Đường Ba Mươi Tháng Tư-Vũng Tàu - Bà Rịa-Vũng Tàu
+979,Bưu Cục 86 Lê Lợi-Tuy Hòa-Phú Yên 01
+980,Bưu Cục 86 Lê Lợi-Tuy Hòa-Phú Yên 02
+981,Bưu Cục 86 Thống nhất II-Ngan Dừa-Hồng Dân-Bạc Liêu
+982,Bưu Cục 86 Tiên Thuỷ-Châu Thành-Bến Tre
+983,Bưu Cục 86 Đường 932-Phú Tân-Châu Thành-Sóc Trăng
+984,Bưu Cục 86A Nguyễn Trãi-Vinh-Nghệ An
+985,Bưu Cục 87 Lê Văn Vị-Bình Minh-Vĩnh Long
+986,Bưu Cục 87 Lê Văn Vị-Cái Vồn-Bình Minh-Vĩnh Long
+987,Bưu Cục 87 Nguyễn An Ninh-Tp.Vũng Tàu-Bà Rịa-Vũng Tàu
+988,Bưu Cục 87 Phạm Nguyễn Du-Cửa Lò-Nghệ An
+989,Bưu Cục 87 Thạnh Xuân 21-Q.12-HCM
+990,Bưu Cục 870 Huỳnh Văn Lũy-Thủ Dầu Một-Bình Dương
+991,Bưu Cục 88 Bạch Đằng-Hoàn Kiếm-HN
+992,Bưu Cục 88 Hùng Vương-Cù Lao Dung-Sóc Trăng
+993,Bưu Cục 88 Nguyễn Khánh Toàn-Q.Cầu Giấy-HN
+994,Bưu Cục 88 Thống Nhất-Kim Thành-Hải Dương
+995,Bưu Cục 88 Ấp Thân Hòa-Thân Cửu Nghĩa-Châu Thành-Tiền Giang
+996,Bưu Cục 88/21 Phan Sào Nam-Q.Tân Bình-HCM
+997,Bưu Cục 882 Kim Giang-Thanh Trì-HN
+998,Bưu Cục 885 Tam Trinh-Q.Hoàng Mai-HN
+999,Bưu Cục 888 QL1A-Phường 2-Cai Lậy-Tiền Giang
+1000,Bưu Cục 889 Quốc Lộ 14-Đồng Xoài-Bình Phước
+1001,Bưu Cục 89 Nguyễn Thị Định-TP.Bến Tre 01
+1002,Bưu Cục 89 Nguyễn Thị Định-TP.Bến Tre 02
+1003,Bưu Cục 89 Đường Giải Phóng-Văn Lãng-Lạng Sơn
+1004,Bưu Cục 890 Nguyễn Duy Trinh-Quận 9-HCM
+1005,Bưu Cục 893 Quốc Lộ 14-Đồng Xoài-Bình Phước
+1006,Bưu Cục 8B Nguyễn Lân-Q.Thanh Xuân-HN
+1007,Bưu Cục 8F Gò Xoài-Bình Hưng Hòa A-Bình Tân-HCM
+1008,Bưu Cục 9 Hồng Bàng-Q.Bình Thạnh-HCM
+1009,Bưu Cục 90 Bà Hom-Q.6-HCM
+1010,Bưu Cục 90 Nguyễn Lương Bằng-Kim Động-Hưng Yên
+1011,Bưu Cục 90 Trần Phú-Uông Bí-Quảng Ninh
+1012,Bưu Cục 90/6B Nguyễn Ảnh Thủ-Q.12-HCM
+1013,Bưu Cục 903B Tạ Quang Bửu-Q.8-HCM
+1014,Bưu Cục 917 Võ Nguyên Giáp-Quảng Ngãi-Quảng Ngãi
+1015,Bưu Cục 92 Quốc Lộ 14-Đồng Xoài-Bình Phước
+1016,Bưu Cục 92 Tân Chánh Hiệp 03-Tân Chánh Hiệp-Quận 12-HCM
+1017,Bưu Cục 92 Đường 27-Quang Bình-Hà Giang
+1018,Bưu Cục 925 Lũy Bán Bích-Q.Tân Phú-HCM
+1019,Bưu Cục 931 Đường 30/4-Long Mỹ-Hậu Giang
+1020,Bưu Cục 933 Tôn Đức Thắng-Q.Hồng Bàng-Hải Phòng
+1021,Bưu Cục 94 Nguyễn Công Trứ-Đà Lạt-Lâm Đồng
+1022,Bưu Cục 94 Thanh Tịnh-Hòa Minh-Liên Chiểu-Đà Nẵng
+1023,Bưu Cục 945 Cách Mạng Tháng 8-Tây Ninh-Tây Ninh
+1024,Bưu Cục 95 Nguyễn Du-Vinh-Nghệ An
+1025,Bưu Cục 95 Nguyễn Thị Tươi-Tân Bình-Dĩ An-Bình Dương
+1026,Bưu Cục 955 Nguyễn Tất Thành-Hương Thủy-Thừa Thiên Huế
+1027,Bưu Cục 95A Đội Cấn-Bảo Lộc-Lâm Đồng
+1028,Bưu Cục 96/4 Trương Định-Biên Hòa-Đồng Nai 01
+1029,Bưu Cục 96/4 Trương Định-Biên Hòa-Đồng Nai 02
+1030,Bưu Cục 97 Thiên Hiền-Q.Nam Từ Liêm-HN
+1031,Bưu Cục 97 Xuân Bách-Sóc Sơn-HN
+1032,Bưu Cục 971 Nguyễn Kiệm-Q.Gò Vấp-HCM
+1033,Bưu Cục 972 Phạm Văn Đồng-Q.Dương Kinh-Hải Phòng
+1034,Bưu Cục 984 Đê La Thành-Ba Đình-HN
+1035,Bưu Cục 99 Nguyễn Khuyến-Buôn Ma Thuột-Đắk Lắk
+1036,Bưu Cục 99 Quốc Lộ 1A-Giá Rai-Bạc Liêu
+1037,Bưu Cục 992 Đường Huyện 35-Vĩnh Kim-Châu Thành-Tiền Giang
+1038,Bưu Cục A Lưới-Huế
+1039,Bưu Cục A4/18 Đường D10-Thuận An-Bình Dương
+1040,Bưu Cục A5 KDC Tân Thuận Nam-Phú Thuận-Quận 7-HCM
+1041,Bưu Cục Agtex Long Bình-Biên Hoà-Đồng Nai
+1042,Bưu Cục Aha Đang Giao Hàng
+1043,Bưu Cục An Dương 2 - Hải Phòng
+1044,Bưu Cục An Dương-Hải Phòng
+1045,Bưu Cục An Khánh-Q.Ninh Kiều-Cần Thơ
+1046,Bưu Cục An Khê-Gia Lai
+1047,Bưu Cục An Lão-Hải Phòng
+1048,Bưu Cục An Lợi Nguyễn Du-Trảng Bàng-Tây Ninh
+1049,Bưu Cục An Nhơn-An Nhơn-Bình Định
+1050,Bưu Cục An Phước- An Ngãi - Bà Rịa Vũng Tàu
+1051,Bưu Cục An Phước-Long Thành-Đồng Nai
+1052,Bưu Cục An Thạnh-Thuận An-Bình Dương
+1053,Bưu Cục Anh Sơn-Nghệ An
+1054,Bưu Cục Ayun Pa-Gia Lai
+1055,Bưu Cục B16-03 Hàm Nghi-Q.Nam Từ Liêm-HN
+1056,Bưu Cục B17 Bồ Hỏa-Q.Hà Đông-HN
+1057,Bưu Cục B2B 1 Phan Chu Trinh-TP Tam Kỳ-Quảng Nam
+1058,Bưu Cục B2B 108 Trường Chinh-TP Quảng Ngãi-Quảng Ngãi
+1059,Bưu Cục B2B 127A Nguyễn Trung Trực-TP Rạch Giá-Kiên Giang
+1060,Bưu Cục B2B 1382 Trần Hưng Đạo-TP Long Xuyên-An Giang
+1061,Bưu Cục B2B 239 Núi Thành-Hải Châu-Đà Nẵng
+1062,Bưu Cục B2B 3 Trần Hưng Đạo-TP Cà Mau-Cà Mau
+1063,Bưu Cục B2B 31 Lý Thường Kiệt-TP Buôn Ma Thuộc-Đắk Lắk
+1064,Bưu Cục B2B 425 Lê Duẩn-Thanh Khê-Đà Nẵng
+1065,Bưu Cục B2B 54 Nguyễn Trác-TP Quy Nhơn-Bình Định
+1066,Bưu Cục B2B 64 Lý Thánh Tông-TP Đồng Hới-Quảng Bình
+1067,Bưu Cục B2B 67 Lê Thành Phương-TP Nha Trang-Khánh Hòa
+1068,Bưu Cục B2B Khu Quy Hoạch Đống Đa-TP Huế-Thừa Thiên Huế
+1069,Bưu Cục B2B Khu dân cư Hùng Vương I-TP Phan Thiết-Bình Thuận
+1070,Bưu Cục B2B Khu ĐTX Vũng Chua-TP Quy Nhơn-Bình Định
+1071,Bưu Cục B2B Lô B15 KCN An Phú-TP Tuy Hòa-Phú Yên
+1072,Bưu Cục B2B Võ Nguyên Giáp QL60-TP Bến Tre-Bến Tre
+1073,Bưu Cục BBS Đang Giao Hàng
+1074,Bưu Cục BL 137 Đường 30/04-Trần Văn Thời-Cà Mau
+1075,Bưu Cục BL 291A Nguyễn Duy-Q.8-HCM
+1076,Bưu Cục Ba Hàng Đồi-Lạc Thủy-Hòa Bình
+1077,Bưu Cục Ba Tơ-Quảng Ngãi
+1078,Bưu Cục Buôn Đôn-Đắk Lắk
+1079,Bưu Cục Bàu Bàng-Bình Dương
+1080,Bưu Cục Bàu vàng 6-Hòa Khánh Bắc-Liên Chiểu-Đà Nẵng
+1081,Bưu Cục Bát Xát-Lào Cai
+1082,Bưu Cục Bê Tông-Thuỷ Xuân Tiên-Chương Mỹ-HN
+1083,Bưu Cục Bình An-DĨ An-Bình Dương
+1084,Bưu Cục Bình Chiểu 38E Cây Keo-Q.Thủ Đức-HCM
+1085,Bưu Cục Bình Chuẩn 45-Thuận An-Bình Dương
+1086,Bưu Cục Bình Gia-Lạng Sơn
+1087,Bưu Cục Bình Gia-Lạng Sơn 02
+1088,Bưu Cục Bình Gia-Lạng Sơn 03
+1089,Bưu Cục Bình Giang-Hải Dương
+1090,Bưu Cục Bình Hòa-Thuận An-Bình Dương
+1091,Bưu Cục Bình Hưng Hoà A-Bình Tân-HCM
+1092,Bưu Cục Bình Lục-Hà Nam
+1093,Bưu Cục Bình Minh-Vĩnh Long
+1094,Bưu Cục Bình Phục-Thăng Bình-Quảng Nam
+1095,Bưu Cục Bình Sơn-Long Thành-Đồng Nai
+1096,Bưu Cục Bình Sơn-Quảng Ngãi
+1097,Bưu Cục Bình Xuyên-Vĩnh Phúc
+1098,Bưu Cục Bù Nho-Phú Riềng-Bình Phước
+1099,Bưu Cục Bùi Trọng Nghĩa-Trảng Dài-Biên Hòa-Đồng Nai
+1100,Bưu Cục Bản Bó Én-Tủa Chùa-Điện Biên
+1101,Bưu Cục Bảo Lâm-Cao Bằng
+1102,Bưu Cục Bảo Lạc-Cao Bằng
+1103,Bưu Cục Bắc Sơn-Lạng Sơn
+1104,Bưu Cục Bắc Tân Uyên-Bình Dương
+1105,Bưu Cục Bắc Yên-Sơn La
+1106,Bưu Cục Bến Cát-Bình Dương
+1107,Bưu Cục Bến Cầu-Tây Ninh
+1108,Bưu Cục Bố Trạch-Quảng Bình
+1109,Bưu Cục C1/7 Lại Hùng Cường-Vĩnh Lộc B-Bình Chánh-HCM
+1110,Bưu Cục C14 Bắc Hà-Q.Nam Từ Liêm-HN
+1111,Bưu Cục Cam Lâm-Khánh Hòa
+1112,Bưu Cục Can Lộc-Hà Tĩnh
+1113,Bưu Cục Cao Bá Quát-Phường 7-Đà Lạt-Lâm Đồng
+1114,Bưu Cục Cao Bằng
+1115,Bưu Cục Cao Sơn-Chương Mỹ-HN
+1116,Bưu Cục Chánh Hội-Tân Mỹ-Đức Hòa-Long An
+1117,Bưu Cục Châu Phú-An Giang
+1118,Bưu Cục Châu Thành A-Hậu Giang
+1119,Bưu Cục Châu Thành-Bến Tre
+1120,Bưu Cục Châu Thành-Tiền Giang
+1121,Bưu Cục Châu Văn Liêm-Ô Môn-Cần Thơ
+1122,Bưu Cục Châu Ổ-Bình Sơn-Quảng Ngãi
+1123,Bưu Cục Chí Linh-Hải Dương
+1124,Bưu Cục Chúc Lý-Ngọc Hòa-Chương Mỹ-HN
+1125,Bưu Cục Chơn Thành-Bình Phước
+1126,Bưu Cục Chợ Cống-Chương Mỹ-Hà Nội
+1127,Bưu Cục Chợ Gạo-Tiền Giang
+1128,Bưu Cục Chợ Mới-An Giang
+1129,Bưu Cục Chợ Trung Tâm-Đại Từ-Thái Nguyên
+1130,Bưu Cục Chợ Vé-Ninh Giang-Hải Dương
+1131,Bưu Cục Chợ Ấp Đồn-Yên Trung-Yên Phong-Bắc Ninh
+1132,Bưu Cục Cái Bè-Tiền Giang
+1133,Bưu Cục Cái Nước-Cà Mau
+1134,Bưu Cục Cái Tắc-Phú Mỹ-Phú Tân-An Giang
+1135,Bưu Cục Cây Hẹ-Tiểu Cần-Trà Vinh
+1136,Bưu Cục Côn Đảo-Bà Rịa Vũng Tàu
+1137,Bưu Cục Cư Jút-Đắk Nông
+1138,Bưu Cục Cư Kuin-Đắk Lắk
+1139,Bưu Cục Cần Giờ-HCM
+1140,Bưu Cục Cần Đước-Long An
+1141,Bưu Cục Cầu Bươu-ThanhTrì-HN
+1142,Bưu Cục Cầu Giá Chợ Tống-Thủy Nguyên-Hải Phòng
+1143,Bưu Cục Cầu Khởi-Dương Minh Châu-Tây Ninh
+1144,Bưu Cục Cầu Thia-Nghĩa Lộ-Yên Bái
+1145,Bưu Cục Cẩm Giàng-Hải Dương
+1146,Bưu Cục Cẩm Mỹ-Đồng Nai
+1147,Bưu Cục Cẩm Thủy-Thanh Hóa
+1148,Bưu Cục Cổ Dương-Tiên Dương-Đông Anh-HNO
+1149,Bưu Cục Cổng chợ Hoàng Xá-Thanh Thủy-Phú Thọ
+1150,Bưu Cục Cột 5-Hạ Long-Quảng Ninh
+1151,Bưu Cục D20/4X Võ Văn Vân-Bình Chánh-HCM
+1152,Bưu Cục DA 1-1 Mỹ Phước-Bến Cát-Bình Dương
+1153,Bưu Cục DT 376-Ngọc Long-Yên Mỹ-Hưng Yên 
+1154,Bưu Cục DT 744-An Tây-Bến Cát-Bình Dương
+1155,Bưu Cục DT 786 Khu Phố 4-Bến Cầu-Tây Ninh
+1156,Bưu Cục DT242-Hữu Lũng-Lạng Sơn
+1157,Bưu Cục DT359-Thủy Nguyên-Hải Phòng
+1158,Bưu Cục DT9 Thạch Châu-Lộc Hà-Hà Tĩnh
+1159,Bưu Cục Diên Khánh-Khánh Hòa
+1160,Bưu Cục Diễn Châu-Nghệ An
+1161,Bưu Cục Diễn Hồng-Diễn Châu-Nghệ An
+1162,Bưu Cục Duy Tiên-Hà Nam
+1163,Bưu Cục Duyên Hải-Duyên Hải-Lào Cai
+1164,Bưu Cục Duyên Hải-Trà Vinh
+1165,Bưu Cục Dĩnh Kế- TP.Bắc Giang-Bắc Giang
+1166,Bưu Cục Dương Thị Cẩm Vân-Khóm 4-Đầm Dơi-Cà Mau
+1167,Bưu Cục E2/34D Thới Hòa-Bình Chánh-HCM
+1168,Bưu Cục Ea H leo-Đắk Lắk
+1169,Bưu Cục Ea Kar-Đắk Lắk
+1170,Bưu Cục Ea Knop-Ea Kar-Đắk Lắk
+1171,Bưu Cục Ea Phê-Krông Pắk-Đắk Lắk
+1172,Bưu Cục F5/9A Trần Văn Giàu-Bình Chánh-HCM
+1173,Bưu Cục G22 Cao Đình Độ - Phường Trường An - TP Huế
+1174,Bưu Cục Gia Lộc-Hải Dương
+1175,Bưu Cục Gia Viễn-Ninh Bình
+1176,Bưu Cục Gia Đông-Thuận Thành-Bắc Ninh
+1177,Bưu Cục Giai Phạm-Yên Mỹ-Hưng Yên
+1178,Bưu Cục Giang Biên-Long Biên-HN
+1179,Bưu Cục Giao Thủy-Nam Định
+1180,Bưu Cục Giồng Riềng-Kiên Giang
+1181,Bưu Cục Gò Công-Tiền Giang
+1182,Bưu Cục Hiệp Hòa-Hiệp Hòa-Bắc Giang
+1183,Bưu Cục Hoà Cường Bắc-Hải Châu-Đà Nẵng
+1184,Bưu Cục Hoài Nhơn-Bình Định
+1185,Bưu Cục Hoài Đức-HN
+1186,Bưu Cục Hoàng Liệt-Q.Hoàng Mai-HN
+1187,Bưu Cục Hoàng Quốc Việt-Tân Hương-Phổ Yên-Thái Nguyên
+1188,Bưu Cục Hoàng Su Phì-Hà Giang
+1189,Bưu Cục Hoàng Văn Thụ-Hoàng Mai-HN
+1190,Bưu Cục Hoàng Xá-Thanh Thuỷ-Phú Thọ
+1191,Bưu Cục Huyện Thường Tín-HN
+1192,Bưu Cục Hà Lộc-TP.Phú Thọ
+1193,Bưu Cục Hà Trung-Thanh Hóa
+1194,Bưu Cục Hà Trì-Hà Cầu-Hà Đông-HN
+1195,Bưu Cục Hàm Liêm-Hàm Thuận Bắc-Bình Thuận
+1196,Bưu Cục Hàm Thuận Bắc-Bình Thuận
+1197,Bưu Cục Hàm Thuận Nam-Bình Thuận
+1198,Bưu Cục Hàm Yên-Tuyên Quang
+1199,Bưu Cục Hòa An-Cao Bằng
+1200,Bưu Cục Hòa Lâm-Ứng Hòa-Hà Nội
+1201,Bưu Cục Hòa Phú-Buôn Ma Thuột-Đắk Lắk
+1202,Bưu Cục Hòa Thuận-Buôn Ma Thuột-Đắk Lắk
+1203,Bưu Cục Hòa Vang-Đà Nẵng
+1204,Bưu Cục Hòn Đất-Kiên Giang
+1205,Bưu Cục Hóa An-Biên Hòa-Đồng Nai
+1206,Bưu Cục Hóc Môn-HCM
+1207,Bưu Cục Hùng Sơn-Đại Từ-Thái Nguyên
+1208,Bưu Cục Hùng Vương-Nghĩa Trung-Gia Nghĩa-Đắk Nông
+1209,Bưu Cục Hưng Hà-Thái Bình
+1210,Bưu Cục Hưng Phúc-Vinh-Nghệ An
+1211,Bưu Cục Hương Lộ 2-Bình Trị Đông A-Bình Tân
+1212,Bưu Cục Hương Nộn-Tam Nông-Phú Thọ
+1213,Bưu Cục Hạ Long-Quảng Ninh
+1214,Bưu Cục Hải Hậu-Nam Định
+1215,Bưu Cục Hải Lăng-Quảng Trị
+1216,Bưu Cục Hậu Lộc-Thanh Hóa
+1217,Bưu Cục Hồng Hà-Mậu A-Văn Yên-Yên Bái
+1218,Bưu Cục Hồng Khanh-Phước Long-Phước Long-Bạc Liêu
+1219,Bưu Cục Hồng Ngự-Đồng Tháp
+1220,Bưu Cục Hồng Thái-TP.Tuyên Quang
+1221,Bưu Cục Hớn Quản-Bình Phước
+1222,Bưu Cục Hợp Hải-Lâm Thao-Phú Thọ
+1223,Bưu Cục Hữu Lũng-Lạng Sơn
+1224,Bưu Cục KCN Vĩnh Niệm-Q.Lê Chân-Hải Phòng
+1225,Bưu Cục KDC Nam Khang-Đức Thạnh-Mộ Đức-Quảng Ngãi
+1226,Bưu Cục KDC Điềm Niêm-Vĩnh Bảo-Hải Phòng
+1227,Bưu Cục KDC Đồng Chàm-Dĩ An-Bình Dương
+1228,Bưu Cục KM38-QL26-Krông Pắc-Đắk Lắk
+1229,Bưu Cục KP Mới Yên Lã-Từ Sơn-Bắc Ninh
+1230,Bưu Cục KP Phú Thứ-Tây Hòa-Phú Yên
+1231,Bưu Cục KP Quảng Phú-Phú Mỹ-Bà Rịa Vũng Tàu
+1232,Bưu Cục KP Thanh Long -Đất Đỏ-Bà Rịa Vũng Tàu
+1233,Bưu Cục KP Trảng Lớn-Phú Mỹ-Hắc Dịch-Bà Rịa Vũng Tàu
+1234,Bưu Cục KP Tân Liên-DT741-Đồng Phú-Bình Phước
+1235,Bưu Cục KP1 Quốc Lộ 13-Hớn Quản-Bình Phước
+1236,Bưu Cục KP1 Đường Nguyễn Ái Quốc-Biên Hòa-Đồng Nai
+1237,Bưu Cục KP2 Tân Hiệp-Định Quán Đồng Nai
+1238,Bưu Cục KP2 Tân Hiệp-Định Quán-Đồng Nai
+1239,Bưu Cục KP2-Nhơn Trạch-Đồng Nai
+1240,Bưu Cục KP2-Thị Trấn Ba Tri-Bến Tre
+1241,Bưu Cục KP3 QL13-Chơn Thành-Bình Phước
+1242,Bưu Cục KP3 TT Hai Riềng-Sông Hinh-Phú Yên
+1243,Bưu Cục KP3 Tầm Vu-Châu Thành-Long An
+1244,Bưu Cục KP4 Hòa Vinh- Đông Hòa- Phú Yên
+1245,Bưu Cục KP6 Vĩnh Tân-Tân Uyên-Bình Dương
+1246,Bưu Cục KT 888 QL1A-Phường 2-TX.Cai Lậy-Tiền Giang
+1247,Bưu Cục KTM 124 Sào Nam-Nghi Thu-Cửa Lò-Nghệ An
+1248,Bưu Cục Khoái Châu-Hưng Yên
+1249,Bưu Cục Khu 1 Kim Tân-Thạch Thành-Thanh Hoá
+1250,Bưu Cục Khu 1 Thị trấn Chi Nê-Lạc Thủy-Hòa Bình
+1251,Bưu Cục Khu 1-Thanh Minh-Phú Thọ
+1252,Bưu Cục Khu 10 Trường Chinh-Kim Đức-Việt Trì-Phú Thọ
+1253,Bưu Cục Khu 10 Tân Phú-Tân Sơn-Phú Thọ
+1254,Bưu Cục Khu 2-Hậu Lộc-Thanh Hóa
+1255,Bưu Cục Khu 3-Hải Hậu-Nam Định
+1256,Bưu Cục Khu 3-Phú Thọ-Phú Thọ
+1257,Bưu Cục Khu 4-Hạ Hòa-Phú Thọ
+1258,Bưu Cục Khu 4-Mường Tè-Lai Châu
+1259,Bưu Cục Khu 6 Na Sầm-Văn Lãng-Lạng Sơn
+1260,Bưu Cục Khu 6 ấp Bàu Cá-Trung Hòa-Trảng Bom-Đồng Nai
+1261,Bưu Cục Khu 6-Ninh Giang-Hải Dương
+1262,Bưu Cục Khu 7 Đường AH14-Đoan Hùng-Phú Thọ
+1263,Bưu Cục Khu Phố 1-TP.Thanh Hóa-Thanh Hóa
+1264,Bưu Cục Khu Phố 2-Thạnh Hoá-Long An
+1265,Bưu Cục Khu Phố 3-Mỏ Cày-Bến Tre
+1266,Bưu Cục Khu Phố 3-Tân Thạnh-Long An
+1267,Bưu Cục Khu Phố 4-Bắc Tân Uyên-Bình Dương
+1268,Bưu Cục Khu Phố Mỹ Ré-Như Xuân-Thanh Hoá
+1269,Bưu Cục Khu Phố Phước Thới-Đất Đỏ-Bà Rịa-Vũng Tàu
+1270,Bưu Cục Khu Phố Tân Ngọc-Phú Mỹ-Bà Rịa-Vũng Tàu
+1271,Bưu Cục Khu Phố Vạn Hạnh-Phú Mỹ-Bà Rịa Vũng Tàu
+1272,Bưu Cục Khu Phố Xuân Lưu-Đông Sơn-Thanh Hoá
+1273,Bưu Cục Khu Thành Công-Kim Bôi-Hòa Bình
+1274,Bưu Cục Khu Vực Kim Châu-An Nhơn-Bình Định
+1275,Bưu Cục Khu phố 1-Tân Phước-Tiền Giang
+1276,Bưu Cục Khu phố 11-Mường Tè-Lai Châu
+1277,Bưu Cục Khu phố 12-Mường Tè-Lai Châu
+1278,Bưu Cục Khu Đô Thị Mỹ Phong-Hoà Bình-Hoà Bình
+1279,Bưu Cục Khu Đô Thị Nam Hồng-Từ Sơn-Bắc Ninh
+1280,Bưu Cục Khu Đồng Cổng Huyện-Tam Dương-Vĩnh Phúc
+1281,Bưu Cục Khu Đồng Mong-Bình Xuyên-Vĩnh Phúc
+1282,Bưu Cục Khu Đồng Thanh-Tân Sơn-Phú Thọ
+1283,Bưu Cục Khu Đồng Đỗi-Lâm Thao-Phú Thọ
+1284,Bưu Cục Khu đô Thị Ghẽ-Cẩm Giàng-Hải Dương
+1285,Bưu Cục Khánh Yên-Văn Bàn-Lào Cai
+1286,Bưu Cục Khóm 3-Châu Thành-Trà Vinh
+1287,Bưu Cục Khóm 7-Trà Vinh-Trà Vinh
+1288,Bưu Cục Khóm 8-Cầu Kè-Trà Vinh
+1289,Bưu Cục Khúc Tréo A-Giá Rai-Bạc Liêu
+1290,Bưu Cục Khối 1-Thị trấn Con Cuông-Huyện Con Cuông-Nghệ An
+1291,Bưu Cục Khối 13-Hưng Nguyên-Nghệ An
+1292,Bưu Cục Khối 13-Quỳnh Xuân-Hoàng Mai-Nghệ An
+1293,Bưu Cục Khối 2-Yên Thành-Nghệ An
+1294,Bưu Cục Khối 3-Tân Kỳ-Nghệ An
+1295,Bưu Cục Khối 5 Quỳnh Xuân-Hoàng Mai-Nghệ An
+1296,Bưu Cục Khối 5-Quỳnh Xuân- Tx.Hoàng Mai-Nghệ An
+1297,Bưu Cục Khối 5A-Thanh Chương-Nghệ An
+1298,Bưu Cục Khối 6A-Anh Sơn-Nghệ An
+1299,Bưu Cục Khối 7 QL1A-Quỳnh Lưu-Nghệ An
+1300,Bưu Cục Khối 9-Nghi Lộc-Nghệ An
+1301,Bưu Cục Khối 9-Đô Lương-Nghệ An
+1302,Bưu Cục Khối Hợp Xuân-Quỳ Hợp-Nghệ An
+1303,Bưu Cục Khối Nam Diễn Hồng-Diễn Châu-Nghệ An
+1304,Bưu Cục Khối Quy Chính-Nam Đàn-Nghệ An
+1305,Bưu Cục Khối Tân Hương-Quỳ Châu-Nghệ An
+1306,Bưu Cục Khối Tân Minh-Nghĩa Đàn-Nghệ An
+1307,Bưu Cục Khối Đông Sơn-Quế Phong-Nghệ An
+1308,Bưu Cục Kim Sơn-Ninh Bình
+1309,Bưu Cục Kim Thành-Hải Dương
+1310,Bưu Cục Kinh Môn-Hải Dương
+1311,Bưu Cục Kiến Tường-Long An
+1312,Bưu Cục Km 24 Bảo Ái-Yên Bình-Yên Bái
+1313,Bưu Cục Km 30 Tân Hòa-Buôn Đôn-Đắk Lắk
+1314,Bưu Cục Km18-Cư Kuin-Đắk Lắk
+1315,Bưu Cục Kon Plông-Kon Tum
+1316,Bưu Cục Krông Năng-Đắk Lắk
+1317,Bưu Cục KĐT Nam Hồng-Từ Sơn-Bắc Ninh
+1318,Bưu Cục KĐT Thị Trấn Chờ yên Phong Bắc ninh
+1319,Bưu Cục Kỳ Trinh-Kỳ Anh-Hà Tĩnh
+1320,Bưu Cục L3-22 Lộ Thiên Hương-Rạch Giá-Kiên Giang
+1321,Bưu Cục LK8 3 Võ Văn Kiệt-Bà Rịa-Bà Rịa Vũng Tàu
+1322,Bưu Cục Lai Cách-Cẩm Giàng-Hải Dương
+1323,Bưu Cục Langbiang-Lạc Dương-Lâm Đồng
+1324,Bưu Cục Long Khánh-Đồng Nai
+1325,Bưu Cục Long Phước-Long Thành-Đồng Nai
+1326,Bưu Cục Long Trung-Cai Lậy-Tiền Giang
+1327,Bưu Cục Long Điền-Bà Rịa Vũng Tàu
+1328,Bưu Cục Lái Thiêu-Thuận An-Bình Dương
+1329,Bưu Cục Lâm Thao-Phú Thọ
+1330,Bưu Cục Lê Anh Xuân-Tam Kỳ-Quảng Nam
+1331,Bưu Cục Lê Hồng Phong-Liên Hiệp-Đức Trọng-Lâm Đồng
+1332,Bưu Cục Lê Hồng Phong-Đồng Tâm-Vĩnh Yên-Vĩnh Phúc
+1333,Bưu Cục Lê Qúy Đôn-Đồng Hỷ-Thái Nguyên
+1334,Bưu Cục Lê Đức Toản-Hùng Vương-Phúc Yên-Vĩnh Phúc
+1335,Bưu Cục Lô 20 Đề Thám-Cao Bằng
+1336,Bưu Cục Lô 20 Đề Thám-Cao Bằng-Cao Bằng
+1337,"Bưu Cục Lô 33, 34 Đồi Ngô-Lục Nam-Bắc Giang"
+1338,Bưu Cục Lô 46 Thủ Dầu Một-TP Lào Cai-Lào Cai
+1339,Bưu Cục Lô B2 TTTM Vĩnh Thạnh-Vĩnh Thạnh-Cần Thơ
+1340,Bưu Cục Lô C02-03 Lê Hồng Phong-An Hòa-Rạch Giá-Kiên Giang
+1341,Bưu Cục Lô DM10-6 Làng nghề Vạn Phúc-Q.Hà Đông-HN
+1342,Bưu Cục Lô L3-22 Lộ Thiên Hương-Rạch Giá-Kiên Giang
+1343,Bưu Cục Lõng Khu-Sơn Nam-Sơn Dương-Tuyên Quang
+1344,Bưu Cục Lý Nam Đế-Phổ Yên-Thái Nguyên
+1345,Bưu Cục Lý Quốc Sư-Võ Cường-Bắc Ninh
+1346,Bưu Cục Lý Văn Lâm-TP.Cà Mau-Cà Mau
+1347,Bưu Cục Lưu Quang Vũ-Trung Hòa-Cầu Giấy-HNO
+1348,Bưu Cục Lương Sơn-Hòa Bình
+1349,Bưu Cục Lương Tài-Bắc Ninh
+1350,Bưu Cục Lạc Long Quân-Đức Trọng-Lâm Đồng
+1351,Bưu Cục Lạc Thiện-Quang Sơn-Ninh Bình
+1352,Bưu Cục Lệ Thủy-Quảng Bình
+1353,Bưu Cục Lộc Ninh-Bình Phước
+1354,Bưu Cục Lộc Thái-Lộc Ninh-Bình Phước
+1355,Bưu Cục Lục Nam-Bắc Giang
+1356,Bưu Cục Lục Ngạn-Bắc Giang
+1357,Bưu Cục Mao Trung-Phượng Mao-Quế Võ-Bắc Ninh
+1358,Bưu Cục Minh Hóa-Quảng Bình
+1359,Bưu Cục Minh Hưng-TX.Chơn Thành-Bình Phước
+1360,Bưu Cục Minh Khai-Vũ Thư-Thái Bình
+1361,Bưu Cục My Điền 2-Việt Yên-Bắc Giang
+1362,Bưu Cục Mèo Vạc-Hà Giang
+1363,Bưu Cục Mê Linh-HN
+1364,Bưu Cục Mường Khương-Lào Cai
+1365,Bưu Cục Mường Nhé-Điện Biên
+1366,Bưu Cục Mường Tè-Lai Châu
+1367,Bưu Cục Mỏ Cày Nam-Bến Tre
+1368,Bưu Cục Mộ Đức-Quảng Ngãi
+1369,Bưu Cục Mộc Châu-Sơn La
+1370,Bưu Cục Mỹ Hào-Hưng Yên
+1371,Bưu Cục Mỹ Sơn-Đô Lương-Nghệ An
+1372,Bưu Cục Mỹ Thọ-Trần Quang Khải-Cao Lãnh-Đồng Tháp
+1373,Bưu Cục Mỹ Xuyên-Sóc Trăng
+1374,Bưu Cục Mỹ Đình 2-Q.Nam Từ Liêm-HN
+1375,Bưu Cục Mỹ Đức-HN
+1376,Bưu Cục NThôn Hạ-Đức Trọng-Lâm Đồng
+1377,Bưu Cục Nam Ban-Lâm Hà-Lâm Đồng
+1378,Bưu Cục Nam Sơn 2-Cẩm Phả-Quảng Ninh
+1379,Bưu Cục Nam Trực-Nam Định
+1380,Bưu Cục Nghi Xuân-Nghi Lộc-Nghệ An
+1381,Bưu Cục Nghiêm Xuân Yêm-Đại Kim-Q.Hoàng Mai-HN
+1382,Bưu Cục Nghĩa Hưng-Nam Định
+1383,Bưu Cục Nghĩa Lộ-Văn Lâm-Hưng Yên
+1384,Bưu Cục Nghĩa Đàn-Nghệ An
+1385,Bưu Cục Nghĩa Đồng-Tân Kỳ-Nghệ An
+1386,Bưu Cục Nguyễn An Ninh-Vị Thanh-Hậu Giang
+1387,Bưu Cục Nguyễn Chí Thanh-Núi Thành-Quảng Nam
+1388,Bưu Cục Nguyễn Chí Thanh-Thị Trấn Núi Thành-Quảng Nam
+1389,Bưu Cục Nguyễn Huệ-Vạn Ninh-Khánh Hoà
+1390,Bưu Cục Nguyễn Nhữ Soạn-Rừng Thông-Đông Sơn-Thanh Hóa
+1391,Bưu Cục Nguyễn Phi Khanh-Tam Thanh-Lạng Sơn
+1392,Bưu Cục Nguyễn Thị Minh Khai-Thị trấn Tân Phú-Huyện Đồng Phú-Bình Phước
+1393,Bưu Cục Nguyễn Trung Thành Khóm 1-U Minh-Cà Mau
+1394,Bưu Cục Nguyễn Văn Cưng-Rạch Gốc-Ngọc Hiển-Cà Mau
+1395,Bưu Cục Nguyễn Văn Hoan-Nho Quan-Ninh Bình
+1396,Bưu Cục Ngã 4 Phố Hòa Bình-Quảng Hòa-Cao Bằng
+1397,Bưu Cục Ngã Ba Cát Thịnh-Văn Chấn-Yên Bái
+1398,Bưu Cục Ngã Ba Cầu Mây-Phú Bình-Thái Nguyên
+1399,Bưu Cục Ngã Ba Khe-Văn Chấn-Yên Bái
+1400,Bưu Cục Ngã Ba Đắk Liêng-Huyện Lắk-Đắk Lắk
+1401,Bưu Cục Ngô Thì Nhậm-Tam Điệp-Ninh Bình
+1402,Bưu Cục Ngõ 1 Cầu Dừa-Thường Tín-HN
+1403,Bưu Cục Ngọc Hồi-Kon Tum
+1404,Bưu Cục Ngọc Long-Yên Mỹ-Hưng Yên
+1405,Bưu Cục Ngọc Lặc-Thanh Hóa
+1406,Bưu Cục Nho Quan-Ninh Bình
+1407,Bưu Cục Nhân Hiền-Hiền Giang-Thường Tín-HNO
+1408,Bưu Cục Nhân Hòa-Mỹ Hào-Hưng Yên
+1409,Bưu Cục Như Quỳnh-Văn Lâm-Hưng Yên
+1410,Bưu Cục Như Thanh-Thanh Hóa
+1411,Bưu Cục Ninh Hiệp-Gia Lâm-HN
+1412,Bưu Cục Ninh Hòa-Khánh Hòa
+1413,Bưu Cục Ninh Phước-Ninh Thuận
+1414,Bưu Cục Noong Bua-TP.Điện Biên Phủ-Điện Biên
+1415,Bưu Cục Noong Bua-Điện Biên Phủ-Điện Biên
+1416,Bưu Cục Nâm N'Jang-Đắk Song-Đắk Nông
+1417,Bưu Cục Nông Cống-Thanh Hóa
+1418,Bưu Cục Nội Duệ-Tiên Du-Bắc Ninh
+1419,Bưu Cục Phan Huy Ích-Gò Vấp-HCM
+1420,Bưu Cục Phan Rang-Ninh Thuận
+1421,Bưu Cục Phan Thiết-Bình Thuận
+1422,Bưu Cục Phan Đình Phùng-Mèo Vạc-Hà Giang
+1423,Bưu Cục Phan Đình Phùng-TT.Đức Thọ-Hà Tĩnh-
+1424,Bưu Cục Phong Nha-Bố Trạch-Quảng Bình
+1425,Bưu Cục Phong Điền-Huế
+1426,Bưu Cục Phía Bắc-Yên Thành-Nghệ An
+1427,Bưu Cục Phù Cát-Bình Định
+1428,Bưu Cục Phù Ninh-Phú Thọ
+1429,Bưu Cục Phù Yên-Sơn La
+1430,Bưu Cục Phú Bình-Thái Nguyên
+1431,Bưu Cục Phú Diễn-Q.Bắc Từ Liêm-HN
+1432,Bưu Cục Phú Hòa-Phú Yên
+1433,Bưu Cục Phú Lộc-TP.Lạng Sơn
+1434,Bưu Cục Phú Lợi-TP.Thủ Dầu Một-Bình Dương
+1435,Bưu Cục Phú Mỹ-Bà Rịa Vũng Tàu
+1436,Bưu Cục Phú Riềng-Bình Phước
+1437,Bưu Cục Phú Thủy-Phan Thiết-Bình Thuận
+1438,Bưu Cục Phú Tài-Phan Thiết-Bình Thuận
+1439,Bưu Cục Phú Tân-Cà Mau
+1440,Bưu Cục Phú Xuyên-HN
+1441,Bưu Cục Phúc La-Hà Đông-HN
+1442,Bưu Cục Phúc Thọ-HN
+1443,Bưu Cục Phúc Tiến-Phú Xuyên-HN
+1444,Bưu Cục Phúc Yên-Vĩnh Phúc
+1445,Bưu Cục Phước Hải-Long Thành-Đồng Nai
+1446,Bưu Cục Phước Kiển-Nhà Bè-HCM
+1447,Bưu Cục Phước Long-Bình Phước
+1448,Bưu Cục Phước Long-Bạc Liêu
+1449,Bưu Cục Phước Long-Lộc Hòa-Long Hồ-Vĩnh Long
+1450,Bưu Cục Phước Thiền-Nhơn Trạch-Đồng Nai
+1451,Bưu Cục Phước Tân-Biên Hòa-Đồng Nai
+1452,Bưu Cục Phước Đồng-Nha Trang-Khánh Hoà
+1453,Bưu Cục Phường Bắc Lý-Đồng Hới-Quảng Bình
+1454,Bưu Cục Phường Hà Huy Tập-Vinh-Nghệ An
+1455,Bưu Cục Phường Long Trường-Q9-HCM
+1456,Bưu Cục Phường Lái Thiêu-Thuận An-Bình Dương
+1457,Bưu Cục Phường Thanh Bình-Hải Châu-Đà Nẵng
+1458,Bưu Cục Phường Trung Kiên-Thốt Nốt-Cần Thơ
+1459,Bưu Cục Phường Tây Thạnh - Tân Phú - HCM
+1460,Bưu Cục Phượng Hoàng-Trung Đô-Vinh-Nghệ An
+1461,Bưu Cục Phạm Hùng - Phước Long - Bình Phước
+1462,Bưu Cục Phạm Văn Đồng-Pơng Đrang-Krông Búk-Đắk Lắk
+1463,Bưu Cục Phố Ba Mỏ-Thanh Sơn-Phú Thọ
+1464,Bưu Cục Phố Lê Thanh-TP Lào Cai-Lào Cai
+1465,Bưu Cục Phố Mới-Thủy Nguyên-Hải Phòng
+1466,Bưu Cục Phố Rịa-Nho Quan-Ninh Bình
+1467,Bưu Cục Phố Trung Sơn-Hoằng Hóa-Thanh Hóa
+1468,Bưu Cục Phố Trương-Thanh Miện-Hải Dương
+1469,Bưu Cục Phố Tân Giang-Lạc Sơn-Hòa Bình
+1470,Bưu Cục Phố Đức Hinh-Văn Quan-Lạng Sơn
+1471,Bưu Cục Phổ Lai-Cam Lộ-Quảng Trị
+1472,Bưu Cục Q.4-HCM
+1473,Bưu Cục Q.Cái Răng-Cần Thơ
+1474,Bưu Cục Q.Thốt Nốt-Cần Thơ
+1475,Bưu Cục QL 30-Thanh Bình-Đồng Tháp
+1476,Bưu Cục QL 6-Xã Vân Hồ-Sơn La
+1477,Bưu Cục QL1 Thôn Dy Lộc-Quảng Trạch-Quảng Bình
+1478,Bưu Cục QL10 Chợ Tổng-Thủy Nguyên-Hải Phòng
+1479,Bưu Cục QL12B-Yên Mô-Ninh Bình
+1480,Bưu Cục QL13 Minh Hưng-Chơn Thành-Bình Phước
+1481,Bưu Cục QL1A Hòa Khánh-Cái Bè-Tiền Giang
+1482,Bưu Cục QL1A Kỳ Thư-Lê Đại Hành-Kỳ Anh-Hà Tĩnh
+1483,Bưu Cục QL1A Đồng Tiến-Kỳ Đồng-Kỳ Anh-Hà Tĩnh
+1484,Bưu Cục QL1A-Hữu Lũng-Lạng Sơn
+1485,Bưu Cục QL20 Ninh Hòa-Đức Trọng-Lâm Đồng
+1486,Bưu Cục QL30 Ấp Đông Mỹ-Cao Lãnh-Đồng Tháp
+1487,Bưu Cục QL37B-Thị trấn Liễu Đề-Nghĩa Hưng-Nam Định
+1488,Bưu Cục QL38B Yên Bắc-Duy Tiên-Hà Nam
+1489,Bưu Cục QL38B Yên Khánh-Ý Yên-Nam Định
+1490,Bưu Cục QL4A-Văn Lãng-Lạng Sơn
+1491,Bưu Cục QL50 Phường 9-Mỹ Tho-Tiền Giang
+1492,Bưu Cục QL53-Vũng Liêm-Vĩnh Long
+1493,Bưu Cục QL57 KP3-Thị Trấn Chợ Lách-Bến Tre
+1494,Bưu Cục QL57-Bình Thạnh-Thạnh Phú-Bến Tre
+1495,Bưu Cục QL57-Bình Thới-Bình Đại-Bến Tre
+1496,Bưu Cục QL91-Châu Phú-An Giang
+1497,Bưu Cục QL91-Châu Thành-An Giang
+1498,Bưu Cục Quan Hóa-Thanh Hóa
+1499,Bưu Cục Quang Châu - Việt Yên - Bắc Giang
+1500,Bưu Cục Quang Trung-Vinh-Nghệ An
+1501,Bưu Cục Quy Nhơn-Bình Định
+1502,Bưu Cục Quán Triền-Nam Trực-Nam Định
+1503,Bưu Cục Quảng Hưng-TP.Thanh Hóa
+1504,Bưu Cục Quảng Khê-Đắk Glong-Đắk Nông
+1505,Bưu Cục Quảng Sơn-Đắk Glong-Đắk Nông
+1506,Bưu Cục Quảng Uyên-Cao Bằng
+1507,Bưu Cục Quảng Xương-Thanh Hóa
+1508,Bưu Cục Quận 10-HCM
+1509,Bưu Cục Quận 10-HCM02
+1510,Bưu Cục Quế Võ 2-Bắc Ninh
+1511,Bưu Cục Quế Võ-Bắc Ninh
+1512,Bưu Cục Quốc Lộ 1-Xuân Lộc-Đồng Nai
+1513,Bưu Cục Quốc Lộ 10-Yên Khánh-Ninh Bình
+1514,Bưu Cục Quốc Lộ 12B-Tân Lạc-Hoà Bình
+1515,Bưu Cục Quốc Lộ 12B-Yên Mô-Ninh Bình
+1516,Bưu Cục Quốc Lộ 14-Đức An-Đắk Song-Đăk Nông
+1517,Bưu Cục Quốc Lộ 1A Phổ Lại-Cam Lộ-Quảng Trị
+1518,Bưu Cục Quốc Lộ 1A-Khóm 5-Giá Rai-Bạc Liêu
+1519,Bưu Cục Quốc Lộ 1A-Ninh Phước-Ninh Thuận
+1520,Bưu Cục Quốc Lộ 1A-Thanh Liêm-Hà Nam
+1521,Bưu Cục Quốc Lộ 2C-Sơn Dương-Tuyên Quang
+1522,Bưu Cục Quốc Lộ 39B-Kiến Xương- Thái Bình
+1523,Bưu Cục Quốc Lộ 50-Gò Công Tây-Tiền Giang
+1524,Bưu Cục Quốc Lộ 50-Mỹ Tho-Tiền Giang
+1525,Bưu Cục Quốc Lộ 51-Biên Hòa-Đồng Nai
+1526,Bưu Cục Quốc Lộ 6-Vân Hồ-Sơn La
+1527,Bưu Cục Quốc Lộ 80-Lấp Vò-Đồng Tháp
+1528,Bưu Cục Quốc lộ 21B-Mỹ Hưng-Mỹ Lộc-Nam Định
+1529,Bưu Cục Quốc lộ 24-Kon Rẫy-Kon Tum
+1530,Bưu Cục Quỳnh Hội-Quỳnh Phụ-Thái Bình
+1531,Bưu Cục Quỳnh Lưu-Nghệ An
+1532,Bưu Cục Sìn Hồ-Lai Châu
+1533,Bưu Cục Sông Lô-Vĩnh Phúc
+1534,Bưu Cục Sơn Dương-Tuyên Quang
+1535,Bưu Cục Sơn Hà-Quảng Ngãi
+1536,Bưu Cục Sơn Thông-Phường 9-Tp.Trà Vinh-Trà Vinh
+1537,Bưu Cục Sơn Tịnh-Quảng Ngãi
+1538,Bưu Cục Số 028 Thanh Niên-Than Uyên-Lai Châu
+1539,Bưu Cục Số 1 Tân Khai-Q.Hoàng Mai-HN
+1540,Bưu Cục Số 10 Phan Huy Ích-Tân Hà-Tuyên Quang
+1541,Bưu Cục Số 13 Nguyễn Bỉnh Khiêm-Lộc Hoà-Nam Định
+1542,Bưu Cục Số 25 Khu Phú Cường-Hậu Lộc-Thanh Hóa
+1543,Bưu Cục Số 25 Đường 12-An Phú-Q.2-HCM
+1544,Bưu Cục Số 35 Phạm Văn Đồng-Tăng Bạt Hổ-Hoài Ân-Bình Định
+1545,Bưu Cục Số 7 Lê Thánh Tôn-LaGi-Bình Thuận
+1546,Bưu Cục Số 8 Lê Chí Dân-Thủ Dầu Một-Bình Dương
+1547,Bưu Cục Số 8 Phan Huy Ích-Tân Hà-Tuyên Quang
+1548,Bưu Cục Số 8 Đường Số 8 Khu Trung Tâm Hành Chính-Dĩ An-Bình Dương
+1549,Bưu Cục Số 9 Xóm Mới-Thanh Oai-HN
+1550,Bưu Cục Số Nhà 30-Mỏ Chè-Sông Công-Thái Nguyên
+1551,Bưu Cục Số nhà 03-Lốc Mới-Vụ Bản-Lạc Sơn-Hoà Bình
+1552,Bưu Cục Số nhà 109-Tô Hiệu-Mộc Châu-Sơn La
+1553,Bưu Cục Sở Dầu-Hồng Bàng-Hải Phòng
+1554,Bưu Cục T30 Nguyễn Hữu Hào-Q.4-HCM
+1555,Bưu Cục TDP  Đội Cấn-Vĩnh Tường-Vĩnh Phúc
+1556,Bưu Cục TDP 1-Mường Chà-Điện Biên
+1557,Bưu Cục TDP Ba Đình-Lâm Hà-Lâm Đồng
+1558,Bưu Cục TDP Hạ Đoạn 2-Q.Hải An-Hải Phòng
+1559,Bưu Cục TDP Lê Hồng Phong-Phú Lương-Thái Nguyên
+1560,Bưu Cục TDP Minh Phượng-Nham Biền-Bắc Giang
+1561,Bưu Cục TDP Nghĩa Đức-Thạnh Mỹ-Đơn Dương-Lâm Đồng
+1562,Bưu Cục TDP Phú Thành 3-Bảo Thắng-Lào Cai
+1563,Bưu Cục TDP Số 6-Hòa Bình-Hoà Bình
+1564,Bưu Cục TDP Thanh Bình-Lạng Giang-Bắc Giang
+1565,Bưu Cục TDP Thắng Lợi-Hương Canh-Bình Xuyên-Vĩnh Phúc
+1566,Bưu Cục TDP Trung Kiên-Định Hóa-Thái Nguyên
+1567,Bưu Cục TDP Trung Sơn-Tiền Hải-Thái Bình
+1568,Bưu Cục TDP Văn Sơn-Lập Thạch-Vĩnh Phúc
+1569,Bưu Cục TDP Đồng Lều-Yên Thế-Bắc Giang
+1570,Bưu Cục TDP Đội Cấn-Vĩnh Tường-Vĩnh Phúc
+1571,Bưu Cục TDP1 Hà Huy Tập-Cẩm Xuyên-Hà Tĩnh
+1572,Bưu Cục TDP1-Thị Trấn Hương Khê-Hương Khê-Hà Tĩnh
+1573,Bưu Cục TDP3 Thị Trấn Krông Kmart-Krông Bông-Đắk Lắk
+1574,Bưu Cục TP.Bắc Ninh
+1575,Bưu Cục TP.Cao Bằng
+1576,Bưu Cục TP.Kon Tum
+1577,Bưu Cục TP.Lai Châu
+1578,Bưu Cục TT 01 Nguyễn Tất Thành-Đắk R lấp-Đắk Nông
+1579,Bưu Cục TT 03 Trần Hưng Đạo-Krông Pắc-Đắk Lắk
+1580,Bưu Cục TT 106 Kinh Dương Vương-Phú Vang-Huế
+1581,Bưu Cục TT 137 Đường 30/04-Trần Văn Thời-Cà Mau
+1582,Bưu Cục TT 152 Hùng Vương-Ba Đồn-Quảng Bình
+1583,Bưu Cục TT 155 Quốc Lộ 80-Hòn Đất-Kiên Giang
+1584,Bưu Cục TT 155 Điện Biên Phủ-Sa Pa-Lào Cai
+1585,Bưu Cục TT 156 Đường 3 Tháng 2-Q.Hải Châu-Đà Nẵng
+1586,Bưu Cục TT 162 Trần Văn Trà-Cái Răng-Cần Thơ
+1587,Bưu Cục TT 167 Tôn Đức Thắng-Tân Châu-Tây Ninh
+1588,Bưu Cục TT 168 Ngô Quyền-Đà Lạt-Lâm Đồng
+1589,Bưu Cục TT 1702 Tỉnh Lộ 10-Tân Tạo A-Bình Tân
+1590,Bưu Cục TT 181 Trường Chinh-Điện Biên Phủ-Điện Biên
+1591,Bưu Cục TT 190 Nguyễn Sỹ Sách - Tp.Vinh-Nghệ An
+1592,Bưu Cục TT 190 Nguyễn Sỹ Sách-TP.Vinh-Nghệ An
+1593,Bưu Cục TT 195 Đường 2/4-Nha Trang-Khánh Hòa
+1594,Bưu Cục TT 2 Bis Nguyễn Thị Minh Khai-Q.1-HCM
+1595,Bưu Cục TT 204 Trần Hưng Đạo-Buôn Hồ-Đắk Lắk
+1596,Bưu Cục TT 206 A Đoàn Thị Nghiệp-Mỹ Tho-Tiền Giang 01
+1597,Bưu Cục TT 208 Võ Văn Kiệt-Buôn Ma Thuột-Đắk Lắk
+1598,Bưu Cục TT 211 Quốc Lộ 80-Kiên Lương-Kiên Giang
+1599,Bưu Cục TT 216 Nguyễn Du-An Hòa-Trảng Bàng-Tây Ninh
+1600,Bưu Cục TT 219 Yên Trung-Đức Thọ-Hà Tĩnh
+1601,Bưu Cục TT 23 Trần Phú-Ninh Sơn-Tây Ninh
+1602,Bưu Cục TT 233 Trần Khánh Dư-Tp.Kon Tum-Kon Tum
+1603,Bưu Cục TT 244 Tự Phước-Đà Lạt-Lâm Đồng 
+1604,"Bưu Cục TT 25 Phạm Văn Đồng TP.Đồng Hới, Tỉnh Quảng Bình"
+1605,Bưu Cục TT 256A Hồ Chí Minh-Hương Khê-Hà Tĩnh
+1606,Bưu Cục TT 27D Mê Linh-Đà Lạt-Lâm Đồng
+1607,Bưu Cục TT 306 Hùng Vương-Bố Trạch-Quảng Bình
+1608,Bưu Cục TT 307 Tiểu La-Q.Hải Châu-Đà Nẵng
+1609,Bưu Cục TT 310 Tiểu khu 3-Hà Trung-Thanh Hóa
+1610,Bưu Cục TT 336 Võ Việt Tân-TX Cai Lậy-Tiền Giang
+1611,Bưu Cục TT 34 Quang Trung-Eakar-Đắk Lắk
+1612,Bưu Cục TT 345C Ngô Quyền-Sơn Trà-Đà Nẵng
+1613,Bưu Cục TT 357 Khối Hòa Tây-Tương Dương-Nghệ An
+1614,Bưu Cục TT 36 Lý Thái Tổ-Điện Bàn-Quảng Nam
+1615,Bưu Cục TT 418 Đường ĐT782-Gò Dầu-Tây Ninh
+1616,Bưu Cục TT 46/48 Kp2 Tân Hòa -Biên Hòa- Đồng Nai
+1617,Bưu Cục TT 54 Hùng Vương-Năm Căn-Cà Mau
+1618,Bưu Cục TT 56 Phan Đình Phùng-Cam Ranh-Khánh Hòa
+1619,Bưu Cục TT 565 Trần Phú-Tuy Phước-Bình Định
+1620,Bưu Cục TT 57 Vạn Kiếp-Đà Lạt-Lâm Đồng
+1621,Bưu Cục TT 58 Nguyễn Tất Thành-Krông Năng-Đắk Lắk
+1622,Bưu Cục TT 596 ĐT 784-Dương Minh Châu Tây Ninh
+1623,Bưu Cục TT 621 Điện Biên Phủ-Q.Thanh Khê-Đà Nẵng
+1624,Bưu Cục TT 63A Trần Đình Xu-Q.1-HCM
+1625,Bưu Cục TT 67 Hai Tháng Tư-Đơn Dương-Lâm Đồng
+1626,Bưu Cục TT 68 Hùng Vương-Gia Nghĩa-Đắk Nông
+1627,Bưu Cục TT 75 Trường Chinh-Vinh-Nghệ An
+1628,Bưu Cục TT 7C Phường Nguyễn Trãi-Hà Giang-Hà Giang
+1629,Bưu Cục TT 82 Hòn Khói-Ninh Hoà-Khánh Hoà
+1630,Bưu Cục TT 945 Cách Mạng Tháng 8-Tây Ninh-Tây Ninh
+1631,Bưu Cục TT 972 Phạm Văn Đồng-Q.Dương Kinh-Hải Phòng
+1632,Bưu Cục TT 99 Nguyễn Khuyến-Buôn Ma Thuột-Đắk Lắk
+1633,Bưu Cục TT An Lợi Nguyễn Du-Trảng Bàng-Tây Ninh
+1634,Bưu Cục TT Bình Hưng Hoà A-Bình Tân-HCM
+1635,Bưu Cục TT Châu Thành-Tiền Giang
+1636,Bưu Cục TT Cây Hẹ-Tiểu Cần-Trà Vinh
+1637,Bưu Cục TT Côn Đảo-Bà Rịa Vũng Tàu
+1638,Bưu Cục TT Cầu Khởi-Dương Minh Châu-Tây Ninh
+1639,Bưu Cục TT Duyên Hải-Trà Vinh
+1640,Bưu Cục TT KM38-QL26-Krông Pắc-Đắk Lắk
+1641,Bưu Cục TT Khu Phố 1-TP.Thanh Hóa-Thanh Hóa
+1642,Bưu Cục TT Khu phố 1-Tân Phước-Tiền Giang
+1643,Bưu Cục TT Khóm 3-Châu Thành-Trà Vinh	
+1644,Bưu Cục TT Khóm 7-Trà Vinh-Trà Vinh
+1645,Bưu Cục TT Khối 2-Yên Thành-Nghệ An
+1646,Bưu Cục TT Khối 5 Quỳnh Xuân-Hoàng Mai-Nghệ An
+1647,Bưu Cục TT Khối 9-Nghi Lộc-Nghệ An
+1648,Bưu Cục TT Km18-Cư Kuin-Đắk Lắk
+1649,Bưu Cục TT Long Trung-Cai Lậy-Tiền Giang
+1650,Bưu Cục TT Mỹ Sơn-Đô Lương-Nghệ An
+1651,Bưu Cục TT Ngã Ba Đắk Liêng-Huyện Lắk-Đắk Lắk
+1652,Bưu Cục TT Nhật Tựu-Kim Bảng-Hà Nam
+1653,Bưu Cục TT Phía Bắc-Yên Thành-Nghệ An
+1654,Bưu Cục TT Phượng Hoàng-Trung Đô-Vinh-Nghệ An
+1655,Bưu Cục TT QL20 Ninh Hòa-Đức Trọng-Lâm Đồng
+1656,Bưu Cục TT QL38B Yên Bắc-Duy Tiên-Hà Nam
+1657,Bưu Cục TT Quốc Lộ 6-Vân Hồ-Sơn La
+1658,Bưu Cục TT Quốc lộ 24-Kon Rẫy-Kon Tum
+1659,Bưu Cục TT TDP 1-Mường Chà-Điện Biên
+1660,Bưu Cục TT Thôn 2-Tuy Đức-Đắk Nông
+1661,Bưu Cục TT Thôn 4-Di Linh-Lâm Đồng
+1662,Bưu Cục TT Thôn Chùa-Việt Yên-Bắc Giang
+1663,Bưu Cục TT Thôn Khoa Trường-Tĩnh Gia-Thanh Hóa
+1664,Bưu Cục TT Thôn Quảng Khai-Bình Xuyên-Vĩnh Phúc
+1665,Bưu Cục TT Thị Trấn Quán Hành-Nghị Lộc-Nghệ An
+1666,Bưu Cục TT Thị Trấn Đồi Ngô-Lục Nam-Bắc Giang
+1667,Bưu Cục TT Thị trấn Sông Đốc-Trần Văn Thời-Cà Mau
+1668,Bưu Cục TT Tiểu Khu 3-Mộc Châu-Sơn La
+1669,Bưu Cục TT Trảng Dài-Biên Hòa-Đồng Nai	
+1670,Bưu Cục TT Tổ 11 Đồng Tâm-Chợ Mới-Bắc Kạn
+1671,Bưu Cục TT Tổ 5 Thị Trấn Điện Biên Đông-Điện Biên Đông-Điện Biên
+1672,Bưu Cục TT Tổ 7-Bát Xát-Lào Cai
+1673,Bưu Cục TT Xã Diễn Hồng-Diễn Châu-Nghệ An
+1674,Bưu Cục TT Xóm 3/2-Nam Đàn-Nghệ An
+1675,Bưu Cục TT Xóm 6 Diễn Thịnh-Diễn Châu-Nghệ An
+1676,Bưu Cục TT Đường 3 Tháng 2 Khóm 8-Thới Bình-Cà Mau
+1677,Bưu Cục TT Đường 30/04 Khóm 4-Đầm Dơi-Cà Mau
+1678,Bưu Cục TT Đạ Rsal-Đam Rông-Lâm Đồng 
+1679,Bưu Cục TT Đắk Mil-Đắk Nông
+1680,Bưu Cục TT Đồng Khởi-Tam Đường-Lai Châu
+1681,Bưu Cục TT Ấp An Trạch-Châu Thành-Sóc Trăng
+1682,Bưu Cục TT Ấp Hậu Mỹ Phú 1-Cái Bè-Tiền Giang
+1683,Bưu Cục TT Ấp Vĩnh Bình-Châu Thành-Tiền Giang
+1684,Bưu Cục TT03 Tây Nam Linh Đàm-Q.Hoàng Mai-HN
+1685,Bưu Cục TT1 Khu tái định cư Ngọc Thụy-Long Biên-HNO
+1686,Bưu Cục TT2 Tái Định Cư-Ngọc Thụy-Long Biên-HN
+1687,Bưu Cục Tam Nông-Đồng Tháp
+1688,Bưu Cục Tam Phước-Biên Hòa-Đồng Nai
+1689,Bưu Cục Tam Đường-Lai Châu
+1690,Bưu Cục Tech
+1691,Bưu Cục Thanh Ba-Phú Thọ
+1692,Bưu Cục Thanh Hà-Hải Dương
+1693,Bưu Cục Thanh Liêm-Hà Nam
+1694,Bưu Cục Thanh Lý 100K-HCM
+1695,Bưu Cục Thanh Lý 300K-HCM
+1696,Bưu Cục Thanh Lý 500K-HCM
+1697,Bưu Cục Thanh Lý Đặc Biệt-HCM
+1698,Bưu Cục Thanh Sơn-Phú Thọ
+1699,Bưu Cục Thanh Trì-HN
+1700,Bưu Cục Thiện Vịnh-Cộng Hoà-Vụ Bản-Nam Định
+1701,Bưu Cục Thoại Sơn-An Giang
+1702,Bưu Cục Thuận Châu-Sơn La
+1703,Bưu Cục Thuận Nam-Ninh Thuận
+1704,Bưu Cục Thuận Thành-Bắc Ninh
+1705,Bưu Cục Thành Thái-Quận 10-HCM
+1706,Bưu Cục Thái Thụy-Thái Bình
+1707,Bưu Cục Tháp Mười-Đồng Tháp
+1708,Bưu Cục Thôn 02-Tuy Đức-Đắk Nông
+1709,Bưu Cục Thôn 1 Hải Hà-Quảng Ninh
+1710,Bưu Cục Thôn 1-Hải Hà-Quảng Ninh
+1711,Bưu Cục Thôn 1-Phù Vân-Phủ Lý-Hà Nam
+1712,Bưu Cục Thôn 2 Đắk Wer-Đắk R Lấp-Đắk Nông
+1713,Bưu Cục Thôn 2-Quốc Lộ 14-Bù Đăng-Bình Phước
+1714,Bưu Cục Thôn 2-Tuy Đức-Đắk Nông
+1715,Bưu Cục Thôn 24-xã Noong Hẹt-Điện Biên
+1716,Bưu Cục Thôn 4-Di Linh-Lâm Đồng
+1717,Bưu Cục Thôn 5 Vân Phúc-Phúc Thọ-HN
+1718,Bưu Cục Thôn 5-Đắk Glong-Đắk Nông
+1719,Bưu Cục Thôn 9-Phúc Thọ-HN
+1720,Bưu Cục Thôn An Khoái-Phúc Tiến-Phú Xuyên-HNO
+1721,Bưu Cục Thôn Bất Lự-Hoàn Sơn-Tiên Du-Bắc Ninh
+1722,Bưu Cục Thôn Cao Xá-Phù Cừ-Hưng Yên
+1723,Bưu Cục Thôn Cao Xá-Trần Cao-Phù Cừ-Hưng Yên  
+1724,Bưu Cục Thôn Chùa-Việt Yên-Bắc Giang
+1725,Bưu Cục Thôn Chớp-Lương Phong-Hiệp Hoà-Bắc Giang
+1726,Bưu Cục Thôn Dinh Mười-Quảng Ninh-Quảng Bình
+1727,Bưu Cục Thôn Dy Lộc-Quảng Tùng-Quảng Trạch-Quảng Bình
+1728,Bưu Cục Thôn Dầu Sơn-Cam Lâm-Khánh Hoà
+1729,Bưu Cục Thôn Hòa Bình-Sông Lô-Vĩnh Phúc
+1730,Bưu Cục Thôn Khoa Trường-Tĩnh Gia-Thanh Hóa
+1731,Bưu Cục Thôn Long Hoà-Vạn Long-Vạn Ninh-Khánh Hoà
+1732,Bưu Cục Thôn Lãng Sơn-Sông Lô-Vĩnh Phúc
+1733,Bưu Cục Thôn Lực Điền-Yên Mỹ -Hưng Yên
+1734,Bưu Cục Thôn Man Để-Yên Lạc-Vĩnh Phúc
+1735,Bưu Cục Thôn My Điền-Việt Yên-Bắc Giang
+1736,Bưu Cục Thôn Mã Tuyển 3-Mường Khương-Lào Cai
+1737,Bưu Cục Thôn Mới-Cao Dương-Thanh Oai-HNO
+1738,Bưu Cục Thôn Nam Hòa-An Dương-Hải Phòng
+1739,Bưu Cục Thôn Ngô Xá-Tiên Du-Bắc Ninh
+1740,Bưu Cục Thôn Ninh Hoà-Đức Trọng-Lâm Đồng
+1741,Bưu Cục Thôn Phú Hưng-Phú Riềng-Bình Phước
+1742,Bưu Cục Thôn Phú Mỹ-Mê Linh-HN
+1743,Bưu Cục Thôn Phổ Lại-Thanh An-Cam Lộ-Quảng Trị
+1744,Bưu Cục Thôn Phục Lễ-Bình Giang-Hải Dương
+1745,Bưu Cục Thôn Quàn-Tứ Kỳ-Hải Dương
+1746,Bưu Cục Thôn Quảng Khai-Bình Xuyên-Vĩnh Phúc
+1747,Bưu Cục Thôn Quảng Phú-A Lưới-Thừa Thiên Huế
+1748,Bưu Cục Thôn TT 5-Đắk Glong-Đắk Nông
+1749,Bưu Cục Thôn Thanh Bình 3-Đức Trọng-Lâm Đồng 
+1750,Bưu Cục Thôn Thành Long-Châu Đức-Bà Rịa Vũng Tàu
+1751,Bưu Cục Thôn Tiên Hùng-Nguyên Khê-Đông Anh-HNO
+1752,Bưu Cục Thôn Tân Hòa-Sơn Dương-Tuyên Quang
+1753,Bưu Cục Thôn Tân Lập 7-Krông Búk-Đắk Lắk
+1754,Bưu Cục Thôn Tân Lập Quốc Lộ 26-Xã Cư M'ta-M'Đrắk-Đăk Lắk
+1755,Bưu Cục Thôn Tây Sơn-Mường So-Phong Thổ-Lai Châu
+1756,Bưu Cục Thôn Tích-Hợp Châu-Tam Đảo-Vĩnh Phúc
+1757,Bưu Cục Thôn Tả Hà 3-Bảo Thắng-Lào Cai
+1758,Bưu Cục Thôn Vĩ Hạ-Lạng Sơn-Lạng Sơn
+1759,Bưu Cục Thôn Vĩ Hạ-TP Lạng Sơn-Lạng Sơn
+1760,Bưu Cục Thôn Xuân Bách-Sóc Sơn-Hà Nội
+1761,Bưu Cục Thôn Xuân Hoà 1-Ninh Hoà-Khánh Hoà
+1762,Bưu Cục Thôn Xuân Hòa 1-Phúc Yên-Vĩnh Phúc
+1763,Bưu Cục Thôn Xuân Phong Nam-An Lão-Bình Định
+1764,Bưu Cục Thôn Xuân Sơn-An Thắng-An Lão-Hải Phòng
+1765,Bưu Cục Thôn Điềm Khê-Gia Viễn-Ninh Bình
+1766,Bưu Cục Thôn Đoàn Kết-NThol Hạ-Đức Trọng-Lâm Đồng
+1767,Bưu Cục Thôn Đô Trang-Dân Lực-Triệu Sơn-Thanh Hóa
+1768,Bưu Cục Thôn Đông Phước-Phú Hòa-Phú Yên
+1769,Bưu Cục Thôn Đông-Tiền Hải-Thái Bình
+1770,Bưu Cục Thôn Đương Thắng-Kiến Thụy-Hải Phòng
+1771,Bưu Cục Thôn Đại Bái-Đại Thịnh-Mê Linh-HNO
+1772,Bưu Cục Thôn Đại Từ-Văn Lâm-Hưng Yên
+1773,Bưu Cục Thôn Đồng Cau-Cam Lâm-Khánh Hoà
+1774,Bưu Cục Thôn Ổ Chương-Lạng Giang-Bắc Giang
+1775,Bưu Cục Thăng Bình-Quảng Nam
+1776,Bưu Cục Thường Lệ-Mê Linh-HN
+1777,Bưu Cục Thạnh An-An Minh-Kiên Giang
+1778,Bưu Cục Thạnh Yên-U Minh Thượng-Kiên Giang
+1779,Bưu Cục Thắng Lợi-Thường Tín-HNO
+1780,Bưu Cục Thị Trấn Buôn Trấp-Krông A Na-Đắk Lắk
+1781,Bưu Cục Thị Trấn Cao Thượng-Tân Yên-Bắc Giang
+1782,Bưu Cục Thị Trấn Chờ-Yên Phong-Bắc Ninh
+1783,Bưu Cục Thị Trấn Cây Dương-Phụng Hiệp-Hậu Giang
+1784,Bưu Cục Thị Trấn Kép-Lạng Giang-Bắc Giang
+1785,Bưu Cục Thị Trấn Như Quỳnh-Văn Lâm-Hưng Yên
+1786,Bưu Cục Thị Trấn Phú Thứ-Tây Hoà-Phú Yên
+1787,Bưu Cục Thị Trấn Quán Hành-Nghị Lộc-Nghệ An
+1788,Bưu Cục Thị Trấn Tủa Chùa-Tủa Chùa-Điện Biên
+1789,Bưu Cục Thị Trấn Tứ Kỳ-Tứ Kỳ-Hải Dương
+1790,Bưu Cục Thị Trấn Vinh Quang-Hoàng Su Phì-Hà Giang
+1791,Bưu Cục Thị Trấn Vôi-Lạng Giang-Bắc Giang
+1792,Bưu Cục Thị Trấn Ân Thi-Ân Thi-Hưng Yên
+1793,Bưu Cục Thị Trấn Đồi Ngô-Lục Nam-Bắc Giang
+1794,Bưu Cục Thị Xã Long Mỹ-Hậu Giang
+1795,Bưu Cục Thị trấn Hàng Trạm-Yên Thủy-Hòa Bình
+1796,Bưu Cục Thị trấn Mộ Đức-Mộ Đức-Quảng Ngãi
+1797,Bưu Cục Thị trấn Nhã Nam-Tân Yên-Bắc Giang
+1798,Bưu Cục Thị trấn Phố Lu-Bảo Thắng-Lào Cai
+1799,Bưu Cục Thị trấn Phố Ràng-Bảo Yên-Lào Cai
+1800,Bưu Cục Thị trấn Sông Đốc-Trần Văn Thời-Cà Mau
+1801,Bưu Cục Thị trấn Tuần Giáo-Điện Biên
+1802,Bưu Cục Thị trấn Vĩnh Hưng-Vĩnh Hưng-Long An
+1803,Bưu Cục Thị trấn Vị Xuyên-Hà Giang
+1804,Bưu Cục Thị xã Ngã Năm-Sóc Trăng
+1805,Bưu Cục Thọ Giáo-Tân Minh-Thường Tín-HNO
+1806,Bưu Cục Thọ Xuân-Thanh Hóa
+1807,Bưu Cục Thống Nhất-Đồng Nai
+1808,Bưu Cục Thới Bình-Cà Mau
+1809,Bưu Cục Thới Hòa-Bến Cát-Bình Dương
+1810,Bưu Cục Thủ Thừa-Long An
+1811,Bưu Cục Thủy Nguyên-Hải Phòng
+1812,Bưu Cục Tiên Du-Bắc Ninh
+1813,Bưu Cục Tiên Lãng-Hải Phòng
+1814,Bưu Cục Tiên Yên-Quảng Ninh
+1815,Bưu Cục Tiểu Khu 1-Thuận Châu-Sơn La
+1816,Bưu Cục Tiểu Khu 10-Hát Lót-Mai Sơn-Sơn La
+1817,Bưu Cục Tiểu Khu 2-Nà Phặc-Ngân Sơn-Bắc Kạn
+1818,Bưu Cục Tiểu Khu 3-Mường La-Sơn La
+1819,Bưu Cục Tiểu Khu 3-Mộc Châu-Sơn La
+1820,Bưu Cục Tiểu khu 4-Yên Dũng-Bắc Giang
+1821,Bưu Cục Tiểu khu 6-Phù Yên-Sơn La
+1822,Bưu Cục Tiểu khu 9-Thuận Châu-Sơn La
+1823,Bưu Cục Tri Tôn-An Giang
+1824,Bưu Cục Triệu Sơn-Thanh Hóa
+1825,Bưu Cục Tràng Định-Lạng Sơn
+1826,Bưu Cục Trường Sơn-Hòa Vang-Đà Nẵng
+1827,Bưu Cục Trảng Dài-Biên Hòa-Đồng Nai
+1828,Bưu Cục Trần Hưng Đạo-Quỳnh Lâm-Hòa Bình
+1829,Bưu Cục Trần Văn Thời-Cà Mau
+1830,Bưu Cục Trừ Văn Thố-Bàu Bàng-Bình Dương
+1831,Bưu Cục Trực Ninh-Nam Định
+1832,Bưu Cục Tuy Phong-Bình Thuận
+1833,Bưu Cục Tuy Phước-Bình Định
+1834,Bưu Cục Tuần Giáo-Điện Biên
+1835,Bưu Cục Tân Chánh Hiệp-Quận 12-HCM
+1836,Bưu Cục Tân Châu-An Giang
+1837,Bưu Cục Tân Hiệp 04-Tân Uyên-Bình Dương
+1838,Bưu Cục Tân Hiệp-Kiên Giang
+1839,Bưu Cục Tân Hiệp-Tân Hội-Đức Trọng-Lâm Đồng
+1840,Bưu Cục Tân Hiệp-Tân Uyên-Bình Dương
+1841,Bưu Cục Tân Hòa-Buôn Ma Thuột-Đắk Lắk
+1842,Bưu Cục Tân Hưng Đông-Cái Nước-Cà Mau
+1843,Bưu Cục Tân Kiên-Bình Chánh-HCM
+1844,Bưu Cục Tân Kỳ-Nghệ An
+1845,Bưu Cục Tân Lạc-Hòa Bình
+1846,Bưu Cục Tân Lập-Cẩm Khê-Phú Thọ
+1847,Bưu Cục Tân Mai-Q.Hoàng Mai-HN
+1848,Bưu Cục Tân Nhuận Đông-Châu Thành-Đồng Tháp
+1849,Bưu Cục Tân Phú-Đồng Nai
+1850,Bưu Cục Tân Phước Khánh-Tân Uyên-Bình Dương
+1851,Bưu Cục Tân Sơn-Phú Thọ
+1852,Bưu Cục Tân Thanh-Điện Biên Phủ-Điện Biên
+1853,Bưu Cục Tân Tiến-Biên Hòa-Đồng Nai
+1854,Bưu Cục Tân Yên-Bắc Giang
+1855,Bưu Cục Tân Định-Bến Cát-Bình Dương
+1856,Bưu Cục Tân Đồng-Đồng Xoài-Bình Phước
+1857,Bưu Cục Tây Sơn-Bình Định
+1858,Bưu Cục Tôn Đức Thắng-Phổ Yên-Thái Nguyên
+1859,Bưu Cục Tùng Lâm-Nghi Sơn-Thanh Hoá
+1860,Bưu Cục Tăng Nhơn Phú B-Q.9-HCM
+1861,Bưu Cục Tĩnh Gia-Thanh Hóa
+1862,Bưu Cục Tỉnh Lộ 744-Bến Cát-Bình Dương
+1863,Bưu Cục Tỉnh Lộ 835-Cần Giuộc-Long An
+1864,Bưu Cục Tỉnh Lộ 868-Phú Cường-Cai Lậy-Tiền Giang
+1865,Bưu Cục Tỉnh lộ 919-Thạnh Phú-Cờ Đỏ-Cần Thơ
+1866,Bưu Cục Tổ 1 Đường 30/4-Trà Ôn-Vĩnh Long
+1867,Bưu Cục Tổ 1-Mường Nhé-Điện Biên
+1868,Bưu Cục Tổ 10 Nam Cường-TP Lào Cai-Lào Cai
+1869,Bưu Cục Tổ 10 Trần Phú-TP.Lào Cai-Lào Cai
+1870,Bưu Cục Tổ 11 Đồng Tâm-Chợ Mới-Bắc Kạn
+1871,Bưu Cục Tổ 2 QL14-Đồng Xoài-Bình Phước
+1872,Bưu Cục Tổ 2 TT. Trạm Tấu-Trạm Tấu-Yên Bái
+1873,Bưu Cục Tổ 2 Xã Mường Nhé-Mường Nhé-Điện Biên
+1874,Bưu Cục Tổ 2 Ấp 5 Xuân Tâm-Xuân Lộc-Đồng Nai
+1875,Bưu Cục Tổ 2-Mường Nhé-Điện Biên
+1876,Bưu Cục Tổ 26 Nguyễn Tất Thành-TP.Yên Bái-Yên Bái
+1877,Bưu Cục Tổ 3 Khu Chiến Thắng-Chương Mỹ-HN
+1878,Bưu Cục Tổ 3 Thị trấn Đức An-Đắk Song-Đắk Nông
+1879,Bưu Cục Tổ 3-Mường Nhé-Điện Biên
+1880,Bưu Cục Tổ 4 KP 8-Tân Uyên-Bình Dương
+1881,Bưu Cục Tổ 4 KP7 767- Vĩnh Cửu-Đồng Nai
+1882,Bưu Cục Tổ 4 ĐT741-Phú Riềng-Bình Phước
+1883,Bưu Cục Tổ 4-Mèo Vạc-Hà Giang
+1884,Bưu Cục Tổ 4-Thị trấn Nguyên Bình-Cao Bằng
+1885,Bưu Cục Tổ 5 Giang Biên-Long Biên-HN
+1886,Bưu Cục Tổ 5 Thị Trấn Điện Biên Đông-Điện Biên Đông-Điện Biên
+1887,Bưu Cục Tổ 5 Đường Ngô Gia Tự-Khánh Vĩnh-Khánh Hòa
+1888,Bưu Cục Tổ 5-Điện Biên Đông-Điện Biên
+1889,Bưu Cục Tổ 7-Bát Xát-Lào Cai
+1890,Bưu Cục Tổ Dân Phố 2-Ninh Hoà-Khánh Hoà
+1891,Bưu Cục Tổ Dân Phố Yên Tập-Mỹ Hào-Hưng Yên
+1892,Bưu Cục Tổ dân phố Lê Hồng Phong-Phú Lương-Thái Nguyên
+1893,Bưu Cục Tỗ 17 Mường Thanh-TP.ĐIện Biên Phủ-Điện Biên
+1894,Bưu Cục Tủa Chùa-Điện Biên
+1895,Bưu Cục Từ Sơn-Bắc Ninh
+1896,Bưu Cục U Minh-Cà Mau
+1897,Bưu Cục Uyên Hưng-Tân Uyên-Bình Dương
+1898,Bưu Cục Việt Quang-Hà Giang 01
+1899,Bưu Cục Việt Quang-Hà Giang 02
+1900,Bưu Cục Việt Yên-Bắc Giang
+1901,Bưu Cục Vân Hà-Đông Anh-HN
+1902,Bưu Cục Vân Nam-Phúc Thọ-HN
+1903,Bưu Cục Võ Nhai-Thái Nguyên
+1904,Bưu Cục Võ Ninh-Quảng Ninh-Quảng Bình
+1905,Bưu Cục Võ Tấn Phát-Sa Đéc-Đồng Tháp
+1906,Bưu Cục Võ Văn Tần-Vĩnh Hưng-Long An
+1907,Bưu Cục Văn Bình-Thường Tín-HN
+1908,Bưu Cục Văn Giang-Hưng Yên
+1909,Bưu Cục Văn Lâm-Hưng Yên
+1910,Bưu Cục Văn Lãng-Lạng Sơn
+1911,Bưu Cục Văn Quan-Lạng Sơn
+1912,Bưu Cục Văn Quan-Lạng Sơn 02
+1913,Bưu Cục Văn Quan-Lạng Sơn 03
+1914,Bưu Cục Văn Quán-Q.Hà Đông-HN
+1915,Bưu Cục Vĩnh Hưng-Q.Hoàng Mai-HN
+1916,Bưu Cục Vĩnh Hải-Nguyễn Đức Cảnh-Đông Triều-Quảng Ninh
+1917,Bưu Cục Vĩnh Lộc A-Bình Chánh-HCM
+1918,Bưu Cục Vĩnh Lộc-Thanh Hóa
+1919,Bưu Cục Vĩnh Niệm-Lê Chân-Hải Phòng
+1920,Bưu Cục Vĩnh Phước QL63-Vĩnh Thuận-Kiên Giang
+1921,Bưu Cục Vĩnh Thanh-Nhơn Trạch-Đồng Nai
+1922,Bưu Cục Vĩnh Trụ-Lý Nhân-Hà Nam
+1923,Bưu Cục Vũ Thư-Thái Bình
+1924,Bưu Cục Vạn Ninh-Khánh Hòa
+1925,Bưu Cục Vụ Bản-Nam Định
+1926,Bưu Cục Xoài Xiêm-Ngãi Xuyên-Trà Cú-Trà Vinh
+1927,Bưu Cục Xuyên Mộc-Bà Rịa Vũng Tàu
+1928,Bưu Cục Xuân Lai-Gia Bình-Bắc Ninh
+1929,Bưu Cục Xuân Phú A-Yên Dũng-Bắc Giang
+1930,Bưu Cục Xuân Trường-Nam Định
+1931,Bưu Cục Xã 10-Bù Đăng-Bình Phước
+1932,Bưu Cục Xã An Thắng-An Lão-Hải Phòng
+1933,Bưu Cục Xã Bàu Đồn-Gò Dầu-Tây Ninh
+1934,Bưu Cục Xã Cửa Cạn-Phú Quốc-Kiên Giang
+1935,Bưu Cục Xã Diễn Hồng-Diễn Châu-Nghệ An
+1936,Bưu Cục Xã Hương Lâm-Hiệp Hòa-Bắc Giang
+1937,Bưu Cục Xã Long Giao-Cẩm Mỹ-Đồng Nai
+1938,Bưu Cục Xã Mường Giàng-Quỳnh Nhai-Sơn La
+1939,Bưu Cục Xã Nam Chính-Đức Linh-Bình Thuận
+1940,Bưu Cục Xã Nghĩa Đồng-Tân Kỳ-Nghệ An
+1941,Bưu Cục Xã Ngũ Hiệp-Thanh Trì-HN
+1942,Bưu Cục Xã Nhật Tựu-Kim Bảng-Hà Nam
+1943,Bưu Cục Xã Quyết Thắng-TP.Thái Nguyên-Thái Nguyên
+1944,Bưu Cục Xã Quỳnh Giang-Quỳnh Lưu-Nghệ An
+1945,Bưu Cục Xã Thạnh Phú-Vĩnh Cữu-Đồng Nai
+1946,Bưu Cục Xã Thống Nhất-Hưng Hà-Thái Bình
+1947,Bưu Cục Xã Tân Hưng-Vĩnh Bảo-Hải Phòng
+1948,Bưu Cục Xã Tân Phú-Tân Kỳ-Nghệ An
+1949,Bưu Cục Xã Tân Tiến-Văn Giang-Hưng Yên
+1950,Bưu Cục Xã Xuân Lai-Gia Bình Bắc Ninh
+1951,Bưu Cục Xã Đức Liễu-Bù Đăng-Bình Phước
+1952,Bưu Cục Xóm 15 Xã Nghi Lâm-Nghi Lộc-Nghệ An
+1953,Bưu Cục Xóm 2 Thụy Sơn-Thái Thụy-Thái Bình
+1954,Bưu Cục Xóm 3-Tân Kỳ-Nghệ An
+1955,Bưu Cục Xóm 3/2-Nam Đàn-Nghệ An
+1956,Bưu Cục Xóm 4 TT Nước Hai-Hòa An-Cao Bằng
+1957,Bưu Cục Xóm 4-Giao Yến-Giao Thuỷ-Nam Định
+1958,Bưu Cục Xóm 5-Quỳnh Giang-Quỳnh Lưu-Nghệ An
+1959,Bưu Cục Xóm 6 Diễn Thịnh-Diễn Châu-Nghệ An
+1960,Bưu Cục Xóm 6-Nước Hai-Hòa An-Cao Bằng
+1961,Bưu Cục Xóm 8 Quỳnh Hậu-Quỳnh Lưu-Nghệ An
+1962,Bưu Cục Xóm Cây Bòng-La Hiên-Võ Nhai-Thái Nguyên
+1963,Bưu Cục Xóm Nhì-Vụ Bản-Nam Định
+1964,Bưu Cục Xóm Sơn Trung-Phổ Yên-Thái Nguyên
+1965,Bưu Cục Xóm Trảng Bông-Bình Sơn-Quảng Ngãi
+1966,Bưu Cục Xóm Xuân Đình-Diễn Hồng-Diễn Châu-Nghệ An
+1967,Bưu Cục Xóm Đoàn Kết-Nam Hòa-Đồng Hỷ-Tỉnh Thái Nguyên
+1968,Bưu Cục Yên Dũng-Bắc Giang
+1969,Bưu Cục Yên Hạnh-Nga Sơn-Thanh Hóa
+1970,Bưu Cục Yên Khánh-Ninh Bình
+1971,Bưu Cục Yên Lập-Phú Thọ
+1972,Bưu Cục Yên Mô-Ninh Bình
+1973,Bưu Cục Yên Mỹ-Hưng Yên
+1974,Bưu Cục Yên Nghĩa-Q.Hà Đông-HN
+1975,Bưu Cục Yên Phong-Bắc Ninh
+1976,Bưu Cục Yên Thành-Nghệ An
+1977,Bưu Cục Yên Thế-Bắc Giang
+1978,Bưu Cục Yên Định-Thanh Hóa
+1979,Bưu Cục xã Đinh Trang Hoà-Di Linh-Lâm Đồng
+1980,Bưu Cục Ý Yên-Nam Định
+1981,Bưu Cục Đa Tốn-Gia Lâm-HN
+1982,Bưu Cục Đang Giao Hàng
+1983,Bưu Cục Điềm Khê-Gia Viễn-Ninh Bình
+1984,Bưu Cục Điện Biên Đông-Điện Biên
+1985,Bưu Cục Điện Bàn-Quảng Nam
+1986,Bưu Cục Đoan Hùng-Phú Thọ
+1987,Bưu Cục Đào Viên-Quế Võ-Bắc Ninh
+1988,Bưu Cục Đào Xá-Lương Tài-Bắc Ninh
+1989,Bưu Cục Đình Lập-Lạng Sơn
+1990,Bưu Cục Đò Quan-Cửa Nam-Nam Định
+1991,Bưu Cục Đô Lương-Nghệ An
+1992,Bưu Cục Đông Anh-HN
+1993,Bưu Cục Đông Hòa-Phú Yên
+1994,Bưu Cục Đông Hưng-Thái Bình
+1995,Bưu Cục Đông Triều-Quảng Ninh
+1996,Bưu Cục Đơn Dương-Lâm Đồng
+1997,"Bưu Cục Đường 10 tháng 6, Khu 4-Yên Định-Thanh Hóa"
+1998,Bưu Cục Đường 188 Mạo Khê-Đông Triều-Quảng Ninh
+1999,Bưu Cục Đường 20/8-Phương Độ-TP.Hà Giang-Hà Giang
+2000,Bưu Cục Đường 24 Mao Trung-Quế Võ-Bắc Ninh
+2001,Bưu Cục Đường 24A-Đức Hòa-Long An
+2002,Bưu Cục Đường 25/5 Thị Trấn Thanh Hà-Hải Dương
+2003,Bưu Cục Đường 261-Bắc Sơn-Phổ Yên-Thái Nguyên
+2004,Bưu Cục Đường 3 Tháng 2 Khóm 8-Thới Bình-Cà Mau
+2005,Bưu Cục Đường 30/04 Khóm 4-Đầm Dơi-Cà Mau
+2006,Bưu Cục Đường 30/6 QL1A-Tp.Ninh Bình-Ninh Bình
+2007,Bưu Cục Đường 743B-Thuận An-Bình Dương
+2008,Bưu Cục Đường Ba Mươi Tháng Tư-Trảng Bàng-Tây Ninh
+2009,Bưu Cục Đường DL16-Bến Cát-Bình Dương
+2010,Bưu Cục Đường DT741-Phú Riềng-Bình Phước
+2011,Bưu Cục Đường F325-Đồng Hới-Quảng Bình
+2012,Bưu Cục Đường Giải Phóng-Mường Khương-Lào Cai
+2013,Bưu Cục Đường Hoàng Văn Thụ-Tràng Định-Lạng Sơn
+2014,Bưu Cục Đường Huyện 21-Thới Lai-Cần Thơ
+2015,Bưu Cục Đường Hà Huy Giáp-Cờ Đỏ-Cần Thơ
+2016,Bưu Cục Đường Hùng Vương-Bảo Lâm-Lâm Đồng
+2017,Bưu Cục Đường NH17-Hòa Phú-Thủ Dầu Một-Bình Dương
+2018,Bưu Cục Đường Ninh Hiệp-Gia Lâm-HN
+2019,Bưu Cục Đường Núi Đôi-Sóc Sơn-HN
+2020,Bưu Cục Đường TL769-Long Thành-Đồng Nai
+2021,Bưu Cục Đường Trần Lê-Cát Tiên-Lâm Đồng 
+2022,Bưu Cục Đường Trần Tự Khánh-Mỹ Lộc-Nam Định
+2023,Bưu Cục Đường Tân Phước Khánh 13-Tân Uyên-Bình Dương
+2024,Bưu Cục Đường Tỉnh 827-Tầm Vu-Châu Thành-Long An
+2025,Bưu Cục Đường Tỉnh 978-Hồng Dân-Bạc Liêu
+2026,Bưu Cục Đường Võ Nguyên Giáp-Biên Hòa-Đồng Nai
+2027,Bưu Cục Đường số 6-Biên Hòa-Đồng Nai
+2028,Bưu Cục Đường tỉnh 986B Khóm 2-Phú Tân-Cà Mau
+2029,Bưu Cục Đường tỉnh lộ 854-Châu Thành-Đồng Tháp
+2030,Bưu Cục Đường Đại Huề-Chi Lăng-Lạng Sơn
+2031,Bưu Cục Đạ Huoai-Lâm Đồng
+2032,Bưu Cục Đạ Rsal-Đam Rông-Lâm Đồng 
+2033,Bưu Cục Đại Học Quốc Gia-Thủ Đức-HCM
+2034,Bưu Cục Đại Lộ CSEDP-TP.Thanh Hóa
+2035,Bưu Cục Đại Nghĩa-Mỹ Đức-HN
+2036,Bưu Cục Đại Từ-Thái Nguyên
+2037,Bưu Cục Đảo Cát Hải-Hải Phòng
+2038,Bưu Cục Đảo Kiên Hải-Kiên Giang
+2039,Bưu Cục Đảo Lý Sơn-Quảng Ngãi
+2040,Bưu Cục Đảo Phú Quý-Bình Thuận
+2041,Bưu Cục Đảo Vân Đồn-Quảng Ninh
+2042,Bưu Cục Đầm Dơi-Cà Mau
+2043,Bưu Cục Đắk Mil-Đắk Nông
+2044,Bưu Cục Đắk Song-Đắk Nông
+2045,Bưu Cục Đặng Châu Tuệ-Cao Xanh-Hạ Long-Quảng Ninh
+2046,Bưu Cục Định Quán-Đồng Nai
+2047,Bưu Cục Đồng Hỷ-Thái Nguyên
+2048,Bưu Cục Đồng Khởi-Tam Đường-Lai Châu
+2049,Bưu Cục Đồng Xuân-Thanh-Ba Phú Thọ
+2050,Bưu Cục Đội 1 Liên Phương-TP.Hưng Yên-Hưng Yên
+2051,Bưu Cục Đội 2 Tiền Phong-Thường Tín-HN
+2052,Bưu Cục Đức Cơ-Gia Lai
+2053,Bưu Cục Đức Huệ-Long An
+2054,Bưu Cục Đức Hòa-Long An
+2055,Bưu Cục Ảo 190 Nguyễn Sỹ Sách-TP.Vinh-Nghệ An
+2056,Bưu Cục Ấp 1 Long Giao-Cẩm Mỹ-Đồng Nai
+2057,Bưu Cục Ấp 1 QL61-Châu Thành A-Hậu Giang
+2058,Bưu Cục Ấp 1 Suối Nhum-Phú Mỹ-Bà Rịa-Vũng Tàu
+2059,Bưu Cục Ấp 1 Đường Tân Châu-Tân Châu-Tây Ninh
+2060,Bưu Cục Ấp 2-Phú Nhuận-Bến Tre
+2061,Bưu Cục Ấp 2/5-Cần Giuộc-Long An
+2062,Bưu Cục Ấp 3 -Thạnh Trị-Sóc Trăng
+2063,Bưu Cục Ấp 4-Long Hoà-Cần Đước-Long An
+2064,Bưu Cục Ấp 4-Thới Bình-Thới Bình-Cà Mau
+2065,"Bưu Cục Ấp 8, Xã Minh Hưng, Huyện Chơn Thành, Tỉnh Bình Phước "
+2066,Bưu Cục Ấp 8-Châu Thành-Bến Tre
+2067,Bưu Cục Ấp 8-Xuân Tây-Cẩm Mỹ-Đồng Nai
+2068,Bưu Cục Ấp An Trạch-Châu Thành-Sóc Trăng
+2069,Bưu Cục Ấp Bến Đình-Xã Phú Đông-Nhơn Trạch-Đồng Nai
+2070,Bưu Cục Ấp Chợ-Cù Lao Dung-Sóc Trăng
+2071,Bưu Cục Ấp Cây Hẹ-Phú Cần-Tiểu Cần-Trà Vinh
+2072,Bưu Cục Ấp Hậu Mỹ Phú 1-Cái Bè-Tiền Giang
+2073,Bưu Cục Ấp Khúc Tréo B-Tân Phong-Giá Rai-Bạc Liêu
+2074,Bưu Cục Ấp Lê Bát-Phú Quốc-Kiên Giang
+2075,Bưu Cục Ấp Lê Bát-Đảo Phú Quốc-Kiên Giang
+2076,Bưu Cục Ấp Lủy-Phước Lại-Cần Giuộc-Long An
+2077,Bưu Cục Ấp Mới 1-Đức Hòa-Long An
+2078,Bưu Cục Ấp Mới 2-Đức Hòa-Long An
+2079,Bưu Cục Ấp Năm Hải-Giồng Riềng-Kiên Giang
+2080,Bưu Cục Ấp Phú Thiện-Xuyên Mộc-Bà Rịa Vũng Tàu
+2081,Bưu Cục Ấp Phú Thọ-Xuyên Mộc-Bà Rịa Vũng Tàu
+2082,Bưu Cục Ấp Phước Lăng-Long Điền-Bà Rịa Vũng Tàu
+2083,Bưu Cục Ấp Phước Sơn-Phú Mỹ-Bà Rịa Vũng Tàu
+2084,Bưu Cục Ấp Thanh Hòa-Mỏ Cày Bắc-Bến Tre
+2085,Bưu Cục Ấp Thuận An-Gò Công-Tiền Giang
+2086,Bưu Cục Ấp Thị Tứ-Thị Trấn Phong Điền-Cần Thơ
+2087,Bưu Cục Ấp Tân Hòa-Tân Biên-Tây Ninh
+2088,Bưu Cục Ấp Tân Thanh B-Cần Giuộc-Long An
+2089,Bưu Cục Ấp Tân Thuận-Bình Tân-Vĩnh Long 
+2090,Bưu Cục Ấp Việt Kiều QL1A-Xuân Lộc-Đồng Nai
+2091,Bưu Cục Ấp Vĩnh Bình-Châu Thành-Tiền Giang
+2092,Bưu Cục Ấp Xa Mau 2-Thạnh Trị-Sóc Trăng
+2093,Bưu Cục Ứng Hòa-HN
+2094,Bưu cục 05 Lê Công Phép - Bình Tân - HCM
+2095,Bưu cục 08/126 Phố Giắt-Triệu Sơn-Thanh Hóa
+2096,Bưu cục 1056 Quang Trung -Chánh Lộ -Quảng Ngãi
+2097,Bưu cục 10B đường Nguyễn Hiền-Dĩ An-Bình Dương
+2098,Bưu cục 1106A Tỉnh lộ 10-Q.Bình Tân-HCM
+2099,Bưu cục 111A Phạm Văn Hai-Q.Tân Bình-HCM
+2100,Bưu cục 1143 Lê Lợi-Tân Uyên-Lai Châu
+2101,Bưu cục 116 Nguyễn Lương Bằng-Q.Liên Chiểu-Đà Nẵng
+2102,Bưu cục 116A Phạm Văn Đồng-Q.Cầu giấy-HN
+2103,Bưu cục 125 Hùng Vương-Bố Trạch-Quảng Bình
+2104,Bưu cục 126 Hoàng Ngân-Q.Cầu giấy-HN
+2105,Bưu cục 137 Tuệ Tĩnh-Văn Yên-Yên Bái
+2106,Bưu cục 1479 Trần Phú-Lộc Châu-Bảo Lộc-Lâm Đồng
+2107,Bưu cục 148 Trâu Quỳ-Gia Lâm-HN
+2108,Bưu cục 165 đường 26 Tháng 3-Ô Môn-Cần Thơ
+2109,Bưu cục 171 Đồng Cam-Thạch Thất-Hà Nội
+2110,Bưu cục 176 Gò Dưa-Thủ Đức-HCM
+2111,Bưu cục 181 Đường số 5 P.Bình Hưng Hoà-Q.Bình Tân-Hồ Chí Minh
+2112,Bưu cục 185 Nguyễn Tất Thành-Lục Yên-Yên Bái
+2113,Bưu cục 19 Đường 422-Hoài Đức-Hà Nội
+2114,Bưu cục 193 Lý Tự Trọng-Thạch Hà-Hà Tĩnh
+2115,Bưu cục 1A38 Trần Văn Giàu-Bình Chánh-HCM
+2116,Bưu cục 213 Xô Viết Nghệ Tĩnh-Q.Bình Thạnh-HCM
+2117,Bưu cục 219 Khu Phố 1-Như Thanh-Thanh Hóa
+2118,Bưu cục 220 - 222 Phan Trọng Tuệ-ThanhTrì-HN
+2119,Bưu cục 227 Hùng Vương-Lệ Thủy-Quảng Bình
+2120,Bưu cục 235 Hùng Vương-Quế Sơn-Quảng Nam
+2121,Bưu cục 236A Nguyễn Huệ-Đak Đoa-Gia Lai
+2122,Bưu cục 253 Phạm Văn Đồng-Q.Bắc Từ Liêm-Hà Nội
+2123,Bưu cục 27 Nguyễn Du-Tam Kỳ-Quảng Nam
+2124,Bưu cục 27 Nguyễn Tất Thành-Tuy Hòa-Phú Yên
+2125,Bưu cục 285A Nguyễn Văn Tăng-Q.9-HCM
+2126,Bưu cục 293 Nguyễn Đệ-Ninh Kiều-Cần Thơ
+2127,Bưu cục 296 đường Ỷ Lan-Gia Lâm-HN
+2128,Bưu cục 299 Phố Vác-Thanh Oai-HN
+2129,Bưu cục 303 Đào Duy Từ-Thắng Lợi-Kon Tum
+2130,Bưu cục 32 đường 3-Q.Bình Tân-HCM
+2131,Bưu cục 327A Cách Mạng Tháng 8-Pleiku-Gia Lai
+2132,Bưu cục 338 Tiểu La-Thăng Bình-Quảng Nam
+2133,Bưu cục 34 Lê Lợi-Sông Hinh-Phú Yên
+2134,Bưu cục 34 Thụy Khuê-Q.Tây Hồ-HN
+2135,Bưu cục 345 Lê Duẩn-Đông Hà-Quảng Trị
+2136,Bưu cục 36 TT9 KĐT Văn Phú-Q.Hà Đông-HN
+2137,Bưu cục 365 Quang Trung-Ba Đồn-Quảng Bình
+2138,Bưu cục 396 Hai Tháng Tư-Đơn Dương-Lâm Đồng
+2139,Bưu cục 41 Trần Quốc Vượng-Q.Cầu giấy-HN
+2140,Bưu cục 44 Việt Bắc-TP.Thái Nguyên-Thái nguyên
+2141,Bưu cục 442 Nguyễn Trãi-Q.Thanh Xuân-HN
+2142,Bưu cục 446 Bạch Đằng-Q.Hoàn Kiếm-HN
+2143,Bưu cục 47 Trần Hưng Đạo-Hàm Thuận Nam-Bình Thuận
+2144,Bưu cục 480F Cao Thắng - Điện Biên Phủ Quận 3 -HCM
+2145,Bưu cục 489 Trần Phú-TP. Bạc Liêu-Bạc Liêu
+2146,Bưu cục 499 Phạm Văn Đồng-Pleiku-Gia Lai
+2147,Bưu cục 4B Đền Lừ 2-Q.Hoàng Mai-HN
+2148,Bưu cục 545 Lưu Nhân Trú-TP.Thái Nguyên-Thái Nguyên
+2149,Bưu cục 58 Vũ Tông Phan-Q.2-HCM
+2150,Bưu cục 60 Hùng Vương-Hải Lăng-Quảng Trị
+2151,Bưu cục 602 Hà Huy Tập-Gia Lâm-HN
+2152,Bưu cục 61 Tôn Đức Thắng-Tiên Phước-Quảng Nam
+2153,Bưu cục 661 Hoàng Văn Thái-Hiệp Hòa-Bắc Giang
+2154,Bưu cục 67 Điện Biên-TX.Nghĩa Lộ-Yên Bái
+2155,Bưu cục 706 Phan Châu Trinh-Tam Kỳ-Quảng Nam
+2156,Bưu cục 73 Lê Lợi-Chư Pah-Gia Lai
+2157,Bưu cục 75 CMT8-Thái Nguyên-Thái Nguyên
+2158,Bưu cục 753 Lũy Bán Bích-Q.Tân Phú-HCM
+2159,Bưu cục 77 Lê Lợi-Triệu Sơn-Thanh Hóa
+2160,Bưu cục 78 Khúc thừa dụ-Q.cầu giấy-HN
+2161,Bưu cục 78 Đường số 4-Q.7-HCM
+2162,Bưu cục 79 Lê Lợi-Ba Đồn-Quảng Bình
+2163,Bưu cục 794 Quang Trung-Thanh Hóa-Thanh Hóa
+2164,Bưu cục 8.03-TT8 Xuân Phương-Q.Nam Từ Liêm-HN
+2165,Bưu cục 835B Quốc Lộ 20-Đức Trọng-Lâm Đồng
+2166,Bưu cục 896 Minh Khai-Q.Hai Bà Trưng-HN
+2167,Bưu cục 91 Nguyễn Khang-Q.Cầu Giấy-HN
+2168,Bưu cục 977 Lê Văn Lương-Nhà Bè-HCM
+2169,Bưu cục AB22 QH1 Nguyễn Văn Trỗi-Lâm Hà-Lâm Đồng
+2170,Bưu cục An Lộc-Bình Long-Bình Phước
+2171,Bưu cục BL Vùng TTB-Trung Trung Bộ
+2172,Bưu cục Cẩm Thành-Cẩm Phả-Quảng Ninh 01
+2173,Bưu cục Cẩm Thành-Cẩm Phả-Quảng Ninh 02
+2174,Bưu cục Cẩm Thạch-Cẩm Phả-Quảng Ninh
+2175,Bưu cục Cống Kè-Gia Lâm-Hà Nội
+2176,Bưu cục Cửa Nhì-Văn Chấn-Yên Bái
+2177,Bưu cục Cửa Ông-Cẩm Phả-Quảng Ninh
+2178,Bưu cục D1-D39 KDC VietSing-An Phú-Thuận An-Bình Dương
+2179,Bưu cục DT707-Hàm Thuận Nam-Bình Thuận
+2180,Bưu cục FTL KTG Bình Dương
+2181,Bưu cục FTL KTG Hà Nội
+2182,Bưu cục FTL Nextco Bình Tân-HCM
+2183,Bưu cục FTL Nextco Dĩ An-Bình Dương
+2184,Bưu cục FTL Nextco Gềnh Ráng-Quy Nhơn-Bình Định
+2185,Bưu cục FTL Nextco Hoài Nhơn-Bình Định
+2186,Bưu cục FTL Nextco Hoàng Mai-HN
+2187,Bưu cục FTL Nextco Hàm Thuận Bắc-Bình Thuận
+2188,Bưu cục FTL Nextco Hòa Vang-Đà Nẵng
+2189,Bưu cục FTL Nextco Phù Cát-Bình Định
+2190,Bưu cục FTL Nextco Phước Hải-Nha Trang
+2191,Bưu cục FTL Nextco Q9-HCM
+2192,Bưu cục FTL Nextco TP Phan Rang-Tháp Chàm-Ninh Thuận
+2193,Bưu cục FTL Nextco TP Quy Nhơn-Bình Định
+2194,Bưu cục FTL Nextco TP Tuy Hòa-Phú Yên
+2195,Bưu cục FTL Nextco TP.Quảng Ngãi-Quảng Ngãi
+2196,Bưu cục Hiệp Phước-Nhơn Trạch-Đồng Nai
+2197,Bưu cục Hội Nghĩa-Tân Uyên-Bình Dương
+2198,Bưu cục Khu 4-Quan Hoá-Thanh Hoá
+2199,Bưu cục Khu Phố 1-Bỉm Sơn-Thanh Hoá
+2200,Bưu cục Khu Phố 2-Bình Xuyên-Vĩnh Phúc
+2201,Bưu cục Khu phố 1-Tân Phước - Tiền Giang 
+2202,Bưu cục Khu vực Qui Thạnh 1-Thốt Nốt-Cần Thơ
+2203,Bưu cục Khu đô thị Quán Chiền-Nam Dương-Nam Trực-Nam Định
+2204,Bưu cục L11-72 đường 49-Bình Thuỷ-Cần Thơ
+2205,Bưu cục Long Phụng-Chương Mỹ-HN
+2206,Bưu cục Long Thạnh Mỹ-Q9-HCM
+2207,Bưu cục Lạc Thiện-Kim Sơn-Ninh Bình
+2208,Bưu cục Lộc Bình-Lạng Sơn
+2209,Bưu cục Ngô Thỳ Sỹ - Đà Lạt - Lâm Đồng
+2210,Bưu cục Ngọc Hồi-Thanh Trì-HN
+2211,Bưu cục QL12B-Nho Quan-Ninh Bình
+2212,Bưu cục QL38B-Duy Tiên-Hà Nam
+2213,Bưu cục QL4B-Đình Lập-Lạng Sơn
+2214,Bưu cục QL50-Bình Chánh-HCM
+2215,Bưu cục Quốc Lộ 21A-Kim Bảng-Hà Nam
+2216,Bưu cục Quốc Oai-HN
+2217,Bưu cục Sóc Sơn-Hn
+2218,Bưu cục Số 54/1 Đường Tân Phước Khánh 13-Tân Uyên-Bình Dương
+2219,Bưu cục TDP Vàng-Việt Yên-Bắc Giang
+2220,Bưu cục TECH GHN 02
+2221,Bưu cục TT 125 Hùng Vương-Bố Trạch-Quảng Bình
+2222,Bưu cục TT 213 Xô Viết Nghệ Tĩnh-Q.Bình Thạnh-HCM
+2223,Bưu cục TT 58 Vũ Tông Phan-Q.2-HCM
+2224,Bưu cục TT 61 Tôn Đức Thắng-Tiên Phước-Quảng Nam
+2225,Bưu cục TT 661 Hoàng Văn Thái-Hiệp Hòa-Bắc Giang
+2226,Bưu cục TT 77 Lê Lợi-Triệu Sơn-Thanh Hóa
+2227,Bưu cục TT 926 Lê Hồng Phong-Bình Thuỷ-Cần Thơ
+2228,Bưu cục TT Long Thạnh Mỹ-Q9-HCM
+2229,Bưu cục TT Ngô Thỳ Sỹ - Đà Lạt - Lâm Đồng
+2230,Bưu cục TT Thị trấn Chũ - Lục Ngạn - Bắc Giang
+2231,Bưu cục TT Xã Tam Hồng-Yên Lạc-Vĩnh Phúc
+2232,Bưu cục Thanh Oai-HN
+2233,Bưu cục Thôn 6-Ba Vì-HN
+2234,Bưu cục Thôn Liên Trung - Tân Hà - Lâm Đồng
+2235,Bưu cục Thôn Đông-Ba Vì-Hà Nội
+2236,Bưu cục Thạch Hòa-Thạch Thất-Hà Nội
+2237,Bưu cục Thắng Lợi-Thường Tín-HN
+2238,Bưu cục Thị Trấn Bình Gia-Bình Gia-Lạng Sơn
+2239,Bưu cục Thị Trấn Liên Hương-Tuy Phong-Bình Thuận
+2240,Bưu cục Thị trấn Chũ - Lục Ngạn - Bắc Giang
+2241,Bưu cục Thị trấn Cờ Đỏ-Cờ Đỏ-Cần Thơ
+2242,Bưu cục Thị trấn Di Lăng-Sơn Hà-Quảng Ngãi
+2243,Bưu cục Thọ Quang-Sơn Trà-Đà Nẵng
+2244,Bưu cục Tiểu Khu 6-Yên Châu-Sơn La
+2245,Bưu cục Tiểu Khu Yên Hạnh 1-Nga Sơn-Thanh Hoá
+2246,Bưu cục Trâu Quỳ-Gia Lâm-HN
+2247,Bưu cục Tân Thanh-Văn Lãng-Lạng Sơn
+2248,Bưu cục Tân Tiến-Chương Mỹ-HN
+2249,Bưu cục Tân Đông Hiệp-Dĩ An-Bình Dương
+2250,Bưu cục Tổ 12-Kênh Dương-Lê Chân-Hải Phòng
+2251,Bưu cục Tổ 2 Phố Lu-Bảo Thắng-Lào Cai
+2252,Bưu cục Tổ 3-Cẩm Phả-Quảng Ninh
+2253,Bưu cục Xuân Thới Thượng-Hóc Môn-HCM
+2254,Bưu cục Xã Tam Hồng-Yên Lạc-Vĩnh Phúc
+2255,Bưu cục Xóm 11B-Xuân Vinh-Xuân Trường-Nam Định
+2256,Bưu cục Yên Xá-Thanh Trì-HN
+2257,Bưu cục Đinh Văn-Lâm Hà-Lâm Đồng
+2258,Bưu cục Đường 23 Tháng 8-TP.Bạc Liêu-Bạc Liêu
+2259,Bưu cục Đồng Đăng-Cao Lộc-Lạng Sơn
+2260,Bưu cục đường B39 KDC 91B Giai đoạn 03-Ninh Kiều-Cần Thơ
+2261,Bưu cục Ấp 5A Thị Trấn Giồng Trôm-Giồng Trôm-Bến Tre
+2262,Bạc Liêu
+2263,Bắc Giang
+2264,Bắc Kạn
+2265,Bắc Ninh
+2266,Bến Tre
+2267,CTO-VinMart+-101ADuongQuangTrung
+2268,CTO-VinMart+-107TranBinhTrong  
+2269,CTO-VinMart+-108A/3Duong3/2
+2270,CTO-VinMart+-119-121DeTham
+2271,CTO-VinMart+-120CachMangThang8
+2272,CTO-VinMart+-134ADuong3thang2
+2273,CTO-VinMart+-142TranVietChau
+2274,CTO-VinMart+-15ACMT8 
+2275,CTO-VinMart+-15AMauThan
+2276,CTO-VinMart+-16/9LeHongPhong
+2277,CTO-VinMart+-163/D1NguyenVanCu
+2278,CTO-VinMart+-183BuiHuuNghia
+2279,CTO-VinMart+-184LyTuTrong  
+2280,CTO-VinMart+-1BDinhTienHoang
+2281,CTO-VinMart+-1BTranQuangKhai
+2282,"CTO-VinMart+-21-22VoNguyenGiap,DieuHien"
+2283,CTO-VinMart+-211/1Duong3/2
+2284,CTO-VinMart+-216Duong3/2
+2285,CTO-VinMart+-228MTranHungDao
+2286,CTO-VinMart+-29-31DuongA3
+2287,CTO-VinMart+-29VoTruongToan
+2288,CTO-VinMart+-37/8BLeHongPhong
+2289,CTO-VinMart+-38VoVanKiet
+2290,CTO-VinMart+-404/12NguyenVanLinh
+2291,CTO-VinMart+-44TranVanKheo
+2292,CTO-VinMart+-45XoVietNgheTinh 
+2293,CTO-VinMart+-53/64NguyenVietDung
+2294,CTO-VinMart+-566Duong30/4
+2295,CTO-VinMart+-61DuongCMT8
+2296,CTO-VinMart+-84/6LeHongPhong
+2297,CTO-VinMart+-91/17BCachMangThang8
+2298,CTO-VinMart+-9TranChien
+2299,CTO-VinMart+-MiniCanTho
+2300,CTO-VinMart+-SO12DUONGSO8
+2301,Cao Bằng
+2302,Châu Đức
+2303,Concung -  70 Trần Hưng Đạo - Huyện Thủy Nguyên - Hải Phòng
+2304,Concung -  71A đường Nguyễn Cao - Thành phố Bắc Ninh - Bắc Ninh
+2305,Concung -  A16 Golden Mall - Huyện Hiệp Hòa - Bắc Giang
+2306,Concung - 01 Tây Hồ - Huyện Lệ Thuỷ - Quảng Bình
+2307,Concung - 04 Nguyễn Trãi - Thành Phố Quảng Ngãi - Quảng Ngãi
+2308,Concung - 05 Nguyen Thi Ngoc Oanh - Thị Xã Ninh Hoà - Khánh Hoà
+2309,Concung - 06 Le Loi - Thành Phố Pleiku - Gia Lai
+2310,Concung - 08 Nguyễn Phan Vinh - Quận Sơn Trà - Đà Nẵng
+2311,Concung - 08 Phan Boi Chau - Huyện Diên Khánh - Khánh Hoà
+2312,Concung - 1 Ba Trieu - Thành Phố Huế - TT Huế
+2313,Concung - 1 Lý Thường Kiệt - Thị Xã Ba Đồn - Quảng Bình
+2314,Concung - 1 Trần Phú - Thành Phố Huế - TT Huế
+2315,Concung - 1067 Le Hong Phong - Thành Phố Nha Trang - Khánh Hoà
+2316,Concung - 111 Mai Thúc Loan - Thành Phố Huế - TT Huế
+2317,Concung - 112-114 Hùng Vương - Huyện Cư M'gar - Đắk Lắk
+2318,Concung - 113 Hai Bà Trưng - Thành Phố Pleiku - Gia Lai
+2319,Concung - 1136 - 1138 Nguyễn Tất Thành - Thị Xã Hương Thủ - TT Huế
+2320,Concung - 119 Nguyễn Văn Thoại - Quận Sơn Trà - Đà Nẵng
+2321,Concung - 119 QL1A - Huyện Ninh Phước - Ninh Thuận
+2322,Concung - 12 Co Giang - Thị Xã Lagi - Bình Thuận
+2323,Concung - 130 Hoang Dieu - TP Buôn Mê Thuột - Đắk Lắk
+2324,Concung - 135 Võ Thị Sáu - Thành Phố Nha Trang - Khánh Hoà
+2325,Concung - 1390 Quảng Xương - Huyện Hoà Vang - Đà Nẵng
+2326,Concung - 153 Hải Thượng Lãn Ông - Thành Phố Phan Rang - Ninh Thuận
+2327,Concung - 157 Tran Hung Dao - Thành Phố Phan Thiết - Bình Thuận
+2328,Concung - 158 Thong Nhat - Thị Xã Lagi - Bình Thuận
+2329,Concung - 16 Le Thanh Tong - TP Buôn Mê Thuột - Đắk Lắk
+2330,Concung - 16 Trần Nhân Tông - Thành phố Uông Bí - Quảng Ninh
+2331,Concung - 16-B4.1 Nguyễn Hữu Thọ - Quận Cẩm Lệ - Đà Nẵng
+2332,Concung - 161 Lê Lợi -Thành phố Bắc Giang - Bắc Giang
+2333,Concung - 164 Nui Thanh - Quận Hải Châu - Đà Nẵng
+2334,Concung - 169 Hung Vuong - Thành Phố Quảng Ngãi - Quảng Ngãi
+2335,Concung - 17-19-21 Huynh Thuc Khang - Thành Phố Gia Nghĩa - Đắk Nông
+2336,Concung - 179 Dien Bien Phu - Huyện Duy Xuyên - Quảng Nam
+2337,Concung - 18 Phố Giếng Đồn - Thành phố Hạ Long - Quảng Ninh
+2338,Concung - 18-20 Nguyen Tat Thanh - Thành Phố Pleiku - Gia Lai
+2339,Concung - 180 Nguyễn Tất Thành - Huyện Krông Bông - Đắk Lắk
+2340,Concung - 182 Trần Quý Cáp  - Thị Xã Ninh Hoà - Khánh Hoà
+2341,Concung - 19 Hoàng Diệu - Thành Phố Nha Trang - Khánh Hoà
+2342,Concung - 199-201 Tôn Đức Thắng - Quận Liên Chiểu - Đà Nẵng
+2343,Concung - 2 - 4 Cầu Đất - Quận Ngô Quyền - Hải Phòng
+2344,Concung - 2 Hai Bà Trưng - Thành Phố Quảng Ngãi - Quảng Ngãi
+2345,Concung - 2 tỉnh lộ 5 - TP Buôn Mê Thuột - Đắk Lắk
+2346,Concung - 200 Thủ Khoa Huân - Thành Phố Phan Thiết - Bình Thuận
+2347,Concung - 207-209 Thong Nhat - Huyện Tuy Phong - Bình Thuận
+2348,Concung - 211 Mai Hắc Đế - TP Buôn Mê Thuột - Đắk Lắk
+2349,Concung - 214 Nguyen Tat Thanh - TP Buôn Mê Thuột - Đắk Lắk
+2350,Concung - 217 - 219 Trần Hưng Đạo - Thị Xã Quảng Trị - Quảng Trị
+2351,Concung - 2197 Dai Lo Hung Vuong - Thành Phố Cam Ranh - Khánh Hoà
+2352,Concung - 22 Tổ 4 An Dương - Huyện An Dương - Hải Phòng
+2353,Concung - 222-224 Phạm Văn Đồng - Thị Xã Sông Cầu - Phú Yên
+2354,Concung - 236 Phạm Văn Đồng - Huyện Núi Thành - Quảng Nam
+2355,Concung - 2436 Dai Lo Hung Vuong - Thành Phố Cam Ranh - Khánh Hoà
+2356,Concung - 256 Ngo Gia Tu - Thị Xã An Nhơn - Bình Định
+2357,Concung - 26 Điện Biên Phủ - Thành Phố Nha Trang - Khánh Hoà
+2358,Concung - 263 Tran Hung Dao - Thành Phố Kontum - Kontum
+2359,Concung - 264 Nguyễn Huệ - Huyện Hàm Tân - Bình Thuận
+2360,Concung - 270 đường 3 tháng - Huyện Đức Linh - Bình Thuận
+2361,Concung - 282 Phạm Văn Đồng - Huyện Bình Sơn - Quảng Ngãi
+2362,Concung - 287B Tran Hung Dao - Thành Phố Tuy Hoà - Phú Yên
+2363,Concung - 288 Dai Lo Hung Vuong - Thành Phố Cam Ranh - Khánh Hoà
+2364,Concung - 294-296 Giai Phong - Huyện Krông Pắc - Đắk Lắk
+2365,Concung - 299 - 301 đường 21 tháng 8 - Thành Phố Phan Rang - Ninh Thuận
+2366,Concung - 2E-2F Duong 2/4 - Thành Phố Nha Trang - Khánh Hoà
+2367,Concung - 30-32 Phố Chờ - Huyện Yên Phong - Bắc Ninh
+2368,Concung - 309 Tran Hung Dao - Thành Phố Đồng Hới - Quảng Bình
+2369,Concung - 310-312 Thong Nhat - Thành Phố Nha Trang - Khánh Hoà
+2370,Concung - 315 Thân Cảnh Phúc -Huyện Lục Ngạn - Bắc Giang
+2371,Concung - 318 Trần Hưng Đạo - Huyện Sa Thầy - Kontum
+2372,Concung - 32 Quang Trung - Thành Phố Đồng Hới - Quảng Bình
+2373,Concung - 32 Quốc Lộ 1A Hương An - Huyện Quế Sơn - Quảng Nam
+2374,Concung - 324 Tran Hung Dao - Thành Phố Phan Thiết - Bình Thuận
+2375,Concung - 325 Nguyễn Tất Thành - Huyện Cư Jut - Đắk Nông
+2376,Concung - 347 Quang Trung - Thị Xã An Khê - Gia Lai
+2377,Concung - 35 Hà Nội - Thành Phố Huế - TT Huế
+2378,Concung - 35 Triều Dương - Thành phố Móng Cái - Quảng Ninh
+2379,Concung - 350 Phan Bội Châu - TP Buôn Mê thuột - Đắk Lắk
+2380,Concung - 36 Lê Duẫn - Huyện Vĩnh Linh - Quảng Trị
+2381,Concung - 36 Nguyễn Đức Trung - Quận Thanh Khê - Đà Nẵng
+2382,Concung - 36 Tỉnh lộ 685 - Huyện Buôn Đôn - Đắk Lắk
+2383,Concung - 362-364 Ông Ích Khiêm - Quận Thanh Khê - Đà Nẵng
+2384,Concung - 373 Trần Hưng Đạo - Thành Phố Phan Thiết - Bình Thuận
+2385,Concung - 384 Le Duan - TP Buôn Mê Thuột - Đắk Lắk
+2386,Concung - 386 Nguyen Nghiem - Thành Phố Quảng Ngãi - Quảng Ngãi
+2387,Concung - 394 Nguyen Thai Hoc - Thành Phố Quy Nhơn - Bình Định
+2388,Concung - 39A Thạch Hãn - Thành Phố Huế - TT Huế
+2389,Concung - 413 Trần Hưng Đạo - Thị xã Kinh Môn - Hải Dương
+2390,Concung - 414-418 Ngo Gia Tu - Thành Phố Phan Rang - Ninh Thuận
+2391,Concung - 42 Ong Ich Duong - Quận Cẩm Lệ - Đà Nẵng
+2392,Concung - 45 Nguyen Tat Thanh - Huyện Đắk Rlấp - Đắk Nông
+2393,Concung - 45 Tran Hung Dao - Thành Phố Phan Thiết - Bình Thuận
+2394,Concung - 450A Thong Nhat - Thành Phố Phan Rang - Ninh Thuận
+2395,Concung - 458-460 Nguyễn Nghiêm - Huyện Đức Phổ - Quảng Ngãi
+2396,Concung - 45A Nguyễn Thị Minh Khai - Thành Phố Nha Trang - Khánh Hoà
+2397,Concung - 47 Trần Phú - Huyện Tuy Phước - Bình Định
+2398,Concung - 473 Hùng Vương - Huyện Đắk Hà - Kontum
+2399,Concung - 48 Hùng Vương - Huyện Ea súp - Đắk Lắk
+2400,Concung - 514 Giai Phong - Huyện Ea Hleo - Đắk Lắk
+2401,Concung - 53 55 Trần Phú - TP.Hà Tĩnh - Hà Tĩnh
+2402,Concung - 547 Trần Hưng Đạo - Huyện Hàm Thuận Nam - Bình Thuận
+2403,Concung - 550 Hai Ba Trung - Thành Phố Hội An - Quảng Nam
+2404,Concung - 558 Quang Trung - Thành Phố Quảng Ngãi - Quảng Ngãi
+2405,Concung - 57 Nguyễn Tất Thành - Huyện Krông Nô - Đắk Nông
+2406,Concung - 60 Nguyen Thai Hoc - Thành Phố Tuy Hoà - Phú Yên
+2407,Concung - 602-604-606 Duong 21/8 - Thành Phố Phan Rang - Ninh Thuận
+2408,Concung - 63-65 Phan Chu Trinh - Thành Phố Tam Kỳ - Quảng Nam
+2409,Concung - 666 Nguyễn Thái Học - Thành Phố Quy Nhơn - Bình Định
+2410,Concung - 68 Trần Hưng Đạo - Thị Xã Buôn Hồ - Đắk Lắk
+2411,Concung - 691 Phan Dinh Phung  - Thành Phố Kontum - Kontum
+2412,Concung - 693 - 695 Hùng Vương - Huyện Duy Xuyên - Quảng Nam
+2413,Concung - 70 Le Hong Phong - Thành Phố Nha Trang - Khánh Hoà
+2414,Concung - 787 Phan Châu Trinh  - Thành Phố Tam Kỳ - Quảng Nam
+2415,Concung - 807D Hung Vuong - Huyện Chư Sê - Gia Lai
+2416,Concung - 81 - 83 Nguyễn Văn Linh - Quận Hải Châu - Đà Nẵng
+2417,Concung - 824 Ngo Quyen - Quận Sơn Trà - Đà Nẵng
+2418,Concung - 84 Quoc Lo 9 - Thành Phố Đông Hà - Quảng Trị
+2419,Concung - 841-843-845 Phạm Văn Đồng - Thành Phố Pleiku - Gia Lai
+2420,Concung - 842- 844 Tôn Đức Thắng - Quận Liên Chiểu - Đà Nẵng
+2421,Concung - 9 Vo Nguyen Giap - Thành Phố Quy Nhơn - Bình Định
+2422,Concung - 90 Võ Chí Công - Quận Cẩm Lệ - Đà Nẵng
+2423,Concung - 93-95 Lê Văn Hiến - Quận Ngũ Hành Sơn - Liên Chiểu
+2424,Concung - 9D Nguyễn Văn Cừ - Thành Phố Phan Rang - Ninh Thuận
+2425,Concung - AI - AII Nguyễn Văn Trỗi  - Thành Phố Tam Kỳ - Quảng Nam
+2426,Concung - B5-B6 Chung cư Vĩnh Phước - Thành Phố Nha Trang - Khánh Hoà
+2427,Concung - GO! Hải Phòng - Quận Ngô Quyền - Hải Phòng
+2428,Concung - Go! Bắc Giang - Thành phố Bắc Giang - Bắc Giang
+2429,Concung - Go! Thái Bình - Thành phố Thái Bình - Thái Bình
+2430,Concung - Khu Dan Cu A2 - Huyện Tuy Phong - Bình Thuận
+2431,Concung - Lo 06-07 Duong 23/10 - Thành Phố Nha Trang - Khánh Hoà
+2432,Concung - Mỹ Lại - Thành Phố Quảng Ngãi - Quảng Ngãi
+2433,Concung - Thôn Dầu Sơn - Huyện Cam Lâm - Khánh Hoà
+2434,Concung - Tran Quy Cap - Thị Xã Điện Bàn - Quảng Nam
+2435,Concung 02 Hữu Nghị-Bắc Lý-Đồng Hới-Quảng Bình
+2436,Concung 02 Quang Trung-Vinh-Nghệ An
+2437,Concung 04 Hà Thành-Đô Lương-Nghệ An
+2438,Concung 100 Quốc Lộ 1A-Hương Thủy-Huế
+2439,Concung 105-107 Trần Hưng Đạo-Quế Võ-Bắc Ninh
+2440,Concung 11 Phạm Văn Đồng-Tư Nghĩa-Quảng Ngãi
+2441,Concung 118 Ngô Quyền-Vĩnh Yên-Vĩnh Phúc
+2442,Concung 1305 Hùng Vương-Buôn Hồ-Đắk Lắk
+2443,Concung 134 Hà Huy Tập-Cẩm Xuyên-Hà Tĩnh
+2444,Concung 142 Y Moan Ênuôl-Buôn Mê Thuột-Đắk Lắk
+2445,Concung 150 Lê Duẩn-Hướng Hoá-Quảng Trị
+2446,Concung 153 Nguyễn Phong Sắc-TP.Vinh-Nghệ An
+2447,Concung 155 Trường Chinh-Vinh-Nghệ An
+2448,Concung 165A Trường Chinh-Xuân Hoà-Phúc Yên-Vĩnh Phúc
+2449,Concung 17 Nguyễn Huệ-Vạn Ninh-Khánh Hoà
+2450,Concung 174 ĐT766-Đức Linh-Bình Thuận
+2451,Concung 176 Nguyễn Huệ-Phú Mỹ-Bình Định
+2452,Concung 186 Nguyễn Sinh Cung-Thừa Thiên Huế
+2453,Concung 188 Hùng Thắng-Tiền Hải-Thái Bình
+2454,Concung 189 Trần Phú-Sơn Hòa-Phú Yên
+2455,Concung 19 Nguyễn Tất Thành-Krông Ana-Đắk Lắk
+2456,Concung 190 CMT 8-Thắng Lợi-Sông Công-Thái Nguyên
+2457,Concung 199 Hùng Vương-Hàm Tân-Bình Thuận
+2458,Concung 20 Huỳnh Đăng Thơ-An Nhơn-Bình Định
+2459,Concung 203 Quốc lộ 26-Ninh Hoà-Khánh Hoà
+2460,Concung 219 Võ Văn Kiệt-Buôn Ma Thuột-Đắk Lắk
+2461,Concung 22 Quang Trung-Hoài Ân-Bình Định
+2462,Concung 227 Trần Phú-Cẩm Tây-Cẩm Phả-Quảng Ninh
+2463,Concung 230-232 Thân Công Tài-Nếnh-Việt Yên-Bắc giang
+2464,Concung 231 Châu Lang-Lang Chánh-Thanh Hóa
+2465,Concung 240 Xô Viết Nghệ Tĩnh-Can Lộc-Hà Tĩnh
+2466,Concung 251 Nguyễn Tất Thành-Lắk-Đắk Lắk
+2467,Concung 318 Trần Hưng Đạo-Sa Thầy-Kon Tum
+2468,Concung 321 Ngô Quyền-Tx.La Gi-Bình Thuận
+2469,Concung 324 Quang Trung-Tây Sơn-Bình Định
+2470,Concung 34 Biên Hòa-Phủ Lý-Hà Nam
+2471,Concung 345 Huỳnh Thúc Kháng-Mũi Né-Phan Thiết-Bình Thuận
+2472,Concung 378 DT717 Thôn 4-Tánh Linh-Bình Thuận
+2473,Concung 384 Quốc Lộ 28-Hàm Thuận Bắc-Bình Thuận
+2474,Concung 386 Quang Trung-Nguyễn Nghiêm-Quảng Ngãi
+2475,Concung 38C Nguyễn Hội-Phan Thiết-Bình Thuận
+2476,Concung 446 DT 720-Tánh Linh-Bình Thuận
+2477,Concung 454 Nguyễn Văn Linh-Quảng Ngãi
+2478,Concung 48 Hùng Vương-Hải Lăng-Quảng Trị
+2479,Concung 48 đường 19/5-Tân Kỳ-Nghệ An
+2480,Concung 50 Tỉnh lộ 8-Cư M'gar-Đắk Lắk
+2481,Concung 51 Quốc Lộ 14-Buôn Ma Thuột-Đắk Lắk
+2482,Concung 526 Bà Triệu-Hậu Lộc-Thanh Hoá
+2483,Concung 53 Cách Mạng Tháng 8-Hương Trà-Huế
+2484,Concung 54 Nguyễn Tất Thành-Krông Năng-Đắk Lắk
+2485,Concung 542 Quang Trung-Hoài Nhơn-Bình Định
+2486,Concung 543 Quang Trung-Đức Cơ-Gia Lai
+2487,Concung 544 Thôn Tân Lạc-Thuận Nam-Ninh Thuận
+2488,Concung 55 Nguyễn Huệ-Tuy Phước-Bình Định
+2489,Concung 55 Nguyễn Tất Thành-Đại Lộc-Quảng Nam
+2490,Concung 574-576 Quang Trung-Uông Bí-Quảng Ninh
+2491,Concung 58 Quốc Lộ 21B Phố Vác - Thanh Oai -HN
+2492,Concung 59-61 Quốc Lộ 03-Sóc Sơn-HN
+2493,Concung 620 Quang Trung-Thanh Hóa
+2494,Concung 63 Buôn Kao-Buôn Ma Thuột-Đắk Lắk
+2495,Concung 65 Phan Trọng Tuệ-Hoài Nhơn-Bình Định
+2496,Concung 73 Nguyễn Huệ-Bỉm Sơn-Thanh Hoá
+2497,Concung 809 Nguyễn Lương Bằng-Liên Chiểu-Đà Nẵng
+2498,Concung 83 Nguyễn Văn Cừ-Vinh-Nghệ An
+2499,Concung 9 Tổ 7 Chùa Hang-Thái Nguyên
+2500,Concung 91 Hùng Vương-Đắk Tô-Kon Tum
+2501,Concung 923 Trần Hưng Đạo-Tánh Linh-Bình Thuận
+2502,Concung 93 Trần Hưng Đạo-Sông Hinh-Phú Yên
+2503,Concung An Hội Bắc 1-Tư Nghĩa-Quảng Ngãi
+2504,Concung Giáng Nam 2-Hoà Vang-Đà Nẵng
+2505,Concung Hồ Chí Minh-Cẩm Thủy-Thanh Hóa
+2506,Concung Khu A Lô 08 ĐT 636B-An Nhơn-Bình Định
+2507,Concung Khối Xa Nam-Nam Đàn-Nghệ An
+2508,Concung Phước Thịnh-Mộ Đức-Quảng Ngãi
+2509,Concung Quốc Lộ 1A-Cam Lâm-Khánh Hòa
+2510,Concung Quốc Lộ 24B Minh Mỹ-Sơn Tịnh-Quảng Ngãi
+2511,Concung Quốc Lộ 27 Thôn Kim Châu-Cư Kuin-Đắk Lắk
+2512,Concung Quốc lộ 45 Thôn Bi Kiều-Nống Cống-Thanh Hóa
+2513,Concung Số 26 - Đông Yên - Đông Phong - Yên Phong - Bắc Ninh
+2514,Concung Số 261 Công Hà - Hà Mãn - Thuận Thành - Bắc Ninh
+2515,Concung Số 372 khu phố 2 - Yên Ninh - Yên Khánh - Ninh Bình
+2516,Concung TDP Dự Quần-Nghi Sơn-Thanh Hoá
+2517,Concung Thân Nhân Trung-Bích Động-Việt Yên-Bắc Giang
+2518,Concung Thôn 1-Cư Kuin-Đắk Lắk
+2519,Concung Thôn 3-Đắk R'Lấp- Đắk Nông
+2520,Concung Thôn Phụng Sơn-Tuy Phước-Bình Định
+2521,Concung Thửa đất 328.6 Tân Chiền-Lập Thạch-Vĩnh Phúc
+2522,Concung Tỉnh lộ 632 Chánh Thiện-Phú Mỹ-Bình Định
+2523,Concung Tổ 3-Thi Sơn-Kim Bảng-Hà Nam
+2524,Concung Đại Nghĩa-Huyện Mỹ Đức - HN
+2525,Concung-302 Trần Phú-Ba Đình-Thanh Hoá
+2526,Concung-Lô 01.10 Lê Lợi-Sơn Lợi-Sầm Sơn-Thanh Hóa
+2527,Cà Mau
+2528,Củ Chi Hub_Deleted
+2529,DNA-VinMart+-245HaiPhong
+2530,DNA-VinMart+-263OngIchDuong
+2531,DNA-VinMart+-757TranCaoVan
+2532,DNI-VinMart+-042To2
+2533,DNI-VinMart+-101BuiVanHoa
+2534,DNI-VinMart+-113CMT8
+2535,DTSC Exceptional Handling Team
+2536,DTSC Linehaul Team
+2537,DTSC Sorting Team
+2538,Dat Do
+2539,Dương Xá
+2540,GHN Fulfillment HCM - Q12
+2541,GHN Fulfillment Hà Nội - Đài Tư
+2542,Gia Lai
+2543,H.Trảng Bom_ĐN_Hủy
+2544,H.Đông Anh_HN_Deleted
+2545,HCM Bưu cục 291 Hồng Bàng - Hồ Chí Minh
+2546,HCM Bưu cục 393 Vườn Lài - Hồ Chí Minh
+2547,HCM Bưu cục 77A Bình Thới - Hồ Chí Minh
+2548,HCM KVT Q12
+2549,HCM Vinmart Pickup
+2550,HCM-ADR Bình Thạnh
+2551,HCM-ADR Quận 1
+2552,HCM-ADR Thủ Đức
+2553,HCM-ADR Tân Bình
+2554,HCM-Ahabike
+2555,HCM-Bình Thạnh
+2556,HCM-Gò Vấp
+2557,HCM-LuanChuyen-353ANguyenThaiBinh
+2558,HCM-LuanChuyen-400AuCo
+2559,HCM-LuanChuyen-B2BDaLat
+2560,HCM-Phú Nhuận
+2561,HCM-Quận 1
+2562,HCM-Quận 10
+2563,HCM-Quận 11
+2564,HCM-Quận 3
+2565,HCM-Quận 4
+2566,HCM-Quận 5
+2567,HCM-Quận 6
+2568,HCM-Quận 7
+2569,HCM-Station-194BTranQuangKhai
+2570,HCM-Station-393XoVietNgheTinh
+2571,HCM-Station-64BinhGia
+2572,HCM-Station-DL889LacLongQuan
+2573,HCM-Tiki
+2574,HCM-Tân Bình
+2575,HCM-Tân Phú
+2576,HCM_Pudo
+2577,HN Bưu Cục 15 Xuân Hà - Hà Nội
+2578,HN Bưu cục 125 Ô Chợ Dừa - Hà Nội
+2579,HN Bưu cục 22A Đại La - Hà Nội
+2580,HN Bưu cục 280 Chùa Thông - Hà Nội
+2581,HN Bưu cục 442 Quảng Oai - Hà Nội
+2582,HN Bưu cục 590 Trương Định - Hà Nội
+2583,HN-Ahabike
+2584,HN-Quận Ba Đình
+2585,HN-Quận Cầu Giấy
+2586,HN-Quận Hai Bà Trưng
+2587,HN-Quận Hoàng Mai
+2588,HN-Quận Thanh Xuân
+2589,HN-Quận Đống Đa
+2590,HN-Station-174CaoLo
+2591,HN-Station-372PhamVanDong
+2592,HN-Tiki
+2593,HYE-Station-54APhoNoi
+2594,HYSC Exceptional Handling Team
+2595,HYSC Linehaul Team
+2596,HYSC Sorting Team
+2597,Hoà Bình
+2598,Huyện Thanh Trì
+2599,Hà Giang
+2600,Hà Nam
+2601,Hà Tĩnh
+2602,Hưng Yên
+2603,Hải Dương
+2604,Hậu Giang
+2605,KHA-VinMart+-HaiBaTrung
+2606,KHA-VinMart+-Lo232KhuA-DongNam
+2607,KHO TECH TESTING 11111
+2608,KHO TECH TESTING 11112
+2609,KHO TECH TESTING 11113
+2610,KHO TECH TESTING 22222
+2611,KTC - OE TEST
+2612,KV1 Bưu cục 1093 Phú Riềng Đỏ - Đồng Xoài
+2613,KV1 Bưu cục 127 Nguyễn Trung Trực - Sóc Trăng
+2614,KV1 Bưu cục 13 Huỳnh Thúc Kháng - Gia Nghĩa
+2615,KV1 Bưu cục 157/5 Lý Thái Tổ - Long Xuyên
+2616,KV1 Bưu cục 19YWang - Buôn Mê Thuột
+2617,KV1 Bưu cục 204 Nguyễn Thanh Đằng - Bà Rịa
+2618,KV1 Bưu cục 2163 Hùng Vương - Cam Ranh
+2619,KV1 Bưu cục 25A Lê Hồng Phong - Kom Tum
+2620,KV1 Bưu cục 268 Lê Lợi - Châu Đốc
+2621,KV1 Bưu cục 288 Cách Mạng Tháng Tám - Thủ Dầu Một
+2622,KV1 Bưu cục 294B Nguyên Sinh Sách - Sa Đéc
+2623,KV1 Bưu cục 328 Lý Thường Kiệt - Cà Mau
+2624,KV1 Bưu cục 34 Nguyễn Công Trứ - Vị Thanh
+2625,KV1 Bưu cục 391 Nguyễn Thái Học - Quy Nhơn
+2626,KV1 Bưu cục 515 Cách Mạng Tháng Tám - Tây Ninh
+2627,KV1 Bưu cục 66 Lê Anh Xuân - Cao Lãnh
+2628,KV1 Bưu cục 7 Nguyễn Tri Phương - Dĩ An
+2629,KV1 Bưu cục 84 Hai Mươi Môt Tháng Tam - Phan Rang
+2630,KV1 Bưu cục 87 Nguyễn Thị Minh Khai - Vĩnh Long
+2631,KV1 Bưu cục 970 Hùng Vương - Chư Sê
+2632,KV1 Bưu cục 98 Cao Văn Lầu - Bạc Liêu
+2633,KV1 Bưu cục Long Khánh - Đồng Nai
+2634,KV1 Bưu cục Long Thành - Đồng Nai
+2635,KV2 Bưu cục 10 Bên Nghé - Huế
+2636,KV2 Bưu cục 106 Hùng Vương - Đông Hà
+2637,KV2 Bưu cục 125 Phan Chu Trinh - Tam Kỳ
+2638,KV2 Bưu cục 40 Điện Biên Phủ - Đà Nẵng
+2639,KV2 Bưu cục 772 Quang Trung - Quang Ngãi
+2640,KV2-HAN-Station-371CuaDai
+2641,KV3 Bưu cục 14 Trần Hưng Đạo - LCH
+2642,KV3 Bưu cục 239 Quang Trung - Tam Điệp
+2643,KV3 Bưu cục 284 Tống Duy Tân - Thanh Hóa
+2644,KV3 Bưu cục 53 Nguyễn Văn Cừ - Vinh
+2645,KV3 Bưu cục 816 Điện Biên - Yên Bái
+2646,KV3- Bưu cục 131 Trần Hưng Đạo- hà Giang
+2647,KV3- Bưu cục 158 hà Huy Tập- Hà Tĩnh
+2648,KV3-BNI-Station-353NgoGiaTu
+2649,KV3-Bưu cục 83 TK13 Lương Sơn- Hòa Bình
+2650,Key Account Warehouse Ha Noi
+2651,Key Account Warehouse Ho Chi Minh
+2652,Kho 1
+2653,Kho 2
+2654,Kho B2B Samsung SDS
+2655,Kho Chuyển Tiếp Bình Phước
+2656,Kho Chuyển Tiếp Bình Thuận
+2657,Kho Chuyển Tiếp Bắc Giang
+2658,Kho Chuyển Tiếp Cà Mau
+2659,Kho Chuyển Tiếp Hoà Bình 02
+2660,Kho Chuyển Tiếp Hoàng Mai
+2661,Kho Chuyển Tiếp Hà Đông
+2662,Kho Chuyển Tiếp Hòa Bình
+2663,Kho Chuyển Tiếp Hưng Yên
+2664,Kho Chuyển Tiếp Hải Phòng
+2665,Kho Chuyển Tiếp Hải Phòng 01
+2666,Kho Chuyển Tiếp Kiên Giang
+2667,Kho Chuyển Tiếp Lào Cai
+2668,Kho Chuyển Tiếp Lâm Đồng
+2669,Kho Chuyển Tiếp Lạng Sơn
+2670,Kho Chuyển Tiếp Nam Từ Liêm
+2671,Kho Chuyển Tiếp Nam Định
+2672,Kho Chuyển Tiếp Ninh Bình
+2673,Kho Chuyển Tiếp Phú Thọ
+2674,Kho Chuyển Tiếp Phú Thọ 01
+2675,Kho Chuyển Tiếp Quảng Ngãi
+2676,Kho Chuyển Tiếp Quảng Ninh
+2677,Kho Chuyển Tiếp Sơn La
+2678,Kho Chuyển Tiếp Thanh Hoá
+2679,Kho Chuyển Tiếp Thái Bình
+2680,Kho Chuyển Tiếp Thái Nguyên
+2681,Kho Chuyển Tiếp Thái Nguyên 02
+2682,Kho Chuyển Tiếp Thừa Thiên Huế
+2683,Kho Chuyển Tiếp Tuyên Quang
+2684,Kho Chuyển Tiếp Vĩnh Phúc
+2685,Kho Chuyển Tiếp Yên Bái
+2686,Kho Chuyển Tiếp Đắk Nông
+2687,Kho Chuyển Tiếp Đồng Nai
+2688,Kho ConCung - 147K Đội Cấn - Ba Đình - Hà Nội
+2689,Kho Concung - 147 Hai Bà Trưng - Vĩnh Phúc
+2690,Kho Concung - 16B-4 Nguyễn Văn Lộc - Hà Đông - Hà Nội
+2691,Kho Concung - 2 Triệu Quốc Đạt - Hoàn Kiếm - Hà Nội
+2692,Kho Concung - 205 Nguyễn Đức Thuận - Gia Lâm - Hà Nội
+2693,Kho Concung - 24 Nguyễn Thái Học - Đan Phượng - Hà Nội 
+2694,Kho Concung - 342 Phan Trọng Tuệ - Thanh Trì - Hà Nội
+2695,Kho Concung - 49 Trần Hưng Đạo - Lai Châu
+2696,Kho Concung - 6 Nguyễn Thái Học - Yên Bái
+2697,Kho Concung - 933 La Thành - Ba Đình - Hà Nội
+2698,Kho Concung - Aeon Mall Hà Đông - Hà Đông - Hà Nội
+2699,Kho Concung - BT8-VT11 Khu đô thị Xa La - Hà Đông - Hà Nội
+2700,Kho Concung - GO! Thăng Long - Cầu Giấy
+2701,Kho Concung - Go Lê Trọng Tấn - Thanh Xuân - Hà Nội
+2702,Kho FTL Bulsan Gia Lâm-HN
+2703,Kho FTL ENCO Củ Chi-HCM
+2704,Kho FTL ENCO Từ Sơn-Bắc Ninh
+2705,Kho FTL Hoàng Minh  Nhơn Trạch-Đồng Nai
+2706,Kho FTL Hoàng Minh Biên Hoà-Đồng Nai
+2707,Kho FTL Hoàng Minh Bến Cát-Bình Dương
+2708,Kho FTL Hoàng Minh Cẩm Giàng-Hải Dương
+2709,Kho FTL Hoàng Minh Cẩm Lệ-Đà Nẵng
+2710,Kho FTL Hoàng Minh Dĩ An-Bình Dương
+2711,Kho FTL Hoàng Minh Hoài Nhơn-Bình Định
+2712,Kho FTL Hoàng Minh Hoàng Mai-Hà Nội
+2713,Kho FTL Hoàng Minh Hóc Môn-HCM
+2714,Kho FTL Hoàng Minh Hương Trà-Huế
+2715,Kho FTL Hoàng Minh Hậu Lộc-Thanh Hoá
+2716,Kho FTL Hoàng Minh Long Biên-Hà Nội
+2717,Kho FTL Hoàng Minh Long Bình-Đồng Nai 
+2718,Kho FTL Hoàng Minh Mỹ Hào-Hưng Yên
+2719,Kho FTL Hoàng Minh Nam Từ Liêm-HN
+2720,Kho FTL Hoàng Minh Nông Cống-Thanh Hoá
+2721,Kho FTL Hoàng Minh Phan Rang-Ninh Thuận
+2722,Kho FTL Hoàng Minh Quảng Xương-Thanh Hoá
+2723,Kho FTL Hoàng Minh Quảng Điền-TP.Huế
+2724,Kho FTL Hoàng Minh Quận 12-HCM
+2725,Kho FTL Hoàng Minh Quận 7-HCM
+2726,Kho FTL Hoàng Minh Quế Võ-Bắc Ninh
+2727,Kho FTL Hoàng Minh Sông Công-Thái Nguyên
+2728,Kho FTL Hoàng Minh Tam Phước-Đồng Nai
+2729,Kho FTL Hoàng Minh Thanh Liêm-Hà Nam
+2730,Kho FTL Hoàng Minh Thuận An-Bình Dương
+2731,Kho FTL Hoàng Minh Thạch Thất-Hà Nội
+2732,Kho FTL Hoàng Minh Thủ Đức-HCM
+2733,Kho FTL Hoàng Minh Tiên Du-Bắc Ninh
+2734,Kho FTL Hoàng Minh Tuy Hoà-Phú Yên
+2735,Kho FTL Hoàng Minh Từ Sơn-Bắc Ninh
+2736,Kho FTL Hoàng Minh Việt Yên-Bắc Giang
+2737,Kho FTL Hoàng Minh Đông Hà-Quảng Trị
+2738,Kho FTL Hoàng Minh Đồng Hới-Quảng Bình
+2739,"Kho FTL Hoàng Minh, Mê Linh-Hà Nội"
+2740,Kho FTL Hải Đăng Biên Hòa-Đồng Nai
+2741,Kho FTL Hải Đăng Bình Chánh-HCM
+2742,Kho FTL Hải Đăng Cần Giuộc-Long An
+2743,Kho FTL Hải Đăng Củ Chi-HCM
+2744,Kho FTL Hải Đăng Nghi Lộc-Nghệ An
+2745,Kho FTL Hải Đăng Thuận An-Bình Dương
+2746,Kho FTL Hải Đăng Thường Tín-HN
+2747,Kho FTL Hải Đăng Vũ Thư-Thái Bình
+2748,Kho FTL KTG Biên Hòa-Đồng Nai
+2749,Kho FTL Lam Sơn Buôn Mê Thuột-Đăk Lăk
+2750,Kho FTL Lam Sơn Bảo Lộc-Lâm Đồng
+2751,Kho FTL Lam Sơn Củ Chi-HCM
+2752,Kho FTL Lam Sơn Mê Linh-HN
+2753,Kho FTL Lam Sơn Nam Từ Liêm-HN
+2754,Kho FTL Lam Sơn Phúc Yên-Vĩnh Phúc
+2755,Kho FTL Lam Sơn Pleiku-Gia Lai
+2756,Kho FTL Lam Sơn Sông Lô-Vĩnh Phúc
+2757,Kho FTL Lam Sơn Tân Bình-HCM
+2758,Kho FTL Lam Sơn Đức Trọng-Lâm Đồng
+2759,Kho FTL Phúc Huy-Hóc Môn-HCM
+2760,Kho FTL Phúc Huy-Thanh Trì-Hà Nội
+2761,Kho FTL SHEIN Bến Lức-Long An
+2762,Kho FTL SHEIN Kim Động-Hưng Yên 
+2763,Kho FTL SHEIN Long Bình-Biên Hòa-Đồng Nai
+2764,Kho FTL SHEIN Từ Sơn-Bắc Ninh
+2765,Kho FTL SHEIN Đức Hòa-Long An
+2766,Kho FTL Yến Sào DoNest Hoàng Mai-HN
+2767,Kho FTL Yến Sào DoNest Ngũ Hành Sơn-Đà Nẵng
+2768,Kho FTL Yến Sào DoNest Thanh Hóa
+2769,Kho FTL Yến Sào DoNest Thủ Đức-HCM
+2770,Kho FTL Ánh Dương Duy Tiên-Hà Nam
+2771,Kho FTL Ánh Dương Long Thọ-Nhơn Trạch-Đồng Nai
+2772,Kho FTL Ánh Dương TT Hiệp Phước-Nhơn Trạch-Đồng Nai
+2773,Kho GXT HCM-Ahamove-Đang Giao Hàng
+2774,Kho Giao Hàng Nặng Biên Hoà-Đồng Nai
+2775,Kho Giao Hàng Nặng Bà Rịa-BRVT
+2776,Kho Giao Hàng Nặng Bình Phước
+2777,Kho Giao Hàng Nặng Bình Thuận
+2778,Kho Giao Hàng Nặng Bình Thủy-Cần Thơ
+2779,Kho Giao Hàng Nặng Bình Định
+2780,Kho Giao Hàng Nặng Bảo Lộc_Lâm Đồng
+2781,Kho Giao Hàng Nặng Bắc Giang
+2782,Kho Giao Hàng Nặng Bắc Từ Liêm-HN
+2783,Kho Giao Hàng Nặng Cam Ranh-Khánh Hòa
+2784,Kho Giao Hàng Nặng Cao Lãnh-Đồng Tháp
+2785,Kho Giao Hàng Nặng Châu Đốc-An Giang
+2786,Kho Giao Hàng Nặng Chơn Thành - Bình Phước
+2787,Kho Giao Hàng Nặng Cái Răng-Cần Thơ
+2788,Kho Giao Hàng Nặng Dĩ An-Bình Dương
+2789,Kho Giao Hàng Nặng Dương Xá
+2790,Kho Giao Hàng Nặng Event AHA Ngọc Hồi-HNO
+2791,Kho Giao Hàng Nặng Event AHA Thanh Trì-HNO
+2792,Kho Giao Hàng Nặng Event AHM Ngọc Hồi-HNO
+2793,Kho Giao Hàng Nặng Event AHM Phan Văn Trị-HCM
+2794,Kho Giao Hàng Nặng Event AHM Tân Triều-HNO
+2795,Kho Giao Hàng Nặng Event AHM-HCM
+2796,Kho Giao Hàng Nặng Gia Lai
+2797,Kho Giao Hàng Nặng HCM
+2798,Kho Giao Hàng Nặng HN02
+2799,Kho Giao Hàng Nặng Hoài Nhơn-Bình Định
+2800,Kho Giao Hàng Nặng Hoài Đức
+2801,Kho Giao Hàng Nặng Huế
+2802,Kho Giao Hàng Nặng Hà Tiên-Kiên Giang
+2803,Kho Giao Hàng Nặng Hà Tĩnh
+2804,Kho Giao Hàng Nặng Hòa Bình
+2805,Kho Giao Hàng Nặng Hòa Xuân-Đà Nẵng
+2806,Kho Giao Hàng Nặng Hải Dương
+2807,Kho Giao Hàng Nặng Hải Phòng
+2808,Kho Giao Hàng Nặng Hội An-Quảng Nam
+2809,Kho Giao Hàng Nặng Khánh Hòa
+2810,Kho Giao Hàng Nặng KonTum
+2811,Kho Giao Hàng Nặng Lagi-Bình Thuận
+2812,Kho Giao Hàng Nặng Long Biên-HNO
+2813,Kho Giao Hàng Nặng Long Thành-Đồng Nai
+2814,Kho Giao Hàng Nặng Long Xuyên-An Giang
+2815,Kho Giao Hàng Nặng Lào Cai
+2816,Kho Giao Hàng Nặng Lạng Sơn
+2817,Kho Giao Hàng Nặng Miền Bắc
+2818,Kho Giao Hàng Nặng Nam Định
+2819,Kho Giao Hàng Nặng Nghệ An
+2820,Kho Giao Hàng Nặng Nhà Bè-HCM
+2821,Kho Giao Hàng Nặng Ninh Bình
+2822,Kho Giao Hàng Nặng Ninh Thuận
+2823,Kho Giao Hàng Nặng Phú Lộc-Huế
+2824,Kho Giao Hàng Nặng Phú Thọ
+2825,Kho Giao Hàng Nặng Phú Yên
+2826,Kho Giao Hàng Nặng Quảng Bình
+2827,Kho Giao Hàng Nặng Quảng Ngãi
+2828,Kho Giao Hàng Nặng Quảng Ninh
+2829,Kho Giao Hàng Nặng Quảng Trị
+2830,Kho Giao Hàng Nặng Rạch Giá-Kiên Giang
+2831,Kho Giao Hàng Nặng Sơn La
+2832,Kho Giao Hàng Nặng TNB
+2833,Kho Giao Hàng Nặng TP Bà Rịa
+2834,Kho Giao Hàng Nặng TP Thủ Đức - HCM
+2835,Kho Giao Hàng Nặng TP.Bạc Liêu
+2836,Kho Giao Hàng Nặng TP.Bến Tre
+2837,Kho Giao Hàng Nặng TP.Cà Mau
+2838,Kho Giao Hàng Nặng TP.Mỹ Tho-Tiền Giang
+2839,Kho Giao Hàng Nặng TP.Sóc Trăng
+2840,Kho Giao Hàng Nặng TP.Trà Vinh
+2841,Kho Giao Hàng Nặng TP.Tân An-Long An
+2842,Kho Giao Hàng Nặng TP.Tây Ninh
+2843,Kho Giao Hàng Nặng TP.Vĩnh Long
+2844,Kho Giao Hàng Nặng Tam Kỳ-Quảng Nam
+2845,Kho Giao Hàng Nặng Tam Nông-Đồng Tháp
+2846,Kho Giao Hàng Nặng Thanh Hóa
+2847,Kho Giao Hàng Nặng Thanh Oai
+2848,Kho Giao Hàng Nặng Thanh Trì
+2849,Kho Giao Hàng Nặng Thái Bình
+2850,Kho Giao Hàng Nặng Thái Nguyên
+2851,Kho Giao Hàng Nặng Thủ Dầu Một
+2852,Kho Giao Hàng Nặng Trảng Bom-Đồng Nai
+2853,Kho Giao Hàng Nặng Tuy Phong-Bình Thuận
+2854,Kho Giao Hàng Nặng Tuy Phước-Bình Định
+2855,Kho Giao Hàng Nặng Tuyên Quang
+2856,Kho Giao Hàng Nặng Tân Bình-HCM
+2857,Kho Giao Hàng Nặng Tân Nhựt - HCM
+2858,Kho Giao Hàng Nặng Tân Tạo-HCM
+2859,Kho Giao Hàng Nặng Vĩnh Phúc
+2860,Kho Giao Hàng Nặng Vũng Tàu-BRVT
+2861,Kho Giao Hàng Nặng Yên Bái
+2862,Kho Giao Hàng Nặng Đà Lạt_Lâm Đồng
+2863,Kho Giao Hàng Nặng Đà Nẵng
+2864,Kho Giao Hàng Nặng Đông Anh
+2865,Kho Giao Hàng Nặng Đắk Lắk
+2866,Kho Giao Hàng Nặng Đắk Nông
+2867,Kho Giao Hàng Nặng Đức Hòa-Long An
+2868,Kho Giao Hàng Nặng Đức Trọng-Lâm Đồng
+2869,Kho Khách hàng lớn Hồ Chí Minh 02
+2870,Kho Khách hàng lớn Quận 10-HCM
+2871,Kho Khách hàng lớn Quận 12A-HCM
+2872,Kho Khách hàng lớn Quận 12B-HCM
+2873,Kho Khách hàng lớn Quận 7-HCM
+2874,Kho Khách hàng lớn Thủ Đức-HCM
+2875,Kho Khách hàng lớn Tân Phú-HCM
+2876,Kho Lấy Hàng Fulfillment GHN_Hồ Chí Minh
+2877,Kho Lấy Hàng Thuận An_Bình Dương
+2878,Kho Lấy Hàng Wilmar Nhà Bè
+2879,Kho Lấy Hàng Wilmar Nhà Bè-Nhà Bè-Hồ Chí Minh
+2880,Kho Lấy Đặc Biệt ĐN
+2881,Kho Phân Loại 103 Láng Hạ_Hà Nội 
+2882,Kho Phân Loại Huế_Thừa Thiên Huế
+2883,Kho Phân Loại Núi Thành_Quảng Nam
+2884,Kho Phân Loại Thanh Hóa_Thanh Hóa
+2885,Kho Phân Loại Đồng Hới_Quảng Bình
+2886,Kho Sort tại điểm Sofia
+2887,Kho Trung Chuyển BW Tân Phú Trung-Củ Chi-HCM
+2888,Kho Trung Chuyển Ba Đình
+2889,Kho Trung Chuyển Bình Định
+2890,Kho Trung Chuyển Bình Định 77
+2891,Kho Trung Chuyển Bắc Cạn
+2892,Kho Trung Chuyển Bắc Giang
+2893,Kho Trung Chuyển Bắc Ninh
+2894,Kho Trung Chuyển Bắc Từ Liêm
+2895,Kho Trung Chuyển Cao Bằng
+2896,Kho Trung Chuyển Chương Mỹ
+2897,Kho Trung Chuyển Cần Thơ
+2898,Kho Trung Chuyển Cầu Giấy
+2899,Kho Trung Chuyển Dương Xá
+2900,Kho Trung Chuyển Gia Lai
+2901,Kho Trung Chuyển Gia Lai 81
+2902,Kho Trung Chuyển Hai Bà Trưng
+2903,Kho Trung Chuyển Hoà Bình
+2904,Kho Trung Chuyển Hoài Đức
+2905,Kho Trung Chuyển Hoàn Kiếm
+2906,Kho Trung Chuyển Hoàng Mai
+2907,Kho Trung Chuyển Hà Giang
+2908,Kho Trung Chuyển Hà Nam
+2909,Kho Trung Chuyển Hà Nội 01
+2910,Kho Trung Chuyển Hà Nội 02
+2911,Kho Trung Chuyển Hà Đông
+2912,Kho Trung Chuyển Hàng Cồng Kềnh HCM
+2913,Kho Trung Chuyển Hưng Yên
+2914,Kho Trung Chuyển Hải Dương
+2915,Kho Trung Chuyển Hải Phòng
+2916,Kho Trung Chuyển Hồ Chí Minh 01
+2917,Kho Trung Chuyển Hồ Chí Minh 05
+2918,Kho Trung Chuyển Hồ Chí Minh 19
+2919,Kho Trung Chuyển Hồ Chí Minh 20
+2920,Kho Trung Chuyển Hồ Chí Minh Miền Nam
+2921,Kho Trung Chuyển Khánh Hòa
+2922,Kho Trung Chuyển Lai Châu
+2923,Kho Trung Chuyển Long Biên
+2924,Kho Trung Chuyển Lào Cai
+2925,Kho Trung Chuyển Lào Cai 02
+2926,Kho Trung Chuyển Lâm Đồng
+2927,Kho Trung Chuyển Lạng Sơn
+2928,Kho Trung Chuyển Nam Từ Niêm
+2929,Kho Trung Chuyển Nam Định
+2930,Kho Trung Chuyển Nghệ An
+2931,Kho Trung Chuyển Ninh Bình
+2932,Kho Trung Chuyển Phú Thọ
+2933,Kho Trung Chuyển Phú Yên
+2934,Kho Trung Chuyển Quảng Bình
+2935,Kho Trung Chuyển Quảng Ninh
+2936,Kho Trung Chuyển Sóc Sơn
+2937,Kho Trung Chuyển Sơn La
+2938,Kho Trung Chuyển Sơn Tây
+2939,Kho Trung Chuyển Thanh Xuân
+2940,Kho Trung Chuyển Thái Bình
+2941,Kho Trung Chuyển Thái Nguyên
+2942,Kho Trung Chuyển Thường Tín
+2943,Kho Trung Chuyển Thạch Thất
+2944,Kho Trung Chuyển Tuyên Quang
+2945,Kho Trung Chuyển Tây Hồ
+2946,Kho Trung Chuyển Vĩnh Phúc
+2947,Kho Trung Chuyển Yên Bái
+2948,Kho Trung Chuyển Điện Biên
+2949,Kho Trung Chuyển Đà Nẵng
+2950,Kho Trung Chuyển Đà Nẵng 02
+2951,Kho Trung Chuyển Đắk Lắk
+2952,Kho Trung Chuyển Đắk Lắk 47
+2953,Kho Trung Chuyển Đống Đa
+2954,Kho Trung Chuyển Ứng Hòa
+2955,Kho Trung chuyển Hà Nội 15
+2956,Kho Trung chuyển Hưng Yên 01
+2957,Kho Tạm Bưu Cục Thôn Xuân Hòa 1-Phúc Yên-Vĩnh Phúc
+2958,Kho Vật Tư Hà Nội 2
+2959,Kho Wilmart BigC Gò Vấp
+2960,Kho Wilmart EINS VINA Bình Dương
+2961,Kho Wilmart Lotte Gò Vấp-Hồ Chí Minh
+2962,Kho Xử Lý Ngoại Lệ Vùng NTB
+2963,Kho Xử lý Ngoại Lệ Miền Bắc
+2964,Kho giao B2B Bình Thuận
+2965,Kho giao hàng Ahamove Bình Dương
+2966,Kho giao hàng Ahamove HCM
+2967,Kho giao hàng Ahamove Hà Nội
+2968,Kho giao hàng Ahamove Đà Nẵng
+2969,Kho giao hàng Ahamove Đồng Nai
+2970,Kho giao nhận Ahamove_Hà Nội
+2971,Kho giao nhận Ahamove_Hồ Chí Minh
+2972,Kho giao nhận Long Biên_Hà Nội
+2973,Kho giao nhận Mộc Hóa_Long An
+2974,Kho lấy B2B Concung
+2975,Kho lấy hàng Ahamove Bình Dương
+2976,Kho lấy hàng Ahamove HCM
+2977,Kho lấy hàng Ahamove Hà Nội
+2978,Kho lấy hàng Ahamove Long An
+2979,Kho lấy hàng Ahamove Đà Nẵng
+2980,Kho lấy hàng Ahamove Đồng Nai
+2981,Kho lấy hàng Freight Hà Nội
+2982,Kho lấy hàng Lazada_Hồ Chí Minh
+2983,Kho lấy hàng Quận 10_Hồ Chí Minh
+2984,Kho lấy hàng Tiki_Hồ Chí Minh
+2985,Kho lấy hàng shop lớn Bình Thạnh_Hồ Chí Minh
+2986,Kho lấy hàng shop lớn Bình Tân_Hồ Chí Minh
+2987,Kho lấy hàng shop lớn Gò Vấp_Hồ Chí Minh
+2988,Kho lấy hàng shop lớn Phú Nhuận_Hồ Chí Minh
+2989,Kho lấy hàng shop lớn Quận 10_Hồ Chí Minh
+2990,Kho lấy hàng shop lớn Quận 11_Hồ Chí Minh
+2991,Kho lấy hàng shop lớn Quận 12_Hồ Chí Minh
+2992,Kho lấy hàng shop lớn Quận 1_Hồ Chí Minh
+2993,Kho lấy hàng shop lớn Quận 3_Hồ Chí Minh
+2994,Kho lấy hàng shop lớn Quận 5_Hồ Chí Minh
+2995,Kho lấy hàng shop lớn Quận 6_Hồ Chí Minh
+2996,Kho lấy hàng shop lớn Quận 7_Hồ Chí Minh
+2997,Kho lấy hàng shop lớn Quận 8_Hồ Chí Minh
+2998,Kho lấy hàng shop lớn Tân Bình_Hồ Chí Minh
+2999,Kho nệm Hóc Môn - HCM
+3000,Kho phân loại A77 Bạch Đằng_Hồ Chí Minh
+3001,Kho phân loại Đống Đa_Hà Nội
+3002,KhoVatTuHCM
+3003,KhoVatTuHN
+3004,Khu vực Bắc Bộ
+3005,Khu vực Cần Thơ
+3006,Khu vực Hà Nội
+3007,Khu vực Lâm Đồng
+3008,Khu vực Tp. HCM
+3009,Khu vực Trung Bộ
+3010,Khu vực Đà Nẵng
+3011,Khu vực Đông Nam Bộ
+3012,Khánh Hoà
+3013,Kiên Giang
+3014,Kon Tum
+3015,Lai Châu
+3016,Long An 
+3017,Long Điền
+3018,Lotte Ba Dinh 
+3019,Lotte Binh Duong
+3020,Lotte Da Nang
+3021,Lotte Dong Da
+3022,Lotte Dong Nai
+3023,Lotte Nam Saigon
+3024,Lotte Phan Thiet
+3025,Lotte Phu Tho
+3026,Lotte Tan Binh
+3027,Lotte Vung Tau 
+3028,Lào Cai
+3029,Lạng Sơn
+3030,M12 Exceptional Handling Team
+3031,M12 Linehaul Team
+3032,M12 Sorting Team
+3033,M2M HCM Hồ Thị Kỷ
+3034,M2M HCM Sài Đồng
+3035,M2M HCM Đầm Sen
+3036,M2M Nam Ban
+3037,M2M Đà Lạt-444 PDP
+3038,M2M Đơn Dương-LacBinh
+3039,M2M Đắk Lắk-10 LQĐ
+3040,M2M Đắk Lắk-81 XVNT
+3041,M2M Đức Trọng - 536 QL20
+3042,M2M Đức Trọng-17/22 QL20
+3043,MH1368
+3044,Metro Hà Đông
+3045,Mobile Hub Vĩnh Lộc - HCM
+3046,NTB Sorting Team
+3047,Nam Định
+3048,Network Planning Team - bỏ
+3049,Nghệ An
+3050,Ninh Bình
+3051,Ninh Thuận
+3052,NutiFood 156 Xuân Quán - Chàng Sơn - Thạch Thất - Hà Nội
+3053,NutiFood 24 Vạn Phúc - Vạn Phúc - Hà Đông - Hà Nội
+3054,NutiFood 36 Thịnh Liệt-Hoàng Mai-Hà Nội
+3055,NutiFood 46 Trung Tựu - Tây Tựu - Bắc Từ Liêm - Hà Nội
+3056,NutiFood 489 Trương Công Định-Phường 7-Vũng Tàu
+3057,NutiFood 83 Phan Văn Xoàn-Phường 2-Bạc Liêu
+3058,NutiFood Chợ Tân Khai-Hớn Quản-Bình Phước
+3059,NutiFood Hải Bối-Đông Anh-Hà Nội
+3060,NutiFood KCN Liên Chiểu Mở Rộng-Hòa Hiệp Bắc-Liên Chiều-Đà Nẵng
+3061,NutiFood Núi Đôi-Sóc Sơn-Hà Nội
+3062,NutiFood Phước Vĩnh Tây-Cần Giuộc-Long An
+3063,NutiFood Phường Bình Khánh-Long Xuyên-An Giang
+3064,NutiFood Phường Chánh Nghĩa-Thủ Dầu Một-Bình Dương
+3065,NutiFood Phường Thống Nhất-Biên Hòa-Đồng Nai
+3066,NutiFood Quảng Bình-Quảng Xương-Thanh Hóa
+3067,NutiFood Quảng Ngọc-Quảng Xương-Thanh Hóa
+3068,NutiFood Số 9-TT19 Văn Phú - Phú La - Hà Đông - Hà Nội
+3069,NutiFood Trịnh Kiểm-Quảng Thắng-Thanh Hóa
+3070,NutiFood Tế Nông-Nông Cống-Thanh Hóa
+3071,NutiFood Xã Bình Hòa-Vĩnh Cửu-Đồng Nai
+3072,NutiFood chợ Đồng Vàng - Hoàng Long - Phú Xuyên - Hà Nội
+3073,Nutifood 206 Tổ 9-Trung Tâm-Nghĩa Lộ-Yên Bái
+3074,OE THANH LÝ
+3075,OE Test hệ thống
+3076,Phú Mỹ
+3077,Phú Thọ
+3078,Phú Yên
+3079,Quảng Bình
+3080,Quảng Nam
+3081,Quảng Ngãi
+3082,Quảng Trị
+3083,RISK - HCM - Hàng cần Xử Lý
+3084,RISK - Hà Nội - Hàng cần Xử Lý
+3085,Risk - Hàng chờ xác nhận
+3086,Risk - Hàng hư hỏng
+3087,Risk - Hàng quá hạn đền bù
+3088,Risk - Hàng trả không thành công
+3089,Risk - Mất hàng
+3090,S&S Glove Lô 76 và 77 Khu Công nghiệp Nội Bài - Mai Đình -Sóc Sơn - Hà Nội
+3091,S&S Glove Ngõ 89 Lê Đức Thọ - Mỹ Đình 2 - Nam Từ Liêm - Hà Nội
+3092,SGN REVERT
+3093,Shein CTY Khởi Nghiệp Thôn 1-Triệu Sơn-Thanh Hoá
+3094,Shein Lê Thị Khuyên Thọ Đông-Nông Cống-Thanh Hoá
+3095,Shop Trẻ Thơ Đống Đa
+3096,Southwest sai
+3097,Sóc Trăng
+3098,Sông Công Hub
+3099,Sơn La
+3100,TP.Hòa Bình_HB
+3101,TST HuynhDai-Thạch Hà-Hà Tĩnh
+3102,TT GHN
+3103,TTB Sorting Team
+3104,TX.Hương Thủy_TTH
+3105,TX.Hương Trà_TTH
+3106,Thanh Hoá
+3107,Thành Phố Hải Phòng
+3108,Thái Bình
+3109,Thái Nguyên
+3110,Thị Xã Sơn Tây
+3111,Thừa Thiên Huế
+3112,Tiền Giang 
+3113,Truck_HCM
+3114,Truck_HN
+3115,Truck_ĐN
+3116,Trà Vinh
+3117,Trụ sở chính F1
+3118,Tuyên Quang
+3119,Tây Ninh
+3120,TĐ GHN
+3121,VTU-VinMart+-01-03PhungKhacKhoan
+3122,Vascara 114 Trần Duy Hưng - Trung Hòa - Cầu Giấy - Hà Nội
+3123,Vascara 224 Bạch Mai - Cầu Đền - Quận Hai Bà Trưng - Hà Nội
+3124,Vascara 248 Cầu Giấy - Quan Hoa - Cầu Giấy - Hà Nội
+3125,Vascara 65-67 Chùa Bộc - Trung Liệt - Đống Đa - Hà Nội
+3126,Vascara 7-9 Nguyễn Văn Linh - Gia Thụy - Long Biên - Hà Nội
+3127,Vascara Aeon Long Biên - Long Biên - Hà Nội.
+3128,Vascara Go Thăng Long - 222 Trần Duy Hưng - Trung Hòa - Cầu giấy - Hà Nội
+3129,Vascara TTTM Aeonmall Hà Đông - Dương Nội - Hà Đông - Hà Nội
+3130,Vascara Vincom Royal City - 72A Nguyễn Trãi - Thanh Xuân - Hà Nội
+3131,Vascara Vincom Times City - gian hàng TN-8A - Vĩnh Tuy - Hai Bà Trưng - Hà Nội
+3132,Vĩnh Long
+3133,Vĩnh Phúc
+3134,Warehouse đại diện New Station
+3135,Wilmar CTCP Acecook Việt Nam-Tân Phú-Hồ Chí Minh
+3136,Wilmar CTCP Con Cưng 1-Thuận An-Bình Dương
+3137,Wilmar CTCP Con Cưng 2-Dĩ An-Bình Dương
+3138,Wilmar CTCP Cá Ngừ Hạ Long-Bình Chánh-Hồ Chí Minh
+3139,Wilmar CTCP Dinh Dưỡng Nocosgreen Việt Nam-Tân Uyên-Bình Dương
+3140,Wilmar CTCP Dược Hậu Giang-Bình Tân-Hồ Chí Minh
+3141,Wilmar CTCP Dược Phẩm Me Di Sun-Bến Cát-Bình Dương
+3142,Wilmar CTCP Dược Phẩm Phong Phú-Bình Tân-Hồ Chí Minh
+3143,Wilmar CTCP Dược Phẩm Phương Đông-Bình Tân-Hồ Chí Minh
+3144,Wilmar CTCP Dịch Vụ Thương Mại Tổng Hợp Wincommerce 1-Tân Uyên-Bình Dương
+3145,Wilmar CTCP Dịch Vụ Thương Mại Tổng Hợp Wincommerce 2-Tân Uyên-Bình Dương
+3146,Wilmar CTCP Dịch Vụ Thương Mại Tổng Hợp Wincommerce 3-Tân Uyên-Bình Dương
+3147,Wilmar CTCP Dịch Vụ Thương Mại Tổng Hợp Wincommerce 4-Tân Uyên-Bình Dương
+3148,Wilmar CTCP Dịch Vụ Thương Mại Tổng Hợp Wincommerce-Tân Uyên-Bình Dương
+3149,Wilmar CTCP Hóa Phẩm Tùng Việt-Nhơn Trạch-Đồng Nai
+3150,Wilmar CTCP Hương Liệu Và Nguyên Liệu Thực Phẩm Hoàng Anh-Nhà Bè-Hồ Chí Minh
+3151,Wilmar CTCP King Food Market-Dĩ An-Bình Dương
+3152,Wilmar CTCP Korea United Pharm Int'L-Thuận An-Bình Dương
+3153,Wilmar CTCP Liwayway Việt Nam-Thuận An-Bình Dương
+3154,Wilmar CTCP Marico South East Asia 1-Thuận An-Bình Dương
+3155,Wilmar CTCP Marico South East Asia 2-Thuận An-Bình Dương
+3156,Wilmar CTCP Marico South East Asia 3-Dĩ An-Bình Dương
+3157,Wilmar CTCP Mondelez Kinh Đô Việt Nam-Thuận An-Bình Dương
+3158,Wilmar CTCP Nguyên Liệu Thực Phẩm Á Châu Sài Gòn-Bến Cát-Bình Dương
+3159,Wilmar CTCP Phở Việt-Thuận An-Bình Dương
+3160,Wilmar CTCP S.P.M-Bình Tân-Hồ Chí Minh
+3161,Wilmar CTCP Sữa Evergrowth-Châu Thành-Sóc Trăng
+3162,Wilmar CTCP Thương Mại Bách Hóa Xanh 1-Bình Tân-Hồ Chí Minh
+3163,Wilmar CTCP Thương Mại Bách Hóa Xanh 2-Nhà Bè-Hồ Chí Minh
+3164,Wilmar CTCP Thương Mại Bách Hóa Xanh 3-Bình Chánh-Hồ Chí Minh
+3165,Wilmar CTCP Thương Mại Bách Hóa Xanh 4-Tân Phú-Hồ Chí Minh
+3166,Wilmar CTCP Thương Mại Bách Hóa Xanh 5-Thành phố Thủ Đức-Hồ Chí Minh
+3167,Wilmar CTCP Thương Mại Bách Hóa Xanh 6-Thuận An-Bình Dương
+3168,Wilmar CTCP Thương Mại Bách Hóa Xanh-Biên Hoà-Đồng Nai
+3169,Wilmar CTCP Thế Giới Di Động-Bình Tân-Hồ Chí Minh
+3170,Wilmar CTCP Thực Phẩm Agrex Saigon-Quận 7-Hồ Chí Minh
+3171,Wilmar CTCP Thực Phẩm Agrex Saigon-Quận 7-Hồ Chí Minh 1
+3172,Wilmar CTCP Thực Phẩm Bình Tây-Quận 7-Hồ Chí Minh
+3173,Wilmar CTCP Thực Phẩm Cholimex-Bình Chánh-Hồ Chí Minh
+3174,Wilmar CTCP Thực Phẩm Dinh Dưỡng Nutifood Bình Dương-Bến Cát-Bình Dương
+3175,Wilmar CTCP Thực Phẩm Hữu Nghị-Thủ Dầu Một-Bình Dương
+3176,Wilmar CTCP Thực Phẩm Sức Khỏe Quốc Tế Ifh-Tân Uyên-Bình Dương
+3177,Wilmar CTCP Trang-Nhà Bè-Hồ Chí Minh
+3178,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam 1-Quận 7-Hồ Chí Minh
+3179,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam 2-Quận 11-Hồ Chí Minh
+3180,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam-Chi Nhánh Gò Vấp-Gò Vấp-Hồ Chí Minh
+3181,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam-Chi Nhánh Tân Bình-Tân Bình-Hồ Chí Minh
+3182,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam-Chi Nhánh Đồng Nai-Biên Hoà-Đồng Nai
+3183,Wilmar CTCP Trung Tâm Thương Mại Lotte Việt Nam–Chi Nhánh Bình Dương-Thuận An-Bình Dương
+3184,Wilmar CTCP Us Pharma Usa-Củ Chi-Hồ Chí Minh
+3185,Wilmar CTCP Việt Nam Kỹ Nghệ Súc Sản-Bình Thạnh-Hồ Chí Minh
+3186,Wilmar CTCP Xuất Nhập Khẩu Dinh Dưỡng Dược Loha-Tân Uyên-Bình Dương
+3187,Wilmar CTCP Đầu Tư Nhiệt Đới-Quận 7-Hồ Chí Minh
+3188,Wilmar CTTNHH Ab Mauri Việt Nam-Định Quán-Đồng Nai
+3189,Wilmar CTTNHH Aeon Việt Nam 1-Quận 12-Hồ Chí Minh
+3190,Wilmar CTTNHH Aeon Việt Nam 2-Quận 12-Hồ Chí Minh
+3191,Wilmar CTTNHH Aeon Việt Nam 3-Quận 12-Hồ Chí Minh
+3192,Wilmar CTTNHH Aeon Việt Nam 4-Tân Phú-Hồ Chí Minh
+3193,Wilmar CTTNHH Aeon Việt Nam 5-Tân Phú-Hồ Chí Minh
+3194,Wilmar CTTNHH Aeon Việt Nam 6-Quận 12-Hồ Chí Minh
+3195,Wilmar CTTNHH Aeon Việt Nam 7-Quận 8-Hồ Chí Minh
+3196,Wilmar CTTNHH Aeon Việt Nam-Chi Nhánh Bình Dương 1-Thuận An-Bình Dương
+3197,Wilmar CTTNHH Aeon Việt Nam-Chi Nhánh Bình Dương 2-Thủ Dầu Một-Bình Dương
+3198,Wilmar CTTNHH Aeon Việt Nam-Chi Nhánh Thành Phố HCM-Bình Tân-Hồ Chí Minh
+3199,Wilmar CTTNHH Chế Biến Thực Phẩm & Bánh Kẹo Phạm Nguyên-Bình Tân-Hồ Chí Minh
+3200,Wilmar CTTNHH Chế Biến Thực Phẩm Gia Vị Bảo Long-Bình Tân-Hồ Chí Minh
+3201,Wilmar CTTNHH Cà Phê Trà Phương Vy-Tân Uyên-Bình Dương
+3202,Wilmar CTTNHH Công Nghiệp Thực Phẩm Liwayway Sài Gòn-Thuận An-Bình Dương
+3203,Wilmar CTTNHH De Heus-Bến Cát-Bình Dương
+3204,Wilmar CTTNHH Deneast Việt Nam-Tân Uyên-Bình Dương
+3205,Wilmar CTTNHH Dầu Thực Vật Vạn Phát Long An-Nhà Bè-Hồ Chí Minh
+3206,Wilmar CTTNHH Dịch Vụ Eb 1-Gò Vấp-Hồ Chí Minh
+3207,Wilmar CTTNHH Dịch Vụ Eb 10-Thành phố Thủ Đức-Hồ Chí Minh
+3208,Wilmar CTTNHH Dịch Vụ Eb 11-Quận 2-Hồ Chí Minh
+3209,Wilmar CTTNHH Dịch Vụ Eb 12-Tân Phú-Hồ Chí Minh
+3210,Wilmar CTTNHH Dịch Vụ Eb 13-Tân Uyên-Bình Dương
+3211,Wilmar CTTNHH Dịch Vụ Eb 14-Thủ Dầu Một-Bình Dương
+3212,Wilmar CTTNHH Dịch Vụ Eb 15-Dĩ An-Bình Dương
+3213,Wilmar CTTNHH Dịch Vụ Eb 16-Lộc Ninh-Bình Phước
+3214,Wilmar CTTNHH Dịch Vụ Eb 18-Biên Hoà-Đồng Nai
+3215,Wilmar CTTNHH Dịch Vụ Eb 19-Biên Hoà-Đồng Nai
+3216,Wilmar CTTNHH Dịch Vụ Eb 2-Quận 2-Hồ Chí Minh
+3217,Wilmar CTTNHH Dịch Vụ Eb 20-Nhơn Trạch-Đồng Nai
+3218,Wilmar CTTNHH Dịch Vụ Eb 3-Quận 10-Hồ Chí Minh
+3219,Wilmar CTTNHH Dịch Vụ Eb 4-Tân Phú-Hồ Chí Minh
+3220,Wilmar CTTNHH Dịch Vụ Eb 5-Tân Phú-Hồ Chí Minh
+3221,Wilmar CTTNHH Dịch Vụ Eb 6-Bình Tân-Hồ Chí Minh
+3222,Wilmar CTTNHH Dịch Vụ Eb 7-Tân Phú-Hồ Chí Minh
+3223,Wilmar CTTNHH Dịch Vụ Eb 8-Tân Phú-Hồ Chí Minh
+3224,Wilmar CTTNHH Dịch Vụ Eb 9-Quận 12-Hồ Chí Minh
+3225,Wilmar CTTNHH Dịch Vụ Ngọc Như Ý 1-Bình Tân-Hồ Chí Minh
+3226,Wilmar CTTNHH Dịch Vụ Ngọc Như Ý-Bình Chánh-Hồ Chí Minh
+3227,Wilmar CTTNHH Dịch Vụ Thực Phẩm Và Giải Khát Việt Nam-Thành phố Thủ Đức-Hồ Chí Minh
+3228,Wilmar CTTNHH Hương Liệu Phụ Gia Thực Phẩm Hồng Á-Quận 11-Hồ Chí Minh
+3229,Wilmar CTTNHH Kiến Vương-Bình Tân-Hồ Chí Minh
+3230,Wilmar CTTNHH Kreators-Tân Uyên-Bình Dương
+3231,Wilmar CTTNHH LC Foods-Bến Cát-Bình Dương
+3232,Wilmar CTTNHH Lotte Vietnam-Bến Cát-Bình Dương
+3233,Wilmar CTTNHH Lâm Bình Dương 1-Thủ Dầu Một-Bình Dương
+3234,Wilmar CTTNHH Lâm Bình Dương 2-Thủ Dầu Một-Bình Dương
+3235,Wilmar CTTNHH Mm Mega Market (Việt Nam) 1-Quận 12-Hồ Chí Minh
+3236,Wilmar CTTNHH Mm Mega Market (Việt Nam) 10-Thành phố Thủ Đức-Hồ Chí Minh
+3237,Wilmar CTTNHH Mm Mega Market (Việt Nam) 11-Thủ Dầu Một-Bình Dương
+3238,Wilmar CTTNHH Mm Mega Market (Việt Nam) 2-Thành phố Thủ Đức-Hồ Chí Minh
+3239,Wilmar CTTNHH Mm Mega Market (Việt Nam) 3-Quận 6-Hồ Chí Minh
+3240,Wilmar CTTNHH Mm Mega Market (Việt Nam) 4-Quận 12-Hồ Chí Minh
+3241,Wilmar CTTNHH Mm Mega Market (Việt Nam) 5-Thành phố Thủ Đức-Hồ Chí Minh
+3242,Wilmar CTTNHH Mm Mega Market (Việt Nam) 6-Quận 6-Hồ Chí Minh
+3243,Wilmar CTTNHH Mm Mega Market (Việt Nam) 7-Thành phố Thủ Đức-Hồ Chí Minh
+3244,Wilmar CTTNHH Mm Mega Market (Việt Nam) 8-Hóc Môn-Hồ Chí Minh
+3245,Wilmar CTTNHH Mm Mega Market (Việt Nam) 9-Quận 12-Hồ Chí Minh
+3246,Wilmar CTTNHH Mm Mega Market (Việt Nam)-Biên Hoà-Đồng Nai
+3247,Wilmar CTTNHH Mtv Chế Biến Thực Phẩm Thọ Phát-Nhà Bè-Hồ Chí Minh
+3248,Wilmar CTTNHH Mtv TMDV Thanh Minh-Quận 6-Hồ Chí Minh
+3249,Wilmar CTTNHH Mtv Vương Tường Văn Gia Lai 1-Bình Thạnh-Hồ Chí Minh
+3250,Wilmar CTTNHH Mtv Vương Tường Văn Gia Lai-Tân Phú-Hồ Chí Minh
+3251,Wilmar CTTNHH Một Thành Viên Ah-Thuận An-Bình Dương
+3252,Wilmar CTTNHH Một Thành Viên Co.Op Mart Huế-Thuận An-Bình Dương
+3253,Wilmar CTTNHH Một Thành Viên Co.Opmart Cà Mau-Thuận An-Bình Dương
+3254,Wilmar CTTNHH Một Thành Viên Co.Opmart Cần Thơ-Thuận An-Bình Dương
+3255,Wilmar CTTNHH Một Thành Viên Co.Opmart Nha Trang-Thuận An-Bình Dương
+3256,Wilmar CTTNHH Một Thành Viên Công Nghiệp Masan-Dĩ An-Bình Dương
+3257,Wilmar CTTNHH Một Thành Viên Nguyễn Ngọc Thùy-Thành phố Thủ Đức-Hồ Chí Minh
+3258,Wilmar CTTNHH Một Thành Viên Sài Gòn Co.Op Phú Nhuận-Thuận An-Bình Dương
+3259,Wilmar CTTNHH Một Thành Viên TMDV Siêu Thị Co.Opmart Đà Nẵng-Thuận An-Bình Dương
+3260,Wilmar CTTNHH Một Thành Viên TMDV Sài Gòn-Buôn Ma Thuột-Thuận An-Bình Dương
+3261,Wilmar CTTNHH Một Thành Viên TMDV Sài Gòn-Phú Yên-Thuận An-Bình Dương
+3262,Wilmar CTTNHH Một Thành Viên Thực Phẩm Sumimoto-Thủ Dầu Một-Bình Dương
+3263,Wilmar CTTNHH Một Thành Viên Thực Phẩm Á Châu Iii-Tân Uyên-Bình Dương
+3264,Wilmar CTTNHH Một Thành Viên Vận Tải Duy Linh 1-Nhà Bè-Hồ Chí Minh
+3265,Wilmar CTTNHH Một Thành Viên Vận Tải Duy Linh-Thành phố Thủ Đức-Hồ Chí Minh
+3266,Wilmar CTTNHH Nam Phương V.N-Củ Chi-Hồ Chí Minh
+3267,Wilmar CTTNHH Nam Việt Đỗ 1-Hóc Môn-Hồ Chí Minh
+3268,Wilmar CTTNHH Nam Việt Đỗ-Hóc Môn-Hồ Chí Minh
+3269,Wilmar CTTNHH Nestle Việt Nam 1-Biên Hoà-Đồng Nai
+3270,Wilmar CTTNHH Nestle Việt Nam 2-Biên Hoà-Đồng Nai
+3271,Wilmar CTTNHH Nestle Việt Nam 3-Biên Hoà-Đồng Nai
+3272,Wilmar CTTNHH Nuplex Resins (Việt Nam)-Biên Hoà-Đồng Nai
+3273,Wilmar CTTNHH Nutrition Việt Nam-Tân Uyên-Bình Dương
+3274,Wilmar CTTNHH Nến Zhong Sheng-Củ Chi-Hồ Chí Minh
+3275,Wilmar CTTNHH Papparoti Việt Nam-Tân Phú-Hồ Chí Minh
+3276,Wilmar CTTNHH Perfetti Van Melle (Việt Nam)-Dĩ An-Bình Dương
+3277,Wilmar CTTNHH Phú Hoàng Vinh-Bình Tân-Hồ Chí Minh
+3278,Wilmar CTTNHH Puratos Grand-Place Việt Nam 1-Thuận An-Bình Dương
+3279,Wilmar CTTNHH Puratos Grand-Place Việt Nam 2-Thuận An-Bình Dương
+3280,Wilmar CTTNHH Republic Biscuit Corporation Việt Nam-Tân Uyên-Bình Dương
+3281,Wilmar CTTNHH Saigon Co-Op Fairprice-Thuận An-Bình Dương
+3282,Wilmar CTTNHH Sản Xuất TMDV Vân Hậu-Nhà Bè-Hồ Chí Minh
+3283,Wilmar CTTNHH Sản Xuất TMDV Xuất Nhập Khẩu M&N Vĩnh Thạnh 1-Quận 10-Hồ Chí Minh
+3284,Wilmar CTTNHH Sản Xuất TMDV Xuất Nhập Khẩu M&N Vĩnh Thạnh 2-Tân Phú-Hồ Chí Minh
+3285,Wilmar CTTNHH Sản Xuất Thương Mại G.B.C.O-Thành phố Thủ Đức-Hồ Chí Minh
+3286,Wilmar CTTNHH Sản Xuất Thương Mại Poyun 1-Tân Uyên-Bình Dương
+3287,Wilmar CTTNHH Sản Xuất Thương Mại Poyun 2-Trảng Bom-Đồng Nai
+3288,Wilmar CTTNHH Sản Xuất Thương Mại Poyun 3-Trảng Bom-Đồng Nai
+3289,Wilmar CTTNHH Sản Xuất Thương Mại Poyun 4-Trảng Bom-Đồng Nai
+3290,Wilmar CTTNHH Sản Xuất Thương Mại Poyun-Trảng Bom-Đồng Nai
+3291,Wilmar CTTNHH Sản Xuất Thương Mại Thiên Long Long Thành-Long Thành-Đồng Nai
+3292,Wilmar CTTNHH Sản Xuất Thương Mại Thư Trúc-Thuận An-Bình Dương
+3293,Wilmar CTTNHH Sữa Nutribiz-Bến Cát-Bình Dương
+3294,Wilmar CTTNHH TMDV Dương Dương Châu-Bình Tân-Hồ Chí Minh
+3295,Wilmar CTTNHH TMDV Hóa Chất Mỹ Phẩm Mia-Quận 6-Hồ Chí Minh
+3296,Wilmar CTTNHH TMDV Xuất Nhập Khẩu Hân Lê 1-Hóc Môn-Hồ Chí Minh
+3297,Wilmar CTTNHH TMDV Xuất Nhập Khẩu Hân Lê 2-Hóc Môn-Hồ Chí Minh
+3298,Wilmar CTTNHH TMDV Xuất Nhập Khẩu Hân Lê 3-Hóc Môn-Hồ Chí Minh
+3299,Wilmar CTTNHH Thiso Retail 1-Thành phố Thủ Đức-Hồ Chí Minh
+3300,Wilmar CTTNHH Thiso Retail 2-Gò Vấp-Hồ Chí Minh
+3301,Wilmar CTTNHH Thiso Retail-Gò Vấp-Hồ Chí Minh
+3302,Wilmar CTTNHH Thương Mại Công Nghệ Thực Phẩm Lê Gia-Thành phố Thủ Đức-Hồ Chí Minh
+3303,Wilmar CTTNHH Thương Mại Nhất Hương-Hóc Môn-Hồ Chí Minh
+3304,Wilmar CTTNHH Thương Mại Phân Phối Thực Phẩm Vi Vi-Bình Chánh-Hồ Chí Minh
+3305,Wilmar CTTNHH Thương Mại Sài Gòn-An Giang-Thuận An-Bình Dương
+3306,Wilmar CTTNHH Thương Mại Sản Xuất Hương Liệu Thanh Xuân 1-Tân Bình-Hồ Chí Minh
+3307,Wilmar CTTNHH Thương Mại Sản Xuất Hương Liệu Thanh Xuân 2-Hóc Môn-Hồ Chí Minh
+3308,Wilmar CTTNHH Thương Mại Tân Nhất Hương 1-Hóc Môn-Hồ Chí Minh
+3309,Wilmar CTTNHH Thương Mại Tân Nhất Hương 2-Củ Chi-Hồ Chí Minh
+3310,Wilmar CTTNHH Thương Mại Ân Thái-Quận 11-Hồ Chí Minh
+3311,Wilmar CTTNHH Thương Mại- Dịch Vụ Sài Gòn-Vũng Tàu-Thuận An-Bình Dương
+3312,Wilmar CTTNHH Thương Mại-Dịch Vụ Lam Tân-Thành phố Thủ Đức-Hồ Chí Minh
+3313,Wilmar CTTNHH Thương Mại-Dịch Vụ Minh Phong-Quận 12-Hồ Chí Minh
+3314,Wilmar CTTNHH Thương Mại-Dịch Vụ Tiền Giang-Sài Gòn-Thuận An-Bình Dương
+3315,Wilmar CTTNHH Thực Phẩm Dary-Nhà Bè-Hồ Chí Minh
+3316,Wilmar CTTNHH Thực Phẩm Dinh Dưỡng Nutridiamond 1-Tân Uyên-Bình Dương
+3317,Wilmar CTTNHH Thực Phẩm Dinh Dưỡng Nutridiamond-Biên Hoà-Đồng Nai
+3318,Wilmar CTTNHH Thực Phẩm Nissin Việt Nam-Tân Uyên-Bình Dương
+3319,Wilmar CTTNHH Thực Phẩm Orion Vina-Bến Cát-Bình Dương
+3320,Wilmar CTTNHH Thực Phẩm Xuất Khẩu Hai Thanh-Nhà Bè-Hồ Chí Minh
+3321,Wilmar CTTNHH Tm Dv Bé Cần Đước-Thủ Dầu Một-Bình Dương
+3322,Wilmar CTTNHH Tm Dv Vinh Phong-Quận 6-Hồ Chí Minh
+3323,Wilmar CTTNHH Tm Dịch Vụ Siêu Thị Co.Op Mart Biên Hòa-Thuận An-Bình Dương
+3324,Wilmar CTTNHH Tm Sb 1-Quận 6-Hồ Chí Minh
+3325,Wilmar CTTNHH Tm Sb 2-Quận 6-Hồ Chí Minh
+3326,Wilmar CTTNHH Uni-President Việt Nam-Dĩ An-Bình Dương
+3327,Wilmar CTTNHH Urc Việt Nam-Tân Uyên-Bình Dương
+3328,Wilmar CTTNHH Vina Foods Kyoei-Bình Tân-Hồ Chí Minh
+3329,Wilmar CTTNHH Vina Foods Kyoei-Chi Nhánh Đà Nẵng-Bình Tân-Hồ Chí Minh
+3330,Wilmar CTTNHH Wipro Consumer Care Việt Nam-Thuận An-Bình Dương
+3331,Wilmar CTTNHH Yilin Việt Nam-Bình Chánh-Hồ Chí Minh
+3332,Wilmar CTTNHH Đại Hiền Tâm-Củ Chi-Hồ Chí Minh
+3333,Wilmar CTTNHH Đầu Tư Và Thương Mại Nguyễn Trương-Tân Phú-Hồ Chí Minh
+3334,Wilmar Chi Nhánh Công Ty Liên Doanh TNHH KFC Việt Nam Tại Thành Phố HCM-Gò Vấp-Hồ Chí Minh
+3335,Wilmar Chi Nhánh Liên Hiệp Hợp Tác Xã Thương Mại Tp HCM-Co.Opmart Bình Dương-Thuận An-Bình Dương
+3336,Wilmar Chi Nhánh Liên Hiệp Hợp Tác Xã Thương Mại Tp. HCM-Co.Opmart Bình Dương-Thuận An-Bình Dương
+3337,Wilmar Cn Tct Tm Sài Gòn-TNHH Mtv-Siêu Thị Sài Gòn-Quận 10-Hồ Chí Minh
+3338,Wilmar Công Ty Ajinomoto Việt Nam 1-Biên Hoà-Đồng Nai
+3339,Wilmar Công Ty Ajinomoto Việt Nam 2-Long Thành-Đồng Nai
+3340,Wilmar Công Ty Cp Sx-Tm Dược Phẩm Đông Nam-Bình Tân-Hồ Chí Minh
+3341,Wilmar Công Ty Liên Doanh Phạm-Asset-Bình Tân-Hồ Chí Minh
+3342,Wilmar Công Ty Trách Nhiệm Hữu Hạn Kms Vina-Bến Cát-Bình Dương
+3343,Wilmar Công Ty Trách Nhiệm Hữu Hạn Sản Xuất TMDV Vũ Phúc-Bình Tân-Hồ Chí Minh
+3344,Wilmar HKD Aby Shop 1-Gò Vấp-Hồ Chí Minh
+3345,Wilmar HKD Công Tử Bột-Thủ Dầu Một-Bình Dương
+3346,Wilmar HKD Cửa Hàng Thế Giới Nguyên Liệu Maii'S Mart-Tân Phú-Hồ Chí Minh
+3347,Wilmar HKD Dương Hồng Mai-Nhà Bè-Hồ Chí Minh
+3348,Wilmar HKD Hoa Mai-Quận 6-Hồ Chí Minh
+3349,Wilmar HKD Khang Phát-Quận 8-Hồ Chí Minh
+3350,Wilmar HKD Lona Mart-Quận 6-Hồ Chí Minh
+3351,Wilmar HKD Lê Huy Thiên-Biên Hoà-Đồng Nai
+3352,Wilmar HKD Mã Kim Huệ-Nhà Bè-Hồ Chí Minh
+3353,Wilmar HKD Ngà Năm-Quận 8-Hồ Chí Minh
+3354,Wilmar HKD Như Thùy-Thành phố Thủ Đức-Hồ Chí Minh
+3355,Wilmar HKD Tân Nguyên Hưng-Quận 6-Hồ Chí Minh
+3356,Wilmar HKD Vi Na Sen-Thành phố Thủ Đức-Hồ Chí Minh
+3357,Wilmar HKD Vân Hậu-Nhà Bè-Hồ Chí Minh
+3358,Wilmar HKD Xuân Thủy-Bình Chánh-Hồ Chí Minh
+3359,Wilmar Hân-Phú 1-Bình Chánh-Hồ Chí Minh
+3360,Wilmar Hân-Phú 2-Bình Chánh-Hồ Chí Minh
+3361,Wilmar Liên Hiệp Hợp Tác Xã Thương Mại Thành Phố HCM 1-Thuận An-Bình Dương
+3362,Wilmar Liên Hiệp Hợp Tác Xã Thương Mại Thành Phố HCM 2-Dĩ An-Bình Dương
+3363,Wilmar Liên Hiệp Hợp Tác Xã Thương Mại Thành Phố HCM 3-Dĩ An-Bình Dương
+3364,Wilmar Liên Hiệp Hợp Tác Xã Thương Mại Thành Phố HCM 4-Thuận An-Bình Dương
+3365,Wilmar Nhà Máy Bibica Biên Hòa – Chi Nhánh CTCP Bibica-Biên Hoà-Đồng Nai
+3366,Wilmar Trung Tâm Phân Phối Satra-Dĩ An-Bình Dương
+3367,Wilmar Trung Tâm Thương Mại Satra Củ Chi-Củ Chi-Hồ Chí Minh
+3368,Wilmar Trung Tâm Điều Hành Bán Lẻ Satra Cần Thơ-Quận 11-Hồ Chí Minh
+3369,Wilmar Tttm Satra Đường Phạm Hùng-Bình Chánh-Hồ Chí Minh
+3370,Wilmar Tuyết Nga-Nhà Bè-Hồ Chí Minh
+3371,Wilmar Võ Thành Nhân-Quận 6-Hồ Chí Minh
+3372,Wilmart Big C Nhơn Trạch-Đồng Nai
+3373,Wilmart Big C Phú Thạnh-Tân Phú-Hồ Chí Minh
+3374,Wilmart Bách Hoá Xanh Xuyên Á-Đức Hoà-Long An
+3375,XASC Exceptional Handling Team
+3376,XASC Linehaul Team
+3377,XASC Sorting Team
+3378,Xoá - Kho Chuyển tiếp Vĩnh Phúc
+3379,Xuyên Mộc
+3380,Xử Lý Ngoại lệ Miền Nam
+3381,Yody 10B KCN Hòa Khánh-Liên Chiểu-Đà Nẵng
+3382,Yên Bái
+3383,Điểm Dịch vụ CircleK
+3384,Điểm Dịch vụ Shop&Go
+3385,Điểm Dịch vụ VinMart+
+3386,Điểm Lấy Hàng 4357508 -Xưởng Vật Tư NN Bắc Hà
+3387,Điểm Lấy Hàng Kho Shopee Đà Nẵng
+3388,Điểm Lấy Hàng Shop 4697549-Hồng Nhung
+3389,Điểm Lấy Hàng Shop 4716742-Yasahi Audio
+3390,Điểm Lấy Hàng Shop Dương Lồng Gà-Thường Xuân-Thanh Hoá
+3391,Điểm Lấy Hàng Shop Lương Gà Đạt Minh-Yên Định-Thanh Hóa
+3392,Điểm Lấy Hàng Shop Nguyễn Thủy-Nông Công-Thanh Hóa
+3393,Điểm Lấy Hàng Shop Thuốc Nam-Ninh Hải-Ninh Thuận
+3394,Điểm Lấy Hàng Shop Tổng Kho Võ Hằng (Shop A2)
+3395,Điểm Lấy Hàng Shop Tổng Kho Xe Điện
+3396,Điểm Lấy Hàng Thôn Hoà Bình-Hải Lựu-Sông Lô-Vĩnh Phúc
+3397,Điểm Lấy Hàng Thôn Hoành Sơn-Lãng Công-Sông Lô-Vĩnh Phúc
+3398,Điểm Xử Lý Hàng 1056 Quang-Chánh Lộ-Quảng Ngãi
+3399,Điểm Xử Lý Hàng Châu Ổ-Bình Sơn-Quảng Ngãi
+3400,Điểm giao Thị Trấn D'Ran-Đơn Dương-Lâm Đồng
+3401,Điểm giao Xã Lát-Đưng K'Nớ-Lạc Dương-Lâm Đồng
+3402,Điểm giao Xã Trạm Hành-Xuân Trường-Đà Lạt-Lâm Đồng
+3403,Điểm giao Xã Đạ Nhim-Lạc Dương-Lâm Đồng
+3404,Điểm lấy hàng Nguyễn Đình Chiểu-Nghĩa Tân-Gia Nghĩa-Đăk Nông
+3405,Điểm lấy hàng Ngõ Đông-Trực Ninh-Nam Định
+3406,Điểm lấy hàng Shop Gia Dụng Hưng Phát-Phú Xuyên-HN
+3407,Điểm lấy hàng Shop Gấu Bông-Thạch Thành-Thanh Hóa
+3408,Điểm lấy hàng Shop Hải Nam-Thọ Xuân-Thanh Hóa
+3409,Điểm lấy hàng Shop Mai Vàng-Bến Lức-Long An
+3410,Điểm lấy hàng Shop Mina Hana-Hương Khê-Hà Tĩnh
+3411,Điểm nhận hàng Ba Bể-Bắc Kạn
+3412,Điểm nhận hàng Bà Triệu-Quản Bạ-Hà Giang
+3413,Điểm nhận hàng Chợ Bằng Ca-Hạ Lang-Cao Bằng
+3414,Điểm nhận hàng Pắc Nặm-Bắc Kạn
+3415,Điểm nhận hàng Sông Hiến-Cao Bằng
+3416,Điểm nhận hàng Thị Trấn Bảo Lạc - Cao Bằng
+3417,Điểm nhận hàng Thị Trấn Hòa Thuận-Hạ Lang-Cao Bằng
+3418,Điểm nhận hàng Thị Trấn Pác Miầu - Bảo Lâm - Cao Bằng
+3419,Điểm nhận hàng Thị Trấn Thanh Nhật-Hạ Lang-Cao Bằng
+3420,Điểm nhận hàng Thị trấn Trùng Khánh-Trùng Khánh-Cao Bằng
+3421,Điểm nhận hàng Thị trấn Đồng Văn Số 1-Đồng Văn-Hà Giang
+3422,Điểm nhận hàng Thị trấn Đồng Văn Số 2-Đồng Văn-Hà Giang
+3423,Điểm nhận hàng Tiêu Khu 2-Ngân Sơn-Bắc Kạn
+3424,Điểm nhận hàng Xã Thông Huề-Trùng Khánh-Cao Bằng
+3425,Điểm nhận hàng xã Phố Cáo-Đồng Văn-Hà Giang
+3426,Điểm xử lý hàng Bắc Mê-Hà Giang
+3427,Điểm xử lý hàng Huyện Bắc Yên-Sơn La
+3428,Điểm xử lý hàng Huyện Đảo Cô Tô-Quảng Ninh
+3429,Điểm xử lý hàng KonPlong - Kon Tum
+3430,Điểm xử lý hàng Nguyên Bình-Cao Bằng
+3431,Điểm xử lý hàng Nhật Tựu-Kim Bảng-Hà Nam
+3432,Điểm xử lý hàng Nậm Pồ-Điện Biên
+3433,Điểm xử lý hàng Phong Thổ-Lai Châu
+3434,Điểm xử lý hàng Si Ma Cai-Lào Cai
+3435,Điểm xử lý hàng Sìn Hồ-Lai Châu 02
+3436,Điểm xử lý hàng Sơn Động-Bắc Giang
+3437,Điểm xử lý hàng Thác Bưởi-Tiên Lãng-Tiên Yên-Quảng Ninh
+3438,Điểm xử lý hàng Thị Trấn Cổ Phúc-Trấn Yên-Yên Bái
+3439,Điểm xử lý hàng Thị trấn Khánh Yên-Văn Bàn-Lào Cai
+3440,Điểm xử lý hàng Thổ Châu-Phú Quốc-Kiên Giang
+3441,Điểm xử lý hàng Tân Uyên-Lai Châu
+3442,Điểm xử lý hàng Vinh Quang-Hà Giang
+3443,Điểm xử lý hàng hoá cho Sìn Hồ Thấp-Lai Châu
+3444,Điểm xử lý hàng hoá cho TT Thác Bà-Yên Bình-Yên Bái
+3445,Điểm xử lý hàng Đường 19 Tháng 8-Đoàn Kết-Lai Châu
+3446,Điện Biên
+3447,Đắc Nông
+3448,Đắk Lắk
+3449,Đồng Nai
+3450,Đồng Tháp

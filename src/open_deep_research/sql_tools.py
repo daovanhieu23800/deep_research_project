@@ -1,10 +1,14 @@
 from langchain_core.tools import tool
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from open_deep_research.utils import query_bigquery
 
 # Input model for schema retrieval tools. It's empty as no input is needed.
 class GetSchemaInput(BaseModel):
     """Input to a schema retrieval tool. No parameters are needed."""
     pass
+class UniqueValueInput(BaseModel):
+    column: str = Field(..., description="Column name to inspect")
+    table:  str = Field(..., description="Table containing the column, it should be in format 'agentic-ai-463517.ghn_data.<table_name>'")
 
 @tool(args_schema=GetSchemaInput)
 def get_schema_shipping_order() -> str:
@@ -53,6 +57,28 @@ def get_schema_sla_delivery() -> str:
     Call this tool to see columns related to Service Level Agreements (SLA) for delivery routes.
     """
     return SLA_DELIVERY_SCHEMA_DDL
+
+@tool(args_schema=UniqueValueInput)
+def get_unique_value_of_columns(column: str, table: str) -> str:
+    """
+    Returns all unique value of a column in the table
+    Call this tool to see all uniques value of one 
+    """
+    query = f"""SELECT DISTINCT {column}
+FROM   `{table}`
+WHERE  {column} IS NOT NULL"""
+
+    if table == "agentic-ai-463517.ghn_data.shipping_order":
+        query += """ AND created_date_partition <'2030-01-01' """
+    elif table == "agentic-ai-463517.ghn_data.middle_mile_log":
+        query += """ AND action_date <'2030-01-01' """
+    #print('====================test tool========================')
+    #print(query)
+    result = query_bigquery(query)
+    #print(result)
+    #print('====================test tool========================')
+    return f"All unique value of {column}: {result}"
+
 
 # --- Define the static DDL schema string for shipping_order --- 
 SHIPPING_ORDER_SCHEMA_DDL = """

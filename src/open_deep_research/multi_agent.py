@@ -30,15 +30,46 @@ from open_deep_research.sql_tools import (
     get_schema_middle_mile_log,
     get_schema_revenue_order,
     get_schema_sla_delivery,
+    get_unique_value_of_columns,
     ABBREVIATIONS_AND_JARGON_LIST
 )
 
 from open_deep_research.prompts import (
     SUPERVISOR_INSTRUCTIONS,
     RESEARCH_INSTRUCTIONS,
-    SQL_AGENT_INSTRUCTIONS
+    SQL_AGENT_INSTRUCTIONS,
+    visualization_instructions
 )
+#--------------Visualize tool----------------------------------
+from langchain_core.messages import HumanMessage, SystemMessage
+from open_deep_research.utils import python_execute
+from langchain_openai import ChatOpenAI
 
+class VisualizeScript(BaseModel):
+    visualize_script: str = Field(..., description="visualize script if cant visulize output empty string ")
+    file_path: str = Field(..., description="path of visualization file, if cant visualize return empty")
+def visualize_data(question, sql_result):
+    llm = ChatOpenAI(
+    model_name="gpt-4o-mini",
+    )
+    llm = llm.with_structured_output(VisualizeScript)
+
+    system_instructions_query = visualization_instructions.format(
+                        previous_script="",
+                        query_result=sql_result,
+                        folder_path="./outputs/images/<file_name>",
+                        last_error="",
+                    )
+        # print(system_instructions_query)
+    result =  llm.invoke([SystemMessage(content=system_instructions_query),
+                                                            HumanMessage(content=question)])
+
+    if result.visualize_script != "":
+        python_execute(result.visualize_script)
+        return result.file_path
+    else:
+        return ""
+#--------------Visualize tool----------------------------------
 
 ## Tools factory - will be initialized based on configuration
 def get_search_tool(config: RunnableConfig):
@@ -440,9 +471,9 @@ async def supervisor_should_continue(state: ReportState) -> str:
 class ExecuteSqlArgs(BaseModel):
     """Input model for the execute_sql_query tool."""
     sql_query: str = Field(description="The syntactically correct SQL query to execute against the database.")
-
+    question:  str = Field(description="key question to answer")
 @tool(args_schema=ExecuteSqlArgs)
-def execute_sql_query(sql_query: str) -> str:
+def execute_sql_query(sql_query: str, question:str) -> str:
     """
     Executes the given SQL query against the database and returns the result set as a string.
     This is the final step after a query has been generated.
@@ -454,6 +485,11 @@ def execute_sql_query(sql_query: str) -> str:
     print("---------------------")
     
     result = query_bigquery(sql_query)
+    if ("No results found." not in result) and ("error" not in  result.lower()):
+        file_path = visualize_data(question, result)
+        print(file_path)
+    print("---------------------")
+
     return result 
 
 def get_sql_agent_tools() -> list[BaseTool]:
@@ -465,6 +501,7 @@ def get_sql_agent_tools() -> list[BaseTool]:
         get_schema_middle_mile_log,
         get_schema_revenue_order,
         get_schema_sla_delivery,
+        get_unique_value_of_columns,
         execute_sql_query,
         tool(FinishSQLAgent),  # Tool to signal the SQL agent is done
     ]
@@ -533,6 +570,16 @@ def sql_agent_should_continue(state: SqlAgentState) -> str:
     """
 
     last_message = state["messages"][-1]
+
+    last_message = state["messages"][-1]
+    if len(state['messages'])>5:
+        last_last_message = state["messages"][-2]
+        last_last_last_message = state["messages"][-3]
+    # If there are no tool calls, loop back to the agent to generate one.
+
+        if (not getattr(last_message, "tool_calls", None)) and (not getattr(last_last_message, "tool_calls", None)) and (not getattr(last_last_last_message, "tool_calls", None)):
+            return END
+
     # If there are no tool calls, loop back to the agent to generate one.
     if not last_message.tool_calls:
         return "sql_agent_node"
