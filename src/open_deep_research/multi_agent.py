@@ -5,11 +5,11 @@ import operator
 import warnings
 import re 
 import pypandoc
-
+import os
 from langchain.chat_models import init_chat_model
 from langchain_core.tools import tool, BaseTool
 from langchain_core.runnables import RunnableConfig
-from langchain_core.messages import HumanMessage, ToolMessage
+from langchain_core.messages import HumanMessage, ToolMessage,SystemMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.graph import MessagesState
 
@@ -37,9 +37,11 @@ from open_deep_research.sql_tools import (
 from open_deep_research.prompts import (
     SUPERVISOR_INSTRUCTIONS,
     RESEARCH_INSTRUCTIONS,
-    SQL_AGENT_INSTRUCTIONS
+    # SQL_AGENT_INSTRUCTIONS,
+    SQL_AGENT_INSTRUCTIONS_TO_GEN_FAKE_DATA,
+    visualization_instructions
 )
-
+from open_deep_research.utils import python_execute
 
 ## Tools factory - will be initialized based on configuration
 def get_search_tool(config: RunnableConfig):
@@ -133,11 +135,10 @@ class SectionState(TypedDict):
 class SqlAgentState(TypedDict):
     # The `add_messages` function ensures that new messages are always appended to the list
     messages: Annotated[list, operator.add] # List of messages in the conversation
-    result: str # The final result of the SQL agent's work, typically the answer to the user's question
-
+    
 class SqlAgentOutput(TypedDict):
-    result: str # The final result of the SQL agent's work, typically the answer to the user's question
-
+    sql_result: str # The final result of the SQL agent's work, typically the answer to the user's question
+    file_path: str
 class ReportStateOutput(TypedDict):
     final_report: str # Final report
     source_str: str # String of formatted source content from web search
@@ -159,14 +160,15 @@ async def translate_to_vietnamese(text: str) -> str:
     • Does NOT alter citation markers like [17].
     • Leaves URLs, code fences, and numeric values unchanged.
     """
-    llm = init_chat_model(model="gpt-4o-mini")  # or any cheaper model
+    llm = init_chat_model(model="gpt-4.1", max_tokens=32000)  # or any cheaper model
     prompt = (
         "Bạn là dịch giả chuyên nghiệp Anh-Việt.\n"
         "Dịch toàn bộ nội dung sang tiếng Việt **giữ nguyên**:\n"
         "  • Mã code trong ``` ``` hoặc indentation 4 spaces\n"
         "  • URL, tên miền, và trích dẫn dạng [12]\n"
         "  • Số liệu & ký hiệu tiền tệ\n"
-        "Trả lại đúng văn bản tiếng Việt, không thêm chú thích.\n\n"
+        "Trả lại đúng văn bản tiếng Việt, không thêm chú thích.\n" \
+        "**Về reference và file path vui lòng hãy giữ nguyên như ban đầu**"
         f"{text}"
     )
     resp = await llm.ainvoke(prompt)
@@ -175,30 +177,110 @@ async def translate_to_vietnamese(text: str) -> str:
 import datetime, pathlib, warnings, textwrap
 from typing import Union
 
-def _persist_report(final_report: str,
-                    out_dir: Union[str, pathlib.Path] = "reports") -> pathlib.Path:
-    """
-    Save *final_report* to both Markdown and DOCX in *out_dir*.
-    Returns the path to the .md file (same stem as .docx).
-    """
-    today = datetime.date.today().isoformat()            # e.g., 2025-07-07
-    out_dir = pathlib.Path(out_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
+# def _persist_report(final_report: str,
+#                     out_dir: Union[str, pathlib.Path] = "reports") -> pathlib.Path:
+#     """
+#     Save *final_report* to both Markdown and DOCX in *out_dir*.
+#     Returns the path to the .md file (same stem as .docx).
+#     """
+#     today = datetime.date.today().isoformat()            # e.g., 2025-07-07
+#     out_dir = pathlib.Path(out_dir)
+#     out_dir.mkdir(parents=True, exist_ok=True)
 
-    md_path   = out_dir / f"board_report_{today}.md"
-    docx_path = md_path.with_suffix(".docx")
+#     md_path   = out_dir / f"board_report_{today}.md"
+#     docx_path = md_path.with_suffix(".docx")
 
-    # --- Markdown ---
-    md_path.write_text(final_report, encoding="utf-8")
+#     # --- Markdown ---
+#     md_path.write_text(final_report, encoding="utf-8")
 
-    pypandoc.convert_text(
-        final_report,
-        to='docx',
-        format='md',
-        outputfile=docx_path)
+#     pypandoc.convert_text(
+#         final_report,
+#         to='docx',
+#         format='md',
+#         outputfile=docx_path,
+#         extra_args=[f"--resource-path={out_dir}/images/"]
+#         )
     
 
+#     return md_path
+
+# def _persist_report(final_report: str,
+#                    report_dir: str | pathlib.Path = "reports",
+#                    dpi: int = 300) -> pathlib.Path:
+#     """
+#     Persist *final_report* as Markdown + DOCX, supporting references like
+#     'images/foo.png' and '../reports/images/foo.png'.
+#     """
+#     report_dir = pathlib.Path(report_dir).expanduser().resolve()
+#     report_dir.mkdir(parents=True, exist_ok=True)
+
+#     today      = datetime.date.today().isoformat()
+#     md_path    = report_dir / f"board_report_{today}.md"
+#     docx_path  = md_path.with_suffix(".docx")
+
+#     # 1 ⃣  Save the Markdown
+#     md_path.write_text(final_report, encoding="utf-8")
+
+#     # 2 ⃣  Tell Pandoc where to look for local assets
+#     resource_dirs   = [str(report_dir),                #  images/…
+#                        str(report_dir.parent)]         #  ../reports/…
+#     resource_search = os.pathsep.join(resource_dirs)   # ':' on *nix, ';' on Windows
+
+#     # 3 ⃣  Convert
+#     pypandoc.convert_file(
+#         str(md_path),                 # input .md
+#         "docx",
+#         outputfile=str(docx_path),    # output .docx
+#         extra_args=[
+#             f"--resource-path={resource_search}",
+#             f"--dpi={dpi}",
+#             "--standalone",
+#         ],
+#     )
+#     return md_path
+
+def _persist_report(final_report: str,
+                    report_dir: str | pathlib.Path = "reports",
+                    dpi: int = 300) -> pathlib.Path:
+    import yaml, re, warnings, os, datetime, pathlib, pypandoc
+
+    YAML_RX = re.compile(r"(?s)^---\n(.*?)\n---\s*")
+
+    def strip_bad_yaml(md: str) -> str:
+        m = YAML_RX.match(md)
+        if not m:
+            return md
+        try:
+            yaml.safe_load(m.group(1))
+            return md          # OK
+        except yaml.YAMLError:
+            warnings.warn("⚠ Stripping invalid YAML front-matter before Pandoc")
+            return md[m.end():].lstrip()
+
+    report_dir = pathlib.Path(report_dir).expanduser().resolve()
+    report_dir.mkdir(parents=True, exist_ok=True)
+
+    today = datetime.date.today().isoformat()
+    md_path = report_dir / f"board_report_{today}.md"
+    docx_path = md_path.with_suffix(".docx")
+
+    clean_md = strip_bad_yaml(final_report)
+    md_path.write_text(clean_md, encoding="utf-8")
+
+    resource_search = os.pathsep.join([str(report_dir), str(report_dir.parent)])
+
+    pypandoc.convert_file(
+        str(md_path),
+        "docx",
+        outputfile=str(docx_path),
+        extra_args=[
+            f"--resource-path={resource_search}",
+            f"--dpi={dpi}",
+            "--standalone",
+        ],
+    )
     return md_path
+
 # ------------------
 
 # ======================================
@@ -248,7 +330,7 @@ def resolve_abbreviations_in_query(query: str) -> str:
     print(f"--- Abbreviation Resolver received query: '{query}' ---")
     
     # Use a fast and cheap model for this internal task
-    resolver_llm = init_chat_model(model="gpt-4o-mini") 
+    resolver_llm = init_chat_model(model="gpt-4.1", max_tokens=32000) 
 
     prompt_template = f"""
     You are a helpful assistant. Your task is to expand abbreviations in a given sentence based on a provided list.
@@ -279,11 +361,12 @@ async def get_supervisor_tools(config: RunnableConfig) -> list[BaseTool]:
     # Use the new, more specific tool names
     tools = [
         resolve_abbreviations_in_query,
+        generate_report_meta,
         tool(CoreProblem), 
         tool(Sections), 
         tool(AssembleReport), 
         tool(FinishReport),
-        translate_to_vietnamese
+        #translate_to_vietnamese
     ]
     
     if configurable.ask_for_clarification:
@@ -296,7 +379,7 @@ async def supervisor(state: ReportState, config: RunnableConfig):
     messages = state["messages"]
     configurable = MultiAgentConfiguration.from_runnable_config(config)
     supervisor_model = get_config_value(configurable.supervisor_model)
-    llm = init_chat_model(model=supervisor_model)
+    llm = init_chat_model(model=supervisor_model, max_tokens=32000)
 
     # If all research is done but the report isn't assembled, prompt the LLM to assemble it.
     if state.get("completed_sections") and not state.get("final_report"):
@@ -333,6 +416,58 @@ async def supervisor(state: ReportState, config: RunnableConfig):
         ]
     }
 
+
+#===================title and table of content==================
+class ReportMeta(BaseModel):
+    """What the LLM must output."""
+    title: str = Field(description="#-level Markdown title")
+    toc_md: str = Field(description="Markdown bullet list that links to each H2/H3")
+
+class _MetaArgs(BaseModel):
+    section_names: list[str] = Field(description="Ordered list of section names")
+from re import sub
+
+@tool(args_schema=_MetaArgs)
+async def generate_report_meta(section_names: list[str]) -> ReportMeta:
+    """
+    Sinh tiêu đề H1 & TOC Markdown bằng **tiếng Việt**.
+    
+    Mỗi dòng ≤ 120 ký tự.
+    """
+    # Ví dụ 3 dòng bullet đầu tiên cho LLM “nhìn mẫu”
+    bullet_example = "\n".join(
+        f"- [{n}](#{sub('[^a-z0-9]+', '-', n.lower()).strip('-')})"
+        for n in section_names[:3]
+    )
+
+    system_prompt = f"""
+Bạn là chuyên gia biên soạn báo cáo cấp điều hành.
+
+*Sections:* {', '.join(section_names)}
+
+Yêu cầu:
+1. Đề xuất **một** tiêu đề H1 ngắn gọn, chuyên nghiệp (title-case), phản ánh câu hỏi chính.
+2. Sinh TOC ở dạng Markdown bullets, liên kết đến từng mục bằng anchor GitHub-style.
+3. Viết **toàn bộ** bằng **tiếng Việt**.
+4. Mỗi dòng **không vượt quá 120 ký tự**.
+
+Ví dụ cú pháp bullet:
+{bullet_example}
+
+Trả về JSON đúng cấu trúc:
+{{
+  "title": "<string>",
+  "toc_md": "<string>"
+}}
+(Không thêm khóa nào khác, không giải thích.)
+""".strip()
+
+    llm = init_chat_model(model="gpt-4.1",
+                           temperature=0.2,
+                           max_tokens=4000)
+
+    return await llm.with_structured_output(ReportMeta).ainvoke(system_prompt)
+#===================================================================
 def _assemble_and_reindex_report(completed_sections: List[Section]) -> str:
     """
     Assembles the final report from completed sections, creating a consolidated
@@ -446,14 +581,35 @@ async def supervisor_tools(
         # Handle specific tool outputs for routing
         if tool_call["name"] == Sections.__name__:
             sections_to_research = cast(Sections, observation).report_structure
+        # elif tool_call["name"] == AssembleReport.__name__:
+        #     # final_report = "\n\n".join([s.content for s in state["completed_sections"]])
+        #     final_report = _assemble_and_reindex_report(state["completed_sections"])
+        # #     final_report = await translate_to_vietnamese.ainvoke(
+        # #     {"text": final_report}, config
+        # # )
+        #     _persist_report(final_report)
+        #     state_update = {"messages": state["messages"] + result_messages, "final_report": final_report}
+        #     return Command(goto="supervisor", update=state_update)
         elif tool_call["name"] == AssembleReport.__name__:
-            # final_report = "\n\n".join([s.content for s in state["completed_sections"]])
-            final_report = _assemble_and_reindex_report(state["completed_sections"])
-        #     final_report = await translate_to_vietnamese.ainvoke(
-        #     {"text": final_report}, config
+    # 1. Ask the LLM for title + TOC
+            section_names = [s.name for s in state["completed_sections"]]
+            meta: ReportMeta = await generate_report_meta.ainvoke(
+                {"section_names": section_names}, config
+            )                                  # 🚀
+
+            # 2. Assemble body + refs as before
+            body = _assemble_and_reindex_report(state["completed_sections"])
+
+            # 3. Prepend meta
+            final_report = f"{meta.title}\n\n{meta.toc_md}\n\n{body}"
+            #final_report = await translate_to_vietnamese.ainvoke(
+            #{"text": final_report}, config
         # )
             _persist_report(final_report)
-            state_update = {"messages": state["messages"] + result_messages, "final_report": final_report}
+            state_update = {
+                "messages": state["messages"] + result_messages,
+                "final_report": final_report,
+            }
             return Command(goto="supervisor", update=state_update)
         # Store special tool results for processing after all tools have been called
         elif tool_call["name"] == Question.__name__:
@@ -519,43 +675,145 @@ def execute_sql_query(sql_query: str) -> str:
 def get_sql_agent_tools() -> list[BaseTool]:
     """Returns the complete list of tools available to the SQL agent."""
     return [
-        get_schema_shipping_order,
-        get_schema_dim_location,
-        get_schema_dim_warehouse,
-        get_schema_middle_mile_log,
-        get_schema_revenue_order,
-        get_schema_sla_delivery,
-        execute_sql_query,
+        # get_schema_shipping_order,
+        # get_schema_dim_location,
+        # get_schema_dim_warehouse,
+        # get_schema_middle_mile_log,
+        # get_schema_revenue_order,
+        # get_schema_sla_delivery,
+        generate_fake_data,
+        # execute_sql_query,
         tool(FinishSQLAgent),  # Tool to signal the SQL agent is done
     ]
 
-async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
-    """The core node of the SQL agent. It decides which tool to call or if it's done."""
-    # This example uses a single model, but you could have a configurable one
-    # Get configuration
-    configurable = MultiAgentConfiguration.from_runnable_config(config)
-    researcher_model = get_config_value(configurable.researcher_model)
+# async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
+#     """The core node of the SQL agent. It decides which tool to call or if it's done."""
+#     # This example uses a single model, but you could have a configurable one
+#     # Get configuration
+#     configurable = MultiAgentConfiguration.from_runnable_config(config)
+#     researcher_model = get_config_value(configurable.researcher_model)
     
-    # Initialize the model
-    llm = init_chat_model(model=researcher_model)
+#     # Initialize the model
+#     llm = init_chat_model(model=researcher_model)
     
-    tools = get_sql_agent_tools()
-    llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=False)
+#     tools = get_sql_agent_tools()
+#     llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=False)
 
-    project_id = "agentic-ai-463517"  
-    dataset_name = "ghn_data"  
+#     project_id = "agentic-ai-463517"  
+#     dataset_name = "ghn_data"  
 
-    result = state.get("result", "No data found for the given question.")
+#     result = state.get("result", "No data found for the given question.")
 
-    # Invoke the LLM with the message history to decide the next step
-    response = await llm_with_tools.ainvoke(
-        [{"role": "system", "content": SQL_AGENT_INSTRUCTIONS.format(
-            project_id=project_id,
-            dataset_name=dataset_name,
-        )}] + state["messages"]
+#     # Invoke the LLM with the message history to decide the next step
+#     response = await llm_with_tools.ainvoke(
+#         [{"role": "system", "content": SQL_AGENT_INSTRUCTIONS.format(
+#             project_id=project_id,
+#             dataset_name=dataset_name,
+#         )}] + state["messages"]
+#     )
+#     return {"messages": [response], "result": result}
+
+# --- NEW: synthetic data generator -----------------------------------------
+class GenerateFakeDataArgs(BaseModel):
+    """
+    Describe the dataset you need:
+      • what entity it represents
+      • required columns & their types
+      • number of rows (default 50)
+      • preferred format: csv | json | markdown-table
+    """
+    spec: str = Field(
+        description=("E.g. '50 rows of orders with order_date, region_name, "
+                     "total_orders (int), revenue_usd (float)'")
     )
-    return {"messages": [response], "result": result}
+    user_question: str = Field(description="User question")
+@tool(args_schema=GenerateFakeDataArgs)
+async def generate_fake_data(user_question: str, spec: str) -> str:
+    """
+    Uses an LLM to synthesise realistic but **fictitious** tabular data.
 
+    Returns a CSV string (header row + ≤ 100 rows).
+    """
+    llm = init_chat_model(model="gpt-4.1", temperature=0.1, max_tokens=32000)
+    prompt = (
+        "You are a data-fabrication engine. "
+        "Generate a CSV that exactly matches the following schema/requirements:\n"
+        f"{spec}\n"
+        "– Use sensible ranges/units.\n"
+        "– No additional commentary, just raw CSV."
+    )
+    sql_result = (await llm.ainvoke(prompt)).content.strip()
+
+
+    system_instructions_query = visualization_instructions.format(
+                                query_result=sql_result,
+                                folder_path="reports/images/"
+                            )
+    structured_llm = llm.with_structured_output(VisualizeCode)
+    visualize_result = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
+                                                            HumanMessage(content=user_question)])
+    file_path = visualize_result.file_path
+    print(python_execute(visualize_result.python_script))
+   
+    return {"sql_result": sql_result, "file_path":file_path}
+
+#================================Visualize===================================
+class VisualizeData(BaseModel):
+    """
+    Data in csv format, and user question. 
+    """
+    data_csv: str = Field("Data in csv format")
+    question: str = Field("User question")
+    
+class VisualizeCode(BaseModel):
+    """
+    Given data in csv format, and user question. generate python code to visualize sql result
+    """
+    python_script: str = Field(description="python script to visualize data")
+    file_path: str = Field(description="path where image store")
+
+@tool(args_schema=VisualizeData)
+async def visualize(data_csv: str, question: str) -> str:
+    """
+    Uses an LLM to generate visulization
+    """
+    llm = init_chat_model(model="gpt-4.1", temperature=0.1, max_tokens=32000)
+    system_instructions_query = visualization_instructions.format(
+                                query_result=data_csv,
+                                folder_path="reports/images/"
+                            )
+    result =  llm.invoke([SystemMessage(content=system_instructions_query),
+                                                            HumanMessage(content=question)])
+    return {"file_path":result["file_path"]} 
+#================================Visualize===================================
+
+
+
+
+async def sql_agent_node(state: SqlAgentState, config: RunnableConfig):
+    configurable = MultiAgentConfiguration.from_runnable_config(config)
+    llm_name = get_config_value(configurable.researcher_model)
+    llm = init_chat_model(model=llm_name, max_tokens=32000)
+
+    # 1. Build conversation context -----------------------------------------
+    history: list = state.get("messages", [])
+    # Expect first element to be the user's natural-language question
+    # (ensured by the caller of `sql_agent_graph`)
+    system_msg = SystemMessage(content=SQL_AGENT_INSTRUCTIONS_TO_GEN_FAKE_DATA)
+    msgs = [system_msg, *history]
+
+    # 2. Bind the toolset ----------------------------------------------------
+    agent = llm.bind_tools(
+        get_sql_agent_tools(),
+        tool_choice="any",               # force a decision
+        parallel_tool_calls=False,
+    )
+
+    # 3. Invoke --------------------------------------------------------------
+    response = await agent.ainvoke(msgs)
+
+    return {"messages": [response]}
+#======================================================
 async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
     """Executes the tool(s) called by the sql_agent_node."""
     tool_calls = state["messages"][-1].tool_calls
@@ -577,14 +835,17 @@ async def sql_agent_tools_node(state: SqlAgentState, config: RunnableConfig):
         )
 
         # If the tool called is execute_sql_query, we need to store the result
-        if tool_call["name"] == execute_sql_query.name:
+        # if tool_call["name"] == execute_sql_query.name:
+        if tool_call["name"] == generate_fake_data.name:
+            
             # Store the result in the state
-            sql_result = observation
+            sql_result = observation["sql_result"]
+            file_path  = observation["file_path"]
             result_messages.append(
                 HumanMessage(content=f"SQL query executed successfully. You should call the `FinishSQLAgent` tool to signal that the SQL agent is done.")
             )
 
-    return {"messages": result_messages, "result": sql_result}
+    return {"messages": result_messages, "sql_result": sql_result, "file_path": file_path}
 
 def sql_agent_should_continue(state: SqlAgentState) -> str:
     """
@@ -635,18 +896,20 @@ async def query_internal_database(question: str) -> str:
     sql_agent_state = await sql_agent_graph.ainvoke({
         "messages": [HumanMessage(content=question)]
     })
-    
+    print(sql_agent_state)
     # The final answer from the SQL agent is the last message in its state
-    final_answer = sql_agent_state["result"]
-    print(f"--- SQL AGENT returned answer: '{final_answer}' ---")
+    final_answer = sql_agent_state["sql_result"]
+    final_image_path = sql_agent_state["file_path"]
+    print(f"""--- SQL AGENT returned answer: '{final_answer}' ---
+          --- And image path for visualization '../{final_image_path}'""")
     
-    return final_answer
+    return f"""--- SQL result: {final_answer} --- \nAnd image path for visualization '../{final_image_path}'"""
 
 
 async def get_research_tools(config: RunnableConfig) -> list[BaseTool]:
     """Get research tools based on configuration"""
     search_tool = get_search_tool(config)
-    tools = [tool(Section), tool(FinishResearch), query_internal_database]
+    tools = [tool(Section), tool(FinishResearch), query_internal_database, translate_to_vietnamese]
     if search_tool is not None:
         tools.append(search_tool)  # Add search tool, if available
     existing_tool_names = {cast(BaseTool, tool).name for tool in tools}
@@ -662,12 +925,13 @@ async def research_agent(state: SectionState, config: RunnableConfig):
     researcher_model = get_config_value(configurable.researcher_model)
     
     # Initialize the model
-    llm = init_chat_model(model=researcher_model)
+    llm = init_chat_model(model=researcher_model, max_tokens=32000)
 
     # Get tools based on configuration
     research_tool_list = await get_research_tools(config)
     system_prompt = RESEARCH_INSTRUCTIONS.format(
         number_of_queries=configurable.number_of_queries,
+        follow_up_queries = configurable.number_of_queries,
         today=get_today_str(),
     )
     if configurable.mcp_prompt:
@@ -766,7 +1030,11 @@ async def research_agent_tools(state: SectionState, config: RunnableConfig):
         # Store the section observation if a Section tool was called
         if tool_call["name"] == Section.__name__:
             completed_section = cast(Section, observation)
-
+            translated_md = await translate_to_vietnamese.ainvoke(
+              {"text": completed_section.content}, config
+            )
+            translated_md += "\n\n\\pagebreak\n"
+            completed_section.content = translated_md
         # Store the source string if a search tool was called
         if tool_call["name"] in search_tool_names and configurable.include_source_str:
             source_str += cast(str, observation)

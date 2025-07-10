@@ -1,0 +1,18 @@
+kpi_name,tracking_frequency,tracked_by,review_process,review_action
+Số đơn hàng giao đúng hẹn,Hàng ngày,Trưởng nhóm giao hàng,Kiểm tra báo cáo giao hàng cuối ngày,Nhắc nhở nhân viên giao hàng trễ
+Tỉ lệ hủy đơn,Hàng tuần,Nhân viên kiểm soát chất lượng,Tổng hợp số liệu từ hệ thống,Phân tích nguyên nhân hủy đơn
+Thời gian giao hàng trung bình (phút),Hàng ngày,Trưởng nhóm giao hàng,So sánh với tiêu chuẩn công ty,Đề xuất cải tiến lộ trình giao hàng
+Sự hài lòng của khách hàng (điểm),Hàng tháng,Nhân viên chăm sóc khách hàng,Thu thập phản hồi khách hàng,Liên hệ khách hàng chưa hài lòng
+Số đơn hàng giao đúng hẹn,Hàng tuần,Trưởng nhóm giao hàng,Đối chiếu dữ liệu hệ thống,Thưởng cho nhân viên xuất sắc
+Tỉ lệ hủy đơn,Hàng ngày,Nhân viên kiểm soát chất lượng,Kiểm tra từng đơn bị hủy,Nhắc nhở nhân viên liên quan
+Thời gian giao hàng trung bình (phút),Hàng tuần,Trưởng nhóm giao hàng,Phân tích dữ liệu GPS,Điều chỉnh tuyến đường giao hàng
+Sự hài lòng của khách hàng (điểm),Hàng ngày,Nhân viên chăm sóc khách hàng,Khảo sát nhanh sau giao hàng,Gọi điện xác minh phản hồi thấp
+Số đơn hàng giao đúng hẹn,Hàng tháng,Trưởng nhóm giao hàng,Tổng hợp số liệu toàn bộ nhân viên,Đánh giá hiệu suất tháng
+Tỉ lệ hủy đơn,Hàng tháng,Nhân viên kiểm soát chất lượng,So sánh với tháng trước,Đề xuất giải pháp giảm hủy đơn
+Thời gian giao hàng trung bình (phút),Hàng ngày,Trưởng nhóm giao hàng,Theo dõi từng ca giao hàng,Huấn luyện lại nhân viên chậm
+Sự hài lòng của khách hàng (điểm),Hàng tuần,Nhân viên chăm sóc khách hàng,Phân tích điểm trung bình,Thưởng cho nhân viên được khen ngợi
+Số đơn hàng giao đúng hẹn,Hàng ngày,Trưởng nhóm giao hàng,Kiểm tra hệ thống giao nhận,Nhắc nhở nhân viên giao hàng trễ
+Tỉ lệ hủy đơn,Hàng tuần,Nhân viên kiểm soát chất lượng,Kiểm tra lý do hủy đơn,Đào tạo lại quy trình xử lý đơn
+Thời gian giao hàng trung bình (phút),Hàng tháng,Trưởng nhóm giao hàng,So sánh với KPI công ty,Đề xuất tăng nhân sự giao hàng
+Sự hài lòng của khách hàng (điểm),Hàng ngày,Nhân viên chăm sóc khách hàng,Khảo sát trực tiếp,Phản hồi khách hàng chưa hài lòng
+Số đơn hàng giao đúng hẹn,Hàng tuần,Trưởng nhóm giao hàng,Đối chiếu báo cáo thực tế,Thưởng cho nhân viên xuất sắc
